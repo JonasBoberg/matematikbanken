@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Logga in – Matematikbanken</title>
+
+<body class="login-page">
+<link rel="stylesheet" href="style.css">
+
+<script type="module">
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm"
+
+const loginBtn = document.getElementById("loginBtn");
+const registerDiv = document.getElementById("registerBtn");
+// Supabase-klient
+const supabase = createClient(
+  "https://fmbmwbhcngtjkfvtvgcx.supabase.co",
+  "sb_publishable_L0aRR9ZevImAgl0moi20MQ_bp80Xf67"
+);
+
+// Vänta på DOM innan vi kopplar event listeners
+document.addEventListener("DOMContentLoaded", async () => {
+  
+  const emailInput = document.getElementById("email");
+  const passwordInput = document.getElementById("password");
+  const msg = document.getElementById("msg");
+  const loginBtn = document.querySelector("button");
+  const registerDiv = document.querySelector(".link");
+
+  // Om redan inloggad → index
+  const { data: { session } } = await supabase.auth.getSession();
+  if (session) {
+    window.location.href = "./index.html";
+    return;
+  }
+
+  // LOGIN
+  loginBtn.addEventListener("click", async () => {
+    const email = emailInput.value;
+    const password = passwordInput.value;
+    msg.innerText = "Loggar in...";
+
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password
+    });
+
+    if (error) {
+      msg.innerText = "Fel: " + error.message;
+    } else {
+      msg.innerText = "Inloggad!";
+      window.location.href = "./index.html";
+    }
+  });
+
+  // REGISTER
+  registerDiv.addEventListener("click", async () => {
+    const email = emailInput.value;
+    const password = passwordInput.value;
+    msg.innerText = "Skapar konto...";
+
+    const { error } = await supabase.auth.signUp({
+      email,
+      password
+    });
+
+    if (error) {
+      msg.innerText = "Vänligen skriv in din mejl och önskat lösenord för att skapa konto.";
+    } else {
+      msg.innerText = "Konto skapat! Kolla din email.";
+    }
+  });
+
+});
+</script>
+</head>
+
+<body class="login-page">
+
+<div class="login-wrapper">
+    
+    <img src="bilder/Logga/matematikbanken_logga.png" class="login-logo">
+
+    <div class="login-card">
+        <h2>Logga in</h2>
+
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Lösenord">
+
+        <button id="loginBtn">Logga in</button>
+
+        <div class="link" id="registerBtn">
+            Skapa konto
+        </div>
+
+        <div id="msg" class="message"></div>
+    </div>
+
+</div>
+
+</body>
+</html>

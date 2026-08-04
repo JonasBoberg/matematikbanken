@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Success</title>
+</head>
+<body>
+
+<h2>Betalning lyckades!</h2>
+
+<script type="module">
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm"
+
+const supabase = createClient(
+  "https://fmbmwbhcngtjkfvtvgcx.supabase.co",
+  "sb_publishable_L0aRR9ZevImAgl0moi20MQ_bp80Xf67"
+)
+
+const { data: { session } } = await supabase.auth.getSession()
+
+if (session) {
+  await supabase.from("subscriptions").upsert({
+    user_id: session.user.id,
+    status: "active"
+  })
+
+  window.location.href = "/test2/index.html"
+}
+</script>
+
+</body>
+</html>

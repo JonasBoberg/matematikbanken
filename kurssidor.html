@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lärarpanel - Matematikkurser & NP</title>
+    <link rel="stylesheet" href="index_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* =========================================
+           KOMPLETTERANDE CSS (För att komplettera din befintliga)
+        ========================================= */
+        
+        .course-nav-card {
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .course-nav-card.active {
+            border-color: var(--primary);
+            background: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        .course-nav-card .course-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .panel-title {
+            font-size: 28px;
+            color: var(--primary-dark);
+            margin-top: 0;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .panel-subtitle {
+            font-size: 18px;
+            color: var(--text-main);
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .important-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .important-list li {
+            background: var(--bg-color);
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-radius: var(--radius);
+            border-left: 4px solid var(--primary);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .important-list li span.icon {
+            font-size: 18px;
+        }
+
+        .np-list-display {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .np-list-display li {
+            margin-bottom: 8px;
+            padding: 8px 12px;
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            font-size: 14px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn-small {
+            padding: 6px 12px;
+            font-size: 13px;
+            background: white;
+            border: 1px solid var(--border-color);
+            color: var(--primary-dark);
+        }
+
+        .btn-small:hover {
+            background: var(--primary-light);
+            border-color: var(--primary);
+        }
+
+        .info-box {
+            background: var(--primary-light);
+            border: 1px solid var(--primary);
+            padding: 15px;
+            border-radius: var(--radius);
+            font-size: 14px;
+            color: var(--primary-dark);
+            margin-top: 20px;
+        }
+
+        .teacher-notes {
+            width: 100%;
+            min-height: 120px;
+            box-sizing: border-box;
+            padding: 12px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border-color);
+            font-family: inherit;
+            font-size: 14px;
+            resize: vertical;
+            background: var(--bg-color);
+        }
+
+        .teacher-notes:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: white;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--text-main);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        .toast.show {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div></div>
+        <div class="header-center">
+            <div class="header-logo" style="font-size: 28px; font-weight: 700; color: var(--primary-dark);">
+                📐 Lärarpanel: Matematik
+            </div>
+        </div>
+        <div class="header-right">
+            <span id="userEmail">lärare@skola.se</span>
+            <button id="logoutBtn">Logga ut</button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <div class="workspace-layout">
+            
+            <!-- VÄNSTER SIDA: Kursval -->
+            <div class="workspace-left">
+                <h2 style="margin-top: 0;">Välj Kurs</h2>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">
+                    Välj en kurs för att se centrala moment, skapa utdelningsmaterial och spara dina egna planeringsanteckningar.
+                </p>
+                
+                <div class="nav-grid" id="courseGrid">
+                    <!-- JS fyller på detta grid med kurskort -->
+                </div>
+            </div>
+
+            <!-- HÖGER SIDA: Control Panel -->
+            <div class="workspace-right">
+                <div class="control-panel" id="coursePanel">
+                    <h3 class="panel-title">Välj en kurs för att börja</h3>
+                    <p>Använd menyn till vänster för att se information och verktyg.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="toast" class="toast">Kopierad!</div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // =========================================
+        // DATA: Kurser och dess innehåll
+        // =========================================
+        const courses = [
+            {
+                id: 'ma1c',
+                name: 'Matematik 1c',
+                icon: '🧮',
+                important: [
+                    { icon: '➗', text: 'Algebra: Förenkla uttryck, lösa linjära ekvationer och ekvationssystem.' },
+                    { icon: '📈', text: 'Funktioner: Förstå linjära funktioner, riktningskoefficient och nollställen.' },
+                    { icon: '📐', text: 'Geometri: Pythagoras sats, area och volymberäkningar samt likformighet.' }
+                ],
+                npChecklist: [
+                    'Kan jag förenkla komplexa algebraiska uttryck?',
+                    'Behärskar jag factoring (kvadrerings- och konjugatregeln)?',
+                    'Kan jag lösa ekvationssystem grafiskt och algebraiskt?',
+                    'Förstår jag skillnaden mellan funktion, ekvation och uttryck?',
+                    'Kan jag rita och tolka linjära funktioner?',
+                    'Behärskar jag grundläggande trigonometri (sin, cos, tan)?'
+                ]
+            },
+            {
+                id: 'ma2c',
+                name: 'Matematik 2c',
+                icon: '📉',
+                important: [
+                    { icon: '🔁', text: 'Andragradsfunktioner: Nollställen, extremvärden och grafens utseende.' },
+                    { icon: '🧩', text: 'Algebra: Lösa andragradsekvationer med pq-formeln och faktorisering.' },
+                    { icon: '📊', text: 'Statistik: Lådagram, standardavvikelse och normalfördelning.' }
+                ],
+                npChecklist: [
+                    'Behärskar jag pq-formeln i sömnen?',
+                    'Kan jag avgöra om en ekvation har 0, 1 eller 2 reella rötter (diskriminanten)?',
+                    'Kan jag omforma en andragradsfunktion till vertexform?',
+                    'Vet jag hur man räknar ut standardavvikelse?',
+                    'Kan jag tolka lådagram (kvartiler, median)?',
+                    'Förstår jag begreppet exponentiell tillväxt?'
+                ]
+            },
+            {
+                id: 'ma3c',
+                name: 'Matematik 3c',
+                icon: '🚀',
+                important: [
+                    { icon: '⚙️', text: 'Derivata: Deriveringsregler för polynom och exponentialfunktioner.' },
+                    { icon: '🏔️', text: 'Tillämpningar: Optimera (max/min), extrempunkter och terrasspunkter.' },
+                    { icon: '🔗', text: 'Samband och förändring: Sammansatta funktioner (kedjeregeln).' }
+                ],
+                npChecklist: [
+                    'Kan jag derivera polynom korrekt?',
+                    'Vet jag skillnaden på extrempunkt och terrasspunkt?',
+                    'Kan jag använda derivata för att rita upp en funktionsgraf?',
+                    'Behärskar jag kedjeregeln (sammansatta funktioner)?',
+                    'Kan jag lösa optimeringsproblem med andragradsderivata?',
+                    'Förstår jag asymptoter (lodräta och vågräta)?'
+                ]
+            },
+            {
+                id: 'ma4c',
+                name: 'Matematik 4c',
+                icon: '🧠',
+                important: [
+                    { icon: '📉', text: 'Trigonometri: Enhetscirkeln, trigonometriska samband och derivering.' },
+                    { icon: '🪜', text: 'Derivata: Derivata av exponential- och logaritmfunktioner.' },
+                    { icon: '🧮', text: 'Komplexa tal: Representation, addition och multiplikation i polär form.' }
+                ],
+                npChecklist: [
+                    'Kan jag derivera sin(x) och cos(x)?',
+                    'Behärskar jag logaritmlagarna?',
+                    'Kan jag räkna med komplexa tal i både rektangulär och polär form?',
+                    'Förstår jag De Moivres formel?',
+                    'Kan jag lösa ekvationer på formen z^n = w?',
+                    'Kan jag rita och tolka trigonometriska grafer (amplitud, period)?'
+                ]
+            }
+        ];
+
+        // =========================================
+        // LOGIK: Rendera innehåll
+        // =========================================
+        const courseGrid = document.getElementById('courseGrid');
+        const coursePanel = document.getElementById('coursePanel');
+        const toast = document.getElementById('toast');
+
+        function renderCourseNav() {
+            courseGrid.innerHTML = '';
+            courses.forEach(course => {
+                const card = document.createElement('div');
+                card.className = 'nav-card course-nav-card';
+                card.id = `nav-${course.id}`;
+                card.innerHTML = `
+                    <span class="nav-icon course-icon">${course.icon}</span>
+                    <h3 style="margin: 0; color: var(--text-main);">${course.name}</h3>
+                `;
+                card.addEventListener('click', () => loadCourse(course.id));
+                courseGrid.appendChild(card);
+            });
+        }
+
+        function loadCourse(courseId) {
+            const course = courses.find(c => c.id === courseId);
+            if (!course) return;
+
+            document.querySelectorAll('.course-nav-card').forEach(card => card.classList.remove('active'));
+            document.getElementById(`nav-${courseId}`).classList.add('active');
+
+            let checklistHTML = course.npChecklist.map(item => `<li>${item}</li>`).join('');
+
+            coursePanel.innerHTML = `
+                <h3 class="panel-title">${course.icon} ${course.name}</h3>
+                <p style="color: var(--text-muted); margin-top: -5px;">Verktyg för planering, bedömning och utdelning.</p>
+
+                <div class="info-box">
+                    <strong>👩‍🏫 Lärtips:</strong> Använd knapparna för att snabbt kopiera text till din LMS (t.ex. Google Classroom) eller skriv ut checklistor direkt till eleverna.
+                </div>
+
+                <div class="panel-subtitle">
+                    <span>🎯 Det viktigaste i kursen</span>
+                    <button class="btn-small" onclick="copyToClipboard('important', '${course.id}')">Kopiera text</button>
+                </div>
+                <ul class="important-list" id="importantList-${course.id}">
+                    ${course.important.map(item => `
+                        <li>
+                            <span class="icon">${item.icon}</span>
+                            <span>${item.text}</span>
+                        </li>
+                    `).join('')}
+                </ul>
+
+                <div class="panel-subtitle">
+                    <span>📝 NP-checklista</span>
+                    <div class="btn-group">
+                        <button class="btn-small" onclick="copyToClipboard('checklist', '${course.id}')">Kopiera</button>
+                        <button class="btn-small" onclick="printChecklist('${course.id}')">Skriv ut</button>
+                    </div>
+                </div>
+                <ul class="np-list-display" id="checklist-${course.id}">
+                    ${checklistHTML}
+                </ul>
+
+                <div class="panel-subtitle">
+                    <span>📓 Mina läraranteckningar</span>
+                </div>
+                <textarea class="teacher-notes" id="notes-${course.id}" placeholder="Skriv anteckningar inför provet, t.ex. 'Klass 9A behöver repetera...', 'Gruppdiskussion om optimering'..."></textarea>
+                
+                <div class="btn-group" style="margin-top: 20px;">
+                    <button class="generate" onclick="generateWorkbook('${course.id}')">📑 Skapa Elevhäfte (Nerladdning)</button>
+                </div>
+            `;
+
+            loadNotes(course.id);
+            
+            // Lägg till eventlyssnare för anteckningar som sparas automatiskt
+            document.getElementById(`notes-${course.id}`).addEventListener('input', (e) => {
+                saveNotes(course.id, e.target.value);
+            });
+        }
+
+        // =========================================
+        // LOGIK: Lärarverktyg
+        // =========================================
+        
+        // Visa en liten "Toast"-notis
+        function showToast(message) {
+            toast.innerText = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2000);
+        }
+
+        // Kopiera till urklipp
+        function copyToClipboard(type, courseId) {
+            const course = courses.find(c => c.id === courseId);
+            let textToCopy = `--- ${course.name} ---\n\n`;
+
+            if (type === 'important') {
+                textToCopy += "DET VIKTIGASTE I KURSEN:\n";
+                course.important.forEach(item => {
+                    textToCopy += ` - ${item.text}\n`;
+                });
+            } else if (type === 'checklist') {
+                textToCopy += "CHECKLISTA INFÖR NP:\n";
+                course.npChecklist.forEach(item => {
+                    textToCopy += ` [ ] ${item}\n`;
+                });
+            }
+
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showToast("Kopierad till urklipp!");
+            }).catch(err => {
+                alert("Kunde inte kopiera. Fel: " + err);
+            });
+        }
+
+        // Skriv ut checklista
+        function printChecklist(courseId) {
+            const course = courses.find(c => c.id === courseId);
+            const printWindow = window.open('', '', 'width=600,height=600');
+            
+            let listItems = course.npChecklist.map(item => `<li style="margin-bottom: 10px; font-size: 16px;"><input type="checkbox" disabled> ${item}</li>`).join('');
+            
+            printWindow.document.write(`
+                <html>
+                <head>
+                    <title>Checklista: ${course.name}</title>
+                    <style>
+                        body { font-family: sans-serif; padding: 40px; }
+                        h1 { color: #1d4ed8; }
+                        ul { list-style: none; padding: 0; }
+                    </style>
+                </head>
+                <body>
+                    <h1>${course.icon} ${course.name} - Checklista NP</h1>
+                    <p>Namn: _________________________</p>
+                    <ul>${listItems}</ul>
+                    <script>window.print()<\/script>
+                </body>
+                </html>
+            `);
+            printWindow.document.close();
+        }
+
+        // Hantera anteckningar (Local Storage)
+        function saveNotes(courseId, text) {
+            localStorage.setItem(`teacher-notes-${courseId}`, text);
+        }
+
+        function loadNotes(courseId) {
+            const saved = localStorage.getItem(`teacher-notes-${courseId}`);
+            const notesArea = document.getElementById(`notes-${courseId}`);
+            if (saved && notesArea) {
+                notesArea.value = saved;
+            }
+        }
+
+        // Generera elevhäfte
+        function generateWorkbook(courseId) {
+            const course = courses.find(c => c.id === courseId);
+            let workbookContent = `=================================\n`;
+            workbookContent += `ELEVARBETSHÄFTE: ${course.name}\n`;
+            workbookContent += `Förberedelse inför Nationella Prov\n`;
+            workbookContent += `=================================\n\n`;
+
+            workbookContent += `🎯 DET VIKTIGASTE I KURSEN:\n`;
+            course.important.forEach(item => {
+                workbookContent += ` - ${item.text}\n`;
+            });
+
+            workbookContent += `\n📝 CHECKLISTA:\n`;
+            course.npChecklist.forEach((item, index) => {
+                workbookContent += ` [ ] ${item}\n`;
+            });
+
+            const blob = new Blob([workbookContent], { type: 'text/plain;charset=utf-8' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = `Elevhafte_${course.name}.txt`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            showToast("Elevhäfte nedladdat!");
+        }
+
+        // =========================================
+        // INITIERING
+        // =========================================
+        renderCourseNav();
+        loadCourse('ma1c'); // Ladda första kursen som standard
+
+        document.getElementById('logoutBtn').addEventListener('click', () => {
+            alert('Du har loggats ut (demo).');
+        });
+
+    </script>
+</body>
+</html>

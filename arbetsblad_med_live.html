@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Matematikbanken</title>
+    <link rel="stylesheet" href="style_med_live.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)'], ['$', '$']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script type="module" src="arbetsblad.js"></script>
+    
+</head>
+
+<body class="auth-loading">
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header class="main-header">
+
+            <!-- Länk tillbaka till startsidan -->
+        <div class="header-left">
+            <a href="index.html" style="text-decoration: none; color: #333; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; line-height: 1; border-radius: 50%;">
+                <span style="font-size: 1.5rem; display: inline-block; line-height: 1;">⬅</span>
+            </a>
+        </div>
+
+        <div class="header-center">
+            <a href="arbetsblad_med_live.html" style="display: inline-flex; align-items: center; justify-content: center;" title="Ladda om arbetsbladssidan">
+                <img src="bilder/Logga/matematikbanken_logga.png"
+                    alt="Matematikbanken"
+                    class="header-logo">
+            </a>
+        </div>
+
+        <div class="header-right" id="userInfo">
+            <span id="userEmail"></span>
+            <button id="logoutBtn">Logga ut</button>
+        </div>
+
+    </header>
+
+
+
+    <div class="workspace-layout">
+
+        <div class="workspace-left">
+
+
+            <div class="filters">
+
+                <!-- Områden -->
+                <div class="custom-dropdown" id="areaDropdown">
+
+                    <div class="dropdown-trigger"
+                        onclick="toggleDropdown('areaDropdown')">
+
+                        <span id="areaDropdownLabel">
+                            Välj område...
+                        </span>
+
+                        <span class="arrow">&#9662;</span>
+
+                    </div>
+
+                    <div class="dropdown-content"
+                        id="areaDropdownContent">
+                    </div>
+
+                </div>
+
+
+                <!-- Kurser -->
+                <div class="custom-dropdown" id="courseDropdown">
+
+                    <div class="dropdown-trigger"
+                        onclick="toggleDropdown('courseDropdown')">
+
+                        <span id="courseDropdownLabel">
+                            Välj kurs...
+                        </span>
+
+                        <span class="arrow">&#9662;</span>
+
+                    </div>
+
+                    <div class="dropdown-content"
+                        id="courseDropdownContent">
+                    </div>
+
+                </div>
+
+
+                <!-- Nivå -->
+                <div class="custom-dropdown" id="difficultyDropdown">
+
+                    <div class="dropdown-trigger"
+                        onclick="toggleDropdown('difficultyDropdown')">
+
+                        <span id="difficultyDropdownLabel">
+                            Välj nivå...
+                        </span>
+
+                        <span class="arrow">&#9662;</span>
+
+                    </div>
+
+                    <div class="dropdown-content"
+                        id="difficultyDropdownContent">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="settings-section">
+
+                <!-- Titel + spacing -->
+                <div class="settings-row" style="margin-top:10pt">
+
+                    <div class="setting-group">
+                        <label for="pdfTitle">
+                            Rubrik på PDF:
+                        </label>
+
+                        <input type="text"
+                            id="pdfTitle"
+                            value="Arbetsblad">
+                    </div>
+
+
+                    <div class="setting-group slider-group" style="margin-top:10pt">
+
+                        <label for="spacingSlider">
+                            Avstånd mellan uppgifter:
+                        </label>
+
+                        <input type="range" id="spacingSlider" min="20" max="400" value="50" step="10">
+
+                        <span id="spacingValue">50px</span>
+
+                    </div>
+
+                    <div class="setting-group" style="margin-top:10pt">
+                        <button id="brSpacingButton" type="button" onclick="toggleBrSpacing()" style="cursor:pointer;padding:5px 10px;">
+                            Större skrivyta &lt;br&gt;
+                        </button>
+                    </div>
+
+                </div>
+
+                    <div class="setting-group" style="margin-top:10pt">
+
+                        <span class="setting-title">
+                            Antal kolumner:
+                        </span>
+
+                        <label>
+                            <input type="radio" name="layout" value="one" checked>
+                            En kolumn
+                        </label>
+
+                        <label>
+                            <input type="radio" name="layout" value="two">
+                            Två kolumner
+                        </label>
+
+                    </div>
+                
+
+                <div class="setting-group" style="margin-top:10pt">
+                        <button onclick="addCustomTextBlock()" style="cursor: pointer; padding: 5px 10px; margin-bottom: 10px;">
+                        + Lägg till egen textruta
+                    </button>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="action-buttons" style="margin-top:10px; margin-bottom:10px">
+
+                <button id="pdfBtn" class="generate">
+                    Skriv ut
+                </button>
+
+                <button id="clearBtn"
+                    class="unmark">
+                    Avmarkera uppgifter
+                </button>
+
+            </div>
+
+            <div id="taskContainer"></div>
+        </div>
+
+
+
+        <div class="workspace-right">
+            <div id="previewPanel" class="preview-panel">
+                <div id="print-root">
+                    <div class="a4-page-preview">
+                        <div style="text-align:center; color:#9ca3af; margin-top:100px; font-style:italic;">
+                            Förhandsgranskning visas här när du väljer uppgifter...
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html> 

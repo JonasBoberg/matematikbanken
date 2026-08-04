@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Matematikbanken</title>
+    <link rel="stylesheet" href="index_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+
+<header class="main-header">
+    <div></div> <!-- Tom div för flex layout -->
+    <img src="bilder/Logga/matematikbanken_logga.png" alt="Matematikbanken" class="header-logo">
+    <div class="header-right" id="userInfo">
+        <span id="userEmail"></span>
+        <button id="logoutBtn">Logga ut</button>
+    </div>
+</header>
+
+<div class="dashboard-container">
+    <div class="nav-grid" style="margin-top: 20pt">
+
+        <!-- Kort 1: Arbetsblad -->
+        <a href="arbetsblad_med_live.html" class="nav-card" style="margin-left: 15pt">
+            <span class="nav-icon">📝</span>
+            <h2>Skapa Arbetsblad</h2>
+            <p>Skapa egna arbetsblad med uppgifter från olika områden och olika nivåer.</p>
+        </a>
+        
+        <!-- Kort 2: Rika problem -->
+        <a href="rika_problems.html" class="nav-card">
+            <span class="nav-icon">🧩</span>
+            <h2>Rika problem</h2>
+            <p>Bank med problemlösningsaktiviteter: elevblad och lärarblad.</p>
+        </a>
+
+        <!-- Kort 3: Färdigt Material -->
+        <a href="fardigt_material.html" class="nav-card" style="margin-right: 15pt">
+            <span class="nav-icon">📚</span>
+            <h2>Färdigt Material</h2>
+            <p>Bläddra bland färdigt material och ladda ned det du vill använda.</p>
+        </a>
+
+    </div>
+</div>
+
+
+<script type="module">
+    import { supabase, logout, checkAuth } from './auth.js';
+
+    // 1. Kontrollera inloggning
+    const user = await checkAuth();
+
+    if (user) {
+        // Visa email i headern
+        document.getElementById('userDisplayEmail').textContent = user.email;
+        
+        // Koppla logga ut-knappen
+        document.getElementById('logoutBtn').addEventListener('click', logout);
+    }
+</script>
+
+</body>
+</html>

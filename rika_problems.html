@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Färdigt Material - Matematikbanken</title>
+    <link rel="stylesheet" href="style.css"> <!-- Använder samma stilmall som startsidan -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header (Liknande startsidan) -->
+<header class="main-header">
+    <!-- Länk tillbaka till startsidan -->
+    <a href="index.html" style="text-decoration: none; color: #333; display: flex; align-items: center;">
+        <span style="font-size: 1.5rem;">⬅</span>
+    </a>
+    
+    <img src="bilder/Logga/matematikbanken_logga.png" alt="Matematikbanken" class="header-logo">
+    
+    <div class="header-right" id="userInfo">
+        <!-- Notera: Jag ändrade ID till 'userDisplayEmail' för att matcha JS-logiken nedan -->
+        <span id="userDisplayEmail" style="font-weight: 500;"></span>
+        <button id="logoutBtn">Logga ut</button>
+    </div>
+</header>
+
+<main class="container">
+    <h1 class="page-title">Rika problem</h1>
+
+    <!-- Sök och Filter -->
+    <section class="filter-section">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Sök efter arbetsblad (t.ex. 'Addition')...">
+        </div>
+        
+        <div class="filter-select">
+            <select id="categoryFilter">
+                <option value="">Alla Kategorier</option>
+                <option value="Räknesätt">Räknesätt</option>
+                <option value="Geometri">Geometri</option>
+                <option value="Mätning">Mätning</option>
+                <option value="Statistik">Statistik</option>
+            </select>
+        </div>
+
+        <div class="filter-select">
+            <select id="levelFilter">
+                <option value="">Alla Nivåer</option>
+                <option value="Ma1a">Ma1a</option>
+                <option value="Ma1b">Ma1b</option>
+                <option value="Ma1c">Ma1c</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Lista över material -->
+    <div id="materialGrid" class="material-grid">
+        <!-- JavaScript fyller detta med kort -->
+    </div>
+</main>
+
+<!-- Modal för förhandsgranskning -->
+<div id="previewModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 id="modalTitle" style="margin:0;">Förhandsgranskning</h3>
+            <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+            <!-- Här laddas PDF:en in -->
+            <iframe id="pdfFrame" src=""></iframe>
+        </div>
+    </div>
+</div>
+
+<script type="module">
+    import { supabase, logout, checkAuth } from './auth.js';
+
+    // 1. KONTROLLERA INLOGGNING
+    // Vi väntar på att auth ska laddas
+    document.addEventListener('DOMContentLoaded', async () => {
+        const user = await checkAuth();
+        if (user) {
+            document.getElementById('userDisplayEmail').textContent = user.email;
+        }
+        
+        // Initiera material-listan
+        renderMaterials(mockMaterials);
+    });
+
+    // Koppla logga ut-knappen
+    document.getElementById('logoutBtn').addEventListener('click', logout);
+
+
+    // 2. MOCK DATA (Exempeldata för att visa funktionen)
+    const mockMaterials = [
+        {
+            id: 1,
+            title: "Hur fungerar k-värdet?",
+            category: "Räta linjens ekvation",
+            level: "Ma1b",
+            url: "Material/Rika_problem_pdfer/Hur_fungerar_k-värdet.pdf",
+        },
+        {
+            id: 2,
+            title: "Punkter i ett koordinatsystem",
+            category: "Koordinatsystem och funktioner",
+            level: "Ma1b",
+            url: "Material/Rika_problem_pdfer/Punkter_i_ett_koordinatsystem.pdf",
+        },
+        {
+            id: 3,
+            title: "Godispåsen",
+            category: "Sannolikhet",
+            level: "Ma1b",
+            url: "Material/Rika_problem_pdfer/Godispåsen.pdf",
+        },
+    ];
+
+
+    // 3. RENDERINGSFUNKTION
+    const grid = document.getElementById('materialGrid');
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const levelFilter = document.getElementById('levelFilter');
+
+    function renderMaterials(data) {
+        grid.innerHTML = '';
+
+        if (data.length === 0) {
+            grid.innerHTML = '<div class="no-results">Inget material matchade din sökning.</div>';
+            return;
+        }
+
+        data.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'material-card';
+            
+            card.innerHTML = `
+                <div class="card-preview-img" style="background-image: url('${item.image}')">
+                    <!-- Ikon om bild inte laddas -->
+                    <span style="display:none">📄</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">${item.title}</h3>
+                    <div class="card-meta">
+                        <span class="badge">${item.category}</span>
+                        <span>${item.level}</span>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-preview" onclick="openPreview('${item.url}', '${item.title}')">Förhandsgranska</button>
+                        <a href="${item.url}" download class="btn btn-download">Ladda ner</a>
+                    </div>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    }
+
+
+    // 4. FILTERLOGIK
+    function filterMaterials() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const categoryValue = categoryFilter.value;
+        const levelValue = levelFilter.value;
+
+        const filtered = mockMaterials.filter(item => {
+            const matchesSearch = item.title.toLowerCase().includes(searchTerm);
+            const matchesCategory = categoryValue === "" || item.category === categoryValue;
+            const matchesLevel = levelValue === "" || item.level === levelValue;
+
+            return matchesSearch && matchesCategory && matchesLevel;
+        });
+
+        renderMaterials(filtered);
+    }
+
+    // Lyssna på ändringar i input-fälten
+    searchInput.addEventListener('input', filterMaterials);
+    categoryFilter.addEventListener('change', filterMaterials);
+    levelFilter.addEventListener('change', filterMaterials);
+
+
+    // 5. MODAL-FUNKTIONALITET (Förhandsgranskning)
+    // Vi gör dessa funktioner globala (window) så att inline-onclick i HTML fungerar
+    const modal = document.getElementById('previewModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const pdfFrame = document.getElementById('pdfFrame');
+    const closeModal = document.querySelector('.close-modal');
+
+    // Lägg till fallback-meddelande när PDF inte kan renderas i modalen
+    const previewError = document.createElement('div');
+    previewError.style.display = 'none';
+    previewError.style.padding = '16px';
+    previewError.style.color = '#1e293b';
+    previewError.style.background = '#f8fafc';
+    previewError.style.borderRadius = '10px';
+    previewError.style.marginTop = '14px';
+    previewError.innerHTML = 'Förhandsgranskningen kunde inte visas direkt i webbläsaren. <a id="pdfFallbackLink" href="#" target="_blank" rel="noopener noreferrer">Öppna PDF i ny flik</a>.';
+    document.querySelector('.modal-body').appendChild(previewError);
+
+    pdfFrame.onload = function() {
+        previewError.style.display = 'none';
+        pdfFrame.style.display = 'block';
+    };
+
+    pdfFrame.onerror = function() {
+        pdfFrame.style.display = 'none';
+        previewError.style.display = 'block';
+        document.getElementById('pdfFallbackLink').href = pdfFrame.src;
+    };
+
+    window.openPreview = function(url, title) {
+        modal.style.display = 'flex'; // Visa modalen (flex för centrering)
+        modalTitle.textContent = title;
+        previewError.style.display = 'none';
+        pdfFrame.style.display = 'block';
+        pdfFrame.src = url;
+    };
+
+    // Stäng modal när man klickar på X
+    closeModal.onclick = function() {
+        modal.style.display = 'none';
+        pdfFrame.src = ''; // Rensa src för att stoppa ljud/uppspelning
+    };
+
+    // Stäng modal om man klickar utanför rutan
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+            pdfFrame.src = '';
+        }
+    };
+
+</script>
+
+</body>
+</html>
