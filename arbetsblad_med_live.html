@@ -140,10 +140,10 @@
                         <input type="text"
                             id="pdfTitle"
                             value="Arbetsblad">
-                    </div>
+<!--                    </div>
 
 
-                    <div class="setting-group slider-group" style="margin-top:10pt">
+                    <div class="setting-group slider-group" style="margin-top:10pt">  -->
 
                         <label for="spacingSlider">
                             Avstånd mellan uppgifter:
@@ -155,36 +155,31 @@
 
                     </div>
 
-                    <div class="setting-group" style="margin-top:10pt">
-                        <button id="brSpacingButton" type="button" onclick="toggleBrSpacing()" style="cursor:pointer;padding:5px 10px;">
-                            Större skrivyta &lt;br&gt;
-                        </button>
-                    </div>
-
                 </div>
 
-                    <div class="setting-group" style="margin-top:10pt">
+                <div class="setting-group" style="margin-top:10pt">
+                 <span class="setting-title">
+                        Antal kolumner:
+                    </span>
+                    <label>
+                        <input type="radio" name="layout" value="one" checked>
+                        En kolumn
+                    </label>
+                    <label>
+                        <input type="radio" name="layout" value="two">
+                        Två kolumner
+                    </label>
 
-                        <span class="setting-title">
-                            Antal kolumner:
-                        </span>
-
-                        <label>
-                            <input type="radio" name="layout" value="one" checked>
-                            En kolumn
-                        </label>
-
-                        <label>
-                            <input type="radio" name="layout" value="two">
-                            Två kolumner
-                        </label>
-
-                    </div>
+                </div>
                 
 
                 <div class="setting-group" style="margin-top:10pt">
                         <button onclick="addCustomTextBlock()" style="cursor: pointer; padding: 5px 10px; margin-bottom: 10px;">
                         + Lägg till egen textruta
+                    </button>
+
+                    <button id="brSpacingButton" type="button" onclick="toggleBrSpacing()" style="cursor:pointer;padding:5px 10px;">
+                        Större skrivyta &lt;br&gt;
                     </button>
                 </div>
 
