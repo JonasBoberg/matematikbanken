@@ -2015,7 +2015,7 @@ difficulty: 2,
 calculator: true,
 solution: "År 2024 (beräkningen ger ca 16,5 år efter 2008)."
 },
-{ groupId: "Längdenheter", area: "Geometri", subArea: "Enheter", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "Längdenheter", area: "Geometri", subArea: "Enheter", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
 { id: 932, versionLabel: "A", question: "Skriv rätt tal på raden:<br>a) 5 m = __________ cm<br>b) 12 mm = __________ cm", solution: "a) 500<br>b) 1,2"},
 { id: 933, versionLabel: "B", question: "Skriv rätt tal på raden:<br>a) 10 dm = __________ cm<br>b) 0,5 m = __________ cm", solution: "a) 100<br>b) 40"},
 { id: 934, versionLabel: "C", question: "Skriv rätt tal på raden:<br>a) 17 dm = __________ m<br>b) 6 km = __________ m", solution: "a) 1,7<br>b) 6000"},
@@ -2201,50 +2201,12 @@ img: "bilder/IMG_1013.jpg",
 difficulty: 2,
 solution: "\\( v=v_1=28^{\\circ} \\)."
 },
-{
-id: 954,
-area: "Geometri",
-subArea: "Kordasatsen",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.",
-img: "bilder/IMG_4001.jpg",
-calculator: true,
-difficulty: 1,
-solution: "\\( x=10,0 \\) l.e."
-},
-{
-id: 955,
-area: "Geometri",
-subArea: "Kordasatsen",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.",
-img: "bilder/IMG_4002.jpg",
-calculator: true,
-difficulty: 1,
-solution: "\\( x=10,7 \\) l.e."
-},
-{
-id: 956,
-area: "Geometri",
-subArea: "Kordasatsen",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.",
-img: "bilder/IMG_4003.jpg",
-calculator: true,
-difficulty: 1,
-solution: "\\( x=6,2 \\) l.e."
-},
-{
-id: 957,
-area: "Geometri",
-subArea: "Kordasatsen",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.",
-img: "bilder/IMG_4020.jpg",
-calculator: true,
-difficulty: 1,
-solution: "\\( x=7,9 \\) l.e."
-},
+{ groupId: "Kordasatsen - Enkla", area: "Geometri", subArea: "Kordasatsen", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
+{ id: 954, versionLabel: "A", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4001.jpg", solution: "\\( x=10,0 \\) l.e."},
+{ id: 955, versionLabel: "B", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4002.jpg", solution: "\\( x=10,7 \\) l.e."},
+{ id: 956, versionLabel: "C", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4003.jpg", solution: "\\( x=6,2 \\) l.e."},
+{ id: 957, versionLabel: "D", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4020.jpg", solution: "\\( x=7,9 \\) l.e."},
+] },
 {
 id: 958,
 area: "Geometri",
@@ -2256,83 +2218,21 @@ calculator: true,
 difficulty: 2,
 solution: "\\( x=18,6 \\) l.e."
 },
-{
-id: 959,
-area: "Geometri",
-subArea: "Likformighet / Pythagoras",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Bestäm sträckan x.",
-img: "bilder/IMG_2013.jpg",
-calculator: true,
-difficulty: 1,
-solution: "x = 13 l.e."
-},
-{
-id: 960,
-area: "Geometri",
-subArea: "Likformighet / Pythagoras",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Bestäm sträckan x.",
-img: "bilder/IMG_2014.jpg",
-calculator: true,
-difficulty: 1,
-solution: "x = 24 l.e."
-},
-{
-id: 961,
-area: "Geometri",
-subArea: "Likformighet / Pythagoras",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Bestäm sträckan x i denna rätvinkliga triangel.",
-img: "bilder/IMG_2015.jpg",
-calculator: true,
-difficulty: 2,
-solution: "x = 8,47 l.e."
-},
-{
-id: 962,
-area: "Geometri",
-subArea: "Likformighet / Pythagoras",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Bestäm omkretsen för denna rätvinkliga triangel.",
-img: "bilder/IMG_2016.jpg",
-calculator: true,
-difficulty: 2,
-solution: "Omkretsen är ca 36,96 l.e."
-},
-{
-id: 963,
-area: "Geometri",
-subArea: "Likformighet / Pythagoras",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Figurerna är likformiga. Bestäm sträckan x.",
-img: "bilder/IMG_2010.jpg",
-calculator: true,
-difficulty: 1,
-solution: "x = 28,8 l.e."
-},
-{
-id: 964,
-area: "Geometri",
-subArea: "Likformighet / Pythagoras",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Figurerna är likformiga. Bestäm sträckan x. Svara med en decimal.",
-img: "bilder/IMG_2011.jpg",
-calculator: true,
-difficulty: 1,
-solution: "x = 14,5 l.e."
-},
-{
-id: 965,
-area: "Geometri",
-subArea: "Likformighet / Pythagoras",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Figurerna är likformiga. Bestäm sträckorna a och b. Svara med en decimal.",
-img: "bilder/IMG_2012.jpg",
-calculator: true,
-difficulty: 1,
-solution: "a = 18,4 l.e. och b = 14,4 l.e."
-},
+{ groupId: "Beräkna hypotenusan", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
+{ id: 959, versionLabel: "A", question: "Bestäm sträckan \\( x \\).", img: "bilder/IMG_2013.jpg", solution: "x = 13 l.e."},
+] },
+{ groupId: "Beräkna katet", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
+{ id: 960, versionLabel: "A", question: "Bestäm sträckan \\( x \\).", img: "bilder/IMG_2014.jpg", solution: "x = 24 l.e."},
+] },
+{ groupId: "Pythagoras -> Andragradare", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
+{ id: 961, versionLabel: "A", question: "Bestäm sträckan x i denna rätvinkliga triangel.", img: "bilder/IMG_2015.jpg", solution: "x = 8,47 l.e."},
+{ id: 962, versionLabel: "B", question: "Bestäm omkretsen för denna rätvinkliga triangel.", img: "bilder/IMG_2016.jpg", solution: "Omkretsen är ca 36,96 l.e."},
+] },
+{ groupId: "Likformighet grundläggande", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
+{ id: 963, versionLabel: "A", question: "Figurerna är likformiga. Bestäm sträckan x.", img: "bilder/IMG_2010.jpg", solution: "x = 28,8 l.e."},
+{ id: 964, versionLabel: "B", question: "Figurerna är likformiga. Bestäm sträckan x. Svara med en decimal.", img: "bilder/IMG_2011.jpg", solution: "x = 14,5 l.e."},
+{ id: 965, versionLabel: "C", question: "Figurerna är likformiga. Bestäm sträckorna a och b. Svara med en decimal.", img: "bilder/IMG_2012.jpg", solution: "a = 18,4 l.e. och b = 14,4 l.e."},
+] },
 {
 id: 966,
 area: "Geometri",
@@ -2628,7 +2528,7 @@ id: 998,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Utgå från punkterna A = (3, -5) och B = (2 , -3). Sträckan AB delas mitt itu av punkten M. Bestäm M:s koordinater.",
+question: "Utgå från punkterna A = (3, -5) och B = (2, -3). Sträckan AB delas mitt itu av punkten M. Bestäm M:s koordinater.",
 difficulty: 1,
 solution: "Svar: \\( \\frac{3+2}{2}=2,5 \\) och \\( \\frac{-5+(-3)}{2}=-4 \\).<br>Svar \\( M=(2,5 ; -4) \\)."
 },
@@ -2637,7 +2537,7 @@ id: 999,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Utgå från punkterna A = (5, 10) och B = (12 , 18). Sträckan AB delas mitt itu av punkten M. Bestäm M:s koordinater.",
+question: "Utgå från punkterna A = (5, 10) och B = (12, 18). Sträckan AB delas mitt itu av punkten M. Bestäm M:s koordinater.",
 difficulty: 1,
 solution: "Svar: \\( \\frac{5+12}{2}=8,5 \\) och \\( \\frac{10+18}{2}=14 \\).<br>Svar \\( M=(8,5 ; 14) \\)."
 },
