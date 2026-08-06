@@ -16,21 +16,29 @@
 <body>
 
 <!-- Header (Liknande startsidan) -->
-<header class="main-header">
-    <!-- Länk tillbaka till startsidan -->
-    <a href="index.html" style="text-decoration: none; color: #333; display: flex; align-items: center;">
-        <span style="font-size: 1.5rem;">⬅</span>
-    </a>
-    
-    <a href="fardigt_material.html" style="display: block; line-height: 0">
-        <img src="bilder/Logga/Matematikbanken_logga_release_vit.svg" alt="Matematikbanken" class="header-logo">
-    </a>    
-    <div class="header-right" id="userInfo">
-        <!-- Notera: Jag ändrade ID till 'userDisplayEmail' för att matcha JS-logiken nedan -->
-        <span id="userDisplayEmail" style="font-weight: 500;"></span>
-        <button id="logoutBtn">Logga ut</button>
-    </div>
-</header>
+    <header class="main-header">
+
+        <!-- Länk tillbaka till startsidan -->
+        <div class="header-left">
+            <a href="index.html" style="text-decoration: none; color: #333; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; line-height: 1; border-radius: 50%;">
+                <span style="font-size: 1.5rem; display: inline-block; line-height: 1;">⬅</span>
+            </a>
+        </div>
+
+        <div class="header-center">
+            <a href="index.html" style="display: block; line-height: 0">
+                <img src="bilder/Logga/Matematikbanken_logga_release_vit.svg"
+                    alt="Matematikbanken"
+                    class="header-logo">
+            </a>
+        </div>
+
+        <div class="header-right" id="userInfo">
+            <span id="userDisplayEmail"></span>
+            <button id="logoutBtn">Logga ut</button>
+        </div>
+
+    </header>
 
 <main class="container">
     <h1 class="page-title">Färdigt Material</h1>

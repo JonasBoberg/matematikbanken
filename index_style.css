@@ -4,8 +4,8 @@
 ========================================= */
 
 :root {
-    --primary: #2563eb;
-    --primary-dark: #1d4ed8;
+    --primary: #1800ad;       /* Samma som logga */
+    --primary-dark: #1c089e;  /* Mörkare blå för hover */
     --primary-light: #eff6ff;
 
     --bg-color: #D8E7F0;

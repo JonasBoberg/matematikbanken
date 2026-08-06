@@ -1,7 +1,7 @@
 /* --- CSS Variabler för en enhetlig design --- */
 :root {
-    --primary: #2563eb;       /* Modern blå färg */
-    --primary-dark: #1d4ed8;  /* Mörkare blå för hover */
+    --primary: #1800ad;       /* Modern blå färg */
+    --primary-dark: #1c089e;  /* Mörkare blå för hover */
     --primary-light: #eff6ff; /* Ljusblå bakgrund för markerade objekt */
     --bg-color: #D8E7F0;      /* Ljusgrå bakgrund */
     --card-bg: #ffffff;       /* Vit bakgrund för kort */
