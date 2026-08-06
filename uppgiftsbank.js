@@ -1,5 +1,5 @@
 export const taskGroups = [
-{ groupId: "beräkna del utan räknare", area: "Procent", subArea: "Del, andel, hela", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
+{ groupId: "Beräkna del utan räknare", area: "Procent", subArea: "Del, andel, hela", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
 { id: 1, listid: 1, versionLabel: "A", question: "Beräkna:<br>a) 10% av 3000 kr<br>b) 15% av 500 kr", solution: "a) 300 kr<br>b) 75 kr" },
 { id: 2, listid: 2, versionLabel: "B", question: "Beräkna:<br>a) 20% av 3000 kr<br>b) 40% av 200 kr", solution: "a) 600 kr<br>b) 80 kr" },
 { id: 3, listid: 3, versionLabel: "C", question: "Vad är 30% av 3000kr?", solution: "Svar: 900 kr" },
@@ -7,7 +7,7 @@ export const taskGroups = [
 { id: 5, listid: 5, versionLabel: "E", question: "Vad är 20% av 1000kr?", solution: "Svar: 200 kr" },
 { id: 6, listid: 6, versionLabel: "F", question: "Vad är 20% av 150kr?", solution: "Svar: 30 kr" },
 ] },
-{groupId: "beräkna andel med räknare", area: "Procent", subArea: "Del, andel, hela", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 1, versions: [
+{groupId: "Beräkna andel med räknare", area: "Procent", subArea: "Del, andel, hela", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 1, versions: [
 { id: 7, listid: 7, versionLabel: "A", question: "I en låda finns 18 röda kulor och 42 blå kulor.<br>Hur stor andel av kulorna är röda? Svara i procentform.", solution: "Totalt antal kulor: 60<br>\\(18/60=0,30\\)<br>Svar: 30%."},
 { id: 8, listid: 8, versionLabel: "B", question: "På ett café säljs 15 muffins och 35 bullar under en dag.<br>Hur stor andel av bakverken är muffins? Svara i procentform.", solution: "Totalt antal bakverk: 50<br>\\(15/50=0,30\\)<br>Svar: 30%."},
 { id: 9, listid: 9, versionLabel: "C", question: "I en klass går 12 elever i fotboll och 18 elever i innebandy.<br>Hur stor andel av eleverna spelar fotboll? Svara i procentform.", solution: "Totalt antal elever: 30<br>\\(12/30=0,40\\)<br>Svar: 40%."},
@@ -15,7 +15,7 @@ export const taskGroups = [
 { id: 11, listid: 11, versionLabel: "E", question: "I en djurpark finns 14 apor och 56 fåglar.<br>Hur stor andel av djuren är apor? Svara i procentform.", solution: "Totalt antal djur: 70<br>\\(14/70=0,20\\)<br>Svar: 20%."},
 { id: 12, listid: 12, versionLabel: "Ex", example: "Andelen beräknas med \\( \\textrm{andelen}=\\frac{\\textrm{delen}}{\\textrm{det hela}}\\).<br>Exempel: På en parkering finns 8 mopeder och 24 bilar. Hur stor andel är mopeder?<br>\\( \\frac{8}{24+8}=\\frac{8}{32}=0,25=25\\% \\)<br>Svar: 25% av fordonen är mopeder."},
 ] },
-{ groupId: "beräkna del med räknare", area: "Procent", subArea: "Del, andel, hela", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 1, versions: [
+{ groupId: "Beräkna del med räknare", area: "Procent", subArea: "Del, andel, hela", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 1, versions: [
 { id: 13, listid: 13, versionLabel: "A", question: "Beräkna<br>a) 64% av 350 kr.<br>b) 31,5% av 820 kg.", solution: "a) 224 kr<br>b) 258,3 kg" },
 { id: 14, listid: 14, versionLabel: "B", question: "a) Vad är 12% av 280 kr?<br>b) Vad är 5,9% av 120 kr?", solution: "a) 33,6 kr<br>b) 7,08 kr" },
 { id: 15, listid: 15, versionLabel: "C", question: "Vad är 5,6% av 6000 kr?", solution: "Svar: 336 kr." },
@@ -31,7 +31,7 @@ export const taskGroups = [
 { id: 23, listid: 16, versionLabel: "D", question: "I en klass finns det 40 elever. 30% spelar fotboll och 20% spelar innebandy. Resten spelar ingen av dessa sporter. Hur många elever spelar ingen av dessa sporter?", solution: "Svar: 20 st (50% av 40)" },
 { id: 24, listid: 17, versionLabel: "E", question: "I ett bibliotek finns det 90 böcker på ett bord. 20% är deckare och 50% är faktaböcker. Resten är romaner. Hur många romaner finns det på bordet?", solution: "Svar: 27 st (30% av 90)" },
 ] },
-{ groupId: "procentuell förändring 1", area: "Procent", subArea: "Procentuell förändring", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
+{ groupId: "Procentuell förändring 1", area: "Procent", subArea: "Procentuell förändring", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
 { id: 25, listid: 20, versionLabel: "A", question: "En jacka kostade först 800 kr men säljs nu för 680 kr. Med hur många procent har priset minskat?", solution: "Svar: Det har minskat med 15%." },
 { id: 26, listid: 21, versionLabel: "B", question: "En mobil kostade först 4000 kr men kostar nu 4800 kr. Med hur många procent har priset ökat?", solution: "Svar: Det har ökat med 20%." },
 { id: 27, listid: 22, versionLabel: "C", question: "En tröja kostade först 440 kr men säljs nu för 360 kr. Med hur många procent har priset minskat? Svara med en decimal.", solution: "Svar: Det har minskat med 18,2%." },
@@ -40,7 +40,7 @@ export const taskGroups = [
 { id: 30, listid: 25, versionLabel: "F", question: "Förra året hade du 34 000 kr i månadslön. I år har du 35 400 kr. Med hur många procent har din måndaslön ökat det senaste året?", solution: "Svar: Den har ökat med ca 4,1%." },
 { id: 31, listid: 26, versionLabel: "Ex", example: "Använd formeln: \\( \\textrm{procentuell förändring}=\\frac{\\textrm{Skillnaden}}{\\textrm{Ursprunget}} \\).<br>Ex. En minskning från 530 till 490 är en minskning på \\( \\frac{40}{530}=0,075=7,5\\%.\\)" },
 ] },
-{ groupId: "ange förändringsfaktorn", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
+{ groupId: "Ange förändringsfaktorn", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
 { id: 32, listid: 27, versionLabel: "A", question: "En vara ökar i värde med 12%. Vad är förändringsfaktorn?", solution: "Svar: 1,12." },
 { id: 33, listid: 28, versionLabel: "B", question: "En vara minskar i värde med 12%. Vad är förändringsfaktorn?", solution: "Svar: 0,88." },
 { id: 34, listid: 29, versionLabel: "C", question: "En vara ökar i värde med 5,8%. Vad är förändringsfaktorn?", solution: "Svar: 1,058." },
@@ -50,7 +50,7 @@ export const taskGroups = [
 { id: 38, listid: 33, versionLabel: "G", question: "Vilken förändringsfaktor motsvarar de olika förändringarna?<br>a) En ökning med 87%.<br>b) En ökning med 112%.", solution: "a) 1,87<br>b) 2,12" },
 { id: 39, listid: 19, versionLabel: "Ex", example: "Utgå från 100%. Addera eller subtrahera skillnaden beroende på om det är en ökning eller minskning. Gör därefter om till decimalform.<br><br>En ökning med 14% motsvarar förändringsfaktorn \\(100\\%+14\\%=114\\%=1,14.\\) Svar: ff=1,14<br><br>En minskning med 14% motsvarar förändringsfaktorn \\(100\\%-14\\%=86\\%=0,86.\\) Svar: ff=0,86" },
 ] },
-{ groupId: "tolka förändringsfaktorn", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
+{ groupId: "Tolka förändringsfaktorn", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
 { id: 40, listid: 34, versionLabel: "A", question: "Priset på en vara förändras. Förändringsfaktorn är 1,55. Beskriv hur varans värde har förändrats.", solution: "Svar: Varans värde har ökat med 55%." },
 { id: 41, listid: 35, versionLabel: "B", question: "Priset på en vara förändras. Förändringsfaktorn är 0,91. Beskriv hur varans värde har förändrats.", solution: "Svar: Varans värde har minskat med 9%." },
 { id: 42, listid: 36, versionLabel: "C", question: "Priset på en vara förändras. Förändringsfaktorn är 0,64. Beskriv hur varans värde har förändrats.", solution: "Svar: Varans värde har minskat med 36%." },
@@ -1670,7 +1670,7 @@ solution: "a) B<br>b) B"
 { id: 808, versionLabel: "D", question: "Ett bageri bakar limpor vars vikt är normalfördelad. Medelvärdet är 750g och standardavvikelsen är 5,5g. Beräkna sannolikheten att en slumpmässigt vald limpa väger mindre än 745g.", solution: "Svar: Det är 18,17% chans." },
 { id: 809, versionLabel: "E", question: "Ett företag säljer hantlar vars vikt är normalfördelad. Medelvärdet är 5kg och standardavvikelsen är 2,3g. Beräkna sannolikheten att en slumpmässigt vald hantel väger mellan 4999 g och 5001 g.", solution: "Svar: Det är 33,6% chans." },
 ]  },
-{ groupId: "Kvadratrotsmetoden - 1", area: "Andragradsekvationer", subArea: "Kvadratrotsmetoden", courses: ["Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "Kvadratrotsmetoden - 1", area: "Andragradare", subArea: "Kvadratrotsmetoden", courses: ["Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 810, versionLabel: "A", question: "Lös ekvationen: \\( x^2=9 \\).", solution: "\\( x_1=3 \\) och \\( x_2=-3 \\)" },
 { id: 811, versionLabel: "B", question: "Lös ekvationen: \\( x^2+5=30 \\).", solution: "\\( x_1=5 \\) och \\( x_2=-5 \\)" },
 { id: 812, versionLabel: "C", question: "Lös ekvationen: \\( 2x^2-8=24 \\).", solution: "\\( x_1=4 \\) och \\( x_2=-4 \\)" },
@@ -1679,7 +1679,7 @@ solution: "a) B<br>b) B"
 ]  },
 {
 id: 815,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Kvadratrotsmetoden",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Lös ekvationen: \\( 9+3x^2=18 \\). Svara exakt.",
@@ -1688,32 +1688,32 @@ solution: "\\( x_1=\\sqrt{3} \\) och \\( x_2=-\\sqrt{3} \\)"
 },
 {
 id: 816,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Kvadratrotsmetoden",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Lös ekvationen: \\( 5x^2=10 \\). Svara exakt.",
 difficulty: 2,
 solution: "\\( x_1=\\sqrt{2} \\) och \\( x_2=-\\sqrt{2} \\)"
 },
-{ groupId: "Nollproduktsmetoden från två parenteser", area: "Andragradsfunktioner", subArea: "Nollproduktsmetoden", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "Nollproduktsmetoden från två parenteser", area: "Andragradare", subArea: "Nollproduktsmetoden", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 817, versionLabel: "A", question: "Lös ekvationen: \\( (x+1)(2x-1)=0.\\)", solution: "\\( x_1=-1 \\) och \\( x_2=0,5 \\)" },
 { id: 818, versionLabel: "B", question: "Lös ekvationen: \\( (2x+10)(x+3)=0.\\)", solution: "\\( x_1=-5 \\) och \\( x_2=-3 \\)" },
 { id: 819, versionLabel: "C", question: "Lös ekvationen: \\( (x-4)(x+15)=0.\\)", solution: "\\( x_1=4 \\) och \\( x_2=-15 \\)" },
 { id: 820, versionLabel: "D", question: "Lös ekvationen: \\( 6(x-4)(1+2x)=0.\\)", solution: "\\( x_1=4 \\) och \\( x_2=-0,5 \\)"},
 { id: 821, versionLabel: "D", question: "Lös ekvationen: \\( (5x+50)(6-2x)=0.\\)", solution: "\\( x_1=-10 \\) och \\( x_2=3 \\)"},
 ]  },
-{ groupId: "Nollproduktsmetoden med faktorisering", area: "Andragradsfunktioner", subArea: "Nollproduktsmetoden", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "Nollproduktsmetoden med faktorisering", area: "Andragradare", subArea: "Nollproduktsmetoden", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 822, versionLabel: "A", question: "Lös ekvationen: \\( x^2+15x=0 \\) med nollproduktsmetoden.", solution: "\\(x^2+15x=0\\)<br>\\(x(x+15)=0\\)<br>Svar:\\( x_1=0 \\) och \\( x_2=-15 \\)" },
 { id: 823, versionLabel: "B", question: "Lös ekvationen: \\( 4x^2-12x=0 \\) med nollproduktsmetoden.", solution: "\\(4x^2-12x=0\\)<br>\\(4x(x-3)=0\\)<br>Svar:\\( x_1=0 \\) och \\( x_2=3 \\)" },
 { id: 824, versionLabel: "C", question: "Lös ekvationen: \\( x^2-5x=0.\\)", solution: "Svar:\\( x_1=0 \\) och \\( x_2=5 \\)" },
 { id: 825, versionLabel: "D", question: "Lös ekvationen: \\( 3x+6x^2=0.\\)", question: "Lös ekvationen: \\( 3x+6x^2=0 \\)", },
 ]  },
-{ groupId: "pq utan justering", area: "Andragradsfunktioner", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "pq utan justering", area: "Andragradare", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 826, versionLabel: "A", question: "Lös ekvationen: \\( x^2-6x+5=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=5 \\)" },
 { id: 827, versionLabel: "B", question: "Lös ekvationen: \\( x^2-2x-15=0 \\).", solution: "\\( x_1=5 \\) och \\( x_2=-3 \\)" },
 { id: 828, versionLabel: "C", question: "Lös ekvationen: \\( x^2+2x-8=0.\\)", solution: "\\( x_1=2 \\) och \\( x_2=4 \\)" }
 ] },
-{ groupId: "pq med justering (allt i VL)", area: "Andragradsfunktioner", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "pq med justering (allt i VL)", area: "Andragradare", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 829, versionLabel: "A", question: "Lös ekvationen: \\( 2x^2+4x-16=0 \\).", solution: "\\( x_1=2 \\) och \\( x_2=-4 \\)" },
 { id: 830, versionLabel: "B", question: "Lös ekvationen: \\( -2x^2-22x+24=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-12 \\)" },
 { id: 831, versionLabel: "C", question: "Lös ekvationen: \\( 0,5x^2-2x-11,5=0 \\).", solution: "\\( x_1=7 \\) och \\( x_2=-3 \\)" },
@@ -1721,26 +1721,26 @@ solution: "\\( x_1=\\sqrt{2} \\) och \\( x_2=-\\sqrt{2} \\)"
 { id: 833, versionLabel: "E", question: "Lös ekvationen: \\( 2x^2-6x+4=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=2 \\)" },
 { id: 834, versionLabel: "F", question: "Lös ekvationen: \\( -x^2-3x+4=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-4 \\)" }
 ] },
-{ groupId: "pq med justering VL/HL", area: "Andragradsfunktioner", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "pq med justering VL/HL", area: "Andragradare", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 835, versionLabel: "A", question: "Lös ekvationen: \\( 2x^2+5x+12=x^2-3x \\).", solution: "\\( x_1=-2 \\) och \\( x_2=-6 \\)" },
 { id: 836, versionLabel: "B", question: "Lös ekvationen: \\( 5x^2=30-5x \\).", solution: "\\( x_1=2 \\) och \\( x_2=-3 \\)" },
 { id: 837, versionLabel: "C", question: "Lös ekvationen: \\( x^2+6x+7=2x+3 \\).", solution: "\\( x_1=-2 \\) och \\( x_2=-2 \\)" },
 { id: 838, versionLabel: "D", question: "Lös ekvationen: \\( 3x^2+6x=24 \\).", solution: "\\( x_1=2 \\) och \\( x_2=-4 \\)" }
 ] },
-{ groupId: "pq med miniräknare", area: "Andragradsfunktioner", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
+{ groupId: "pq med miniräknare", area: "Andragradare", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
 { id: 839, versionLabel: "A", question: "Lös ekvationen \\( 1,5x^2-3,3+1,8x=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-2,2 \\)" },
 { id: 840, versionLabel: "B", question: "Lös ekvationen \\( 0,05x^2-0,425x=2,1 \\).", solution: "\\( x_1=12 \\) och \\( x_2=-3,5 \\)" },
 { id: 841, versionLabel: "C", question: "Lös ekvationen \\( 2,4x^2+1,2x-3,6=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-1,5 \\)" },
 { id: 842, versionLabel: "D", question: "Lös ekvationen \\( 0,8x^2-4x-4,4=2 \\).", solution: "\\( x_1=4 \\) och \\( x_2=-2 \\)" },
 { id: 843, versionLabel: "E", question: "Lös ekvationen \\( 2x^2-1,5x-4,5=-x^2 \\).", solution: "\\( x_1=1,5 \\) och \\( x_2=-1 \\)" }
 ] },
-{ groupId: "Geometriskproblemlösning med pq", area: "Andragradsfunktioner", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
+{ groupId: "Geometriskproblemlösning med pq", area: "Andragradare", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
 { id: 844, versionLabel: "A", question: "En triangel har arean 142,5 cm². Höjden är 4 cm kortare än basen. Bestäm triangelns bas och höjd.", solution: "Lös ekvationen \\(\\frac{x(x-4)}{2}=142,5\\) (med pq eller kvadratkomplettering).<br>Svar: basen = 19 cm, höjden = 15 cm." },
 { id: 845, versionLabel: "A", question: "En rektangel vars bredd är 1,5 cm längre än dess höjd har arean 175 cm².  Bestäm rektangelns breddoch höjd.", solution: "Lös ekvationen \\(x(x-1)=175\\) (med pq eller kvadratkomplettering).<br>Svar: bredd = 12,5 cm, höjd = 14 cm." },
 ] },
 {
 id: 846,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Nollställe / symmetrilinje",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Nedan ser du funktionen \\( f(x)=ax^2+bx+c \\). <br>a) Är koefficienten a positiv eller negativ?<br>b) Bestäm funktionens symmetrilinje.",
@@ -1750,7 +1750,7 @@ solution: "a) \\(a\\) är positiv eftersom linjen är \"glad\".<br>b) \\(x=6\\).
 },
 {
 id: 847,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Nollställe / symmetrilinje",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Nedan ser du funktionen \\( f(x)=ax^2+bx+c \\). <br>a) Bestäm konstanten c.<br>b) Bestäm funktionens nollställen.",
@@ -1760,7 +1760,7 @@ solution: "a) \\(c=5\\).<br>b) \\(x_1=2\\) och \\(x_2=10\\)."
 },
 {
 id: 848,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Nollställe / symmetrilinje",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Nedan ser du funktionen \\( g(x)=ax^2+bx+c \\). <br>a) Är koefficienten a positiv eller negativ?<br>b) Bestäm funktionens symmetrilinje.",
@@ -1770,7 +1770,7 @@ solution: "a) a är negativ eftersom linjen är \"ledsen\".<br>b) x=1."
 },
 {
 id: 849,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Nollställe / symmetrilinje",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Nedan ser du funktionen \\( f(x)=ax^2+bx+c \\). <br>a) Bestäm konstanten c.<br>b) Bestäm funktionens nollställen.",
@@ -1780,7 +1780,7 @@ solution: "a) \\(c=4\\).<br>b) \\(x_1=-2\\) och \\(x_2=4\\)."
 },
 {
 id: 850,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Extrempunkt",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Nedan ser du funktionen \\( f(x)=ax^2+bx+c \\). Bestäm koordinaterna för funktionens extrempunkt.",
@@ -1790,20 +1790,20 @@ solution: "(1 ; 4,5)"
 },
 {
 id: 851,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Nollställe / symmetrilinje",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Funktionen \\( f(x)=10x^2-x+10,5 \\) är given. Har funktionen en maximipunkt eller minimipunkt? Motivera ditt svar.",
 difficulty: 1,
 solution: "Funktionen har en minimipunkt eftersom \\( x^2 \\)-termen är positiv."
 },
-{ groupId: "bestäm andra nollstället med f(x)", area: "Andragradsfunktioner", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "bestäm andra nollstället med f(x)", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 852, versionLabel: "A", question: "För andragradsfunktionen \\( f(x) \\) gäller följande:<br><ul><li>Symmetrilinjen är \\( x=10 \\)</li><li>\\( f(1)=0 \\)</li></ul>Bestäm funktionens nollställen.", solution: "\\( x_1=1 \\) och \\( x_2=19 \\)." },
 { id: 853, versionLabel: "B", question: "För andragradsfunktionen \\( f(x) \\) gäller följande:<br><ul><li>Symmetrilinjen är \\( x=2 \\)</li><li>\\( f(3)=0 \\)</li></ul>Bestäm funktionens nollställen.", solution: "\\( x_1=1 \\) och \\( x_2=3 \\)." }
 ] },
 {
 id: 854,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Nollställe / symmetrilinje",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Andragradsfunktionen \\( f(x)=(x+a)(x-8) \\) har symmetrilinjen \\( x=10 \\). Bestäm \\( a \\).",
@@ -1812,37 +1812,37 @@ solution: "\\( a=-12 \\)."
 },
 {
 id: 855,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Nollställe / symmetrilinje",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Andragradsfunktionen \\( f(x)=2(x+1)(x+b) \\) har symmetrilinjen \\( x=2 \\). Bestäm \\( b \\).",
 difficulty: 1,
 solution: "\\( b=5 \\)."
 },
-{ groupId: "Ange funktion utifrån symmetrilinje", area: "Andragradsfunktioner", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "Ange funktion utifrån symmetrilinje", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 856, versionLabel: "A", question: "Ange en andragradsfunktion med symmetrilinjen \\( x=15,5 \\).", solution: "T.ex. \\( f(x)=(x-15)(x-16) \\) eller \\( f(x)=(x-14)(x-17).\\)" },
 { id: 857, versionLabel: "B", question: "Ange en andragradsfunktion med symmetrilinjen \\( x=-12 \\).", solution: "T.ex. \\( f(x)=(x+13)(x+15) \\) eller \\( f(x)=(x+12)^2\\)" },
 ] },
 {
 id: 858,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Nollställe / symmetrilinje",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "För andragradsfunktionen \\(f(x)\\) gäller att \\(f(1)=0\\) och \\(f(3)=0\\).<br>Ge ett förslag på funktionsuttrycket till \\(f(x)\\).",
 difficulty: 1,
 solution: "T.ex. \\( f(x)=(x-1)(x-3) \\)."
 },
-{ groupId: "Bestäm nollställen algebraiskt", area: "Andragradsfunktioner", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "Bestäm nollställen algebraiskt", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 859, versionLabel: "A", question: "Funktionen \\( f(x)=3x^2-30x+27 \\) är given. Bestäm funktionens nollställen.", solution: "\\( x_1=1 \\) och \\( x_2=9 \\)" },
 { id: 860, versionLabel: "B", question: "Funktionen \\( f(x)=0,5x^2-4x+7,5 \\) är given. Hitta funktionens nollställen.", solution: "\\( x_1=3 \\) och \\( x_2=5 \\)" },
 ] },
-{ groupId: "Bestäm symmetrilinje algebraiskt", area: "Andragradsfunktioner", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "Bestäm symmetrilinje algebraiskt", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 861, versionLabel: "A", question: "Vilken symmetrilinje har funktionen \\( f(x)= \\frac{x^2}{2}+13x+84 \\)?", solution: "Symmetrilinjen är \\( x=-13\\)" },
 { id: 862, versionLabel: "B", question: "Funktionen \\( f(x)= \\frac{-x^2}{2}-2x+6 \\) är given. Bestäm funktionens symmetrilinje.", solution: "Symmetrilinjen är \\( x=-2\\)" },
 ] },
 {
 id: 863,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Extrempunkt",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Funktionen \\( f(x)=-0.2(x+1)(x-4) \\) är given. Bestäm koordinaterna för funktionens vertex.",
@@ -1850,14 +1850,14 @@ difficulty: 1,
 calculator: true,
 solution: "Funktionens vertex/extrempunkt hittar vi genom att beräkna \\( f(1,5) \\) (eftersom symmetrilinjen är \\(x = 1,5\\)).<br>Svar: \\((1,5; 1,25)\\)."
 },
-{ groupId: "Avgör max eller min algebraiskt", area: "Andragradsfunktioner", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "Avgör max eller min algebraiskt", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 864, versionLabel: "A", question: "Funktionen \\( f(x)=0.4x^2-x+1 \\) är given. Har funktionen en maximipunkt eller en minimipunkt?", solution: "Eftersom koefficienten framför \\(x^2\\)-termen är positiv så har funktionen en minimipunkt." },
 { id: 865, versionLabel: "B", question: "Funktionen \\( f(x)=6x^2+2x-15 \\) är given. Har funktionen en maximipunkt eller en minimipunkt?", solution: "Eftersom koefficienten framför \\(x^2\\)-termen är positiv så har funktionen en minimipunkt." },
 { id: 866, versionLabel: "C", question: "Funktionen \\( f(x)=-2x^2+3x+4 \\) är given. Har funktionen en maximipunkt eller en minimipunkt?", solution: "Eftersom koefficienten framför \\(x^2\\)-termen är negativ så har funktionen en maximipunkt." },
 ] },
 {
 id: 867,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Extrempunkt",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Funktionen \\( f(x)=10x^2+30x+20 \\) är given. Bestäm funktionens minsta värde.",
@@ -1867,7 +1867,7 @@ solution: "Funktionens minsta värde får vi genom att beräkna \\( f(-1,5) \\) 
 },
 {
 id: 868,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Extrempunkt",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Funktionen \\( f(x)= \\frac{-x^2}{2}+4x+10 \\) är given. Bestäm funktionens största värde.",
@@ -1875,7 +1875,7 @@ difficulty: 1,
 calculator: true,
 solution: "Funktionens största värde får vi genom att beräkna f(4) (eftersom symmetrilinjen är x = 4).<br> Svar: funktionens största värde är 18."
 },
-{ groupId: "Bestäm extrempunkt algebraiskt", area: "Andragradsfunktioner", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
+{ groupId: "Bestäm extrempunkt algebraiskt", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
 { id: 869, versionLabel: "A", question: "Bestäm funktionens extrempunkt: \\( f(x)= 0,4x^2-3,2x+6 \\) och avgör om det är en maximipunkt eller en minimipunkt.", solution: "Svar: Funktionen har minimipunkten (4; -0,4)." },
 { id: 870, versionLabel: "B", question: "Bestäm funktionens extrempunkt: \\( f(x)= -0,1x^2+0,6x-0,5 \\) och avgör om det är en maximipunkt eller en minimipunkt.", solution: "Svar: Funktionen har maximipunkten (3; 0,4)." },
 { id: 871, versionLabel: "C", question: "Bestäm funktionens extrempunkt: \\( f(x)= 2x^2+28x+90 \\) och avgör om det är en maximipunkt eller en minimipunkt.", solution: "Svar: Funktionen har minimipunkten (-7, -8)." },
@@ -1884,7 +1884,7 @@ solution: "Funktionens största värde får vi genom att beräkna f(4) (eftersom
 ] },
 {
 id: 874,
-area: "Andragradsfunktioner",
+area: "Andragradare",
 subArea: "Extrempunkt",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
 question: "Adam kastar en boll som landar på marken 10 meter bort. Bollens bana i luften (från hans hand tills att den landar på marken) kan beskrivas med funktionen \\( f(x)= -0,2x^2+1,8x+2 \\)<br>a) Hur högt över marken är bollen när den lämnar hans hand?<br>Hur högt över marken når bollen som högst under dess färd?",
