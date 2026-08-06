@@ -771,7 +771,7 @@ body.login-page {
 
 /* Gör så att vänstra panelen alltid fyller höjden (lika som höger) */
 .workspace-left {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 120px);
     overflow-y: auto;
     box-sizing: border-box;
 }
@@ -784,7 +784,7 @@ body.login-page {
 
 .workspace-right {
     position: relative; /* FIX */
-    height: calc(100vh - 150px);
+    height: calc(100vh - 120px);
     min-width: 0;
 }
 
