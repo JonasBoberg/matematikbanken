@@ -1,6 +1,9 @@
+// Temporärt inaktiverat inloggningssystem.
+// Det gamla Supabase-flödet finns kvar som kommentar för enkel återaktivering senare.
+
+/*
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
-// Supabase klient
 export const supabase = createClient(
   "https://fmbmwbhcngtjkfvtvgcx.supabase.co",
   "sb_publishable_L0aRR9ZevImAgl0moi20MQ_bp80Xf67",
@@ -12,10 +15,9 @@ export const supabase = createClient(
   }
 );
 
-// Kontrollera auth status
 export async function checkAuth() {
   const { data: { session }, error } = await supabase.auth.getSession();
-  
+
   if (error) {
     console.error("Auth check error:", error);
     return null;
@@ -29,10 +31,9 @@ export async function checkAuth() {
   return session.user;
 }
 
-// Logga ut
 export async function logout() {
   const { error } = await supabase.auth.signOut();
-  
+
   if (error) {
     console.error("Logout error:", error);
     alert("Kunde inte logga ut");
@@ -41,4 +42,20 @@ export async function logout() {
 
   console.log("Utloggad!");
   window.location.href = "./login.html";
+}
+*/
+
+export const supabase = null;
+
+export async function checkAuth() {
+  console.log("Auth är temporärt inaktiverat.");
+  return {
+    id: "demo-user",
+    email: "demo@matematikbanken.local"
+  };
+}
+
+export async function logout() {
+  console.log("Logout är temporärt inaktiverat.");
+  window.location.href = "./index.html";
 }

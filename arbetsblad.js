@@ -2,6 +2,91 @@
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm"
 import { taskGroups } from './uppgiftsbank.js';
 
+// TEMPORÄRT INAKTIVERAT AUTH
+// För att återaktivera senare: byt ut den aktiva auth-blocken längre ned mot den kommenterade koden härunder.
+/*
+// --- Original auth-logik (sparad som backup) ---
+console.log("AUTH CHECK STARTAR");
+
+document.body.style.display = "none";
+
+const supabase = createClient("https://fmbmwbhcngtjkfvtvgcx.supabase.co", "sb_publishable_L0aRR9ZevImAgl0moi20MQ_bp80Xf67", {
+  auth: {
+    persistSession: true,
+    storage: localStorage
+  }
+});
+
+async function initAuth() {
+    console.log("Startar auth...");
+
+    const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+    if (sessionError) {
+        console.error("Fel vid session:", sessionError);
+        return;
+    }
+
+    if (!session) {
+        console.log("→ Ingen session, till login");
+        window.location.href = "./login.html";
+        return;
+    }
+
+    const user = session.user;
+    console.log("Inloggad användare:", user.id, user.email);
+
+    const userInfoDiv = document.getElementById("userInfo");
+    if (userInfoDiv) {
+        userInfoDiv.innerHTML = `
+            <span id="userEmail">${user.email}</span>
+            <button id="logoutBtn" style="margin-left: 10px; cursor: pointer;">Logga ut</button>
+        `;
+
+        const logoutBtn = document.getElementById("logoutBtn");
+        logoutBtn.addEventListener("click", async () => {
+            const { error } = await supabase.auth.signOut();
+            if (error) {
+                console.error("Logout error:", error);
+                alert("Kunde inte logga ut");
+                return;
+            }
+            console.log("Utloggad!");
+            window.location.href = "./login.html";
+        });
+    }
+
+    const { data: subData, error: subError } = await supabase
+        .from("subscriptions")
+        .select("*")
+        .eq("user_id", user.id)
+        .maybeSingle();
+
+    if (subError) {
+        console.error("Fel vid hämtning av subscription:", subError);
+    }
+
+    if (!subData) {
+        const { data: insertData, error: insertError } = await supabase
+            .from("subscriptions")
+            .insert([{ user_id: user.id, status: "trial" }]);
+
+        if (insertError) {
+            console.error("Kunde inte skapa subscription:", insertError);
+        } else {
+            console.log("Ny subscription skapad för användaren:", insertData);
+        }
+    } else {
+        console.log("Subscription finns redan:", subData);
+    }
+
+    document.body.style.display = "block";
+    console.log("→ Sidan klar att visas");
+}
+
+initAuth();
+document.body.classList.remove("auth-loading");
+*/
+
 function flattenTasks(groups) {
     const flatList = [];
 
@@ -37,91 +122,20 @@ function flattenTasks(groups) {
 const tasks = flattenTasks(taskGroups);
 window.tasks = tasks;
 
-console.log("AUTH CHECK STARTAR");
+// Aktuell, temporär version: auth är avstängt men koden lämnas lätt att återaktivera.
+console.log("AUTH är temporärt inaktiverat");
 
-document.body.style.display = "none"; // Dölj sidan tills auth är klar
+document.body.style.display = "block";
+document.body.classList.remove("auth-loading");
 
-const supabase = createClient("https://fmbmwbhcngtjkfvtvgcx.supabase.co", "sb_publishable_L0aRR9ZevImAgl0moi20MQ_bp80Xf67", {
-  auth: {
-    persistSession: true,
-    storage: localStorage
-  }
-});
-
-// --- Init Auth ---
-async function initAuth() {
-    console.log("Startar auth...");
-
-    const { data: { session }, error: sessionError } = await supabase.auth.getSession();
-    if (sessionError) {
-        console.error("Fel vid session:", sessionError);
-        return;
-    }
-
-    if (!session) {
-        console.log("→ Ingen session, till login");
-        window.location.href = "./login.html";
-        return;
-    }
-
-    const user = session.user;
-    console.log("Inloggad användare:", user.id, user.email);
-
-    // --- Visa e-post och logga ut-knapp ---
-    const userInfoDiv = document.getElementById("userInfo");
-    if (userInfoDiv) {
-        userInfoDiv.innerHTML = `
-            <span id="userEmail">${user.email}</span>
-            <button id="logoutBtn" style="margin-left: 10px; cursor: pointer;">Logga ut</button>
-        `;
-
-        const logoutBtn = document.getElementById("logoutBtn");
-        logoutBtn.addEventListener("click", async () => {
-            const { error } = await supabase.auth.signOut();
-            if (error) {
-                console.error("Logout error:", error);
-                alert("Kunde inte logga ut");
-                return;
-            }
-            console.log("Utloggad!");
-            window.location.href = "./login.html";
-        });
-    }
-
-    // --- Hantera subscription ---
-    const { data: subData, error: subError } = await supabase
-        .from("subscriptions")
-        .select("*")
-        .eq("user_id", user.id)
-        .maybeSingle();
-
-    if (subError) {
-        console.error("Fel vid hämtning av subscription:", subError);
-    }
-
-    if (!subData) {
-        const { data: insertData, error: insertError } = await supabase
-            .from("subscriptions")
-            .insert([{ user_id: user.id, status: "trial" }]);
-        
-        if (insertError) {
-            console.error("Kunde inte skapa subscription:", insertError);
-        } else {
-            console.log("Ny subscription skapad för användaren:", insertData);
-        }
-    } else {
-        console.log("Subscription finns redan:", subData);
-    }
-
-    // --- Visa sidan ---
-    document.body.style.display = "block";
-    console.log("→ Sidan klar att visas");
+const userInfoDiv = document.getElementById("userInfo");
+if (userInfoDiv) {
+    userInfoDiv.innerHTML = `
+        <span id="userEmail">Demo-användare</span>
+        <button id="logoutBtn" style="margin-left: 10px; cursor: pointer;">Logga ut</button>
+    `;
 }
 
-// --- Kör auth-init ---
-initAuth();
-
-document.body.classList.remove("auth-loading");
 
 // --- Tillståndsvariabler ---
 let selectedTaskIds = []; // Array för att kunna sortera

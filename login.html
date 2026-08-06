@@ -10,33 +10,32 @@
 <link rel="stylesheet" href="style.css">
 
 <script type="module">
+// Temporärt avaktiverat inloggningssystem.
+// Det gamla Supabase-flödet finns kvar som kommentar för enkel återaktivering senare.
+
+/*
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm"
 
 const loginBtn = document.getElementById("loginBtn");
 const registerDiv = document.getElementById("registerBtn");
-// Supabase-klient
 const supabase = createClient(
   "https://fmbmwbhcngtjkfvtvgcx.supabase.co",
   "sb_publishable_L0aRR9ZevImAgl0moi20MQ_bp80Xf67"
 );
 
-// Vänta på DOM innan vi kopplar event listeners
 document.addEventListener("DOMContentLoaded", async () => {
-  
   const emailInput = document.getElementById("email");
   const passwordInput = document.getElementById("password");
   const msg = document.getElementById("msg");
   const loginBtn = document.querySelector("button");
   const registerDiv = document.querySelector(".link");
 
-  // Om redan inloggad → index
   const { data: { session } } = await supabase.auth.getSession();
   if (session) {
     window.location.href = "./index.html";
     return;
   }
 
-  // LOGIN
   loginBtn.addEventListener("click", async () => {
     const email = emailInput.value;
     const password = passwordInput.value;
@@ -55,7 +54,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
-  // REGISTER
   registerDiv.addEventListener("click", async () => {
     const email = emailInput.value;
     const password = passwordInput.value;
@@ -72,8 +70,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       msg.innerText = "Konto skapat! Kolla din email.";
     }
   });
-
 });
+*/
+
+window.location.replace("./index.html");
 </script>
 </head>
 
