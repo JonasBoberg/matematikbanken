@@ -2338,7 +2338,7 @@ difficulty: 1,
 calculator: true,
 solution: "Svar: \\( \\sqrt{7^2+2^2}=7,28 l.e. \\)"
 },
-{ groupId: "Bestäm koordinat utifrån givet avstånd", area: "Geometri", subArea: "Avståndsformeln/Mittpunktsformeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
+{ groupId: "Bestäm koordinat utifrån givet avstånd", area: "Geometri", subArea: "Avståndsformeln / Mittpunktsformeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
 { id: 976, versionLabel: "A", question: "Punkten \\( (2, y) \\) ligger 10 l.e. från punkten \\( (-4, 6) \\). Bestäm \\( y \\).", solution: "Vi löser ekvationen \\( \\sqrt{(2+4)^2+(y-6)^2}=10 \\).<br>Svar: \\( y_1=-2 \\) och \\( y_2=14 \\)." },
 { id: 977, versionLabel: "B", question: "Punkten \\( (x, 10) \\) ligger 13 l.e. från punkten \\( (5, 4) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-5)^2+(10-4)^2}=13 \\).<br>Svar: \\( x_1=-6 \\) och \\( x_2=16 \\)."},
 { id: 978, versionLabel: "C", question: "Punkten \\( (x, 20) \\) ligger 37 l.e. från punkten \\( (3, 8) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-3)^2+(20-8)^2}=37 \\).<br>Svar: \\( x_1=-32 \\) och \\( x_2=38 \\)."},
