@@ -2034,6 +2034,49 @@ function updateBrSpacingButton() {
 
 updateBrSpacingButton();
 
+
+
+
+
+
+function adjustPdfZoom() {
+    const wrapper = document.querySelector('.pdf-preview-wrapper');
+    if (!wrapper) return;
+
+    // Den faktiska bredden vi vill ha på PDF:en
+    const pdfActualWidth = 595; 
+    
+    // Hur mycket plats har den högra panelen faktiskt? 
+    // (Vi drar bort 10px för gapet i mitten)
+    const availableWidth = wrapper.parentElement.clientWidth - 10; 
+
+    if (availableWidth >= pdfActualWidth) {
+        // Finns det plats? Visar den i 100%
+        wrapper.style.zoom = 1;
+    } else {
+        // För lite plats? Räkna ut hur mycket vi måste skala ner (zooma ut)
+        const scale = availableWidth / pdfActualWidth;
+        // Se till att den aldrig zoomar ut mer än till 50%
+        wrapper.style.zoom = Math.max(scale, 0.5); 
+    }
+}
+
+// Kör funktionen när sidan laddas
+window.addEventListener('DOMContentLoaded', adjustPdfZoom);
+
+// Kör funktionen varje gång fönstret ändrar storlek
+window.addEventListener('resize', adjustPdfZoom);
+
+
+
+
+
+
+
+
+
+
+
 // --- Start ---
 initFilters();
 document.getElementById('pdfBtn').addEventListener('click', generatePDF);

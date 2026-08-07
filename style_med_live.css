@@ -845,6 +845,9 @@ body.login-page {
 /* RESPONSIVE */
 /* ========================= */
 
+
+/* Version 1 - Fixerad förhållande */
+
 /*.workspace-layout {
     display: grid;
     grid-template-columns: 4fr 6fr;
@@ -859,9 +862,11 @@ body.login-page {
 }*/
 
 
-.workspace-layout {
+
+/* Version 2 - Fixerad storlek på högerpanel */
+
+/*.workspace-layout {
     display: grid;
-    /* Vänster tar resten av platsen (med en minsta bredd), höger anpassar sig efter PDF:ens bredd */
     grid-template-columns: minmax(250px, 1fr) fit-content(100%);
     gap: 10px;
 
@@ -871,7 +876,46 @@ body.login-page {
     margin-top: 20px;
     
     align-items: start;
+}*/
+
+
+
+
+/*Version 3 - Tryhard med zoom*/
+
+.workspace-layout {
+    display: grid;
+    /* Vänster: minst 300px, max kan den bli om det finns plats. Höger: tar resten (1fr) */
+    grid-template-columns: minmax(300px, 400px) 1fr;
+    gap: 10px;
+
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    align-items: start;
+    
+    /* Lägg till overflow-x ifall fönstret blir extremt smalt */
+    overflow-x: auto; 
 }
+
+/* Detta är behållaren för din PDF i högra panelen */
+.pdf-preview-wrapper {
+    /* Sätt den exakta bredden på din PDF här (t.ex. A4 i 72 DPI = 595px) */
+    width: 595px; 
+    min-width: 595px; /* Detta löser Problem 1: Den behåller bredden även när den är tom */
+    
+    margin: 0 auto; /* Centrerar PDF:en i den högra panelen på stora skärmar */
+    
+    /* Förberedelser för zoom */
+    transform-origin: top center;
+    transition: zoom 0.2s ease; /* Ger en mjuk övergång när man ändrar storlek */
+}
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {
