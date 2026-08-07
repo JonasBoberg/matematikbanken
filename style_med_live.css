@@ -848,7 +848,7 @@ body.login-page {
 
 /* Version 1 - Fixerad förhållande */
 
-/*.workspace-layout {
+.workspace-layout {
     display: grid;
     grid-template-columns: 4fr 6fr;
     gap: 10px;
@@ -859,76 +859,7 @@ body.login-page {
     margin-top: 20px;
     
     align-items: start;
-}*/
-
-
-
-/* Version 2 - Fixerad storlek på högerpanel */
-
-/*.workspace-layout {
-    display: grid;
-    grid-template-columns: minmax(250px, 1fr) fit-content(100%);
-    gap: 10px;
-
-    width: 100%;
-    box-sizing: border-box;
-
-    margin-top: 20px;
-    
-    align-items: start;
-}*/
-
-
-
-
-/*Version 3 - Tryhard med divider - 070826*/
-.workspace-layout {
-    display: flex;
-    gap: 0; /* Inget gap, divider hanterar avståndet */
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 20px;
-    align-items: start;
 }
-
-/* Vänster panel: Startar på 40% (4fr av 10) */
-#leftPanel {
-    flex: 4;
-    min-width: 200px; /* Förhindrar att den dras in för mycket */
-    padding-right: 10px; /* Lite luft före dividern */
-    overflow-y: auto; /* Scrolla om innehållet blir för långt */
-}
-
-/* Dividern (drag-handtaget) */
-.divider {
-    width: 10px;
-    background: #e2e8f0;
-    cursor: col-resize;
-    border-radius: 5px;
-    flex-shrink: 0; /* Dividern får aldrig krympa */
-    transition: background 0.2s;
-    position: relative;
-    z-index: 10;
-}
-
-.divider:hover, .divider.active {
-    background: #cbd5e1; /* Mörkare när man håller musen över/drar */
-}
-
-/* Höger panel: Startar på 60% (6fr av 10) */
-#previewPanel {
-    flex: 6;
-    min-width: 210mm; /* VIKTIGT: PDF-förhandsgranskningen får aldrig bli smalare än A4 */
-    padding-left: 10px; /* Lite luft efter dividern */
-    overflow: auto; /* Om man drar åt vänster så mycket att PDF:en inte får plats, blir det scrollbar här istället */
-}
-
-
-
-
-
-
-
 
 
 @media (max-width: 768px) {
