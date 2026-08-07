@@ -2043,34 +2043,73 @@ updateBrSpacingButton();
 
 
 //070826
-function adjustPdfZoom() {
-    const panel = document.getElementById("previewPanel");
-    if (!panel) return;
+function initResizablePanels() {
+    const leftPanel = document.getElementById('leftPanel');
+    const rightPanel = document.getElementById('previewPanel');
+    const divider = document.getElementById('panelDivider');
 
-    // Webbläsaren räknar automatiskt ut pixlarna för 210mm beroende på skärm
-    const pdfActualWidth = panel.offsetWidth; 
-    const availableWidth = panel.parentElement.clientWidth;
+    if (!divider || !leftPanel || !rightPanel) return;
 
-    // Om det finns plats för hela PDF:en, visa den i 100%
-    if (availableWidth >= pdfActualWidth) {
-        panel.style.zoom = 1;
-    } else {
-        // Om det inte finns plats, räkna ut hur mycket vi måste zooma ut
-        const scale = availableWidth / pdfActualWidth;
-        // Sätt zoom, men aldrig mindre än 50% (så man åtminstone ser något)
-        panel.style.zoom = Math.max(scale, 0.5); 
-    }
+    let isResizing = false;
+    let startX = 0;
+    let startLeftWidth = 0;
+
+    // När användaren klickar på dividern
+    divider.addEventListener('mousedown', (e) => {
+        isResizing = true;
+        startX = e.clientX;
+        
+        // Hur bred är vänsterpanelen just nu (i pixlar)?
+        startLeftWidth = leftPanel.getBoundingClientRect().width;
+        
+        divider.classList.add('active');
+        
+        // Förhindra att text markeras medan man drar
+        document.body.style.cursor = 'col-resize';
+        document.body.style.userSelect = 'none'; 
+    });
+
+    // När användaren drar musen
+    document.addEventListener('mousemove', (e) => {
+        if (!isResizing) return;
+
+        // Hur långt har musen flyttats sedan klicket?
+        const dx = e.clientX - startX;
+        let newLeftWidth = startLeftWidth + dx;
+
+        // Räkna ut gränserna
+        const minLeft = 200; // Minsta bredd på vänster
+        const minRight = 600; // Minsta bredd på höger (ca 210mm i pixlar, så PDF:en syns)
+        
+        // Total bredd på hela layouten
+        const containerWidth = leftPanel.parentElement.getBoundingClientRect().width;
+        
+        // Det maximala utrymmet vänster kan ta är totalt minus dividern minus minsta höger
+        const maxLeft = containerWidth - divider.offsetWidth - minRight;
+
+        // Begränsa värdet så det inte går utanför gränserna
+        if (newLeftWidth < minLeft) newLeftWidth = minLeft;
+        if (newLeftWidth > maxLeft) newLeftWidth = maxLeft;
+
+        // Tillämpa den nya bredden
+        leftPanel.style.width = newLeftWidth + 'px';
+        leftPanel.style.flex = 'none'; // Nollställ flexboxen så den lyder pixlarna istället för 4:6
+    });
+
+    // När användaren släpper musknappen
+    document.addEventListener('mouseup', () => {
+        if (!isResizing) return;
+        isResizing = false;
+        divider.classList.remove('active');
+        
+        // Återställ muspekaren och textmarkeringen
+        document.body.style.cursor = '';
+        document.body.style.userSelect = '';
+    });
 }
 
-
-
-
-// Uppdatera zoom när användaren ändrar storlek på fönstret
-window.addEventListener('resize', adjustPdfZoom);
-
-// Kör en gång när sidan laddats för att sätta rätt storlek från början
-window.addEventListener('DOMContentLoaded', adjustPdfZoom);
-
+// Starta funktionen när sidan laddats
+window.addEventListener('DOMContentLoaded', initResizablePanels);
 
 
 
