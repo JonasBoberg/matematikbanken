@@ -881,34 +881,30 @@ body.login-page {
 
 
 
-/*Version 3 - Tryhard med zoom*/
+/*Version 3 - Tryhard med zoom - 070826*/
 
 .workspace-layout {
     display: grid;
-    /* Vänster: minst 300px, max kan den bli om det finns plats. Höger: tar resten (1fr) */
-    grid-template-columns: minmax(300px, 400px) 1fr;
+    /* Vänster: Fast 350px. Höger: Tar allt annat utrymme (1fr) */
+    grid-template-columns: 350px 1fr;
     gap: 10px;
 
     width: 100%;
     box-sizing: border-box;
     margin-top: 20px;
     align-items: start;
-    
-    /* Lägg till overflow-x ifall fönstret blir extremt smalt */
-    overflow-x: auto; 
 }
 
-/* Detta är behållaren för din PDF i högra panelen */
-.pdf-preview-wrapper {
-    /* Sätt den exakta bredden på din PDF här (t.ex. A4 i 72 DPI = 595px) */
-    width: 595px; 
-    min-width: 595px; /* Detta löser Problem 1: Den behåller bredden även när den är tom */
-    
-    margin: 0 auto; /* Centrerar PDF:en i den högra panelen på stora skärmar */
+/* MAGIN HÄR: Tvingar högra panelen att ALLTID vara A4-bred, även när den är tom */
+#previewPanel {
+    min-width: 210mm; 
+    width: 210mm;
+    max-width: 100%; /* Säkerhet så den aldrig bryter ut på extremt små fönster */
+    margin: 0 auto;  /* Centrerar PDF:en om högra panelen blir bredare än 210mm */
     
     /* Förberedelser för zoom */
     transform-origin: top center;
-    transition: zoom 0.2s ease; /* Ger en mjuk övergång när man ändrar storlek */
+    transition: zoom 0.2s ease;
 }
 
 

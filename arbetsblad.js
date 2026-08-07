@@ -1587,6 +1587,9 @@ async function updatePreview() {
     });
 
     document.body.removeChild(container);
+
+
+    adjustPdfZoom();  //070826
 }
 
 
@@ -2039,36 +2042,34 @@ updateBrSpacingButton();
 
 
 
+//070826
 function adjustPdfZoom() {
-    const wrapper = document.querySelector('.pdf-preview-wrapper');
-    if (!wrapper) return;
+    const panel = document.getElementById("previewPanel");
+    if (!panel) return;
 
-    // Den faktiska bredden vi vill ha på PDF:en
-    const pdfActualWidth = 595; 
-    
-    // Hur mycket plats har den högra panelen faktiskt? 
-    // (Vi drar bort 10px för gapet i mitten)
-    const availableWidth = wrapper.parentElement.clientWidth - 10; 
+    // Webbläsaren räknar automatiskt ut pixlarna för 210mm beroende på skärm
+    const pdfActualWidth = panel.offsetWidth; 
+    const availableWidth = panel.parentElement.clientWidth;
 
+    // Om det finns plats för hela PDF:en, visa den i 100%
     if (availableWidth >= pdfActualWidth) {
-        // Finns det plats? Visar den i 100%
-        wrapper.style.zoom = 1;
+        panel.style.zoom = 1;
     } else {
-        // För lite plats? Räkna ut hur mycket vi måste skala ner (zooma ut)
+        // Om det inte finns plats, räkna ut hur mycket vi måste zooma ut
         const scale = availableWidth / pdfActualWidth;
-        // Se till att den aldrig zoomar ut mer än till 50%
-        wrapper.style.zoom = Math.max(scale, 0.5); 
+        // Sätt zoom, men aldrig mindre än 50% (så man åtminstone ser något)
+        panel.style.zoom = Math.max(scale, 0.5); 
     }
 }
 
-// Kör funktionen när sidan laddas
-window.addEventListener('DOMContentLoaded', adjustPdfZoom);
 
-// Kör funktionen varje gång fönstret ändrar storlek
+
+
+// Uppdatera zoom när användaren ändrar storlek på fönstret
 window.addEventListener('resize', adjustPdfZoom);
 
-
-
+// Kör en gång när sidan laddats för att sätta rätt storlek från början
+window.addEventListener('DOMContentLoaded', adjustPdfZoom);
 
 
 
