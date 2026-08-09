@@ -714,9 +714,9 @@ solution: "Svar: 2"
 { id: 450, versionLabel: "D", question: "Beräkna:<br>a) \\(1^2+1^3+1^4\\)<br>b) \\(2^2+3^2+4^2\\)", solution: "a) 3<br>b) 27" },
 ] },
 { groupId: "Roten ur", area: "Potenser", subArea: "Potenser", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: false, difficulty: 1, versions: [
-{ id: 451, versionLabel: "A", question: "Beräkna:<br>a) \\( \\sqrt(25) \\)<br>b) \\( \\sqrt(16)-\\sqrt(9) \\)", solution: "a) 5<br>b) 1" },
-{ id: 452, versionLabel: "B", question: "Beräkna:<br>a) \\( \\sqrt(81) \\)<br>b) \\( \\sqrt(49)+\\sqrt(4) \\)", solution: "a) 9<br>b) 9" },
-{ id: 453, versionLabel: "C", question: "Beräkna:<br>a) \\( \\sqrt(36)+\\sqrt(100) \\)<br>b) \\( \\sqrt(9)\\cdot\\sqrt(25) \\)", solution: "a) 16<br>b) 15" },
+{ id: 451, versionLabel: "A", question: "Beräkna:<br>a) \\( \\sqrt{25} \\)<br>b) \\( \\sqrt{16}-\\sqrt{9} \\)", solution: "a) 5<br>b) 1" },
+{ id: 452, versionLabel: "B", question: "Beräkna:<br>a) \\( \\sqrt{81} \\)<br>b) \\( \\sqrt{49}+\\sqrt{4} \\)", solution: "a) 9<br>b) 9" },
+{ id: 453, versionLabel: "C", question: "Beräkna:<br>a) \\( \\sqrt{36}+\\sqrt{100} \\)<br>b) \\( \\sqrt{9}\\cdot\\sqrt{25} \\)", solution: "a) 16<br>b) 15" },
 ] },
 { groupId: "potenslag - multiplikation", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1a", "Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], calculator: false, difficulty: 1, versions: [
 { id: 454, versionLabel: "A", question: "Förenkla uttrycket \\( 4^y \\cdot 4^{3y} \\).", solution: "Svar: \\( 4^{4y} \\)." },
