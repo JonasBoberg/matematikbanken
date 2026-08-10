@@ -854,10 +854,10 @@ calculator: true
 { id: 538, versionLabel: "D", question: "Förenkla uttrycken så långt som möjligt:<br>a) \\( (b-1)(b+1)+(b+1)^2 \\)<br>b) \\(x+(x-3)^2+3\\)", solution: "a) \\(2b^2+2b \\)<br>b) \\(x^2-5x+12\\)" },
 ]  },
 { groupId: "Vad saknas i konjugat och kvadrering", area: "Konjugat / Kvadrering", subArea: "Förenkla uttryck", courses: ["Ma2a","Ma2b","Ma2c"], difficulty: 1, versions: [
-{ id: 539, versionLabel: "A", question: "Vad ska stå i rutorna?<br>a) \\( (3x+2)(3x-2)=9x^2-\\square \\)<br>\\( (x+\\square)^2=x^2+10x+25 \\)", solution: "a) 4<br>b) 5" },
-{ id: 540, versionLabel: "B", question: "Vad ska stå i rutorna?<br>a) \\( (\\square-10)^2=16x^2-80x+100 \\)<br>\\( (3x+1)(3x-1)=\\square x^2-1 \\)", solution: "a) 4x<br>b) 9" },
-{ id: 541, versionLabel: "C", question: "Vad ska stå i rutorna?<br>a) \\( (2x+3)(2x-3)=4x^2-\\square \\)<br>\\( (x-\\square)^2=x^2-8x+16 \\)", solution: "a) 9<br>b) 4" },
-{ id: 542, versionLabel: "D", question: "Vad ska stå i rutorna?<br>a) \\( (\\square+4)^2=25x^2+40x+16 \\)<br>\\( (5x+2)(5x-2)=\\square x^2-4 \\)", solution: "a) 5x<br>b) 25" },
+{ id: 539, versionLabel: "A", question: "Vad ska stå i rutorna?<br>a) \\( (3x+2)(3x-2)=9x^2-\\square \\)<br>b)\\( (x+\\square)^2=x^2+10x+25 \\)", solution: "a) 4<br>b) 5" },
+{ id: 540, versionLabel: "B", question: "Vad ska stå i rutorna?<br>a) \\( (\\square-10)^2=16x^2-80x+100 \\)<br>b)\\( (3x+1)(3x-1)=\\square x^2-1 \\)", solution: "a) 4x<br>b) 9" },
+{ id: 541, versionLabel: "C", question: "Vad ska stå i rutorna?<br>a) \\( (2x+3)(2x-3)=4x^2-\\square \\)<br>b)\\( (x-\\square)^2=x^2-8x+16 \\)", solution: "a) 9<br>b) 4" },
+{ id: 542, versionLabel: "D", question: "Vad ska stå i rutorna?<br>a) \\( (\\square+4)^2=25x^2+40x+16 \\)<br>b)\\( (5x+2)(5x-2)=\\square x^2-4 \\)", solution: "a) 5x<br>b) 25" },
 ] },
 { groupId: "Beräkningar med konjugat/kvadrering", area: "Konjugat / Kvadrering", subArea: "Förenkla", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 543, versionLabel: "A", question: "Beräkna \\( 21\\cdot19 \\) med hjälp av konjugatregeln.", solution: "\\( 21 \\cdot 19 = (20+1)(20-1) \\)<br>\\(=20^2-1^2=399\\)" },
