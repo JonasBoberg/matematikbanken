@@ -364,9 +364,9 @@ export const taskGroups = [
 {id: 256, versionLabel: "G", question: "Lös ekvationen: \\( 10+5x=x+2 \\)", solution: "\\( 10+5x=x+2\\)<br>\\(10+4x=2\\)<br>\\(4x=-8\\)<br>\\(x=-2\\)"},
 ] },
 { groupId: "Textuppgifter: Linjära ekvationer", area: "Algebra", subArea: "Lösa linjära ekvationer", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a"], calulator: true, difficulty: 1, versions: [
-{id: 257, versionLabel: "A", question: "Erik köper 4 äpplen och 2 apelsiner. Ett äpple kostar 3 kr mindre än en apelsin. Han betalar 33 kr.<br>Vad kostar ett äpple? Lös uppgiften med hjälp av en ekvation.", solution: Ett äpple kostar 4,50 kr. },
-{id: 258, versionLabel: "B", question: "Emma köper 3 chokladkakor och 4 burkar läsk. En chokladkaka kostar 9 kr mer än en läskburk. Hon betalar 160 kr.<br>Vad kostar en chokladkaka? Lös uppgiften med hjälp av en ekvation.", solution: En chokladkaka kostar 28 kr. },
-{id: 259, versionLabel: "C", question: "Nathalie köper 2 fotbollar och 3 handbollar och betalar 445 kr. Vad kostar en handboll om den är 10 kr billigare än en fotboll? Lös uppgiften med hjälp av en ekvation.", solution: En handboll kostar 85 kr. },
+{id: 257, versionLabel: "A", question: "Erik köper 4 äpplen och 2 apelsiner. Ett äpple kostar 3 kr mindre än en apelsin. Han betalar 33 kr.<br>Vad kostar ett äpple? Lös uppgiften med hjälp av en ekvation.", solution: "Ett äpple kostar 4,50 kr." },
+{id: 258, versionLabel: "B", question: "Emma köper 3 chokladkakor och 4 burkar läsk. En chokladkaka kostar 9 kr mer än en läskburk. Hon betalar 160 kr.<br>Vad kostar en chokladkaka? Lös uppgiften med hjälp av en ekvation.", solution: "En chokladkaka kostar 28 kr. "},
+{id: 259, versionLabel: "C", question: "Nathalie köper 2 fotbollar och 3 handbollar och betalar 445 kr. Vad kostar en handboll om den är 10 kr billigare än en fotboll? Lös uppgiften med hjälp av en ekvation.", solution: "En handboll kostar 85 kr." },
 ] },
 { groupId: "Lös linjära ekvationer med parenteser", area: "Algebra", subArea: "Lösa linjära ekvationer", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b"], difficulty: 2, versions: [
 { id: 260, versionLabel: "A", question: "Lös ekvationerna:<br>a) \\( 5(1-2x)=-4x-1 \\)<br>b) \\(17=(x+1)+2(x-4) \\)", solution: "a) \\(x=1\\)<br>b) \\(x=8\\)" },
