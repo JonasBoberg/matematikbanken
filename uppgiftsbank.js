@@ -1957,8 +1957,8 @@ solution: "a) 2 meter<br>b) 6,05 meter"
 { id: 928, versionLabel: "I", question: "Lös ekvationssystemet \\( \\begin{cases} 2x+y=1 \\\\ x-5y=28 \\end{cases} \\)", solution: "\\( \\begin{cases} x=3 \\\\ y=-5 \\end{cases} \\)" }
 ] },
 { groupId: "Lös systemet med digitalt verktyg", area: "Ekvationssystem", subArea: "Lös algebraiskt", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, calculator: true, versions: [
-{ id: 929, versionLabel: "A", question: "Lös ekvationssystemet med hjälp av digitalt verktyg \\( \\begin{cases} xy=10 \\\\ x-y=3 \\end{cases} \\)", solution: "\\( \\begin{cases} x_1=4,32 \\\\ y_1=2,32 \\end{cases} \\)" och "\\( \\begin{cases} x_2=-2,32 \\\\ y_2=-4,32 \\end{cases} \\)" },
-{ id: 930, versionLabel: "B", question: "Lös ekvationssystemet med hjälp av digitalt verktyg \\( \\begin{cases} x^2+y=5 \\\\ x-5y=1 \\end{cases} \\)", solution: "\\( \\begin{cases} x_1=2,18 \\\\ y_1=0,24 \\end{cases} \\)" och "\\( \\begin{cases} x_2=-2,38 \\\\ y_2=-0,68 \\end{cases} \\)" },
+{ id: 929, versionLabel: "A", question: "Lös ekvationssystemet med hjälp av digitalt verktyg \\( \\begin{cases} xy=10 \\\\ x-y=3 \\end{cases} \\)", solution: "\\( \\begin{cases} x_1=4,32 \\\\ y_1=2,32 \\end{cases} \\) och \\( \\begin{cases} x_2=-2,32 \\\\ y_2=-4,32 \\end{cases} \\)" },
+{ id: 930, versionLabel: "B", question: "Lös ekvationssystemet med hjälp av digitalt verktyg \\( \\begin{cases} x^2+y=5 \\\\ x-5y=1 \\end{cases} \\)", solution: "\\( \\begin{cases} x_1=2,18 \\\\ y_1=0,24 \\end{cases} \\) och \\( \\begin{cases} x_2=-2,38 \\\\ y_2=-0,68 \\end{cases} \\)" },
 ] },
 { groupId: "Problemlösning med ekvationssystem 1", area: "Ekvationssystem", subArea: "Problemlösning", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, calculator: true, versions: [
 { id: 931, versionLabel: "A", question: "Du är och handlar och köper 6 chokladkakor och 3 burkar läsk. Din kompis köper 2 chokladkakor och 4 burkar läsk. Du betalar 153 kr och din kompis betalar 78 kr. Vad kostar en burk läsk?", solution: "Ställ upp ekvationerna \\( 6x+3y=153 \\) och \\( 2x+4y=78 \\). Lös systemet så får du \\( y=9 \\). Svar: En burk läsk kostar 9 kr." },
