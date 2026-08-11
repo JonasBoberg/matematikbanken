@@ -2055,21 +2055,24 @@ solution: "a) 2 meter<br>b) 6,05 meter"
 { id: 988, versionLabel: "C", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och v.", img: "bilder/Randvinkelsatsen/IMG_1019.png", solution: "\\( u=192^{\\circ} \\) och \\( v=96^{\\circ} \\)"},
 { id: 989, versionLabel: "D", question: "Bestäm vinklarna e och c.", img: "bilder/Randvinkelsatsen/IMG_1004.jpg", solution: "\\( e=74^{\\circ} \\) och \\( c=148^{\\circ} \\)"},
 ] },
+{ groupId: "Bestäm motstående vinkel", area: "Geometri", subArea: "Randvinkelsatsen", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
+{ id: 990, versionLabel: "A", question: "Punkterna A, B, C och D ligger på cirkelns rand. Bestäm vinkeln v.", img: "bilder/Randvinkelsatsen/IMG_1030.svg", solution: "\\( v=60^{\\circ} \\)."},
+] },
 { groupId: "Bestäm motstående vinkel och medelpunktsvinkel", area: "Geometri", subArea: "Randvinkelsatsen", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 990, versionLabel: "A", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och v.", img: "bilder/Randvinkelsatsen/IMG_1020.png", solution: "\\( u=152^{\\circ} \\) och \\( v=76^{\\circ} \\)"},
-{ id: 991, versionLabel: "B", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och v.", img: "bilder/Randvinkelsatsen/IMG_1021.png", solution: "\\( u=132^{\\circ} \\) och \\( w=66^{\\circ} \\)"},
-{ id: 992, versionLabel: "C", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och w.", img: "bilder/Randvinkelsatsen/IMG_1022.png", solution: "\\( u=132^{\\circ} \\) och \\( w=114^{\\circ} \\)"},
+{ id: 991, versionLabel: "A", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och v.", img: "bilder/Randvinkelsatsen/IMG_1020.png", solution: "\\( u=152^{\\circ} \\) och \\( v=76^{\\circ} \\)"},
+{ id: 992, versionLabel: "B", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och v.", img: "bilder/Randvinkelsatsen/IMG_1021.png", solution: "\\( u=132^{\\circ} \\) och \\( w=66^{\\circ} \\)"},
+{ id: 993, versionLabel: "C", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och w.", img: "bilder/Randvinkelsatsen/IMG_1022.png", solution: "\\( u=132^{\\circ} \\) och \\( w=114^{\\circ} \\)"},
 ] },
 { groupId: "Bestäm vinklar i cirkel", area: "Geometri", subArea: "Randvinkelsatsen", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
-{ id: 993, versionLabel: "A", question: "Bestäm vinkel a och b.", img: "bilder/Randvinkelsatsen/IMG_1001.jpg", solution: "\\( a=34^{\\circ} \\) och \\( b=74^{\\circ} \\)"},
-{ id: 994, versionLabel: "B", question: "Bestäm vinkel a och b.", img: "bilder/Randvinkelsatsen/IMG_1002.jpg", solution: "\\( a=65^{\\circ} \\) och \\( b=110^{\\circ} \\)"},
-{ id: 995, versionLabel: "C", question: "Linjen genom cirkeln är cirkelns diameter. Bestäm vinkel a och vinkel b.", img: "bilder/Randvinkelsatsen/IMG_1003.jpg", solution: "\\( a=30^{\\circ} \\) och \\( b=90^{\\circ} \\)"},
+{ id: 994, versionLabel: "A", question: "Bestäm vinkel a och b.", img: "bilder/Randvinkelsatsen/IMG_1001.jpg", solution: "\\( a=34^{\\circ} \\) och \\( b=74^{\\circ} \\)"},
+{ id: 995, versionLabel: "B", question: "Bestäm vinkel a och b.", img: "bilder/Randvinkelsatsen/IMG_1002.jpg", solution: "\\( a=65^{\\circ} \\) och \\( b=110^{\\circ} \\)"},
+{ id: 996, versionLabel: "C", question: "Linjen genom cirkeln är cirkelns diameter. Bestäm vinkel a och vinkel b.", img: "bilder/Randvinkelsatsen/IMG_1003.jpg", solution: "\\( a=30^{\\circ} \\) och \\( b=90^{\\circ} \\)"},
 ] },
 { groupId: "Bestäm motsatt medelpunktsvinkel", area: "Geometri", subArea: "Randvinkelsatsen", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
-{ id: 996, versionLabel: "A", question: "Bestäm vinklarna \\(u\\) och \\(w_1\\).", img: "bilder/Randvinkelsatsen/IMG_1011.jpg", solution: "\\( u=228^{\\circ} \\) och \\( w_1=66^{\\circ} \\)"},
+{ id: 997, versionLabel: "A", question: "Bestäm vinklarna \\(u\\) och \\(w_1\\).", img: "bilder/Randvinkelsatsen/IMG_1011.jpg", solution: "\\( u=228^{\\circ} \\) och \\( w_1=66^{\\circ} \\)"},
 ] },
 {
-id: 997,
+id: 998,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2079,7 +2082,7 @@ difficulty: 1,
 solution: "\\( u=58^{\\circ} \\) och \\( v=45^{\\circ} \\)."
 },
 {
-id: 998,
+id: 999,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2089,7 +2092,7 @@ difficulty: 1,
 solution: "\\( w=94^{\\circ} \\)."
 },
 {
-id: 999,
+id: 1000,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2099,7 +2102,7 @@ difficulty: 1,
 solution: "\\( v=172^{\\circ} \\)."
 },
 {
-id: 1000,
+id: 1001,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2109,7 +2112,7 @@ difficulty: 2,
 solution: "\\( a=20^{\\circ} \\)."
 },
 {
-id: 1001,
+id: 1002,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2119,7 +2122,7 @@ difficulty: 1,
 solution: "\\( w_1=64^{\\circ} \\) och \\( u_2=128^{\\circ} \\)."
 },
 {
-id: 1002,
+id: 1003,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2129,7 +2132,7 @@ difficulty: 2,
 solution: "\\( w_1=56^{\\circ} \\) \\( u=112^{\\circ}.\\)"
 },
 {
-id: 1003,
+id: 1004,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2139,7 +2142,7 @@ difficulty: 1,
 solution: "\\( w=105^{\\circ} \\)."
 },
 {
-id: 1004,
+id: 1005,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2149,13 +2152,13 @@ difficulty: 2,
 solution: "\\( v=v_1=28^{\\circ} \\)."
 },
 { groupId: "Kordasatsen - Enkla", area: "Geometri", subArea: "Kordasatsen", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 1005, versionLabel: "A", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4001.jpg", solution: "\\( x=10,0 \\) l.e."},
-{ id: 1006, versionLabel: "B", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4002.jpg", solution: "\\( x=10,7 \\) l.e."},
-{ id: 1007, versionLabel: "C", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4003.jpg", solution: "\\( x=6,2 \\) l.e."},
-{ id: 1008, versionLabel: "D", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4020.jpg", solution: "\\( x=7,9 \\) l.e."},
+{ id: 1006, versionLabel: "A", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4001.jpg", solution: "\\( x=10,0 \\) l.e."},
+{ id: 1007, versionLabel: "B", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4002.jpg", solution: "\\( x=10,7 \\) l.e."},
+{ id: 1008, versionLabel: "C", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4003.jpg", solution: "\\( x=6,2 \\) l.e."},
+{ id: 1009, versionLabel: "D", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4020.jpg", solution: "\\( x=7,9 \\) l.e."},
 ] },
 {
-id: 1009,
+id: 1010,
 area: "Geometri",
 subArea: "Kordasatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2166,22 +2169,22 @@ difficulty: 2,
 solution: "\\( x=18,6 \\) l.e."
 },
 { groupId: "Beräkna hypotenusan", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 1010, versionLabel: "A", question: "Bestäm sträckan \\( x \\).", img: "bilder/IMG_2013.jpg", solution: "x = 13 l.e."},
+{ id: 1011, versionLabel: "A", question: "Bestäm sträckan \\( x \\).", img: "bilder/IMG_2013.jpg", solution: "x = 13 l.e."},
 ] },
 { groupId: "Beräkna katet", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 1011, versionLabel: "A", question: "Bestäm sträckan \\( x \\).", img: "bilder/IMG_2014.jpg", solution: "x = 24 l.e."},
+{ id: 1012, versionLabel: "A", question: "Bestäm sträckan \\( x \\).", img: "bilder/IMG_2014.jpg", solution: "x = 24 l.e."},
 ] },
 { groupId: "Pythagoras -> Andragradare", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
-{ id: 1012, versionLabel: "A", question: "Bestäm sträckan x i denna rätvinkliga triangel.", img: "bilder/Pythagoras_och_likformighet/IMG_2015.jpg", solution: "x = 8,47 l.e."},
-{ id: 1013, versionLabel: "B", question: "Bestäm omkretsen för denna rätvinkliga triangel.", img: "bilder/Pythagoras_och_likformighet/IMG_2016.jpg", solution: "Omkretsen är ca 36,96 l.e."},
+{ id: 1013, versionLabel: "A", question: "Bestäm sträckan x i denna rätvinkliga triangel.", img: "bilder/Pythagoras_och_likformighet/IMG_2015.jpg", solution: "x = 8,47 l.e."},
+{ id: 1014, versionLabel: "B", question: "Bestäm omkretsen för denna rätvinkliga triangel.", img: "bilder/Pythagoras_och_likformighet/IMG_2016.jpg", solution: "Omkretsen är ca 36,96 l.e."},
 ] },
 { groupId: "Likformighet grundläggande", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 1014, versionLabel: "A", question: "Figurerna är likformiga. Bestäm sträckan x.", img: "bilder/Pythagoras_och_likformighet/IMG_2010.jpg", solution: "x = 28,8 l.e."},
-{ id: 1015, versionLabel: "B", question: "Figurerna är likformiga. Bestäm sträckan x. Svara med en decimal.", img: "bilder/Pythagoras_och_likformighet/IMG_2011.jpg", solution: "x = 14,5 l.e."},
-{ id: 1016, versionLabel: "C", question: "Figurerna är likformiga. Bestäm sträckorna a och b. Svara med en decimal.", img: "bilder/Pythagoras_och_likformighet/IMG_2012.jpg", solution: "a = 18,4 l.e. och b = 14,4 l.e."},
+{ id: 1015, versionLabel: "A", question: "Figurerna är likformiga. Bestäm sträckan x.", img: "bilder/Pythagoras_och_likformighet/IMG_2010.jpg", solution: "x = 28,8 l.e."},
+{ id: 1016, versionLabel: "B", question: "Figurerna är likformiga. Bestäm sträckan x. Svara med en decimal.", img: "bilder/Pythagoras_och_likformighet/IMG_2011.jpg", solution: "x = 14,5 l.e."},
+{ id: 1017, versionLabel: "C", question: "Figurerna är likformiga. Bestäm sträckorna a och b. Svara med en decimal.", img: "bilder/Pythagoras_och_likformighet/IMG_2012.jpg", solution: "a = 18,4 l.e. och b = 14,4 l.e."},
 ] },
 {
-id: 1017,
+id: 1018,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2191,7 +2194,7 @@ difficulty: 2,
 solution: "FC = 32 l.e."
 },
 {
-id: 1018,
+id: 1019,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2201,7 +2204,7 @@ difficulty: 1,
 solution: "Båda trianglarna har en rät vinkel. Vi ser också att båda trianglarna delar vinkeln vid punkten B. Eftersom trianglarna har två gemensama vinklar och vinkelsumman i en triangel alltid är 180 så måste den tredje vinkeln i respektive triangel vara lika stora. Därför har trianglarna lika stora vinklar och därmed är de likformiga."
 },
 {
-id: 1019,
+id: 1020,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2212,7 +2215,7 @@ calculator: true,
 solution: "DE = 8,57 l.e."
 },
 {
-id: 1020,
+id: 1021,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2223,7 +2226,7 @@ calculator: true,
 solution: "DE = 20,83 l.e."
 },
 {
-id: 1021,
+id: 1022,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2234,7 +2237,7 @@ calculator: true,
 solution: "AE = 21,25 l.e."
 },
 {
-id: 1022,
+id: 1023,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2245,7 +2248,7 @@ calculator: true,
 solution: "AE = 61,48 cm"
 },
 {
-id: 1023,
+id: 1024,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2256,7 +2259,7 @@ calculator: true,
 solution: "AE = 5,33 l.e."
 },
 {
-id: 1024,
+id: 1025,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2267,7 +2270,7 @@ calculator: true,
 solution: "Eftersom \\( 12^2+16^2=144+256=400=20^2 \\) så märker vi att summan av kateternas kvadrater är lika med hyponetusan i kvadrat. Det innebär att Pythagoras sats gäller, alltså är triangeln rätvinklig."
 },
 {
-id: 1025,
+id: 1026,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2276,7 +2279,7 @@ difficulty: 1,
 solution: "Svar: \\( \\sqrt{3^2+4^2}=5 l.e. \\)"
 },
 {
-id: 1026,
+id: 1027,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2286,13 +2289,13 @@ calculator: true,
 solution: "Svar: \\( \\sqrt{7^2+2^2}=7,28 l.e. \\)"
 },
 { groupId: "Bestäm koordinat utifrån givet avstånd", area: "Geometri", subArea: "Avståndsformeln / Mittpunktsformeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
-{ id: 1027, versionLabel: "A", question: "Punkten \\( (2, y) \\) ligger 10 l.e. från punkten \\( (-4, 6) \\). Bestäm \\( y \\).", solution: "Vi löser ekvationen \\( \\sqrt{(2+4)^2+(y-6)^2}=10 \\).<br>Svar: \\( y_1=-2 \\) och \\( y_2=14 \\)." },
-{ id: 1028, versionLabel: "B", question: "Punkten \\( (x, 10) \\) ligger 13 l.e. från punkten \\( (5, 4) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-5)^2+(10-4)^2}=13 \\).<br>Svar: \\( x_1=-6 \\) och \\( x_2=16 \\)."},
-{ id: 1029, versionLabel: "C", question: "Punkten \\( (x, 20) \\) ligger 37 l.e. från punkten \\( (3, 8) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-3)^2+(20-8)^2}=37 \\).<br>Svar: \\( x_1=-32 \\) och \\( x_2=38 \\)."},
-{ id: 1030, versionLabel: "D", question: "Punkten \\( (a, a) \\) ligger 5 l.e. från punkten \\( (1, 2) \\). Bestäm punktens koordinater.", solution: "Vi löser ekvationen \\( \\sqrt{(a-1)^2+(a-2)^2}=5 \\).<br>Svar: \\( (-2, -2)\\) eller \\( (5,5) \\)."},
+{ id: 1028, versionLabel: "A", question: "Punkten \\( (2, y) \\) ligger 10 l.e. från punkten \\( (-4, 6) \\). Bestäm \\( y \\).", solution: "Vi löser ekvationen \\( \\sqrt{(2+4)^2+(y-6)^2}=10 \\).<br>Svar: \\( y_1=-2 \\) och \\( y_2=14 \\)." },
+{ id: 1029, versionLabel: "B", question: "Punkten \\( (x, 10) \\) ligger 13 l.e. från punkten \\( (5, 4) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-5)^2+(10-4)^2}=13 \\).<br>Svar: \\( x_1=-6 \\) och \\( x_2=16 \\)."},
+{ id: 1030, versionLabel: "C", question: "Punkten \\( (x, 20) \\) ligger 37 l.e. från punkten \\( (3, 8) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-3)^2+(20-8)^2}=37 \\).<br>Svar: \\( x_1=-32 \\) och \\( x_2=38 \\)."},
+{ id: 1031, versionLabel: "D", question: "Punkten \\( (a, a) \\) ligger 5 l.e. från punkten \\( (1, 2) \\). Bestäm punktens koordinater.", solution: "Vi löser ekvationen \\( \\sqrt{(a-1)^2+(a-2)^2}=5 \\).<br>Svar: \\( (-2, -2)\\) eller \\( (5,5) \\)."},
 ] },
 {
-id: 1031,
+id: 1032,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2302,7 +2305,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{3^2+a^2}=\\sqrt{6^2+8^2} \\).<br>Svar: \\( a_1=10 \\) och \\( a_2=-10 \\)."
 },
 {
-id: 1032,
+id: 1033,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2312,7 +2315,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(-4)^2+a^2}=\\sqrt{0^2+7^2} \\).<br>Svar: \\( a_1=\\sqrt{33} \\) och \\( a_2=-\\sqrt{33} \\)."
 },
 {
-id: 1033,
+id: 1034,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2322,7 +2325,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(-7)^2+b^2}=\\sqrt{1^2+24^2} \\).<br>Svar: \\( b_1=\\sqrt{528} \\) och \\( b_2=-\\sqrt{528} \\)."
 },
 {
-id: 1034,
+id: 1035,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2332,7 +2335,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{10^2+a^2}=\\sqrt{13^2+0^2} \\).<br>Svar: \\( a_1=\\sqrt{69} \\) och \\( a_2=-\\sqrt{69} \\)."
 },
 {
-id: 1035,
+id: 1036,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2341,7 +2344,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{3+2}{2}=2,5 \\) och \\( \\frac{-5+(-3)}{2}=-4 \\).<br>Svar \\( M=(2,5 ; -4) \\)."
 },
 {
-id: 1036,
+id: 1037,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2350,7 +2353,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{5+12}{2}=8,5 \\) och \\( \\frac{10+18}{2}=14 \\).<br>Svar \\( M=(8,5 ; 14) \\)."
 },
 {
-id: 1037,
+id: 1038,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2361,7 +2364,7 @@ difficulty: 1,
 solution: "Svar: P=(1,5 ; 8,77)."
 },
 {
-id: 1038,
+id: 1039,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2372,7 +2375,7 @@ difficulty: 1,
 solution: "Svar: y-koordinaten är ca 4,36."
 },
 {
-id: 1039,
+id: 1040,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2381,7 +2384,7 @@ difficulty: 1,
 solution: "Svar: \\( \\sqrt{3^2+4^2}=5 l.e. \\)"
 },
 {
-id: 1040,
+id: 1041,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2391,7 +2394,7 @@ calculator: true,
 solution: "Svar: \\( \\sqrt{7^2+2^2}=7,28 l.e. \\)"
 },
 {
-id: 1041,
+id: 1042,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2401,7 +2404,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(2+4)^2+(y-6)^2}=10 \\).<br>Svar: \\( y_1=-2 \\) och \\( y_2=14 \\)."
 },
 {
-id: 1042,
+id: 1043,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2411,7 +2414,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(x-5)^2+(10-4)^2}=13 \\).<br>Svar: \\( x_1=-6 \\) och \\( x_2=16 \\)."
 },
 {
-id: 1043,
+id: 1044,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2421,7 +2424,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(x-3)^2+(20-8)^2}=37 \\).<br>Svar: \\( x_1=-32 \\) och \\( x_2=38 \\)."
 },
 {
-id: 1044,
+id: 1045,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2431,7 +2434,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(x-1)^2+(x-2)^2}=5 \\).<br>Svar: \\( x_1=-2 \\) och \\( x_2=5 \\)."
 },
 {
-id: 1045,
+id: 1046,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2441,7 +2444,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{3^2+a^2}=\\sqrt{6^2+8^2} \\).<br>Svar: \\( a_1=10 \\) och \\( a_2=-10 \\)."
 },
 {
-id: 1046,
+id: 1047,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2451,7 +2454,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(-4)^2+a^2}=\\sqrt{0^2+7^2} \\).<br>Svar: \\( a_1=\\sqrt{33} \\) och \\( a_2=-\\sqrt{33} \\)."
 },
 {
-id: 1047,
+id: 1048,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2461,7 +2464,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(-7)^2+b^2}=\\sqrt{1^2+24^2} \\).<br>Svar: \\( b_1=\\sqrt{528} \\) och \\( b_2=-\\sqrt{528} \\)."
 },
 {
-id: 1048,
+id: 1049,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2471,7 +2474,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{10^2+a^2}=\\sqrt{13^2+0^2} \\).<br>Svar: \\( a_1=\\sqrt{69} \\) och \\( a_2=-\\sqrt{69} \\)."
 },
 {
-id: 1049,
+id: 1050,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2480,7 +2483,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{3+2}{2}=2,5 \\) och \\( \\frac{-5+(-3)}{2}=-4 \\).<br>Svar \\( M=(2,5 ; -4) \\)."
 },
 {
-id: 1050,
+id: 1051,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2489,7 +2492,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{5+12}{2}=8,5 \\) och \\( \\frac{10+18}{2}=14 \\).<br>Svar \\( M=(8,5 ; 14) \\)."
 },
 {
-id: 1051,
+id: 1052,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2500,7 +2503,7 @@ difficulty: 1,
 solution: "Svar: P=(1,5 ; 8,77)."
 },
 {
-id: 1052,
+id: 1053,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2511,7 +2514,7 @@ difficulty: 1,
 solution: "Svar: y-koordinaten är ca 4,36."
 },
 { groupId: "derivera enkla polynom", area: "Derivata", subArea: "Derivera polynom", courses: ["Ma3b", "Ma3c"], difficulty: 1, versions: [
-{ id: 1053, versionLabel: "A", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=x^2+5x^3\\)<br>b) \\(g(x)=7x^4-x \\)", solution: "a) \\(f´(x)=2x+15x^2\\)<br>b) \\(g´(x)=28x^3-1\\)" },
-{ id: 1054, versionLabel: "B", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=3x^3-4\\)<br>b) \\(g(x)=x^6-0,3x^8 \\)", solution: "a) \\(f´(x)=9x^2\\)<br>b) \\(g´(x)=6x^5-2,4x^7\\)" },
+{ id: 1054, versionLabel: "A", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=x^2+5x^3\\)<br>b) \\(g(x)=7x^4-x \\)", solution: "a) \\(f´(x)=2x+15x^2\\)<br>b) \\(g´(x)=28x^3-1\\)" },
+{ id: 1055, versionLabel: "B", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=3x^3-4\\)<br>b) \\(g(x)=x^6-0,3x^8 \\)", solution: "a) \\(f´(x)=9x^2\\)<br>b) \\(g´(x)=6x^5-2,4x^7\\)" },
 ] },
 ];
