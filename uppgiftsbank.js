@@ -2159,8 +2159,16 @@ solution: "\\( x=18,6 \\) l.e."
 { id: 1026, versionLabel: "B", question: "Figurerna är likformiga. Bestäm sträckan x. Svara med en decimal.", img: "bilder/Pythagoras_och_likformighet/IMG_2011.jpg", solution: "x = 14,5 l.e."},
 { id: 1027, versionLabel: "C", question: "Figurerna är likformiga. Bestäm sträckorna a och b. Svara med en decimal.", img: "bilder/Pythagoras_och_likformighet/IMG_2012.jpg", solution: "a = 18,4 l.e. och b = 14,4 l.e."},
 ] },
+{ groupId: "Skriv uttryck för arean", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 3, versions: [
+{ id: 1028, versionLabel: "A", question: "Den liksidiga triangeln har bredden \\(s\\) och höjden \\(h\\). Bestäm triangelns area uttryckt i \\(s.\\)", img: "bilder/Pythagoras_och_likformighet/IMG_4010.svg", solution: "\\(A=\\frac{\\sqrt{3}s^2}{4}\\) a.e."},
+{ id: 1029, versionLabel: "B", question: "Skriv ett uttryck för den likbenta triangelns area uttryckt i \\(a.\\)", img: "bilder/Pythagoras_och_likformighet/IMG_4011.svg", solution: "\\(A=\\frac{\\sqrt{15}a^2}{4}\\) a.e."},
+] },
+{ groupId: "Maximera arean av rektangel under rät linje", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, versions: [
+{ id: 1030, versionLabel: "A", question: "Punkten \\(A\\) ligger på linjen \\(f(x)=3-2x\\). Bestäm största möjliga area för en rektangel som ligger på korrdinataxlarna med ett hörn i punkten \\(A\\) (som på bilden).", img: "bilder/IMG_8001.svg", solution: "\\(A=\\frac{3}{8}=0.375\\) a.e."},
+{ id: 1031, versionLabel: "B", question: "Punkten \\(A\\) ligger på linjen \\(f(x)=2-2x\\). Bestäm största möjliga area för en rektangel som ligger på korrdinataxlarna med ett hörn i punkten \\(A\\) (som på bilden).", img: "bilder/IMG_8002.svg", solution: "\\(A=\\frac{1}{2}=0.5\\) a.e."},
+] },
 {
-id: 1028,
+id: 1032,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2170,7 +2178,7 @@ difficulty: 2,
 solution: "FC = 32 l.e."
 },
 {
-id: 1029,
+id: 1033,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2180,7 +2188,7 @@ difficulty: 1,
 solution: "Båda trianglarna har en rät vinkel. Vi ser också att båda trianglarna delar vinkeln vid punkten B. Eftersom trianglarna har två gemensama vinklar och vinkelsumman i en triangel alltid är 180 så måste den tredje vinkeln i respektive triangel vara lika stora. Därför har trianglarna lika stora vinklar och därmed är de likformiga."
 },
 {
-id: 1030,
+id: 1034,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2191,7 +2199,7 @@ calculator: true,
 solution: "DE = 8,57 l.e."
 },
 {
-id: 1031,
+id: 1035,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2202,7 +2210,7 @@ calculator: true,
 solution: "DE = 20,83 l.e."
 },
 {
-id: 1032,
+id: 1036,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2213,7 +2221,7 @@ calculator: true,
 solution: "AE = 21,25 l.e."
 },
 {
-id: 1033,
+id: 1037,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2224,7 +2232,7 @@ calculator: true,
 solution: "AE = 61,48 cm"
 },
 {
-id: 1034,
+id: 1038,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2235,7 +2243,7 @@ calculator: true,
 solution: "AE = 5,33 l.e."
 },
 {
-id: 1035,
+id: 1039,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2246,7 +2254,7 @@ calculator: true,
 solution: "Eftersom \\( 12^2+16^2=144+256=400=20^2 \\) så märker vi att summan av kateternas kvadrater är lika med hyponetusan i kvadrat. Det innebär att Pythagoras sats gäller, alltså är triangeln rätvinklig."
 },
 {
-id: 1036,
+id: 1040,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2255,7 +2263,7 @@ difficulty: 1,
 solution: "Svar: \\( \\sqrt{3^2+4^2}=5 l.e. \\)"
 },
 {
-id: 1037,
+id: 1041,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2265,13 +2273,13 @@ calculator: true,
 solution: "Svar: \\( \\sqrt{7^2+2^2}=7,28 l.e. \\)"
 },
 { groupId: "Bestäm koordinat utifrån givet avstånd", area: "Geometri", subArea: "Avståndsformeln / Mittpunktsformeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
-{ id: 1038, versionLabel: "A", question: "Punkten \\( (2, y) \\) ligger 10 l.e. från punkten \\( (-4, 6) \\). Bestäm \\( y \\).", solution: "Vi löser ekvationen \\( \\sqrt{(2+4)^2+(y-6)^2}=10 \\).<br>Svar: \\( y_1=-2 \\) och \\( y_2=14 \\)." },
-{ id: 1039, versionLabel: "B", question: "Punkten \\( (x, 10) \\) ligger 13 l.e. från punkten \\( (5, 4) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-5)^2+(10-4)^2}=13 \\).<br>Svar: \\( x_1=-6 \\) och \\( x_2=16 \\)."},
-{ id: 1040, versionLabel: "C", question: "Punkten \\( (x, 20) \\) ligger 37 l.e. från punkten \\( (3, 8) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-3)^2+(20-8)^2}=37 \\).<br>Svar: \\( x_1=-32 \\) och \\( x_2=38 \\)."},
-{ id: 1041, versionLabel: "D", question: "Punkten \\( (a, a) \\) ligger 5 l.e. från punkten \\( (1, 2) \\). Bestäm punktens koordinater.", solution: "Vi löser ekvationen \\( \\sqrt{(a-1)^2+(a-2)^2}=5 \\).<br>Svar: \\( (-2, -2)\\) eller \\( (5,5) \\)."},
+{ id: 1042, versionLabel: "A", question: "Punkten \\( (2, y) \\) ligger 10 l.e. från punkten \\( (-4, 6) \\). Bestäm \\( y \\).", solution: "Vi löser ekvationen \\( \\sqrt{(2+4)^2+(y-6)^2}=10 \\).<br>Svar: \\( y_1=-2 \\) och \\( y_2=14 \\)." },
+{ id: 1043, versionLabel: "B", question: "Punkten \\( (x, 10) \\) ligger 13 l.e. från punkten \\( (5, 4) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-5)^2+(10-4)^2}=13 \\).<br>Svar: \\( x_1=-6 \\) och \\( x_2=16 \\)."},
+{ id: 1044, versionLabel: "C", question: "Punkten \\( (x, 20) \\) ligger 37 l.e. från punkten \\( (3, 8) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-3)^2+(20-8)^2}=37 \\).<br>Svar: \\( x_1=-32 \\) och \\( x_2=38 \\)."},
+{ id: 1045, versionLabel: "D", question: "Punkten \\( (a, a) \\) ligger 5 l.e. från punkten \\( (1, 2) \\). Bestäm punktens koordinater.", solution: "Vi löser ekvationen \\( \\sqrt{(a-1)^2+(a-2)^2}=5 \\).<br>Svar: \\( (-2, -2)\\) eller \\( (5,5) \\)."},
 ] },
 {
-id: 1042,
+id: 1046,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2281,7 +2289,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{3^2+a^2}=\\sqrt{6^2+8^2} \\).<br>Svar: \\( a_1=10 \\) och \\( a_2=-10 \\)."
 },
 {
-id: 1043,
+id: 1047,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2291,7 +2299,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(-4)^2+a^2}=\\sqrt{0^2+7^2} \\).<br>Svar: \\( a_1=\\sqrt{33} \\) och \\( a_2=-\\sqrt{33} \\)."
 },
 {
-id: 1044,
+id: 1048,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2301,7 +2309,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(-7)^2+b^2}=\\sqrt{1^2+24^2} \\).<br>Svar: \\( b_1=\\sqrt{528} \\) och \\( b_2=-\\sqrt{528} \\)."
 },
 {
-id: 1045,
+id: 1049,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2311,7 +2319,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{10^2+a^2}=\\sqrt{13^2+0^2} \\).<br>Svar: \\( a_1=\\sqrt{69} \\) och \\( a_2=-\\sqrt{69} \\)."
 },
 {
-id: 1046,
+id: 1050,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2320,7 +2328,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{3+2}{2}=2,5 \\) och \\( \\frac{-5+(-3)}{2}=-4 \\).<br>Svar \\( M=(2,5 ; -4) \\)."
 },
 {
-id: 1047,
+id: 1051,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2329,7 +2337,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{5+12}{2}=8,5 \\) och \\( \\frac{10+18}{2}=14 \\).<br>Svar \\( M=(8,5 ; 14) \\)."
 },
 {
-id: 1048,
+id: 1052,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2340,7 +2348,7 @@ difficulty: 1,
 solution: "Svar: P=(1,5 ; 8,77)."
 },
 {
-id: 1049,
+id: 1053,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2351,7 +2359,7 @@ difficulty: 1,
 solution: "Svar: y-koordinaten är ca 4,36."
 },
 {
-id: 1050,
+id: 1054,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2360,7 +2368,7 @@ difficulty: 1,
 solution: "Svar: \\( \\sqrt{3^2+4^2}=5 l.e. \\)"
 },
 {
-id: 1051,
+id: 1055,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2370,7 +2378,7 @@ calculator: true,
 solution: "Svar: \\( \\sqrt{7^2+2^2}=7,28 l.e. \\)"
 },
 {
-id: 1052,
+id: 1056,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2380,7 +2388,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(2+4)^2+(y-6)^2}=10 \\).<br>Svar: \\( y_1=-2 \\) och \\( y_2=14 \\)."
 },
 {
-id: 1053,
+id: 1057,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2390,7 +2398,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(x-5)^2+(10-4)^2}=13 \\).<br>Svar: \\( x_1=-6 \\) och \\( x_2=16 \\)."
 },
 {
-id: 1054,
+id: 1058,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2400,7 +2408,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(x-3)^2+(20-8)^2}=37 \\).<br>Svar: \\( x_1=-32 \\) och \\( x_2=38 \\)."
 },
 {
-id: 1055,
+id: 1059,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2410,7 +2418,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(x-1)^2+(x-2)^2}=5 \\).<br>Svar: \\( x_1=-2 \\) och \\( x_2=5 \\)."
 },
 {
-id: 1056,
+id: 1060,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2420,7 +2428,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{3^2+a^2}=\\sqrt{6^2+8^2} \\).<br>Svar: \\( a_1=10 \\) och \\( a_2=-10 \\)."
 },
 {
-id: 1057,
+id: 1061,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2430,7 +2438,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(-4)^2+a^2}=\\sqrt{0^2+7^2} \\).<br>Svar: \\( a_1=\\sqrt{33} \\) och \\( a_2=-\\sqrt{33} \\)."
 },
 {
-id: 1058,
+id: 1062,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2440,7 +2448,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(-7)^2+b^2}=\\sqrt{1^2+24^2} \\).<br>Svar: \\( b_1=\\sqrt{528} \\) och \\( b_2=-\\sqrt{528} \\)."
 },
 {
-id: 1059,
+id: 1063,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2450,7 +2458,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{10^2+a^2}=\\sqrt{13^2+0^2} \\).<br>Svar: \\( a_1=\\sqrt{69} \\) och \\( a_2=-\\sqrt{69} \\)."
 },
 {
-id: 1060,
+id: 1064,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2459,7 +2467,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{3+2}{2}=2,5 \\) och \\( \\frac{-5+(-3)}{2}=-4 \\).<br>Svar \\( M=(2,5 ; -4) \\)."
 },
 {
-id: 1061,
+id: 1065,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2468,7 +2476,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{5+12}{2}=8,5 \\) och \\( \\frac{10+18}{2}=14 \\).<br>Svar \\( M=(8,5 ; 14) \\)."
 },
 {
-id: 1062,
+id: 1066,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2479,7 +2487,7 @@ difficulty: 1,
 solution: "Svar: P=(1,5 ; 8,77)."
 },
 {
-id: 1063,
+id: 1067,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2490,7 +2498,7 @@ difficulty: 1,
 solution: "Svar: y-koordinaten är ca 4,36."
 },
 { groupId: "derivera enkla polynom", area: "Derivata", subArea: "Derivera polynom", courses: ["Ma3b", "Ma3c"], difficulty: 1, versions: [
-{ id: 1064, versionLabel: "A", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=x^2+5x^3\\)<br>b) \\(g(x)=7x^4-x \\)", solution: "a) \\(f´(x)=2x+15x^2\\)<br>b) \\(g´(x)=28x^3-1\\)" },
-{ id: 1065, versionLabel: "B", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=3x^3-4\\)<br>b) \\(g(x)=x^6-0,3x^8 \\)", solution: "a) \\(f´(x)=9x^2\\)<br>b) \\(g´(x)=6x^5-2,4x^7\\)" },
+{ id: 1068, versionLabel: "A", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=x^2+5x^3\\)<br>b) \\(g(x)=7x^4-x \\)", solution: "a) \\(f´(x)=2x+15x^2\\)<br>b) \\(g´(x)=28x^3-1\\)" },
+{ id: 1069, versionLabel: "B", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=3x^3-4\\)<br>b) \\(g(x)=x^6-0,3x^8 \\)", solution: "a) \\(f´(x)=9x^2\\)<br>b) \\(g´(x)=6x^5-2,4x^7\\)" },
 ] },
 ];
