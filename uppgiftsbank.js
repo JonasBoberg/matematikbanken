@@ -31,7 +31,7 @@ export const taskGroups = [
 { id: 23, listid: 16, versionLabel: "D", question: "I en klass finns det 40 elever. 30% spelar fotboll och 20% spelar innebandy. Resten spelar ingen av dessa sporter. Hur många elever spelar ingen av dessa sporter?", solution: "Svar: 20 st (50% av 40)" },
 { id: 24, listid: 17, versionLabel: "E", question: "I ett bibliotek finns det 90 böcker på ett bord. 20% är deckare och 50% är faktaböcker. Resten är romaner. Hur många romaner finns det på bordet?", solution: "Svar: 27 st (30% av 90)" },
 ] },
-{ groupId: "Procentuell förändring 1", area: "Procent", subArea: "Procentuell förändring", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
+{ groupId: "Procentuell förändring 1", area: "Procent", subArea: "Procentuell förändring", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 1, versions: [
 { id: 25, listid: 20, versionLabel: "A", question: "En jacka kostade först 800 kr men säljs nu för 680 kr. Med hur många procent har priset minskat?", solution: "Svar: Det har minskat med 15%." },
 { id: 26, listid: 21, versionLabel: "B", question: "En mobil kostade först 4000 kr men kostar nu 4800 kr. Med hur många procent har priset ökat?", solution: "Svar: Det har ökat med 20%." },
 { id: 27, listid: 22, versionLabel: "C", question: "En tröja kostade först 440 kr men säljs nu för 360 kr. Med hur många procent har priset minskat? Svara med en decimal.", solution: "Svar: Det har minskat med 18,2%." },
@@ -61,13 +61,13 @@ export const taskGroups = [
 { id: 47, listid: 39, versionLabel: "H", question: "Nedan ser du två förändringsfaktorer. Beskriv vilken förändring de motsvarar.<br>a) 1,9<br>b) 3,0", solution: "a) En ökning med 90%<br>b) En ökning med 200%" },
 { id: 48, listid: 40, versionLabel: "I", question: "Nedan ser du två förändringsfaktorer. Beskriv vilken förändring de motsvarar.<br>a) 0,05<br>b) 2,5", solution: "a) En minskning med 95%<br>b) En ökning med 150%" },
 ] },
-{ groupId: "Beräkna nytt värde", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
+{ groupId: "Beräkna nytt värde", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 1, versions: [
 { id: 49, listid: 41, versionLabel: "A", question: "Förra året hade Lena 34 000 kr i månadslön. I år fick hon en löneökning på 4%. Vad är hennes månadslön idag?", solution: "Svar: Den är nu 35 360 kr / månad." },
 { id: 50, listid: 42, versionLabel: "B", question: "Förra året hade Adam 32 000 kr i månadslön. I år fick han en löneökning på 4,5%. Vad är hans månadslön idag?", solution: "Svar: Den är nu 33 440 kr / månad." },
 { id: 51, listid: 43, versionLabel: "C", question: "Förra året köpte Erik en dator för 6000 kr. Den har sedan dess minskat i värde med 12%. Vad är datorn värd idag?", solution: "Svar: Den är värd 5280 kr." },
 { id: 52, listid: 44, versionLabel: "D", question: "En vara som tidigare kostat 1 800 kr har nu ökat i värde med 4,5%. Vad kostar varan idag?", solution: "Svar: Den kostar 1881 kr." },
 ] },
-{ groupId: "beräkna nytt värde, många år", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
+{ groupId: "beräkna nytt värde, många år", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 2, versions: [
 { id: 53, listid: 45, versionLabel: "A", question: "Du sätter in 40 000 kr på ett sparkonto med 3% ränta. Hur mycket pengar har du på kontot efter 10 år om du inte sätter in eller tar ut något under denna period?", solution: "\\( 40 000 \\cdot 1,03^{10} = 53 757\\) kr." },
 { id: 54, listid: 46, versionLabel: "B", question: "Du köper en motorcykel för 92 500 kr. Motorcykelns värde minskar med 7% per år. Hur mycket är motorcykeln värd 6 år efter att du köpt den?", solution: "\\( 92 500 \\cdot 0,93^6 = 59 847\\) kr." },
 { id: 55, listid: 47, versionLabel: "C", question: "Du sätter in 12 800 kr på ett konto. Pengarna ökar med 3,5% per år. Hur mycket finns på kontot efter 9 år?", solution: "\\( 12 800 \\cdot 1,035^9 = 17 440 \\) kr." },
@@ -85,22 +85,22 @@ export const taskGroups = [
 { id: 63, versionLabel: "A", question: "För två år sedan köpte du en bil. Bilens värde har sedan dess minskat med 8% per år och är nu värd 124 000 kr. Vad kostade bilen när du köpte den?", solution: "Svar: ca 146 500 kr"},
 { id: 64, versionLabel: "B", question: "För tre år sedan köpte du en moped. Mopedens värde har sedan dess minskat med 11% per år och är nu värd 15 510 kr. Vad kostade mopeden när du köpte den?", solution: "Svar: Den kostade 22 000 kr"},
 ] },
-{ groupId: "total förändringsfaktor 1", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
+{ groupId: "total förändringsfaktor 1", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 2, versions: [
 { id: 65, versionLabel: "A", question: "Priset på en vara ökar med 20% och minskar därefter med 20%. Har priset på varan förändrats från ordinarie pris? Om ja, med hur många procent?", solution: "Svar: \\( 1,2 \\cdot 0,8 = 0,96\\).<br>Priset har minskat med 4%." },
 { id: 66, versionLabel: "B", question: "Du köper en bil som under första året minskar med 10% i värde. Året därpå minskar den med 12%. Med hur många procent har den minskat i värde totalt? Svara exakt.", solution: "Svar: \\( 0,9 \\cdot 0,88 = 0,792\\). Den har minskat med 20,8%." },
 ] },
-{ groupId: "total förändringsfaktor 2", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
+{ groupId: "total förändringsfaktor 2", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 2, versions: [
 { id: 67, versionLabel: "A", question: "Antalet träd i Trollskogen har de senaste åren ökat med 8,5% per år. Med hur många procent har antalet träd ökat de senaste 4 åren? Svara i procentform med en decimal.", solution: "Svar: \\( 1,085^4 = 1,3856\\). Antalet träd har ökat med 38,6%." },
 { id: 68, versionLabel: "B", question: "Din nya TV förväntas minska i värde med 14% per år. Med hur många procent har TV:n minskat i värde efter 5 år? Svara i procent med en decimal.", solution: "Svar: \\( 0,86^5 = 0,470427\\). Värdet har minskat med 53,0%." },
 { id: 69, versionLabel: "C", question: "Du sätter in pengar på ett sparkonto med 4% ränta. Med hur många procent har värdet av pengarna ökat efter 3 år? Svara i procent med en decimal.", solution: "Svar: \\( 1,04^3 = 1,124864\\). Pengarnas värde har ökat med 12,5%." },
 ] },
-{ groupId: "förändringsfaktor NP 1", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
+{ groupId: "förändringsfaktor NP 1", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 2, versions: [
 { id: 70, versionLabel: "A", question: "En aktie har från början värdet 200 kr. Första veckan ökar värdet med 10% och andra veckan minskar värdet med 10%. Aktiens värde fortsätter att förändras i samma mönster. (NP Ma1abc).<br>a) Hur mycket är aktien värd efter två veckor?<br>b) Hur mycket är aktien värd efter 100 veckor?", solution: "a) 198kr<br>b) 121 kr" },
 ] },
-{ groupId: "förändringsfaktor NP 2", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
+{ groupId: "förändringsfaktor NP 2", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 2, versions: [
 { id: 71, versionLabel: "A", question: "Oskar vinner x kr i en tävling. Ahmed vinner 40 % mer än Oskar. Stina vinner 20 % mindre än Oskar. Hur många procent större är Ahmeds vinst jämfört med Stinas?", solution: "\\(\\frac{0,6x}{0,8x}=0,75\\). Svar: 75%." },
 ] },
-{ groupId: "vinkelsumma med ff", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
+{ groupId: "vinkelsumma med ff", area: "Procent", subArea: "Förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 2, versions: [
 { id: 72, versionLabel: "A", question: "En triangel har vinklarna U, V och W. Vinkel V är 20 % mindre än vinkel U och vinkel W är 40 % större än vinkel W. Bestäm vinkel W.", solution: "Svar: Lös ekvationen \\(x+1,4x+0,8x=180\\). \\(W=78,75^{\\circ} \\)." },
 { id: 73, versionLabel: "B", question: "En triangel har vinklarna U, V och W. Vinkel V och vinkel W är båda 30 % mindre än vinkel U. Bestäm vinkel V.", solution: "Svar: Lös ekvationen \\(x+0,7x+0,7x=180\\). \\(V=52,5^{\\circ} \\)." },
 { id: 74, versionLabel: "C", question: "En triangel har vinklarna A, B och C. Vinkel B är 72 % mindre än vinkel A. Vinkel C är 60 % större än vinkel A. Bestäm triangelns vinklar. (NP 1a, 1b, 1c)", solution: "Svar: Lös ekvationen \\(x+0,28x+1,6x=180\\) så får du \\(A=62,5^{\\circ} \\), \\(B=17,5^{\\circ} \\) och \\(C=100^{\\circ} \\)." }
@@ -1128,17 +1128,22 @@ solution: "Triangeln har basen 1 l.e. och höjden 2 l.e. Svar: Triangeln har are
 { id: 674, versionLabel: "A", question: "Bestäm linjens k-värde och m-värde: \\( 2y=50x-10 \\).", solution: "\\( k=25 \\) och \\(m=-5\\)."},
 { id: 675, versionLabel: "B", question: "Bestäm linjens k-värde och m-värde: \\( 5x+5y-15=0 \\).", solution: "\\( k=-1 \\) och \\(m=3\\)."},
 { id: 676, versionLabel: "C", question: "Bestäm linjens k-värde och m-värde: \\( 0,5y-3x=-4 \\).", solution: "\\( k=6 \\) och \\(m=-8\\)."},
-{ id: 677, versionLabel: "C", question: "Bestäm linjens k-värde och m-värde: \\( 4x-y=12 \\).", solution: "\\( k=4 \\) och \\(m=-12\\)."},
+{ id: 677, versionLabel: "D", question: "Bestäm linjens k-värde och m-värde: \\( 4x-y=12 \\).", solution: "\\( k=4 \\) och \\(m=-12\\)."},
+] },
+{ groupId: "Skriv på k-form", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c"], difficulty: 1, versions: [
+{ id: 678, versionLabel: "A", question: "Skriv linjen på k-form: \\( 2y+2x=12 \\).", solution: "\\( y=-x+6 \\)."},
+{ id: 679, versionLabel: "B", question: "Skriv linjen på k-form: \\( 20-4y=4x \\).", solution: "\\( y=-x+5 \\)."},
+{ id: 680, versionLabel: "C", question: "Skriv linjen på k-form: \\( 5y-10x+15=0 \\).", solution: "\\( y=2x-3 \\)."},
 ] },
 { groupId: "Avgör om parallella", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c"], difficulty: 1, versions: [
-{ id: 678, versionLabel: "A", question: "Avgör om linjerna \\( 2y=4x-20 \\) och \\( y+2x=100 \\) är parallella eller ej. Motivera ditt svar.", solution: "Svar: \\( 2y=4x-20 \\) är samma sak som \\( y=2x-10 \\) så det är en linje med lutningen \\( k=2 \\). <br> Linjen \\( y+2x=100 \\) är samma sak som \\( y=-2x+100 \\) så det är en linje med lutningen \\( k=-2 \\). <br> Linjerna är alltså inte parallella eftersom de har olika k-värden." },
-{ id: 679, versionLabel: "B", question: "Avgör om linjerna \\( 0,5y=10-3x \\) och \\( y=-6x+5 \\) är parallella eller ej. Motivera ditt svar.", solution: "Svar: \\( 0,5y=10-3x \\) är samma sak som \\( y=20-6x \\) så det är en linje med lutningen \\( k=-6 \\). <br> Linjen \\( y=-6x+5 \\) har också lutningen \\( k=-6 \\). <br> Svar: Linjerna är parallella eftersom de har samma k-värde." }
+{ id: 681, versionLabel: "A", question: "Avgör om linjerna \\( 2y=4x-20 \\) och \\( y+2x=100 \\) är parallella eller ej. Motivera ditt svar.", solution: "Svar: \\( 2y=4x-20 \\) är samma sak som \\( y=2x-10 \\) så det är en linje med lutningen \\( k=2 \\). <br> Linjen \\( y+2x=100 \\) är samma sak som \\( y=-2x+100 \\) så det är en linje med lutningen \\( k=-2 \\). <br> Linjerna är alltså inte parallella eftersom de har olika k-värden." },
+{ id: 682, versionLabel: "B", question: "Avgör om linjerna \\( 0,5y=10-3x \\) och \\( y=-6x+5 \\) är parallella eller ej. Motivera ditt svar.", solution: "Svar: \\( 0,5y=10-3x \\) är samma sak som \\( y=20-6x \\) så det är en linje med lutningen \\( k=-6 \\). <br> Linjen \\( y=-6x+5 \\) har också lutningen \\( k=-6 \\). <br> Svar: Linjerna är parallella eftersom de har samma k-värde." }
 ] },
 { groupId: "Bestäm a så att parallella", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c"], difficulty: 2, versions: [
-{ id: 680, versionLabel: "A", question: "Linje \\(L_1\\) går genom punkterna \\( (1, 2) \\) och \\( (3, 10) \\). Linje \\(L_2\\) går genom punkterna \\( (5, 12) \\) och \\( (16, a) \\). Bestäm värdet på \\(a\\) så att \\(L_1\\) och \\(L_2\\) blir parallella.", solution: "Linje \\(L_1\\) har \\( k=4 \\) så \\( \\frac{a-12}{16-5}=4 \\).<br>Svar: \\( a=56 \\)." }
+{ id: 683, versionLabel: "A", question: "Linje \\(L_1\\) går genom punkterna \\( (1, 2) \\) och \\( (3, 10) \\). Linje \\(L_2\\) går genom punkterna \\( (5, 12) \\) och \\( (16, a) \\). Bestäm värdet på \\(a\\) så att \\(L_1\\) och \\(L_2\\) blir parallella.", solution: "Linje \\(L_1\\) har \\( k=4 \\) så \\( \\frac{a-12}{16-5}=4 \\).<br>Svar: \\( a=56 \\)." }
 ] },
 {
-id: 681,
+id: 684,
 area: "Funktioner",
 subArea: "Räta linjens ekvation",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1147,7 +1152,7 @@ difficulty: 1,
 solution: "\\( k=\\frac{a-10}{5-3}=4 \\). Om vi löser \\( a \\) från denna ekvation får vi svar: \\( a=18 \\)."
 },
 {
-id: 682,
+id: 685,
 area: "Funktioner",
 subArea: "Räta linjens ekvation",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1156,20 +1161,20 @@ difficulty: 2,
 solution: "\\( k=\\frac{5-(-1)}{a-1}=-3 \\). Om vi löser \\( a \\) från denna ekvation får vi svar: \\( a=-1 \\)."
 },
 { groupId: "Skriv linjär funktion 1", area: "Funktioner", subArea: "Linjära funktioner", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 683, versionLabel: "A", question: "Vid en mätning är mängden koldioxid i ett ämne 200 mg. Man ser sedan att mängden ökar med 10 mg per timme. Skriv en funktion, \\( f(t) \\), som beskriver hur mängden koldioxid i ämnet \\( t \\) timmar efter den förstst mätningen.", solution: "Svar: \\( f(t)=200+10t \\)." },
-{ id: 684, versionLabel: "B", question: "Du har 1500 kr på i din spargris och sparar 200 kr varje månad. Skriv en funktion, \\( S(t) \\), som beskriver hur mycket pengar du har i spargrisen efter \\( t \\) månader.", solution: "Svar: \\( S(t)=200t+1500 \\)." },
-{ id: 685, versionLabel: "C", question: "Att hyra en skoter kostar 500kr i startavgift och därefter 250 kr/h. Skriv en funktion, \\( K(t) \\), som beskriver den kostnaden att hyra en skoter \\( t \\) timmar.", solution: "Svar: \\( K(t)=250t+500 \\)." },
-{ id: 686, versionLabel: "D", question: "Ett vattenbad innehåller från början 50 liter vatten och fylls på med 15 liter per minut. Skriv en funktion, \\( V(t) \\), som beskriver vattenmängden efter \\( t \\) minuter.", solution: "Svar: \\( V(t)=15t+50 \\)." },
-{ id: 687, versionLabel: "E", question: "År 2010 fanns det 1500 granar i Storskogen men antalet minskar med 40 st varje år. Skriv en funktion, \\( G(t) \\), som beskriver hur många granar det finns i skogen \\( t \\) år efter 2010.", solution: "Svar: \\( G(t)=1500-40t \\)." },
-{ id: 688, versionLabel: "F", question: "En tank innehåller 300 liter olja och töms med 25 liter per timme. Skriv en funktion, \\( T(t) \\), som beskriver hur många liter olja som finns kvar efter \\( t \\) timmar.", solution: "Svar: \\( T(t)=300-25t \\)." }
+{ id: 686, versionLabel: "A", question: "Vid en mätning är mängden koldioxid i ett ämne 200 mg. Man ser sedan att mängden ökar med 10 mg per timme. Skriv en funktion, \\( f(t) \\), som beskriver hur mängden koldioxid i ämnet \\( t \\) timmar efter den förstst mätningen.", solution: "Svar: \\( f(t)=200+10t \\)." },
+{ id: 687, versionLabel: "B", question: "Du har 1500 kr på i din spargris och sparar 200 kr varje månad. Skriv en funktion, \\( S(t) \\), som beskriver hur mycket pengar du har i spargrisen efter \\( t \\) månader.", solution: "Svar: \\( S(t)=200t+1500 \\)." },
+{ id: 688, versionLabel: "C", question: "Att hyra en skoter kostar 500kr i startavgift och därefter 250 kr/h. Skriv en funktion, \\( K(t) \\), som beskriver den kostnaden att hyra en skoter \\( t \\) timmar.", solution: "Svar: \\( K(t)=250t+500 \\)." },
+{ id: 689, versionLabel: "D", question: "Ett vattenbad innehåller från början 50 liter vatten och fylls på med 15 liter per minut. Skriv en funktion, \\( V(t) \\), som beskriver vattenmängden efter \\( t \\) minuter.", solution: "Svar: \\( V(t)=15t+50 \\)." },
+{ id: 690, versionLabel: "E", question: "År 2010 fanns det 1500 granar i Storskogen men antalet minskar med 40 st varje år. Skriv en funktion, \\( G(t) \\), som beskriver hur många granar det finns i skogen \\( t \\) år efter 2010.", solution: "Svar: \\( G(t)=1500-40t \\)." },
+{ id: 691, versionLabel: "F", question: "En tank innehåller 300 liter olja och töms med 25 liter per timme. Skriv en funktion, \\( T(t) \\), som beskriver hur många liter olja som finns kvar efter \\( t \\) timmar.", solution: "Svar: \\( T(t)=300-25t \\)." }
 ]  },
 { groupId: "Skriv linjär funktion 2", area: "Funktioner", subArea: "Linjära funktioner", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 689, versionLabel: "A", question: "År 2000 fanns det 400 grodor i Storsjön. År 2020 beräknades antalet vara 560. Anta att ökningen är linjär och skriv en funktion som beskriver antalet grodor, y, i sjön, x år efter 2000.", solution: "Svar: y=400+8x" },
-{ id: 690, versionLabel: "B", question: "När du började spara pengar i din spargris hade du 150kr i den. Tio veckor senare har du 450kr i den. Anta att ditt sparande är linjärt och skriv en funktion som beskriver pengarna (y) i spargrisen, x veckor efter att du börjat spara.", solution: "Svar: y=30x+150" },
-{ id: 691, versionLabel: "C", question: "När man mäter antalet rävar i en skog ser man att det fanns 60 st år 2000. År 2005 fanns det 75 st. Anta att ökningen är linjär och skriv en funktion som beskriver antalet rävar, y, i skogen, x år efter 2000.", solution: "Svar: y=60+3x" },
+{ id: 692, versionLabel: "A", question: "År 2000 fanns det 400 grodor i Storsjön. År 2020 beräknades antalet vara 560. Anta att ökningen är linjär och skriv en funktion som beskriver antalet grodor, y, i sjön, x år efter 2000.", solution: "Svar: y=400+8x" },
+{ id: 693, versionLabel: "B", question: "När du började spara pengar i din spargris hade du 150kr i den. Tio veckor senare har du 450kr i den. Anta att ditt sparande är linjärt och skriv en funktion som beskriver pengarna (y) i spargrisen, x veckor efter att du börjat spara.", solution: "Svar: y=30x+150" },
+{ id: 694, versionLabel: "C", question: "När man mäter antalet rävar i en skog ser man att det fanns 60 st år 2000. År 2005 fanns det 75 st. Anta att ökningen är linjär och skriv en funktion som beskriver antalet rävar, y, i skogen, x år efter 2000.", solution: "Svar: y=60+3x" },
 ]  },
 {
-id: 692,
+id: 695,
 area: "Funktioner",
 subArea: "Linjära funktioner",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1177,7 +1182,7 @@ question: "Ett mobilabonnemang har en fast månadsavgift och en rörlig kostnad.
 solution: "a) 199 kr<br> b) \\( K(60)=349 \\). Det kostar 349 kr om du ringer 60 minuter.<br> c) \\( t=120 \\). Du kan ringa 120 minuter om kostnaden ska bli 499 kr."
 },
 {
-id: 693,
+id: 696,
 area: "Funktioner",
 subArea: "Linjära funktioner",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1185,7 +1190,7 @@ question: "Temperaturen i en ugn kan beskrivas med funktionen \\( T(t)=50+15t \\
 solution: "a) Det ökar med 15°C varje minut.<br> b) \\( T(8)=170 \\). Efter 8 minuter är temperaturen 170°C.<br> c) \\( t=10 \\). Det tar 10 minuter innan temperaturen är 200°C."
 },
 {
-id: 694,
+id: 697,
 area: "Funktioner",
 subArea: "Linjära funktioner",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1193,7 +1198,7 @@ question: "Antalet besökare på ett museum kan beskrivas med funktionen \\( B(t
 solution: "a) 120 besökare<br> b) \\( B(5)=270 \\). Efter 5 timmar har 270 besökare kommit.<br> c) \\( t=6 \\). Efter 6 timmar har museet haft 300 besökare."
 },
 {
-id: 695,
+id: 698,
 area: "Funktioner",
 subArea: "Linjära funktioner",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1201,7 +1206,7 @@ question: "Sträckan en cyklist har färdats (i km) kan beskrivas med funktionen
 solution: "a) \\( s(6)=120 \\). Cyklisten cyklar 120 km.<br> c) 20 mil = 200 km. \\( s(10)=200 \\) så det tar 10 timmar att färdas 200 km."
 },
 {
-id: 696,
+id: 699,
 area: "Funktioner",
 subArea: "Linjära funktioner",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1209,7 +1214,7 @@ question: "Värdet på en maskin kan beskrivas med funktionen \\( V(t)=100000-50
 solution: "a) 100 000 kr<br> b) \\( V(6)=70000 \\). Efter 6 år är maskinen värd 70 000 kr.<br> c) \\( t=20 \\) vilket innebär att maskinen är värd 0 kr efter 20 år."
 },
 {
-id: 697,
+id: 700,
 area: "Funktioner",
 subArea: "Linjära funktioner",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1217,7 +1222,7 @@ question: "En pool töms på vatten så att mängden vatten i poolen (räknat i 
 solution: "a) 20 000 liter<br> b) \\( f(10)=18750 \\). Efter 10 minuter finns det 18 750 liter vatten i poolen.<br> c) \\( t=160 \\). Det tar 160 minuter (2h och 40min) att tömma poolen."
 },
 {
-id: 698,
+id: 701,
 area: "Funktioner",
 subArea: "Linjära funktioner",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1227,7 +1232,7 @@ difficulty: 1,
 solution: "a) Startavgiften är 50kr.<br>b) Dygnskostnaden är 150 kr / dygn."
 },
 {
-id: 699,
+id: 702,
 area: "Funktioner",
 subArea: "Linjära funktioner",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1237,7 +1242,7 @@ difficulty: 1,
 solution: "Svar: 100 liter / min."
 },
 {
-id: 700,
+id: 703,
 area: "Funktioner",
 subArea: "Linjära funktioner",
 courses: ["Ma1b", "Ma1c"],
@@ -1247,12 +1252,12 @@ difficulty: 1,
 solution: "Svar: Definitionsmängden är de tillåtna x-värdena, alltså \\( 0 \\leq x \\leq 22 \\). Värdemängden är de tillåtna y-värdena, alltså \\( 0 \\leq y \\leq 2200 \\)."
 },
 { groupId: "Ange värdemängden algebraiskt", area: "Funktioner", subArea: "Linjära funktioner", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], difficulty: 2, versions: [
-{ id: 701, versionLabel: "A", question: "Funktionen \\(f(x)=3x+10\\) är definierad för \\(0 \\le x \\le 4\\).<br>Ange funktionens värdemängd.", solution: "Värdemängden är \\( 10 \\le y \\le 22 \\)." },
-{ id: 702, versionLabel: "B", question: "Funktionen \\(f(x)=50-2x\\) är definierad för \\(10 \\leq x \\leq 25\\).<br>Ange funktionens värdemängd.", solution: "Värdemängden är \\( 0 \\leq f(x) \\leq 30 \\)." },
-{ id: 703, versionLabel: "C", question: "Funktionen \\(f(x)=4x\\) är definierad för alla \\(x\\) sådana att \\(x \\geq 5\\).<br>Ange funktionens värdemängd.", solution: "Värdemängden är \\(f(x) \\geq 20 \\)." },
+{ id: 704, versionLabel: "A", question: "Funktionen \\(f(x)=3x+10\\) är definierad för \\(0 \\le x \\le 4\\).<br>Ange funktionens värdemängd.", solution: "Värdemängden är \\( 10 \\le y \\le 22 \\)." },
+{ id: 705, versionLabel: "B", question: "Funktionen \\(f(x)=50-2x\\) är definierad för \\(10 \\leq x \\leq 25\\).<br>Ange funktionens värdemängd.", solution: "Värdemängden är \\( 0 \\leq f(x) \\leq 30 \\)." },
+{ id: 706, versionLabel: "C", question: "Funktionen \\(f(x)=4x\\) är definierad för alla \\(x\\) sådana att \\(x \\geq 5\\).<br>Ange funktionens värdemängd.", solution: "Värdemängden är \\(f(x) \\geq 20 \\)." },
 ]  },
 {
-id: 704,
+id: 707,
 area: "Funktioner",
 subArea: "Linjära funktioner",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1262,13 +1267,13 @@ calculator: true,
 solution: "Svar: \\(y=380x+300\\)."
 },
 { groupId: "Beräkna k-värde utifrån likavärdespunkt", area: "Funktioner", subArea: "Linjära funktioner", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, versions: [
-{ id: 705, versionLabel: "A", question: "Anna ska hyra en bil på sin resa i Sydamerika. Hon väljer mellan två företag.<br>Företag A tar betalt enligt följande modell: \\(y=145x+300\\) där \\(y\\) är kostnaden att hyra en bil i \\(x\\) dygn.<br>Företag B tar 860 kr i startavgift men en lägre kostnad per dygn.<br>Anna räknar ut att om hon hyr bilen i 14 dagar så blir det lika dyrt oavsett vilket företag hon väljer.<br>Vad är priset per dygn hos företag B?", solution: "Svar: 105 kr / dygn." },
-{ id: 706, versionLabel: "B", question: "Erik ska hyra en släpvagn. Han väljer mellan två företag.<br>Företag A tar betalt enligt modellen: \\(y=180x+250\\) där \\(y\\) är kostnaden i kronor och \\(x\\) är antal dygn.<br>Företag B tar 700 kr i startavgift men en lägre kostnad per dygn.<br>Erik räknar ut att om han hyr släpvagnen i 9 dagar blir det lika dyrt hos båda företagen.<br>Vad är priset per dygn hos företag B?", solution: "Svar: 130 kr / dygn." },
-{ id: 707, versionLabel: "C", question: "Sara ska hyra en cykel under semestern. Hon väljer mellan två företag.<br>Företag A tar betalt enligt modellen: \\(y=95x+180\\) där \\(y\\) är kostnaden i kronor och \\(x\\) är antal dygn.<br>Företag B tar 480 kr i startavgift men en lägre kostnad per dygn.<br>Sara räknar ut att om hon hyr cykeln i 10 dagar blir det lika dyrt hos båda företagen.<br>Vad är priset per dygn hos företag B?", solution: "Svar: 65 kr / dygn." },
-{ id: 708, versionLabel: "D", question: "Maja ska hyra en kajak. Hon väljer mellan två företag.<br>Företag A tar betalt enligt modellen: \\(y=120x+350\\) där \\(y\\) är kostnaden i kronor och \\(x\\) är antal dygn.<br>Företag B tar 650 kr i startavgift men en lägre kostnad per dygn.<br>Maja räknar ut att om hon hyr kajaken i 6 dagar blir det lika dyrt hos båda företagen.<br>Vad är priset per dygn hos företag B?", solution: "Svar: 70 kr / dygn." },
+{ id: 708, versionLabel: "A", question: "Anna ska hyra en bil på sin resa i Sydamerika. Hon väljer mellan två företag.<br>Företag A tar betalt enligt följande modell: \\(y=145x+300\\) där \\(y\\) är kostnaden att hyra en bil i \\(x\\) dygn.<br>Företag B tar 860 kr i startavgift men en lägre kostnad per dygn.<br>Anna räknar ut att om hon hyr bilen i 14 dagar så blir det lika dyrt oavsett vilket företag hon väljer.<br>Vad är priset per dygn hos företag B?", solution: "Svar: 105 kr / dygn." },
+{ id: 709, versionLabel: "B", question: "Erik ska hyra en släpvagn. Han väljer mellan två företag.<br>Företag A tar betalt enligt modellen: \\(y=180x+250\\) där \\(y\\) är kostnaden i kronor och \\(x\\) är antal dygn.<br>Företag B tar 700 kr i startavgift men en lägre kostnad per dygn.<br>Erik räknar ut att om han hyr släpvagnen i 9 dagar blir det lika dyrt hos båda företagen.<br>Vad är priset per dygn hos företag B?", solution: "Svar: 130 kr / dygn." },
+{ id: 710, versionLabel: "C", question: "Sara ska hyra en cykel under semestern. Hon väljer mellan två företag.<br>Företag A tar betalt enligt modellen: \\(y=95x+180\\) där \\(y\\) är kostnaden i kronor och \\(x\\) är antal dygn.<br>Företag B tar 480 kr i startavgift men en lägre kostnad per dygn.<br>Sara räknar ut att om hon hyr cykeln i 10 dagar blir det lika dyrt hos båda företagen.<br>Vad är priset per dygn hos företag B?", solution: "Svar: 65 kr / dygn." },
+{ id: 711, versionLabel: "D", question: "Maja ska hyra en kajak. Hon väljer mellan två företag.<br>Företag A tar betalt enligt modellen: \\(y=120x+350\\) där \\(y\\) är kostnaden i kronor och \\(x\\) är antal dygn.<br>Företag B tar 650 kr i startavgift men en lägre kostnad per dygn.<br>Maja räknar ut att om hon hyr kajaken i 6 dagar blir det lika dyrt hos båda företagen.<br>Vad är priset per dygn hos företag B?", solution: "Svar: 70 kr / dygn." },
 ]  },
 {
-id: 709,
+id: 712,
 area: "Funktioner",
 subArea: "Linjära funktioner",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1278,102 +1283,102 @@ calculator: true,
 solution: "Svar: Det behöver kosta 64kr i månaden."
 },
 { groupId: "Hittar likavärdespunkt, linjära funktioner i text", area: "Funktioner", subArea: "Linjära funktioner", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: false, difficulty: 1, versions: [
-{ id: 710, versionLabel: "A", question: "En nöjespark erbjuder två olika biljettalternativ:<br>Alternativ A: Inträde kostar 150 kr och varje åkattraktion kostar 30 kr.<br>Alternativ B: Ett åkband kostar 390 kr och ger fri tillgång till alla attraktioner.<br>Vid hur många åk är kostnaden densamma i de båda alternativen?", solution: "Svar: Lös ekvationen \\(150+30x=390\\). <br>8 åk." },
-{ id: 711, versionLabel: "B", question: "Ett gym erbjuder två alternativ:<br>Alternativ A: Fast månadsavgift på 1020 kr.<br>Alternativ B: 85 kr per träningspass.<br>Vid hur många träningspass är kostnaden densamma för de olika alternativen?", solution: "Svar: Lös ekvationen \\(85x=1020\\). <br>12 träningspass." },
-{ id: 712, versionLabel: "C", question: "Två fraktföretag erbjuder olika prismodeller:<br>Företag A: Fast avgift på 200 kr + 15 kr per paket.<br>Företag B: Ingen fast avgift, men 25 kr per paket.<br>Vid hur många paket är kostnaden för Företag A densamma som kostnaden för Företag B?", solution: "Svar: Lös ekvationen \\(200+15x=25x\\). <br>20 paket." }
+{ id: 713, versionLabel: "A", question: "En nöjespark erbjuder två olika biljettalternativ:<br>Alternativ A: Inträde kostar 150 kr och varje åkattraktion kostar 30 kr.<br>Alternativ B: Ett åkband kostar 390 kr och ger fri tillgång till alla attraktioner.<br>Vid hur många åk är kostnaden densamma i de båda alternativen?", solution: "Svar: Lös ekvationen \\(150+30x=390\\). <br>8 åk." },
+{ id: 714, versionLabel: "B", question: "Ett gym erbjuder två alternativ:<br>Alternativ A: Fast månadsavgift på 1020 kr.<br>Alternativ B: 85 kr per träningspass.<br>Vid hur många träningspass är kostnaden densamma för de olika alternativen?", solution: "Svar: Lös ekvationen \\(85x=1020\\). <br>12 träningspass." },
+{ id: 715, versionLabel: "C", question: "Två fraktföretag erbjuder olika prismodeller:<br>Företag A: Fast avgift på 200 kr + 15 kr per paket.<br>Företag B: Ingen fast avgift, men 25 kr per paket.<br>Vid hur många paket är kostnaden för Företag A densamma som kostnaden för Företag B?", solution: "Svar: Lös ekvationen \\(200+15x=25x\\). <br>20 paket." }
 ] },
 { groupId: "Hittar skärningspunkt, linjära funktioner algebraiskt", area: "Funktioner", subArea: "Linjära funktioner", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
-{ id: 713, versionLabel: "A", question: "Linjerna \\( y=4x+2 \\) och \\( y=5x-10 \\) skär varandra i en punkt. Bestäm x-koordinaten för denna skärningspunkt.", solution: "Lös ekvationen \\(4x+2=5x-10.\\)<br>Svar: \\(x = 12.\\)" },
-{ id: 714, versionLabel: "B", question: "Linjerna \\( y=-2x+14 \\) och \\( y=10x-10 \\) skär varandra i en punkt. Bestäm x-koordinaten för denna skärningspunkt.", solution: "Lös ekvationen \\(-2x+14=10x-10.\\)<br>Svar: \\(x = 2.\\)" },
-{ id: 715, versionLabel: "C", question: "Linjerna \\(f(x)=3x+120\\) och \\(g(x)=7x-120\\) är givna. Bestäm x-koordinaten för deras skärningspunkt.", solution: "Lös ekvationen \\(3x+120=7x-120.\\)<br>Svar: \\(x = 60.\\)" },
+{ id: 716, versionLabel: "A", question: "Linjerna \\( y=4x+2 \\) och \\( y=5x-10 \\) skär varandra i en punkt. Bestäm x-koordinaten för denna skärningspunkt.", solution: "Lös ekvationen \\(4x+2=5x-10.\\)<br>Svar: \\(x = 12.\\)" },
+{ id: 717, versionLabel: "B", question: "Linjerna \\( y=-2x+14 \\) och \\( y=10x-10 \\) skär varandra i en punkt. Bestäm x-koordinaten för denna skärningspunkt.", solution: "Lös ekvationen \\(-2x+14=10x-10.\\)<br>Svar: \\(x = 2.\\)" },
+{ id: 718, versionLabel: "C", question: "Linjerna \\(f(x)=3x+120\\) och \\(g(x)=7x-120\\) är givna. Bestäm x-koordinaten för deras skärningspunkt.", solution: "Lös ekvationen \\(3x+120=7x-120.\\)<br>Svar: \\(x = 60.\\)" },
 ] },
 { groupId: "Avgör linjär eller exponentiell", area: "Funktioner", subArea: "Exponentialfunktioner", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: false, difficulty: 1, versions: [
-{ id: 716, versionLabel: "A", question: "Tabellen nedan visar olika värden för funktionen \\(f(x).\\) Är funktionen linjär eller exponentiell? Motivera ditt svar.\n{table\nx | f(x)\n1 | 2,5\n2 | 4\n4 | 7\n}", solution: "Svar: Funktionen är en linjär funktion eftersom funktionens värde ökar med 1,5 varje gång x ökar med 1." },
-{ id: 717, versionLabel: "B", question: "Tabellen nedan visar olika värden för funktionen \\(f(x).\\) Är funktionen linjär eller exponentiell? Motivera ditt svar.\n{table\nx | f(x)\n10 | -4\n 12 | -8\n 15 | -14\n}", solution: "Svar: Funktionen är en linjär funktion eftersom funktionens värde minskar med 2 varje gång x ökar med 1." },
-{ id: 718, versionLabel: "C", question: "Tabellen nedan visar olika värden för funktionen \\(f(x).\\) Är funktionen linjär eller exponentiell? Motivera ditt svar.\n{table\nx | f(x)\n0 | 2300\n1 | 2530\n2 | 2783\n}", solution: "Svar: Funktionen är en exponentialfunktion.<br>Detta ser vi eftersom \\(\\frac{2530}{2300}=1,1\\) och \\(\\frac{2783}{2530}=1,1\\). Det innebär att den ökar med 10% för varje steg." },
+{ id: 719, versionLabel: "A", question: "Tabellen nedan visar olika värden för funktionen \\(f(x).\\) Är funktionen linjär eller exponentiell? Motivera ditt svar.\n{table\nx | f(x)\n1 | 2,5\n2 | 4\n4 | 7\n}", solution: "Svar: Funktionen är en linjär funktion eftersom funktionens värde ökar med 1,5 varje gång x ökar med 1." },
+{ id: 720, versionLabel: "B", question: "Tabellen nedan visar olika värden för funktionen \\(f(x).\\) Är funktionen linjär eller exponentiell? Motivera ditt svar.\n{table\nx | f(x)\n10 | -4\n 12 | -8\n 15 | -14\n}", solution: "Svar: Funktionen är en linjär funktion eftersom funktionens värde minskar med 2 varje gång x ökar med 1." },
+{ id: 721, versionLabel: "C", question: "Tabellen nedan visar olika värden för funktionen \\(f(x).\\) Är funktionen linjär eller exponentiell? Motivera ditt svar.\n{table\nx | f(x)\n0 | 2300\n1 | 2530\n2 | 2783\n}", solution: "Svar: Funktionen är en exponentialfunktion.<br>Detta ser vi eftersom \\(\\frac{2530}{2300}=1,1\\) och \\(\\frac{2783}{2530}=1,1\\). Det innebär att den ökar med 10% för varje steg." },
 ] },
 { groupId: "Bestäm ff utifrån tabell  (ett steg)", area: "Funktioner", subArea: "Exponentialfunktioner", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 719, versionLabel: "A", question: "Tabellen nedan visar olika värden för funktionen \\(f(x)=Ca^x.\\) Bestäm konstanten \\(a.\\)\n{table\nx | f(x)\n0 | 2400\n1 | 2760\n2 | 3174\n}", solution: "Svar: \\(a=1,15\\)." },
-{ id: 720, versionLabel: "B", question: "Tabellen nedan visar olika värden för funktionen \\(f(x)=Ca^x.\\) Bestäm konstanten \\(a.\\)\n{table\nx | f(x)\n0 | 800\n1 | 720\n2 | 648\n}", solution: "Svar: \\(a=0,9\\)." },
-{ id: 721, versionLabel: "C", question: "Tabellen nedan visar olika värden för funktionen \\(f(x)=Ca^x.\\) Bestäm konstanten \\(a.\\)\n{table\nx | f(x)\n10 | 300\n11 | 360\n}", solution: "Svar: \\(a=1,2\\)." },
-{ id: 722, versionLabel: "D", question: "Tabellen nedan visar olika värden för funktionen \\(f(x)=Ca^x.\\) Bestäm konstanten \\(a.\\)\n{table\nx | f(x)\n1 | 900\n2 | 846\n}", solution: "Svar: \\(a=0,94\\)." },
+{ id: 722, versionLabel: "A", question: "Tabellen nedan visar olika värden för funktionen \\(f(x)=Ca^x.\\) Bestäm konstanten \\(a.\\)\n{table\nx | f(x)\n0 | 2400\n1 | 2760\n2 | 3174\n}", solution: "Svar: \\(a=1,15\\)." },
+{ id: 723, versionLabel: "B", question: "Tabellen nedan visar olika värden för funktionen \\(f(x)=Ca^x.\\) Bestäm konstanten \\(a.\\)\n{table\nx | f(x)\n0 | 800\n1 | 720\n2 | 648\n}", solution: "Svar: \\(a=0,9\\)." },
+{ id: 724, versionLabel: "C", question: "Tabellen nedan visar olika värden för funktionen \\(f(x)=Ca^x.\\) Bestäm konstanten \\(a.\\)\n{table\nx | f(x)\n10 | 300\n11 | 360\n}", solution: "Svar: \\(a=1,2\\)." },
+{ id: 725, versionLabel: "D", question: "Tabellen nedan visar olika värden för funktionen \\(f(x)=Ca^x.\\) Bestäm konstanten \\(a.\\)\n{table\nx | f(x)\n1 | 900\n2 | 846\n}", solution: "Svar: \\(a=0,94\\)." },
 ] },
 { groupId: "Skriv exponentialfunktion, ff given", area: "Funktioner", subArea: "Exponentialfunktioner", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: false, difficulty: 1, versions: [
-{ id: 723, versionLabel: "A", question: "Du sätter in 5000 kr på ett konto med 3% årlig ränta. Skriv en funktion, \\( f(t) \\), som beskriver hur mycket pengar du har efter \\( t \\) år.", solution: "Svar: \\( f(t)=5000 \\cdot 1,03^t \\)." },
-{ id: 724, versionLabel: "B", question: "En dator kostar 8000 kr. Värdet minskar med 10% per år. Skriv en funktion, \\( f(t) \\), som beskriver datorns värde efter \\( t \\) år.", solution: "Svar: \\( f(t)=8000 \\cdot 0,90^t \\)." },
-{ id: 725, versionLabel: "C", question: "En bakteriekultur består från början av 300 bakterier och ökar med 20% per timme. Skriv en funktion, \\( B(t) \\), som beskriver antalet bakterier efter \\( t \\) timmar.", solution: "Svar: \\( B(t)=300 \\cdot 1,20^t \\)." },
-{ id: 726, versionLabel: "D", question: "Du köper en bil för 150 000 kr. Värdet minskar med 15% per år. Skriv en funktion, \\( f(x) \\), som beskriver bilens värde efter \\( x \\) år.", solution: "Svar: \\( f(x)=150000 \\cdot 0,85^x \\)." },
-{ id: 727, versionLabel: "E", question: "Du köper en cykel för 2000 kr. Efter köpet minskar den i värde med 5% per år. Skriv en funktion, \\( f(t) \\), som beskriver cykelns värde efter \\( t \\) år.", solution: "Svar: \\( f(t)=2000 \\cdot 0,95^t \\)." }
+{ id: 726, versionLabel: "A", question: "Du sätter in 5000 kr på ett konto med 3% årlig ränta. Skriv en funktion, \\( f(t) \\), som beskriver hur mycket pengar du har efter \\( t \\) år.", solution: "Svar: \\( f(t)=5000 \\cdot 1,03^t \\)." },
+{ id: 727, versionLabel: "B", question: "En dator kostar 8000 kr. Värdet minskar med 10% per år. Skriv en funktion, \\( f(t) \\), som beskriver datorns värde efter \\( t \\) år.", solution: "Svar: \\( f(t)=8000 \\cdot 0,90^t \\)." },
+{ id: 728, versionLabel: "C", question: "En bakteriekultur består från början av 300 bakterier och ökar med 20% per timme. Skriv en funktion, \\( B(t) \\), som beskriver antalet bakterier efter \\( t \\) timmar.", solution: "Svar: \\( B(t)=300 \\cdot 1,20^t \\)." },
+{ id: 729, versionLabel: "D", question: "Du köper en bil för 150 000 kr. Värdet minskar med 15% per år. Skriv en funktion, \\( f(x) \\), som beskriver bilens värde efter \\( x \\) år.", solution: "Svar: \\( f(x)=150000 \\cdot 0,85^x \\)." },
+{ id: 730, versionLabel: "E", question: "Du köper en cykel för 2000 kr. Efter köpet minskar den i värde med 5% per år. Skriv en funktion, \\( f(t) \\), som beskriver cykelns värde efter \\( t \\) år.", solution: "Svar: \\( f(t)=2000 \\cdot 0,95^t \\)." }
 ] },
 { groupId: "Skriv exponentialfunktion, nya värdet givet, text", area: "Funktioner", subArea: "Exponentialfunktioner", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 728, versionLabel: "A", question: "Du köper en lägenhet för 850 000 kr. Ett år senare värderas lägenheten till 880 000 kr. Skriv en funktion, \\( f(x) \\), som beskriver lägenhetens värde efter \\( x \\) år om vi förutsätter att det ökar exponentiellt.", solution: "Svar: \\( f(x)=850000 \\cdot 1,035^x \\)." },
-{ id: 729, versionLabel: "B", question: "År 2020 hade Storbyn 12 000 invånare. Ett år senare hade byn 11 700 invånare. Skriv en funktion, \\( f(t) \\), som beskriver antalet invånare i Storbyn efter \\( t \\) år om vi förutsätter att det är en exponentiell minskning.", solution: "Svar: \\( f(t)=12000 \\cdot 0,975^t \\)." },
-{ id: 730, versionLabel: "C", question: "Du sätter in 25 000 kr på ett sparkonto. Ett år senare finns det 25 750 kr på kontot. Skriv en funktion, \\( f(x) \\), som beskriver saldot efter \\( x \\) år om vi förutsätter att det ökar exponentiellt.", solution: "Svar: \\( f(x)=25000 \\cdot 1,03^x \\)." },
-{ id: 731, versionLabel: "D", question: "Ett företag köper en maskin för 480 000 kr. Ett år senare värderas maskinen till 456 000 kr. Skriv en funktion, \\( f(t) \\), som beskriver maskinens värde efter \\( t \\) år om vi förutsätter att värdet minskar exponentiellt.", solution: "Svar: \\( f(t)=480000 \\cdot 0,95^t \\)." },
-{ id: 732, versionLabel: "E", question: "En bakteriekultur innehåller 8 000 bakterier. Ett dygn senare finns det 8 400 bakterier. Skriv en funktion, \\( f(t) \\), som beskriver antalet bakterier efter \\( t \\) dygn om vi förutsätter att antalet ökar exponentiellt.", solution: "Svar: \\( f(t)=8000 \\cdot 1,05^t \\)." },
-{ id: 733, versionLabel: "Ex", example: "En exponentialfunktion skrivs: \\( f(x)=Ca^x \\), där \\( C \\) är startvärdet och \\(a\\) är förändringsfaktorn.<br>För att beräkna förändringsfaktorn kan du använda \\(ff=\\frac{nytt}{gammalt}\\)"},
+{ id: 731, versionLabel: "A", question: "Du köper en lägenhet för 850 000 kr. Ett år senare värderas lägenheten till 880 000 kr. Skriv en funktion, \\( f(x) \\), som beskriver lägenhetens värde efter \\( x \\) år om vi förutsätter att det ökar exponentiellt.", solution: "Svar: \\( f(x)=850000 \\cdot 1,035^x \\)." },
+{ id: 732, versionLabel: "B", question: "År 2020 hade Storbyn 12 000 invånare. Ett år senare hade byn 11 700 invånare. Skriv en funktion, \\( f(t) \\), som beskriver antalet invånare i Storbyn efter \\( t \\) år om vi förutsätter att det är en exponentiell minskning.", solution: "Svar: \\( f(t)=12000 \\cdot 0,975^t \\)." },
+{ id: 733, versionLabel: "C", question: "Du sätter in 25 000 kr på ett sparkonto. Ett år senare finns det 25 750 kr på kontot. Skriv en funktion, \\( f(x) \\), som beskriver saldot efter \\( x \\) år om vi förutsätter att det ökar exponentiellt.", solution: "Svar: \\( f(x)=25000 \\cdot 1,03^x \\)." },
+{ id: 734, versionLabel: "D", question: "Ett företag köper en maskin för 480 000 kr. Ett år senare värderas maskinen till 456 000 kr. Skriv en funktion, \\( f(t) \\), som beskriver maskinens värde efter \\( t \\) år om vi förutsätter att värdet minskar exponentiellt.", solution: "Svar: \\( f(t)=480000 \\cdot 0,95^t \\)." },
+{ id: 735, versionLabel: "E", question: "En bakteriekultur innehåller 8 000 bakterier. Ett dygn senare finns det 8 400 bakterier. Skriv en funktion, \\( f(t) \\), som beskriver antalet bakterier efter \\( t \\) dygn om vi förutsätter att antalet ökar exponentiellt.", solution: "Svar: \\( f(t)=8000 \\cdot 1,05^t \\)." },
+{ id: 736, versionLabel: "Ex", example: "En exponentialfunktion skrivs: \\( f(x)=Ca^x \\), där \\( C \\) är startvärdet och \\(a\\) är förändringsfaktorn.<br>För att beräkna förändringsfaktorn kan du använda \\(ff=\\frac{nytt}{gammalt}\\)"},
 ] },
 { groupId: "Skriv ekvation för skärningspunkt - exponentialfunktioner", area: "Funktioner", subArea: "Exponentialfunktioner", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 734, versionLabel: "A", question: "En bil köptes för 50 000 kr och minskade i värde med 6% varje år. En annan bil köptes för 75 000 kr men minskade i värde med 8% varje år. Skriv en ekvation som kan lösas för att besvara frågan 'efter hur många år kostar bilarna lika mycket?' ", solution: "Svar: \\(50000\\cdot 0,94^x=75000\\cdot 0,92^x\\)" },
-{ id: 735, versionLabel: "B", question: "Du sätter in 40 000 kr på ett sparkonto med 2,5% årsränta. Din kompis har 50 000 kr i sin spargris och sparar 3000 kr varje år (men har ingen ränta). Skriv en ekvation som kan lösas för att beräkna vid vilken tidpunkt du har mer sparade pengar än din kompis.' ", solution: "Svar: \\(40000\\cdot 1,025^x=50000 + 3000x\\)" },
+{ id: 737, versionLabel: "A", question: "En bil köptes för 50 000 kr och minskade i värde med 6% varje år. En annan bil köptes för 75 000 kr men minskade i värde med 8% varje år. Skriv en ekvation som kan lösas för att besvara frågan 'efter hur många år kostar bilarna lika mycket?' ", solution: "Svar: \\(50000\\cdot 0,94^x=75000\\cdot 0,92^x\\)" },
+{ id: 738, versionLabel: "B", question: "Du sätter in 40 000 kr på ett sparkonto med 2,5% årsränta. Din kompis har 50 000 kr i sin spargris och sparar 3000 kr varje år (men har ingen ränta). Skriv en ekvation som kan lösas för att beräkna vid vilken tidpunkt du har mer sparade pengar än din kompis.' ", solution: "Svar: \\(40000\\cdot 1,025^x=50000 + 3000x\\)" },
 ] },
 { groupId: "Ange ff och räkna på exponentialfunktion", area: "Funktioner", subArea: "Exponentialfunktioner", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
-{ id: 736, versionLabel: "A", question: "Du sätter in pengar på ett sparkonto. Pengarnas värde efter \\( x \\) år kan beskrivas med funktionen \\( f(x)=12000 \\cdot 1,025^x \\). <br>a) Hur stor är räntesatsen?<br>b) Hur mycket har du på banken efter 7 år om du inte sätter in eller tar ut några pengar under denna period?", solution: "a) 2,5% b) 14 264 kr" },
-{ id: 737, versionLabel: "B", question: "Du sätter in pengar på ett sparkonto. Pengarnas värde efter \\( x \\) år kan beskrivas med funktionen \\( f(x)=15000 \\cdot 1,035^x \\). <br>a) Hur stor är räntesatsen?<br>b) Hur mycket har du på banken efter 4 år om du inte sätter in eller tar ut några pengar under denna period?", solution: "a) 3,5% b) 17 213 kr" },
-{ id: 738, versionLabel: "C", question: "Du köper en bil vars värde efter \\( x \\) år kan beskrivas med funktionen \\( f(x)=32000 \\cdot 0,92^x \\). <br>a) Med hur många procent minskar bilens värde per år?<br>b) Hur mycket är bilen värd 6 år efter att du köpt den?", solution: "a) 8% b) 19 403 kr" },
-{ id: 739, versionLabel: "D", question: "Du köper en bil vars värde efter \\( x \\) år kan beskrivas med funktionen \\( f(x)=55000 \\cdot 0,9^x \\). <br>a) Med hur många procent minskar bilens värde per år?<br>b) Hur mycket är bilen värd 5 år efter att du köpt den?", solution: "a) 10% b) 32 477 kr" },
+{ id: 739, versionLabel: "A", question: "Du sätter in pengar på ett sparkonto. Pengarnas värde efter \\( x \\) år kan beskrivas med funktionen \\( f(x)=12000 \\cdot 1,025^x \\). <br>a) Hur stor är räntesatsen?<br>b) Hur mycket har du på banken efter 7 år om du inte sätter in eller tar ut några pengar under denna period?", solution: "a) 2,5% b) 14 264 kr" },
+{ id: 740, versionLabel: "B", question: "Du sätter in pengar på ett sparkonto. Pengarnas värde efter \\( x \\) år kan beskrivas med funktionen \\( f(x)=15000 \\cdot 1,035^x \\). <br>a) Hur stor är räntesatsen?<br>b) Hur mycket har du på banken efter 4 år om du inte sätter in eller tar ut några pengar under denna period?", solution: "a) 3,5% b) 17 213 kr" },
+{ id: 741, versionLabel: "C", question: "Du köper en bil vars värde efter \\( x \\) år kan beskrivas med funktionen \\( f(x)=32000 \\cdot 0,92^x \\). <br>a) Med hur många procent minskar bilens värde per år?<br>b) Hur mycket är bilen värd 6 år efter att du köpt den?", solution: "a) 8% b) 19 403 kr" },
+{ id: 742, versionLabel: "D", question: "Du köper en bil vars värde efter \\( x \\) år kan beskrivas med funktionen \\( f(x)=55000 \\cdot 0,9^x \\). <br>a) Med hur många procent minskar bilens värde per år?<br>b) Hur mycket är bilen värd 5 år efter att du köpt den?", solution: "a) 10% b) 32 477 kr" },
 ] },
 { groupId: "Tolka ff i exponentialfunktion", area: "Funktioner", subArea: "Exponentialfunktioner", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: false, difficulty: 1, versions: [
-{ id: 740, versionLabel: "A", question: "Du sätter in pengar på ett sparkonto. Pengarnas värde efter \\( x \\) år kan beskrivas med funktionen \\( f(x)=20000 \\cdot 1,034^x \\). Hur stor är räntesatsen?", solution: "Svar: 3,4%" },
-{ id: 741, versionLabel: "B", question: "Värdet på en bil, \\( x \\) år efter att den är köpt, kan beskrivas med funktionen \\( f(x)=350000 \\cdot 0,93^x \\). Hur stor är den årliga procentuella minskningen?", solution: "Svar: 7%" },
+{ id: 743, versionLabel: "A", question: "Du sätter in pengar på ett sparkonto. Pengarnas värde efter \\( x \\) år kan beskrivas med funktionen \\( f(x)=20000 \\cdot 1,034^x \\). Hur stor är räntesatsen?", solution: "Svar: 3,4%" },
+{ id: 744, versionLabel: "B", question: "Värdet på en bil, \\( x \\) år efter att den är köpt, kan beskrivas med funktionen \\( f(x)=350000 \\cdot 0,93^x \\). Hur stor är den årliga procentuella minskningen?", solution: "Svar: 7%" },
 ] },
 { groupId: "Skriv exponentialfunktion, nya värdet givet, tabell", area: "Funktioner", subArea: "Exponentialfunktioner", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 742, versionLabel: "A", question: "Tabellen nedan visar två värden för exponentialfunktionen \\(f(x).\\) Bestäm funktionsuttrycket.\n{table\nx | f(x)\n 0 | 120 \n 1 | 126 \n}", solution: "Svar: \\( f(x)=120\\cdot1,05^x \\)." },
-{ id: 743, versionLabel: "B", question: "Tabellen nedan visar två värden för exponentialfunktionen \\(f(x).\\) Bestäm funktionsuttrycket.\n{table\nx | f(x)\n 0 | 2000 \n 1 | 1850 \n}", solution: "Svar: \\( f(x)=2000\\cdot0,925^x \\)." },
+{ id: 745, versionLabel: "A", question: "Tabellen nedan visar två värden för exponentialfunktionen \\(f(x).\\) Bestäm funktionsuttrycket.\n{table\nx | f(x)\n 0 | 120 \n 1 | 126 \n}", solution: "Svar: \\( f(x)=120\\cdot1,05^x \\)." },
+{ id: 746, versionLabel: "B", question: "Tabellen nedan visar två värden för exponentialfunktionen \\(f(x).\\) Bestäm funktionsuttrycket.\n{table\nx | f(x)\n 0 | 2000 \n 1 | 1850 \n}", solution: "Svar: \\( f(x)=2000\\cdot0,925^x \\)." },
 ] },
 { groupId: "skriv exponentialfunktion, nya värdet givet, tabell - svår", area: "Funktioner", subArea: "Exponentialfunktioner", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
-{ id: 744, versionLabel: "A", question: "Tabellen nedan visar två värden för exponentialfunktionen \\(f(x).\\) Bestäm funktionsuttrycket.\n{table\nx | f(x)\n 0 | 5000 \n 4 | 4200 \n}", solution: "\\( f(x)=5000\\cdot0,957^x \\)." },
-{ id: 745, versionLabel: "B", question: "Tabellen nedan visar två värden för exponentialfunktionen \\(f(x).\\) Bestäm funktionsuttrycket.\n{table\nx | f(x)\n 0 | 8600 \n 10 | 10000 \n}", solution: "\\( f(x)=8600\\cdot1,015^x \\)." },
+{ id: 747, versionLabel: "A", question: "Tabellen nedan visar två värden för exponentialfunktionen \\(f(x).\\) Bestäm funktionsuttrycket.\n{table\nx | f(x)\n 0 | 5000 \n 4 | 4200 \n}", solution: "\\( f(x)=5000\\cdot0,957^x \\)." },
+{ id: 748, versionLabel: "B", question: "Tabellen nedan visar två värden för exponentialfunktionen \\(f(x).\\) Bestäm funktionsuttrycket.\n{table\nx | f(x)\n 0 | 8600 \n 10 | 10000 \n}", solution: "\\( f(x)=8600\\cdot1,015^x \\)." },
 ] },
 { groupId: "Beräkna sannolikheten - bråk", area: "Sannolikhet", subArea: "Grundläggande sannolikhet", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
-{ id: 746, versionLabel: "A", question: "I en burk finns 8 vita pärlor och 4 svarta pärlor. Du tar en pärla slumpmässigt. Vad är sannolikheten att pärlan är vit? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{2}{3} \\)." },
-{ id: 747, versionLabel: "B", question: "I en skål ligger 9 äpplen och 6 apelsiner. Du tar en frukt utan att titta. Vad är sannolikheten att det är ett äpple? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{3}{5} \\)." },
-{ id: 748, versionLabel: "C", question: "En kortlek består av 52 kort. Vad är sannolikheten att du drar en hjärter? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{1}{4} \\)." },
-{ id: 749, versionLabel: "D", question: "Du kastar en vanlig sexsidig tärning. Vad är sannolikheten att få ett tal större än 4? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{1}{3} \\)." },
-{ id: 750, versionLabel: "E", question: "En klass består av 12 flickor och 8 pojkar. Läraren väljer slumpmässigt en elev. Vad är sannolikheten att eleven är en pojke? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{2}{5} \\)." },
-{ id: 751, versionLabel: "F", question: "I en låda finns 7 blå pennor och 5 röda pennor. Du tar en penna utan att titta. Vad är sannolikheten att pennan är blå? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{7}{12} \\)." },
-{ id: 752, versionLabel: "G", question: "I en låda har du 4 svarta strumpor, 6 gråa strumpor och 2 blå strumpor. Du plockar upp en strumpa utan att titta. Vad är sannolikheten att det är en grå strumpa? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{1}{2} \\)." },
+{ id: 749, versionLabel: "A", question: "I en burk finns 8 vita pärlor och 4 svarta pärlor. Du tar en pärla slumpmässigt. Vad är sannolikheten att pärlan är vit? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{2}{3} \\)." },
+{ id: 750, versionLabel: "B", question: "I en skål ligger 9 äpplen och 6 apelsiner. Du tar en frukt utan att titta. Vad är sannolikheten att det är ett äpple? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{3}{5} \\)." },
+{ id: 751, versionLabel: "C", question: "En kortlek består av 52 kort. Vad är sannolikheten att du drar en hjärter? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{1}{4} \\)." },
+{ id: 752, versionLabel: "D", question: "Du kastar en vanlig sexsidig tärning. Vad är sannolikheten att få ett tal större än 4? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{1}{3} \\)." },
+{ id: 753, versionLabel: "E", question: "En klass består av 12 flickor och 8 pojkar. Läraren väljer slumpmässigt en elev. Vad är sannolikheten att eleven är en pojke? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{2}{5} \\)." },
+{ id: 754, versionLabel: "F", question: "I en låda finns 7 blå pennor och 5 röda pennor. Du tar en penna utan att titta. Vad är sannolikheten att pennan är blå? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{7}{12} \\)." },
+{ id: 755, versionLabel: "G", question: "I en låda har du 4 svarta strumpor, 6 gråa strumpor och 2 blå strumpor. Du plockar upp en strumpa utan att titta. Vad är sannolikheten att det är en grå strumpa? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{1}{2} \\)." },
 ] },
 { groupId: "Bestäm frekvens (grund)", area: "Sannolikhet", subArea: "Grundläggande sannolikhet", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
-{ id: 753, versionLabel: "A", question: "Du slår en tärning 600 gånger. Hur många gånger kan du förväntas få en 1a eller 2a?", solution: "\\( \\frac{1}{3} \\cdot 600 = 200 \\). Svar: 200 gånger." },
-{ id: 754, versionLabel: "B", question: "På ett lyckohjul finns det 18 lika stora fält som du kan hamna på. Tre av dessa är vinstfält. Du spelar 40 gånger. Hur många gånger förväntas du vinna?", solution: "\\( \\frac{3}{18} \\cdot 40 = \\frac{1}{6} \\cdot 40 ≈ 7 \\). Svar: 7 gånger.", },
-{ id: 755, versionLabel: "C", question: "I en påse finns 20 kulor. Fem av kulorna är röda. Du drar en kula och lägger tillbaka den, totalt 80 gånger. Hur många gånger kan du förväntas dra en röd kula?", solution: "\\( \\frac{5}{20} \\cdot 80 = \\frac{1}{4} \\cdot 80 = 20 \\). Svar: 20 gånger." },
-{ id: 756, versionLabel: "D", question: "Du kastar en tärning 300 gånger. Hur många gånger kan du förväntas få ett jämnt tal?", solution: "\\( \\frac{3}{6} \\cdot 300 = \\frac{1}{2} \\cdot 300 = 150 \\). Svar: 150 gånger." },
+{ id: 756, versionLabel: "A", question: "Du slår en tärning 600 gånger. Hur många gånger kan du förväntas få en 1a eller 2a?", solution: "\\( \\frac{1}{3} \\cdot 600 = 200 \\). Svar: 200 gånger." },
+{ id: 757, versionLabel: "B", question: "På ett lyckohjul finns det 18 lika stora fält som du kan hamna på. Tre av dessa är vinstfält. Du spelar 40 gånger. Hur många gånger förväntas du vinna?", solution: "\\( \\frac{3}{18} \\cdot 40 = \\frac{1}{6} \\cdot 40 ≈ 7 \\). Svar: 7 gånger.", },
+{ id: 758, versionLabel: "C", question: "I en påse finns 20 kulor. Fem av kulorna är röda. Du drar en kula och lägger tillbaka den, totalt 80 gånger. Hur många gånger kan du förväntas dra en röd kula?", solution: "\\( \\frac{5}{20} \\cdot 80 = \\frac{1}{4} \\cdot 80 = 20 \\). Svar: 20 gånger." },
+{ id: 759, versionLabel: "D", question: "Du kastar en tärning 300 gånger. Hur många gånger kan du förväntas få ett jämnt tal?", solution: "\\( \\frac{3}{6} \\cdot 300 = \\frac{1}{2} \\cdot 300 = 150 \\). Svar: 150 gånger." },
 ] },
 { groupId: "beräkna komplementet (decimalform) - enkla", area: "Sannolikhet", subArea: "Grundläggande sannolikhet", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
-{ id: 757, versionLabel: "A", question: "I en påse finns det blåa, gula och gröna kulor. Sannolikheten att ta en grön kula är 0,45. Sannolikheten att ta en gul kula är 0,25. Bestäm sannolikheten att man tar en blå kula.", solution: "Svar: 0,3." },
-{ id: 758, versionLabel: "B", question: "Sannolikheten att det regnar en viss dag är 0,35. Vad är sannolikheten att det inte regnar? Svara i decimalform.", solution: "Svar: 0,65." },
+{ id: 760, versionLabel: "A", question: "I en påse finns det blåa, gula och gröna kulor. Sannolikheten att ta en grön kula är 0,45. Sannolikheten att ta en gul kula är 0,25. Bestäm sannolikheten att man tar en blå kula.", solution: "Svar: 0,3." },
+{ id: 761, versionLabel: "B", question: "Sannolikheten att det regnar en viss dag är 0,35. Vad är sannolikheten att det inte regnar? Svara i decimalform.", solution: "Svar: 0,65." },
 ] },
 { groupId: "Multiplikationsprincipen", area: "Sannolikhet", subArea: "Sannolikhet i flera steg", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, calculator: true, versions: [
-{ id: 759, versionLabel: "A", question: "I en klass med 20 elever är 12 flickor och 8 pojkar. Två elever väljs slumpmässigt utan återläggning. Vad är sannolikheten att båda är pojkar? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{14}{95} \\)." },
-{ id: 760, versionLabel: "B", question: "I en låda finns 3 vita och 2 svarta kulor. Du drar två kulor utan återläggning. Vad är sannolikheten att båda är vita? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{3}{10} \\)." },
-{ id: 761, versionLabel: "C", question: "En påse innehåller 2 röda och 3 blå kulor. Du drar en kula, lägger tillbaka den och drar igen. Vad är sannolikheten att båda kulorna är röda? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{4}{25} \\)." },
-{ id: 762, versionLabel: "D", question: "Du kastar en sexsidig tärning två gånger. Vad är sannolikheten att få en sexa båda gångerna? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{1}{36} \\)." },
-{ id: 763, versionLabel: "E", question: "I din frysbox finns 8 chokladglassar och 4 vaniljglassar. Du plockar upp en glass till dig och en till din kompis (slumpmässigt). Vad är sannolikheten att båda är choklad? Svara i procentform med en decimal.", solution: "Svar: 42,4%." },
-{ id: 764, versionLabel: "F", question: "Du singlar slant två gånger i rad. Vad är sannolikheten att du får klave båda gångerna? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{1}{4} \\)." },
+{ id: 762, versionLabel: "A", question: "I en klass med 20 elever är 12 flickor och 8 pojkar. Två elever väljs slumpmässigt utan återläggning. Vad är sannolikheten att båda är pojkar? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{14}{95} \\)." },
+{ id: 763, versionLabel: "B", question: "I en låda finns 3 vita och 2 svarta kulor. Du drar två kulor utan återläggning. Vad är sannolikheten att båda är vita? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{3}{10} \\)." },
+{ id: 764, versionLabel: "C", question: "En påse innehåller 2 röda och 3 blå kulor. Du drar en kula, lägger tillbaka den och drar igen. Vad är sannolikheten att båda kulorna är röda? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{4}{25} \\)." },
+{ id: 765, versionLabel: "D", question: "Du kastar en sexsidig tärning två gånger. Vad är sannolikheten att få en sexa båda gångerna? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{1}{36} \\)." },
+{ id: 766, versionLabel: "E", question: "I din frysbox finns 8 chokladglassar och 4 vaniljglassar. Du plockar upp en glass till dig och en till din kompis (slumpmässigt). Vad är sannolikheten att båda är choklad? Svara i procentform med en decimal.", solution: "Svar: 42,4%." },
+{ id: 767, versionLabel: "F", question: "Du singlar slant två gånger i rad. Vad är sannolikheten att du får klave båda gångerna? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{1}{4} \\)." },
 ] },
 { groupId: "Flera steg - en specifik gren", area: "Sannolikhet", subArea: "Sannolikhet i flera steg", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, calculator: true, versions: [
-{ id: 765, versionLabel: "A", question: "Du har en godispåse med 10 fruktnappar och 5 colanappar. Du tar en godis, äter upp den och tar sedan en till. Vad är sannolikheten att den första godisen är en fruktnapp och den andra är en colanapp? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{5}{21} \\)." },
-{ id: 766, versionLabel: "B", question: "Du hittar en godispåse med 5 chokladbitar och 3 lakritsbitar. Du tar en godis, tittar på den och lägger ned den innan du därefter tar en till. Vad är sannolikheten att den första godisen var en lakrits och den andra en choklad? Svara i procentform med en decimal.", solution: "Svar: 37,5%." },
+{ id: 768, versionLabel: "A", question: "Du har en godispåse med 10 fruktnappar och 5 colanappar. Du tar en godis, äter upp den och tar sedan en till. Vad är sannolikheten att den första godisen är en fruktnapp och den andra är en colanapp? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{5}{21} \\)." },
+{ id: 769, versionLabel: "B", question: "Du hittar en godispåse med 5 chokladbitar och 3 lakritsbitar. Du tar en godis, tittar på den och lägger ned den innan du därefter tar en till. Vad är sannolikheten att den första godisen var en lakrits och den andra en choklad? Svara i procentform med en decimal.", solution: "Svar: 37,5%." },
 ] },
 { groupId: "Flera steg - två grenar", area: "Sannolikhet", subArea: "Sannolikhet i flera steg", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, calculator: true, versions: [
-{ id: 767, versionLabel: "A", question: "I en godispåse finns 12 hallonbåtar och 4 lakritsbåtar. Du plockar upp två bitar slumpmässigt med återläggning. Vad är sannolikheten att godisbitarna har olika smak? Rita ett träddiagram och svara i procentform.", solution: "Svar: 37,5%." },
-{ id: 768, versionLabel: "B", question: "I en godispåse finns 12 hallonbåtar och 4 lakritsbåtar. Du plockar upp två bitar slumpmässigt utan återläggning. Vad är sannolikheten att godisbitarna har olika smak? Rita ett träddiagram och svara i procentform.", solution: "Svar: 40%." },
-{ id: 769, versionLabel: "C", question: "I en burk finns 5 gröna och 5 gula kulor. Du drar två kulor utan återläggning. Vad är sannolikheten att kulorna har olika färg? Svara i enklaste bråkform.", solution: "Svar: \\(\\frac{5}{9}\\)" },
-{ id: 770, versionLabel: "D", question: "I en påse finns 15 röda kulor och 10 gröna kulor. Du drar två kulor utan att titta. Vad är sannolikheten att kulorna har olika färg? Rita ett träddiagram och svara i procentform.", solution: "Svar: 50%." },
+{ id: 770, versionLabel: "A", question: "I en godispåse finns 12 hallonbåtar och 4 lakritsbåtar. Du plockar upp två bitar slumpmässigt med återläggning. Vad är sannolikheten att godisbitarna har olika smak? Rita ett träddiagram och svara i procentform.", solution: "Svar: 37,5%." },
+{ id: 771, versionLabel: "B", question: "I en godispåse finns 12 hallonbåtar och 4 lakritsbåtar. Du plockar upp två bitar slumpmässigt utan återläggning. Vad är sannolikheten att godisbitarna har olika smak? Rita ett träddiagram och svara i procentform.", solution: "Svar: 40%." },
+{ id: 772, versionLabel: "C", question: "I en burk finns 5 gröna och 5 gula kulor. Du drar två kulor utan återläggning. Vad är sannolikheten att kulorna har olika färg? Svara i enklaste bråkform.", solution: "Svar: \\(\\frac{5}{9}\\)" },
+{ id: 773, versionLabel: "D", question: "I en påse finns 15 röda kulor och 10 gröna kulor. Du drar två kulor utan att titta. Vad är sannolikheten att kulorna har olika färg? Rita ett träddiagram och svara i procentform.", solution: "Svar: 50%." },
 ] },
 {
-id: 771,
+id: 774,
 area: "Sannolikhet",
 subArea: "Sannolikhet i flera steg",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1382,7 +1387,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{1}{221} \\)."
 },
 {
-id: 772,
+id: 775,
 area: "Sannolikhet",
 subArea: "Sannolikhet i flera steg",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1391,7 +1396,7 @@ difficulty: 2,
 solution: "Svar: \\( \\frac{5}{36} \\)."
 },
 {
-id: 773,
+id: 776,
 area: "Sannolikhet",
 subArea: "Komplementhändelse",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1400,7 +1405,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{11}{36} \\)."
 },
 {
-id: 774,
+id: 777,
 area: "Sannolikhet",
 subArea: "Sannolikhet i flera steg",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1409,7 +1414,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{18}{203} \\)."
 },
 {
-id: 775,
+id: 778,
 area: "Sannolikhet",
 subArea: "Grundläggande sannolikhet",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1418,7 +1423,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{3}{10} \\)."
 },
 {
-id: 776,
+id: 779,
 area: "Sannolikhet",
 subArea: "Sannolikhet i flera steg",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1427,7 +1432,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{25}{36} \\)."
 },
 {
-id: 777,
+id: 780,
 area: "Sannolikhet",
 subArea: "Komplementhändelse",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1437,7 +1442,7 @@ difficulty: 2,
 solution: "Svar: P(ingen spader)\\(=\\frac{39}{52} \\cdot \\frac{38}{51} = 55,9% \\). Så P(minst en spader)\\( =1 - 0,559 = 0,441 \\). Svar: 44,1%. "
 },
 {
-id: 778,
+id: 781,
 area: "Sannolikhet",
 subArea: "Komplementhändelse",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1447,7 +1452,7 @@ difficulty: 2,
 solution: "Svar: P(ingen röd)\\(=\\frac{24}{32} \\cdot \\frac{23}{31} \\cdot \\frac{22}{30} = 0,408 \\). Så P(minst en röd)\\( =1 - 0,408 = 0,592 \\). Svar: 59,2%. "
 },
 {
-id: 779,
+id: 782,
 area: "Sannolikhet",
 subArea: "Komplementhändelse",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1456,7 +1461,7 @@ difficulty: 2,
 solution: "Svar: \\( P(ingen trea)=\\frac{5}{6} \\cdot \\frac{3}{4} = \\frac{15}{24} = \\frac{5}{8} \\). Så \\( P(minst en trea)=1 - \\frac{5}{8} = \\frac{3}{8} \\) (beräknat med komplementhändelse). "
 },
 {
-id: 780,
+id: 783,
 area: "Sannolikhet",
 subArea: "Sannolikhet i flera steg",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1466,7 +1471,7 @@ solution: "Svar: \\( \\frac{4}{16} \\cdot \\frac{3}{15} \\cdot \\frac{2}{14} = 0
 calculator: true
 },
 {
-id: 781,
+id: 784,
 area: "Sannolikhet",
 subArea: "Sannolikhet i flera steg",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1476,7 +1481,7 @@ solution: "Svar: 15,4%.",
 calculator: true
 },
 {
-id: 782,
+id: 785,
 area: "Sannolikhet",
 subArea: "Sannolikhet i flera steg",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1486,7 +1491,7 @@ solution: "Svar: 56,7%.",
 calculator: true
 },
 {
-id: 783,
+id: 786,
 area: "Sannolikhet",
 subArea: "Sannolikhet i flera steg",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1496,7 +1501,7 @@ solution: "Svar: 50,9%.",
 calculator: true
 },
 {
-id: 784,
+id: 787,
 area: "Sannolikhet",
 subArea: "Sannolikhet i flera steg",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1506,7 +1511,7 @@ solution: "Svar: 34,5%.",
 calculator: true
 },
 {
-id: 785,
+id: 788,
 area: "Sannolikhet",
 subArea: "Sannolikhet i flera steg",
 courses: ["Ma1a", "Ma1b", "Ma1c", "Ma5"],
@@ -1516,7 +1521,7 @@ solution: "Svar: 7,1%.",
 calculator: true
 },
 {
-id: 786,
+id: 789,
 area: "Sannolikhet",
 subArea: "Sannolikhet / kombinatorik",
 courses: ["Ma1a", "Ma1b", "Ma1c", "Ma5"],
@@ -1526,7 +1531,7 @@ solution: "Svar: 60%.",
 calculator: true
 },
 {
-id: 787,
+id: 790,
 area: "Sannolikhet",
 subArea: "Komplementhändelse",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1536,7 +1541,7 @@ solution: "Svar: 30%.",
 calculator: true
 },
 {
-id: 788,
+id: 791,
 area: "Sannolikhet",
 subArea: "Komplementhändelse",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1546,7 +1551,7 @@ solution: "Svar: 44,4%.",
 calculator: true
 },
 {
-id: 789,
+id: 792,
 area: "Sannolikhet",
 subArea: "Komplementhändelse",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1556,17 +1561,17 @@ solution: "Svar: 42%.",
 calculator: true
 },
 { groupId: "avgör implikation eller ekvivalens - vardagssituationer", area: "Logik", subArea: "Implikation / Ekvivalens", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 790, versionLabel: "A", question: "Avgör om det ska vara implikation eller ekvivalens (\\( \\implies \\), \\(\\impliedby\\), \\(\\iff\\)) mellan påståendena:<br>Leo är född på 1900-talet &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Leo är född 1990.", solution: "Svar: Leo är född på 1900-talet \\(\\impliedby\\) Leo är född 1990." },
-{ id: 791, versionLabel: "B", question: "Avgör om det ska vara implikation eller ekvivalens (\\( \\implies \\), \\(\\impliedby\\), \\(\\iff\\)) mellan påståendena:<br>Edvin har en hund &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Edvin har ett husdjur.", solution: "Svar: Edvin har en hund \\(\\implies\\) Edvin har ett husdjur." },
-{ id: 792, versionLabel: "C", question: "Avgör om det ska vara implikation eller ekvivalens (\\( \\implies \\), \\(\\impliedby\\), \\(\\iff\\)) mellan påståendena:<br>Triangel A har tre lika stora vinklar &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Triangel A är liksidig.", solution: "Svar: Triangel A har tre lika stora vinklar \\(\\iff\\) Triangel A är liksidig." },
-{ id: 793, versionLabel: "D", question: "Avgör om det ska vara implikation eller ekvivalens (\\( \\implies \\), \\(\\impliedby\\), \\(\\iff\\)) mellan påståendena:<br>Charlotta bor i Sverige &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Charlotta bor i Stockholm.", solution: "Svar: Charlotta bor i Sverige \\(\\impliedby\\) Charlotta bot i Stockholm."},
+{ id: 793, versionLabel: "A", question: "Avgör om det ska vara implikation eller ekvivalens (\\( \\implies \\), \\(\\impliedby\\), \\(\\iff\\)) mellan påståendena:<br>Leo är född på 1900-talet &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Leo är född 1990.", solution: "Svar: Leo är född på 1900-talet \\(\\impliedby\\) Leo är född 1990." },
+{ id: 794, versionLabel: "B", question: "Avgör om det ska vara implikation eller ekvivalens (\\( \\implies \\), \\(\\impliedby\\), \\(\\iff\\)) mellan påståendena:<br>Edvin har en hund &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Edvin har ett husdjur.", solution: "Svar: Edvin har en hund \\(\\implies\\) Edvin har ett husdjur." },
+{ id: 795, versionLabel: "C", question: "Avgör om det ska vara implikation eller ekvivalens (\\( \\implies \\), \\(\\impliedby\\), \\(\\iff\\)) mellan påståendena:<br>Triangel A har tre lika stora vinklar &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Triangel A är liksidig.", solution: "Svar: Triangel A har tre lika stora vinklar \\(\\iff\\) Triangel A är liksidig." },
+{ id: 796, versionLabel: "D", question: "Avgör om det ska vara implikation eller ekvivalens (\\( \\implies \\), \\(\\impliedby\\), \\(\\iff\\)) mellan påståendena:<br>Charlotta bor i Sverige &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Charlotta bor i Stockholm.", solution: "Svar: Charlotta bor i Sverige \\(\\impliedby\\) Charlotta bot i Stockholm."},
 ]  },
 { groupId: "avgör implikation eller ekvivalens - ekvationer", area: "Logik", subArea: "Implikation / Ekvivalens", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, versions: [
-{ id: 794, versionLabel: "A", question: "Vilka två ekvationer är ekvivalenta?<br>A: \\(x+2y=10\\)<br>B: \\( x=2y+10\\)<br>C: \\( 10+x=2y\\)<br>D: \\( x-10=2y\\)", solution: "Svar: B och D." },
-{ id: 795, versionLabel: "B", question: "Vilka två ekvationer är ekvivalenta?<br>A: \\(ab=2c\\)<br>B: \\( \\frac{1}{a}=2bc\\)<br>C: \\( \\frac{a}{2}=\\frac{c}{b}\\)<br>D: \\(ac=2b\\)", solution: "Svar: A och C." },
+{ id: 797, versionLabel: "A", question: "Vilka två ekvationer är ekvivalenta?<br>A: \\(x+2y=10\\)<br>B: \\( x=2y+10\\)<br>C: \\( 10+x=2y\\)<br>D: \\( x-10=2y\\)", solution: "Svar: B och D." },
+{ id: 798, versionLabel: "B", question: "Vilka två ekvationer är ekvivalenta?<br>A: \\(ab=2c\\)<br>B: \\( \\frac{1}{a}=2bc\\)<br>C: \\( \\frac{a}{2}=\\frac{c}{b}\\)<br>D: \\(ac=2b\\)", solution: "Svar: A och C." },
 ]  },
 {
-id: 796,
+id: 799,
 area: "Statistik / Ekonomi",
 subArea: "Diagram",
 courses: ["Ma1a"],
@@ -1575,22 +1580,22 @@ solution: "Svar: Tisdag var det flest.",
 difficulty: 1
 },
 { groupId: "Stratifierat urval - Bestäm antalet", area: "Statistik / Ekonomi", subArea: "Population, stickprov, signifikans", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
-{ id: 797, versionLabel: "A", question: "Ett företag har 250 anställda, varav 150 arbetar på kontor och resten i produktion. Ett stickprov på 50 personer ska göras med samma proportioner.<br>Hur många från produktionen ska väljas?", solution: "Antal i produktion: //(250-150=100//).<br>Andel produktion: //(\\frac{100}{250}=0,4//).<br>Antal i stickprovet: //(0,4\\cdot50=20//).<br>Svar: Det ska vara 20 personer från produktionen.", calculator: true },
-{ id: 798, versionLabel: "B", question: "I en stad bor 10 000 personer. Av dessa är 3 000 barn och resten vuxna. Ett stickprov på 200 personer ska göras med samma proportion.<br>Hur många barn ska ingå i stickprovet?", solution: "Andel barn: //(\\frac{3000}{10000}=0,3//).<br>Antal barn i stickprovet: //(0,3\\cdot200=60//).<br>Svar: Det ska ingå 60 barn i stickprovet.", calculator: true },
-{ id: 799, versionLabel: "C", question: "En klass består av 30 elever: 18 tjejer och 12 killar. Läraren vill välja ut 10 elever med samma könsfördelning.<br>Hur många killar ska väljas?", solution: "Andel killar: //(\\frac{12}{30}=0,4//).<br>Antal i urvalet: //(0,4\\cdot10=4//).<br>Svar: Det ska vara 4 killar i urvalet.", calculator: true },
-{ id: 800, versionLabel: "D", question: "En undersökning gäller 500 personer där 200 är pensionärer och resten yrkesverksamma. Ett stickprov på 75 personer ska tas med samma proportioner.<br>Hur många pensionärer ska ingå?", solution: "Andel pensionärer: //(\\frac{200}{500}=0,4//).<br>Antal i stickprovet: //(0,4\\cdot75=30//).<br>Svar: Det ska vara 30 pensionärer i stickprovet.", calculator: true },
-{ id: 801, versionLabel: "E", question: "I en förening finns 800 medlemmar, varav 200 är ungdomar och resten vuxna. Ett stickprov på 160 personer ska göras med samma proportioner.<br>Hur många ungdomar ska ingå i stickprovet?", solution: "Andel ungdomar: //(\\frac{200}{800}=0,25//).<br>Antal i stickprovet: //(0,25\\cdot160=40//).<br>Svar: Det ska vara 40 ungdomar i stickprovet.", calculator: true },
-{ id: 802, versionLabel: "F", question: "På en skola finns 600 elever, varav 240 är pojkar och resten flickor. Du ska göra ett stratifierat urval på 120 elever där könsfördelningen ska vara densamma som i populationen.<br>Hur många pojkar ska ingå i urvalet?", solution: "Andel pojkar: //(\\frac{240}{600}=0,4//).<br>Antal pojkar i stickprovet: //(0,4\\cdot120=48//).<br>Svar: Det ska vara 48 pojkar i stickprovet.", calculator: true },
-{ id: 803, versionLabel: "G", question: "I en förening med 400 medlemmar är 120 män och resten kvinnor. Du vill göra en stickprovsundersökning och bestämmer dig för att det blir bäst med ett stratifierat urval där andelen kvinnor och män i stickprovet är detsamma som i populationen. Stickprovet ska bestå av 80 personer. Hur många män bör det finnas i stickprovet?", solution: "Svar: Det ska vara 24 män i stickprovet.", calculator: true },
+{ id: 800, versionLabel: "A", question: "Ett företag har 250 anställda, varav 150 arbetar på kontor och resten i produktion. Ett stickprov på 50 personer ska göras med samma proportioner.<br>Hur många från produktionen ska väljas?", solution: "Antal i produktion: //(250-150=100//).<br>Andel produktion: //(\\frac{100}{250}=0,4//).<br>Antal i stickprovet: //(0,4\\cdot50=20//).<br>Svar: Det ska vara 20 personer från produktionen.", calculator: true },
+{ id: 801, versionLabel: "B", question: "I en stad bor 10 000 personer. Av dessa är 3 000 barn och resten vuxna. Ett stickprov på 200 personer ska göras med samma proportion.<br>Hur många barn ska ingå i stickprovet?", solution: "Andel barn: //(\\frac{3000}{10000}=0,3//).<br>Antal barn i stickprovet: //(0,3\\cdot200=60//).<br>Svar: Det ska ingå 60 barn i stickprovet.", calculator: true },
+{ id: 802, versionLabel: "C", question: "En klass består av 30 elever: 18 tjejer och 12 killar. Läraren vill välja ut 10 elever med samma könsfördelning.<br>Hur många killar ska väljas?", solution: "Andel killar: //(\\frac{12}{30}=0,4//).<br>Antal i urvalet: //(0,4\\cdot10=4//).<br>Svar: Det ska vara 4 killar i urvalet.", calculator: true },
+{ id: 803, versionLabel: "D", question: "En undersökning gäller 500 personer där 200 är pensionärer och resten yrkesverksamma. Ett stickprov på 75 personer ska tas med samma proportioner.<br>Hur många pensionärer ska ingå?", solution: "Andel pensionärer: //(\\frac{200}{500}=0,4//).<br>Antal i stickprovet: //(0,4\\cdot75=30//).<br>Svar: Det ska vara 30 pensionärer i stickprovet.", calculator: true },
+{ id: 804, versionLabel: "E", question: "I en förening finns 800 medlemmar, varav 200 är ungdomar och resten vuxna. Ett stickprov på 160 personer ska göras med samma proportioner.<br>Hur många ungdomar ska ingå i stickprovet?", solution: "Andel ungdomar: //(\\frac{200}{800}=0,25//).<br>Antal i stickprovet: //(0,25\\cdot160=40//).<br>Svar: Det ska vara 40 ungdomar i stickprovet.", calculator: true },
+{ id: 805, versionLabel: "F", question: "På en skola finns 600 elever, varav 240 är pojkar och resten flickor. Du ska göra ett stratifierat urval på 120 elever där könsfördelningen ska vara densamma som i populationen.<br>Hur många pojkar ska ingå i urvalet?", solution: "Andel pojkar: //(\\frac{240}{600}=0,4//).<br>Antal pojkar i stickprovet: //(0,4\\cdot120=48//).<br>Svar: Det ska vara 48 pojkar i stickprovet.", calculator: true },
+{ id: 806, versionLabel: "G", question: "I en förening med 400 medlemmar är 120 män och resten kvinnor. Du vill göra en stickprovsundersökning och bestämmer dig för att det blir bäst med ett stratifierat urval där andelen kvinnor och män i stickprovet är detsamma som i populationen. Stickprovet ska bestå av 80 personer. Hur många män bör det finnas i stickprovet?", solution: "Svar: Det ska vara 24 män i stickprovet.", calculator: true },
 ]  },
 { groupId: "Avgör singifikant eller ej", area: "Statistik / Ekonomi", subArea: "Population, stickprov, signifikans", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
-{ id: 804, versionLabel: "A", question: "Vid en opinionsundersökning förra året stödde 28% av stickprovet Skogspartiet. I år i samma undersökning stödde 33% av stickprovet partiet. Om felmarginalen är \\(\\pm 2%\\), är ökningen signifikant eller ej?", solution: "Ja den är signifikant.", },
-{ id: 805, versionLabel: "B", question: "I en kundundersökning förra året svarade 42% att de var nöjda med servicen. I år svarade 45% att de var nöjda. Om felmarginalen är \\(\\pm 1%\\), är förändringen signifikant eller ej?", solution: "Ja den är signifikant.", },
-{ id: 806, versionLabel: "C", question: "Vid en väljarundersökning förra året fick Sverigepartiet 17% av stickprovets röster. I år i samma undersökning fick Sverigepartiet 20% av stickprovets röster. Om felmarginalen är \\(\\pm 2%\\), är ökningen signifikant eller ej?", solution: "Nej, den är inte signifikant.", },
-{ id: 807, versionLabel: "Ex", example: "Resultat från stickprovsundersökningar har en felmarginal (eftersom man inte har frågat hela populationen). Om ett resultat går från 15% till 20% har en felmarginal på \\(\\pm 2%\\) så är den första undersökningen mellan 13% och 17% medan den andra är mellan 18% och 22%. Eftersom dessa intervall inte överlappar så är ökningen statistikt signifikan (statistiskt säkerställd)." },
+{ id: 807, versionLabel: "A", question: "Vid en opinionsundersökning förra året stödde 28% av stickprovet Skogspartiet. I år i samma undersökning stödde 33% av stickprovet partiet. Om felmarginalen är \\(\\pm 2%\\), är ökningen signifikant eller ej?", solution: "Ja den är signifikant.", },
+{ id: 808, versionLabel: "B", question: "I en kundundersökning förra året svarade 42% att de var nöjda med servicen. I år svarade 45% att de var nöjda. Om felmarginalen är \\(\\pm 1%\\), är förändringen signifikant eller ej?", solution: "Ja den är signifikant.", },
+{ id: 809, versionLabel: "C", question: "Vid en väljarundersökning förra året fick Sverigepartiet 17% av stickprovets röster. I år i samma undersökning fick Sverigepartiet 20% av stickprovets röster. Om felmarginalen är \\(\\pm 2%\\), är ökningen signifikant eller ej?", solution: "Nej, den är inte signifikant.", },
+{ id: 810, versionLabel: "Ex", example: "Resultat från stickprovsundersökningar har en felmarginal (eftersom man inte har frågat hela populationen). Om ett resultat går från 15% till 20% har en felmarginal på \\(\\pm 2%\\) så är den första undersökningen mellan 13% och 17% medan den andra är mellan 18% och 22%. Eftersom dessa intervall inte överlappar så är ökningen statistikt signifikan (statistiskt säkerställd)." },
 ]  },
 {
-id: 808,
+id: 811,
 area: "Statistik / Ekonomi",
 subArea: "Korrelation och kausalitet",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1599,7 +1604,7 @@ solution: "Ja det finns en positivt korrelation mellan genomsnittstemperaturerna
 difficulty: 1
 },
 {
-id: 809,
+id: 812,
 area: "Statistik / Ekonomi",
 subArea: "Korrelation och kausalitet",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1608,7 +1613,7 @@ solution: "Ja det finns en svag negativ korrelation.",
 difficulty: 1
 },
 {
-id: 810,
+id: 813,
 area: "Statistik / Ekonomi",
 subArea: "Korrelation och kausalitet",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1617,7 +1622,7 @@ solution: "Förmodligen är korrelationen negativ eftersom fler sålda glassar b
 difficulty: 1
 },
 {
-id: 811,
+id: 814,
 area: "Statistik / Ekonomi",
 subArea: "Korrelation och kausalitet",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1626,7 +1631,7 @@ solution: "D",
 difficulty: 1
 },
 {
-id: 812,
+id: 815,
 area: "Statistik / Ekonomi",
 subArea: "Korrelation och kausalitet",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1635,32 +1640,32 @@ solution: "C",
 difficulty: 1
 },
 { groupId: "Kalkylblad - bestäm värden", area: "Statistik / Ekonomi", subArea: "Kalkylblad", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 1, versions: [
-{ id: 813, versionLabel: "A", question: "Nedan ser du ett påbörjat kalkylark som visar ett lån på 60 000 kr.<br>a) Vilket värde ska stå i cell F3?<br>b) Vilket värde ska stå i cell G3?", solution: "a) 2700<br>b) 22700", img: "bilder/Kalkylblad/IMG_001.jpg"},
-{ id: 814, versionLabel: "B", question: "Nedan ser du ett påbörjat kalkylark som visar ett lån på 60 000 kr. Vilket värde ska stå i cell C4?", solution: "Svar: 40000", img: "bilder/Kalkylblad/IMG_001.jpg" },
-{ id: 815, versionLabel: "C", question: "Nedan ser du ett påbörjat kalkylark som visar ett lån på 60 000 kr men räntesatsen saknas. Vilket värde ska stå i cell E3?", solution: "Svar: 0,06", img: "bilder/Kalkylblad/IMG_002.jpg"},
-{ id: 816, versionLabel: "D", question: "Leo har tagit ett lån på 24000 kr som ska betalas tillbaka på 4 år.<br>a) Vilket värde ska stå i cell F4?<br>b) Vilket värde ska stå i cell F7?", solution: "a) 7170<br>b) 27900", img: "bilder/Kalkylblad/IMG_005.jpg"}
+{ id: 816, versionLabel: "A", question: "Nedan ser du ett påbörjat kalkylark som visar ett lån på 60 000 kr.<br>a) Vilket värde ska stå i cell F3?<br>b) Vilket värde ska stå i cell G3?", solution: "a) 2700<br>b) 22700", img: "bilder/Kalkylblad/IMG_001.jpg"},
+{ id: 817, versionLabel: "B", question: "Nedan ser du ett påbörjat kalkylark som visar ett lån på 60 000 kr. Vilket värde ska stå i cell C4?", solution: "Svar: 40000", img: "bilder/Kalkylblad/IMG_001.jpg" },
+{ id: 818, versionLabel: "C", question: "Nedan ser du ett påbörjat kalkylark som visar ett lån på 60 000 kr men räntesatsen saknas. Vilket värde ska stå i cell E3?", solution: "Svar: 0,06", img: "bilder/Kalkylblad/IMG_002.jpg"},
+{ id: 819, versionLabel: "D", question: "Leo har tagit ett lån på 24000 kr som ska betalas tillbaka på 4 år.<br>a) Vilket värde ska stå i cell F4?<br>b) Vilket värde ska stå i cell F7?", solution: "a) 7170<br>b) 27900", img: "bilder/Kalkylblad/IMG_005.jpg"}
 ]  },
 { groupId: "Kalkylblad - formler", area: "Statistik / Ekonomi", subArea: "Kalkylblad", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
-{ id: 817, versionLabel: "A", question: "Nedan ser du ett påbörjat kalkylark som visar ett lån på 60 000 kr.<br>a) Vilken formel bör stå i cell F3?<br>b) Vilken formel bör stå i cell G3?", solution: "a) =C3*E3<br>b) =D3+F3", img: "bilder/Kalkylblad/IMG_001.jpg"},
+{ id: 820, versionLabel: "A", question: "Nedan ser du ett påbörjat kalkylark som visar ett lån på 60 000 kr.<br>a) Vilken formel bör stå i cell F3?<br>b) Vilken formel bör stå i cell G3?", solution: "a) =C3*E3<br>b) =D3+F3", img: "bilder/Kalkylblad/IMG_001.jpg"},
 ]  },
 { groupId: "Lån - räkna på första året", area: "Statistik / Ekonomi", subArea: "Lån, ränta och amortering", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 1, versions: [
-{ id: 818, versionLabel: "A", question: "Oskar har lånat 12 000 kr hos en bank till räntan 5%. Lånet ska betalas tillbaka på 3 år.<br>a) Hur stor är amorteringen varje år?<br>b) Hur mycket ränta betalar han första året?", solution: "Svar: a) 4000 kr. b) 600 kr."},
-{ id: 819, versionLabel: "B", question: "Nora har lånat 16 000 kr till räntan 6%. Lånet ska betalas tillbaka på 4 år.<br>a) Hur stor amortering betalar hon varje år?<br>b) Hur stor är skulden kvar efter första året?", solution: "Svar: a) 4000 kr. b) 12000 kr."},
-{ id: 820, versionLabel: "C", question: "Erik lånar 10 000 kr hos en bank. Räntan är 6% och lånet ska betalas tillbaka på 2 år.<br>a) Hur stor amortering betalar han varje år?<br>b) Hur mycket betalar han totalt till banken första året?", solution: "Svar: a) 5000 kr. b) Ränta = 600 kr. Totalt = 5600 kr."},
-{ id: 821, versionLabel: "D", question: "Anton har lånat 12 000 kr till räntan 4%. Lånet ska betalas tillbaka på 3 år.<br>a) Hur stor amortering betalar han varje år?<br>b) Hur stor skuld har han kvar efter två år?", solution: "Svar: a) 4000 kr. b) Efter två år återstår 4000 kr."},
-{ id: 822, versionLabel: "E", question: "Mira lånar 18 000 kr hos en bank till räntan 5%. Lånet ska betalas tillbaka på 3 år.<br>a) Hur stor amortering betalar hon varje år?<br>b) Hur mycket ränta betalar hon första året?", solution: "Svar: a) 6000 kr. b) 900 kr."},
-{ id: 823, versionLabel: "F", question: "Sofia lånar 25 000 kr hos en bank till räntan 4%. Lånet ska betalas tillbaka på 5 år.<br>a) Hur stor amortering betalar hon varje år?<br>b) Hur mycket ränta betalar hon första året?", solution: "Svar: a) 5000 kr. b) 1000 kr."},
-{ id: 824, versionLabel: "G", question: "Lea har lånat 12 000 kr hos en bank som gav henne ett lån med 5% ränta. Hon ska betala tillbaka lånet på 3 år.<br>a) Hur stora amorteringar ska hon betala?<br>b) Hur mycket ska hon betala till banken första året?", solution: "Svar: a) 4000 kr. b) Amortering + räntebelopp = 4000 + 600 = 4600 kr."},
+{ id: 821, versionLabel: "A", question: "Oskar har lånat 12 000 kr hos en bank till räntan 5%. Lånet ska betalas tillbaka på 3 år.<br>a) Hur stor är amorteringen varje år?<br>b) Hur mycket ränta betalar han första året?", solution: "Svar: a) 4000 kr. b) 600 kr."},
+{ id: 822, versionLabel: "B", question: "Nora har lånat 16 000 kr till räntan 6%. Lånet ska betalas tillbaka på 4 år.<br>a) Hur stor amortering betalar hon varje år?<br>b) Hur stor är skulden kvar efter första året?", solution: "Svar: a) 4000 kr. b) 12000 kr."},
+{ id: 823, versionLabel: "C", question: "Erik lånar 10 000 kr hos en bank. Räntan är 6% och lånet ska betalas tillbaka på 2 år.<br>a) Hur stor amortering betalar han varje år?<br>b) Hur mycket betalar han totalt till banken första året?", solution: "Svar: a) 5000 kr. b) Ränta = 600 kr. Totalt = 5600 kr."},
+{ id: 824, versionLabel: "D", question: "Anton har lånat 12 000 kr till räntan 4%. Lånet ska betalas tillbaka på 3 år.<br>a) Hur stor amortering betalar han varje år?<br>b) Hur stor skuld har han kvar efter två år?", solution: "Svar: a) 4000 kr. b) Efter två år återstår 4000 kr."},
+{ id: 825, versionLabel: "E", question: "Mira lånar 18 000 kr hos en bank till räntan 5%. Lånet ska betalas tillbaka på 3 år.<br>a) Hur stor amortering betalar hon varje år?<br>b) Hur mycket ränta betalar hon första året?", solution: "Svar: a) 6000 kr. b) 900 kr."},
+{ id: 826, versionLabel: "F", question: "Sofia lånar 25 000 kr hos en bank till räntan 4%. Lånet ska betalas tillbaka på 5 år.<br>a) Hur stor amortering betalar hon varje år?<br>b) Hur mycket ränta betalar hon första året?", solution: "Svar: a) 5000 kr. b) 1000 kr."},
+{ id: 827, versionLabel: "G", question: "Lea har lånat 12 000 kr hos en bank som gav henne ett lån med 5% ränta. Hon ska betala tillbaka lånet på 3 år.<br>a) Hur stora amorteringar ska hon betala?<br>b) Hur mycket ska hon betala till banken första året?", solution: "Svar: a) 4000 kr. b) Amortering + räntebelopp = 4000 + 600 = 4600 kr."},
 ]  },
 { groupId: "Lån - räkna på andra/tredje året", area: "Statistik / Ekonomi", subArea: "Lån, ränta och amortering", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 2, versions: [
-{ id: 825, versionLabel: "A", question: "Ella har lånat 18 000 kr till räntan 4%. Lånet ska betalas tillbaka på 3 år.<br>a) Hur stor amortering betalar hon varje år?<br>b) Hur mycket ränta betalar hon andra året?", solution: "Svar: a) 6000 kr. b) Efter första året återstår 12000 kr. Ränta = 480 kr." },
-{ id: 826, versionLabel: "B", question: "Leo lånar 20 000 kr hos en bank till räntan 5%. Lånet ska betalas tillbaka på 4 år.<br>a) Hur stor amortering betalar han varje år?<br>b) Hur mycket ska han betala till banken andra året?", solution: "Svar: a) 5000 kr. b) Efter första året återstår 15000 kr. Ränta = 750 kr. Totalt = 5750 kr." },
-{ id: 827, versionLabel: "C", question: "Lisa har lånat 24 000 kr hos en bank till räntan 5%. Lånet ska betalas tillbaka på 4 år.<br>a) Hur stor amortering betalar hon varje år?<br>b) Hur mycket ränta betalar hon tredje året?", solution: "Svar: a) 6000 kr. b) Efter två år återstår 12000 kr. Ränta = 600 kr."},
-{ id: 828, versionLabel: "D", question: "Hanna lånar 21 000 kr till räntan 3%. Lånet ska betalas tillbaka på 3 år.<br>a) Hur stor amortering betalar hon varje år?<br>b) Hur mycket ränta betalar hon andra året?", solution: "Svar: a) 7000 kr. b) Efter första året återstår 14000 kr. Ränta = 420 kr."},
-{ id: 829, versionLabel: "E", question: "Viktor har lånat 20 000 kr till räntan 4%. Lånet ska betalas tillbaka på 4 år.<br>a) Hur stor amortering betalar han varje år?<br>b) Hur mycket ränta betalar han andra året?", solution: "Svar: a) 5000 kr. b) Efter första året återstår 15000 kr. Ränta = 600 kr."},
+{ id: 828, versionLabel: "A", question: "Ella har lånat 18 000 kr till räntan 4%. Lånet ska betalas tillbaka på 3 år.<br>a) Hur stor amortering betalar hon varje år?<br>b) Hur mycket ränta betalar hon andra året?", solution: "Svar: a) 6000 kr. b) Efter första året återstår 12000 kr. Ränta = 480 kr." },
+{ id: 829, versionLabel: "B", question: "Leo lånar 20 000 kr hos en bank till räntan 5%. Lånet ska betalas tillbaka på 4 år.<br>a) Hur stor amortering betalar han varje år?<br>b) Hur mycket ska han betala till banken andra året?", solution: "Svar: a) 5000 kr. b) Efter första året återstår 15000 kr. Ränta = 750 kr. Totalt = 5750 kr." },
+{ id: 830, versionLabel: "C", question: "Lisa har lånat 24 000 kr hos en bank till räntan 5%. Lånet ska betalas tillbaka på 4 år.<br>a) Hur stor amortering betalar hon varje år?<br>b) Hur mycket ränta betalar hon tredje året?", solution: "Svar: a) 6000 kr. b) Efter två år återstår 12000 kr. Ränta = 600 kr."},
+{ id: 831, versionLabel: "D", question: "Hanna lånar 21 000 kr till räntan 3%. Lånet ska betalas tillbaka på 3 år.<br>a) Hur stor amortering betalar hon varje år?<br>b) Hur mycket ränta betalar hon andra året?", solution: "Svar: a) 7000 kr. b) Efter första året återstår 14000 kr. Ränta = 420 kr."},
+{ id: 832, versionLabel: "E", question: "Viktor har lånat 20 000 kr till räntan 4%. Lånet ska betalas tillbaka på 4 år.<br>a) Hur stor amortering betalar han varje år?<br>b) Hur mycket ränta betalar han andra året?", solution: "Svar: a) 5000 kr. b) Efter första året återstår 15000 kr. Ränta = 600 kr."},
 ]  },
 {
-id: 830,
+id: 833,
 area: "Statistik / Ekonomi",
 subArea: "Lån, ränta och amortering",
 courses: ["Ma1a", "Ma1b", "Ma1c"],
@@ -1670,32 +1675,32 @@ difficulty: 2,
 calculator: true
 },
 { groupId: "Index - beräkna nytt värde från basår", area: "Statistik / Ekonomi", subArea: "Index", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, calculator: true, versions: [
-{ id: 831, versionLabel: "A", question: "År 2000 kostade en liter mjölk 8 kr. Vad kostade en liter år 2020 om priserna följer indextabellen nedan?\n{table\nÅr | Index\n2000 | 100\n2010 | 122,5\n2020 | 146,3\n}", solution: "Svar: 11,7 kr" },
-{ id: 832, versionLabel: "B", question: "År 2008 kostade en bussbiljett 20 kr. Vad kostade den år 2018 enligt index?\n{table\nÅr | Index\n2008 | 100\n2012 | 110,2\n2015 | 117,5\n2018 | 124,0\n}", solution: "Svar: 24,8 kr" },
-{ id: 833, versionLabel: "C", question: "År 2005 kostade en biobiljett 90 kr. Vad kostade en biljett år 2020 om priserna följer indextabellen nedan?\n{table\nÅr | Index\n2005 | 100\n2010 | 108,4\n2015 | 119,7\n2020 | 131,2\n}", solution: "Svar: 118,1 kr" },
-{ id: 834, versionLabel: "D", question: "År 2000 kostade ett par jeans 500 kr. Vad kostade de år 2015 enligt index?\n{table\nÅr | Index\n2000 | 100\n2005 | 104,8\n2010 | 111,2\n2015 | 125,0\n}", solution: "Svar: 625 kr" },
-{ id: 835, versionLabel: "E", question: "År 2010 kostade en liter bensin 13 kr. Vad kostade den år 2020 om priserna följer indextabellen nedan?\n{table\nÅr | Index\n2010 | 100\n2015 | 112,5\n2020 | 128,0\n}", solution: "Svar: 16,6 kr" },
-{ id: 836, versionLabel: "F", question: "År 2012 kostade en t-shirt 120 kr. Vad kostade den år 2020 enligt index?\n{table\nÅr | Index\n2012 | 100\n2016 | 108,0\n2018 | 115,5\n2020 | 121,0\n}", solution: "Svar: 145,2 kr" },
-{ id: 837, versionLabel: "G", question: "År 2006 kostade ett par skor 800 kr. Vad kostade de år 2020 om priserna följer indextabellen nedan?\n{table\nÅr | Index\n2006 | 100\n2010 | 105,0\n2015 | 118,0\n2020 | 130,0\n}", solution: "Svar: 1040 kr" }
+{ id: 834, versionLabel: "A", question: "År 2000 kostade en liter mjölk 8 kr. Vad kostade en liter år 2020 om priserna följer indextabellen nedan?\n{table\nÅr | Index\n2000 | 100\n2010 | 122,5\n2020 | 146,3\n}", solution: "Svar: 11,7 kr" },
+{ id: 835, versionLabel: "B", question: "År 2008 kostade en bussbiljett 20 kr. Vad kostade den år 2018 enligt index?\n{table\nÅr | Index\n2008 | 100\n2012 | 110,2\n2015 | 117,5\n2018 | 124,0\n}", solution: "Svar: 24,8 kr" },
+{ id: 836, versionLabel: "C", question: "År 2005 kostade en biobiljett 90 kr. Vad kostade en biljett år 2020 om priserna följer indextabellen nedan?\n{table\nÅr | Index\n2005 | 100\n2010 | 108,4\n2015 | 119,7\n2020 | 131,2\n}", solution: "Svar: 118,1 kr" },
+{ id: 837, versionLabel: "D", question: "År 2000 kostade ett par jeans 500 kr. Vad kostade de år 2015 enligt index?\n{table\nÅr | Index\n2000 | 100\n2005 | 104,8\n2010 | 111,2\n2015 | 125,0\n}", solution: "Svar: 625 kr" },
+{ id: 838, versionLabel: "E", question: "År 2010 kostade en liter bensin 13 kr. Vad kostade den år 2020 om priserna följer indextabellen nedan?\n{table\nÅr | Index\n2010 | 100\n2015 | 112,5\n2020 | 128,0\n}", solution: "Svar: 16,6 kr" },
+{ id: 839, versionLabel: "F", question: "År 2012 kostade en t-shirt 120 kr. Vad kostade den år 2020 enligt index?\n{table\nÅr | Index\n2012 | 100\n2016 | 108,0\n2018 | 115,5\n2020 | 121,0\n}", solution: "Svar: 145,2 kr" },
+{ id: 840, versionLabel: "G", question: "År 2006 kostade ett par skor 800 kr. Vad kostade de år 2020 om priserna följer indextabellen nedan?\n{table\nÅr | Index\n2006 | 100\n2010 | 105,0\n2015 | 118,0\n2020 | 130,0\n}", solution: "Svar: 1040 kr" }
 ]  },
 { groupId: "Index - beräkna nytt värde ej basår", area: "Statistik / Ekonomi", subArea: "Index", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, calculator: true, versions: [
-{ id: 838, versionLabel: "A", question: "År 2016 var priset på en hamburgare 65 kr. Vad var priset år 2022 enligt index?\n{table\nÅr | Index\n2012 | 100\n2016 | 105,6\n2018 | 109,3\n2022 | 118,7\n}", solution: "Svar: 73,1 kr" },
-{ id: 839, versionLabel: "B", question: "År 2017 kostade en kopp kaffe 26 kr. Vad kostade den år 2019 enligt index?\n{table\nÅr | Index\n2015 | 100\n2017 | 103,5\n2019 | 107,8\n2021 | 112,6\n}", solution: "Svar: 27,1 kr" },
-{ id: 840, versionLabel: "C", question: "År 2010 var snittpriset för 1kg bananer 17,50 kr. Vad vad snittpriset år 2020 om priserna följde indextabellen nedan?\n{table\nÅr | Index\n2000 | 100\n2010 | 122,5\n2020 | 146,3\n}", solution: "Svar: 20,9 kr" }
+{ id: 841, versionLabel: "A", question: "År 2016 var priset på en hamburgare 65 kr. Vad var priset år 2022 enligt index?\n{table\nÅr | Index\n2012 | 100\n2016 | 105,6\n2018 | 109,3\n2022 | 118,7\n}", solution: "Svar: 73,1 kr" },
+{ id: 842, versionLabel: "B", question: "År 2017 kostade en kopp kaffe 26 kr. Vad kostade den år 2019 enligt index?\n{table\nÅr | Index\n2015 | 100\n2017 | 103,5\n2019 | 107,8\n2021 | 112,6\n}", solution: "Svar: 27,1 kr" },
+{ id: 843, versionLabel: "C", question: "År 2010 var snittpriset för 1kg bananer 17,50 kr. Vad vad snittpriset år 2020 om priserna följde indextabellen nedan?\n{table\nÅr | Index\n2000 | 100\n2010 | 122,5\n2020 | 146,3\n}", solution: "Svar: 20,9 kr" }
 ]  },
 { groupId: "Index - linjediagram", area: "Statistik / Ekonomi", subArea: "Index", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, calculator: true, versions: [
-{ id: 841, versionLabel: "A", question: "Nedan ser du en KPI-tabell.<br>a) Vilket är basåret? <br>b) Med hur många procent har KPI ökat från 2022 till 2025?", img: "bilder/Indexkurvor/kpi_diagram_1.jpg", solution: "a) 2023<br>b) 22,2%" },
-{ id: 842, versionLabel: "B", question: "Nedan ser du en KPI-tabell.<br>a) Vilket är basåret? <br>b) Med hur många procent har KPI ökat från 1990 till 1995?", img: "bilder/Indexkurvor/kpi_diagram_2.jpg", solution: "a) 2005<br>b) 18,75%" },
-{ id: 843, versionLabel: "C", question: "Nedan ser du en KPI-tabell.<br>a) Vilket är basåret? <br>b) Med hur många procent har KPI ökat från 2000 till 2030?", img: "bilder/Indexkurvor/kpi_diagram_3.jpg", solution: "a) 2010<br>b) 100%" },
-{ id: 844, versionLabel: "D", question: "Nedan ser du en KPI-tabell.<br>a) Vilket är basåret? <br>b) Med hur många procent har KPI ökat från 2015 till 2018?", img: "bilder/Indexkurvor/kpi_diagram_4.jpg", solution: "a) 2020<br>b) 33,3%" },
+{ id: 844, versionLabel: "A", question: "Nedan ser du en KPI-tabell.<br>a) Vilket är basåret? <br>b) Med hur många procent har KPI ökat från 2022 till 2025?", img: "bilder/Indexkurvor/kpi_diagram_1.jpg", solution: "a) 2023<br>b) 22,2%" },
+{ id: 845, versionLabel: "B", question: "Nedan ser du en KPI-tabell.<br>a) Vilket är basåret? <br>b) Med hur många procent har KPI ökat från 1990 till 1995?", img: "bilder/Indexkurvor/kpi_diagram_2.jpg", solution: "a) 2005<br>b) 18,75%" },
+{ id: 846, versionLabel: "C", question: "Nedan ser du en KPI-tabell.<br>a) Vilket är basåret? <br>b) Med hur många procent har KPI ökat från 2000 till 2030?", img: "bilder/Indexkurvor/kpi_diagram_3.jpg", solution: "a) 2010<br>b) 100%" },
+{ id: 847, versionLabel: "D", question: "Nedan ser du en KPI-tabell.<br>a) Vilket är basåret? <br>b) Med hur många procent har KPI ökat från 2015 till 2018?", img: "bilder/Indexkurvor/kpi_diagram_4.jpg", solution: "a) 2020<br>b) 33,3%" },
 ]  },
 { groupId: "Index - bestäm proc. förändring", area: "Statistik / Ekonomi", subArea: "Index", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, calculator: true, versions: [
-{ id: 845, versionLabel: "A", question: "Utgå från indextabellen nedan.<br>a) Vilket är basåret?<br>b) Hur stor var den procentuella förändringen av KPI från år 1990 till 1992? Svara med en decimal.\n{table\nÅr | KPI\n1990 | 92,1\n1991 | 100\n1992 | 105,6\n}", solution: "a) år 1991<br>b) 14,7%", },
-{ id: 846, versionLabel: "B", question: "Utgå från indextabellen nedan.<br>a) Vilket är basåret?<br>b) Hur stor var den procentuella förändringen av KPI från år 2000 till 2010? Svara med en decimal.\n{table\nÅr | KPI\n1995 | 100\n2000 | 113,0\n2005 | 120,0\n2010 | 131,1\n}", solution: "a) år 1995<br>b) 16%", },
-{ id: 847, versionLabel: "C", question: "Utgå från indextabellen nedan.<br>a) Vilket är basåret?<br>b) Hur stor var den procentuella förändringen av KPI från år 1990 till 2002? Svara med en decimal.\n{table\nÅr | KPI\n1990 | 93,3\n1994 | 102,0\n1998 | 100,0\n2002 | 120,5\n}", solution: "a) år 1998<br>b) 29%", },
+{ id: 848, versionLabel: "A", question: "Utgå från indextabellen nedan.<br>a) Vilket är basåret?<br>b) Hur stor var den procentuella förändringen av KPI från år 1990 till 1992? Svara med en decimal.\n{table\nÅr | KPI\n1990 | 92,1\n1991 | 100\n1992 | 105,6\n}", solution: "a) år 1991<br>b) 14,7%", },
+{ id: 849, versionLabel: "B", question: "Utgå från indextabellen nedan.<br>a) Vilket är basåret?<br>b) Hur stor var den procentuella förändringen av KPI från år 2000 till 2010? Svara med en decimal.\n{table\nÅr | KPI\n1995 | 100\n2000 | 113,0\n2005 | 120,0\n2010 | 131,1\n}", solution: "a) år 1995<br>b) 16%", },
+{ id: 850, versionLabel: "C", question: "Utgå från indextabellen nedan.<br>a) Vilket är basåret?<br>b) Hur stor var den procentuella förändringen av KPI från år 1990 till 2002? Svara med en decimal.\n{table\nÅr | KPI\n1990 | 93,3\n1994 | 102,0\n1998 | 100,0\n2002 | 120,5\n}", solution: "a) år 1998<br>b) 29%", },
 ]  },
 {
-id: 848,
+id: 851,
 area: "Statistik / Ekonomi",
 subArea: "Standardavvikelse",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -1705,7 +1710,7 @@ difficulty: 1,
 solution: "Medelvärde: 22<br>Standardavvikelse: 1,3038"
 },
 {
-id: 849,
+id: 852,
 area: "Statistik / Ekonomi",
 subArea: "Normalfördelning",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -1715,27 +1720,27 @@ difficulty: 1,
 solution: "a) B<br>b) B"
 },
 { groupId: "Normalfördelning - beräkna sannolikhet utan räknare", area: "Statistik / Ekonomi", subArea: "Normalfördelning", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 850, versionLabel: "A", question: "Ett företag producerar biljardbollar vars vikt är normalfördelad. Medelvärdet på en boll är 165 g och standardavvikelsen är 0,8g. Beräkna sannolikheten att ett slumpmässigt utvalt biljardboll väger mer än 164,2 g.", solution: "Svar: Det är 84,1 % chans." },
-{ id: 851, versionLabel: "B", question: "Vid en undersökning frågade man ett stort antal flickor om deras skostorlekar och märkte att storlekarna var normalfördelade. Medelvärdet var 38 och standardavvikelsen 1,2. Beräkna sannolikheten att ett slumpmässigt flicka har en skostorlek som är mellan 36,8 och 38", solution: "Svar: Det är 34,1 % chans." },
-{ id: 852, versionLabel: "C", question: "En fabrik tillverkar läskburkar vars volym är normalfördelad. Medelvärdet är 33 cl och standardavvikelsen är 0,5 cl. Beräkna sannolikheten att en slumpmässigt utvald burk innehåller mindre än 33,5 cl.", solution: "Svar: Det är 84,1 % chans." },
-{ id: 853, versionLabel: "D", question: "Längden på morötter i en odling är normalfördelad. Medelvärdet är 18 cm och standardavvikelsen är 2 cm. Beräkna sannolikheten att en slumpmässigt utvald morot har en längd mellan 14 cm och 16 cm.", solution: "Svar: Det är 13,6 % chans." },
+{ id: 853, versionLabel: "A", question: "Ett företag producerar biljardbollar vars vikt är normalfördelad. Medelvärdet på en boll är 165 g och standardavvikelsen är 0,8g. Beräkna sannolikheten att ett slumpmässigt utvalt biljardboll väger mer än 164,2 g.", solution: "Svar: Det är 84,1 % chans." },
+{ id: 854, versionLabel: "B", question: "Vid en undersökning frågade man ett stort antal flickor om deras skostorlekar och märkte att storlekarna var normalfördelade. Medelvärdet var 38 och standardavvikelsen 1,2. Beräkna sannolikheten att ett slumpmässigt flicka har en skostorlek som är mellan 36,8 och 38", solution: "Svar: Det är 34,1 % chans." },
+{ id: 855, versionLabel: "C", question: "En fabrik tillverkar läskburkar vars volym är normalfördelad. Medelvärdet är 33 cl och standardavvikelsen är 0,5 cl. Beräkna sannolikheten att en slumpmässigt utvald burk innehåller mindre än 33,5 cl.", solution: "Svar: Det är 84,1 % chans." },
+{ id: 856, versionLabel: "D", question: "Längden på morötter i en odling är normalfördelad. Medelvärdet är 18 cm och standardavvikelsen är 2 cm. Beräkna sannolikheten att en slumpmässigt utvald morot har en längd mellan 14 cm och 16 cm.", solution: "Svar: Det är 13,6 % chans." },
 ]  },
 { groupId: "Normalfördelning GeoGebra - beräkna sannolikhet", area: "Statistik / Ekonomi", subArea: "Normalfördelning", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, calculator: true, versions: [
-{ id: 854, versionLabel: "A", question: "Ett företag producerar flingpaket. Vikten på flingpaketen varierar något men följer en normalfördelningskurva. Medelvärdet på paketen är 700g och standardavvikelsen är 3,4g. Beräkna sannolikheten att ett slumpmässigt utvalt paket väger mer än 705g.", solution: "Svar: Det är 7,07% chans." },
-{ id: 855, versionLabel: "B", question: "En fabrik tillverkar kaffepaket vars vikt är normalfördelad. Medelvärdet är 500g och standardavvikelsen är 4,2g. Beräkna sannolikheten att ett slumpmässigt valt paket väger mindre än 495g.", solution: "Svar: Det är 11,69% chans." },
-{ id: 856, versionLabel: "C", question: "Längden på skruvar från en maskin är normalfördelad. Medelvärdet är 25mm och standardavvikelsen är 0,8mm. Beräkna sannolikheten att en slumpmässigt vald skruv är längre än 26mm.", solution: "Svar: Det är 10,56% chans." },
-{ id: 857, versionLabel: "D", question: "Ett bageri bakar limpor vars vikt är normalfördelad. Medelvärdet är 750g och standardavvikelsen är 5,5g. Beräkna sannolikheten att en slumpmässigt vald limpa väger mindre än 745g.", solution: "Svar: Det är 18,17% chans." },
-{ id: 858, versionLabel: "E", question: "Ett företag säljer hantlar vars vikt är normalfördelad. Medelvärdet är 5kg och standardavvikelsen är 2,3g. Beräkna sannolikheten att en slumpmässigt vald hantel väger mellan 4999 g och 5001 g.", solution: "Svar: Det är 33,6% chans." },
+{ id: 857, versionLabel: "A", question: "Ett företag producerar flingpaket. Vikten på flingpaketen varierar något men följer en normalfördelningskurva. Medelvärdet på paketen är 700g och standardavvikelsen är 3,4g. Beräkna sannolikheten att ett slumpmässigt utvalt paket väger mer än 705g.", solution: "Svar: Det är 7,07% chans." },
+{ id: 858, versionLabel: "B", question: "En fabrik tillverkar kaffepaket vars vikt är normalfördelad. Medelvärdet är 500g och standardavvikelsen är 4,2g. Beräkna sannolikheten att ett slumpmässigt valt paket väger mindre än 495g.", solution: "Svar: Det är 11,69% chans." },
+{ id: 859, versionLabel: "C", question: "Längden på skruvar från en maskin är normalfördelad. Medelvärdet är 25mm och standardavvikelsen är 0,8mm. Beräkna sannolikheten att en slumpmässigt vald skruv är längre än 26mm.", solution: "Svar: Det är 10,56% chans." },
+{ id: 860, versionLabel: "D", question: "Ett bageri bakar limpor vars vikt är normalfördelad. Medelvärdet är 750g och standardavvikelsen är 5,5g. Beräkna sannolikheten att en slumpmässigt vald limpa väger mindre än 745g.", solution: "Svar: Det är 18,17% chans." },
+{ id: 861, versionLabel: "E", question: "Ett företag säljer hantlar vars vikt är normalfördelad. Medelvärdet är 5kg och standardavvikelsen är 2,3g. Beräkna sannolikheten att en slumpmässigt vald hantel väger mellan 4999 g och 5001 g.", solution: "Svar: Det är 33,6% chans." },
 ]  },
 { groupId: "Kvadratrotsmetoden - 1", area: "Andragradare", subArea: "Kvadratrotsmetoden", courses: ["Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 859, versionLabel: "A", question: "Lös ekvationen: \\( x^2=9 \\).", solution: "\\( x_1=3 \\) och \\( x_2=-3 \\)" },
-{ id: 860, versionLabel: "B", question: "Lös ekvationen: \\( x^2+5=30 \\).", solution: "\\( x_1=5 \\) och \\( x_2=-5 \\)" },
-{ id: 861, versionLabel: "C", question: "Lös ekvationen: \\( 2x^2-8=24 \\).", solution: "\\( x_1=4 \\) och \\( x_2=-4 \\)" },
-{ id: 862, versionLabel: "D", question: "Lös ekvationen: \\( 2x^2=98 \\).", solution: "\\( x_1=7 \\) och \\( x_2=-7 \\)" },
-{ id: 863, versionLabel: "Ex", example: "Ekvationen \\( 3x^2=48 \\) löses på följande sätt:<br>\\(3x^2=48\\)<br>\\(\\frac{3x^2}{3}=\\frac{48}{3}\\)<br>\\(x^2=16\\)<br>\\(\\sqrt{x^2}=\\pm \\sqrt{16}\\)<br>\\(x=\\pm 4\\)" },
+{ id: 862, versionLabel: "A", question: "Lös ekvationen: \\( x^2=9 \\).", solution: "\\( x_1=3 \\) och \\( x_2=-3 \\)" },
+{ id: 863, versionLabel: "B", question: "Lös ekvationen: \\( x^2+5=30 \\).", solution: "\\( x_1=5 \\) och \\( x_2=-5 \\)" },
+{ id: 864, versionLabel: "C", question: "Lös ekvationen: \\( 2x^2-8=24 \\).", solution: "\\( x_1=4 \\) och \\( x_2=-4 \\)" },
+{ id: 865, versionLabel: "D", question: "Lös ekvationen: \\( 2x^2=98 \\).", solution: "\\( x_1=7 \\) och \\( x_2=-7 \\)" },
+{ id: 866, versionLabel: "Ex", example: "Ekvationen \\( 3x^2=48 \\) löses på följande sätt:<br>\\(3x^2=48\\)<br>\\(\\frac{3x^2}{3}=\\frac{48}{3}\\)<br>\\(x^2=16\\)<br>\\(\\sqrt{x^2}=\\pm \\sqrt{16}\\)<br>\\(x=\\pm 4\\)" },
 ]  },
 {
-id: 864,
+id: 867,
 area: "Andragradare",
 subArea: "Kvadratrotsmetoden",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -1744,7 +1749,7 @@ difficulty: 2,
 solution: "\\( x_1=\\sqrt{3} \\) och \\( x_2=-\\sqrt{3} \\)"
 },
 {
-id: 865,
+id: 868,
 area: "Andragradare",
 subArea: "Kvadratrotsmetoden",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -1753,50 +1758,50 @@ difficulty: 2,
 solution: "\\( x_1=\\sqrt{2} \\) och \\( x_2=-\\sqrt{2} \\)"
 },
 { groupId: "Nollproduktsmetoden från två parenteser", area: "Andragradare", subArea: "Nollproduktsmetoden", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 866, versionLabel: "A", question: "Lös ekvationen: \\( (x+1)(2x-1)=0.\\)", solution: "\\( x_1=-1 \\) och \\( x_2=0,5 \\)" },
-{ id: 867, versionLabel: "B", question: "Lös ekvationen: \\( (2x+10)(x+3)=0.\\)", solution: "\\( x_1=-5 \\) och \\( x_2=-3 \\)" },
-{ id: 868, versionLabel: "C", question: "Lös ekvationen: \\( (x-4)(x+15)=0.\\)", solution: "\\( x_1=4 \\) och \\( x_2=-15 \\)" },
-{ id: 869, versionLabel: "D", question: "Lös ekvationen: \\( 6(x-4)(1+2x)=0.\\)", solution: "\\( x_1=4 \\) och \\( x_2=-0,5 \\)"},
-{ id: 870, versionLabel: "E", question: "Lös ekvationen: \\( (5x+50)(6-2x)=0.\\)", solution: "\\( x_1=-10 \\) och \\( x_2=3 \\)"},
+{ id: 869, versionLabel: "A", question: "Lös ekvationen: \\( (x+1)(2x-1)=0.\\)", solution: "\\( x_1=-1 \\) och \\( x_2=0,5 \\)" },
+{ id: 870, versionLabel: "B", question: "Lös ekvationen: \\( (2x+10)(x+3)=0.\\)", solution: "\\( x_1=-5 \\) och \\( x_2=-3 \\)" },
+{ id: 871, versionLabel: "C", question: "Lös ekvationen: \\( (x-4)(x+15)=0.\\)", solution: "\\( x_1=4 \\) och \\( x_2=-15 \\)" },
+{ id: 872, versionLabel: "D", question: "Lös ekvationen: \\( 6(x-4)(1+2x)=0.\\)", solution: "\\( x_1=4 \\) och \\( x_2=-0,5 \\)"},
+{ id: 873, versionLabel: "E", question: "Lös ekvationen: \\( (5x+50)(6-2x)=0.\\)", solution: "\\( x_1=-10 \\) och \\( x_2=3 \\)"},
 ]  },
 { groupId: "Nollproduktsmetoden med faktorisering", area: "Andragradare", subArea: "Nollproduktsmetoden", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 871, versionLabel: "A", question: "Lös ekvationen: \\( x^2+15x=0 \\) med nollproduktsmetoden.", solution: "\\(x^2+15x=0\\)<br>\\(x(x+15)=0\\)<br>Svar:\\( x_1=0 \\) och \\( x_2=-15 \\)" },
-{ id: 872, versionLabel: "B", question: "Lös ekvationen: \\( 4x^2-12x=0 \\) med nollproduktsmetoden.", solution: "\\(4x^2-12x=0\\)<br>\\(4x(x-3)=0\\)<br>Svar:\\( x_1=0 \\) och \\( x_2=3 \\)" },
-{ id: 873, versionLabel: "C", question: "Lös ekvationen: \\( x^2-5x=0.\\)", solution: "Svar:\\( x_1=0 \\) och \\( x_2=5 \\)" },
-{ id: 874, versionLabel: "D", question: "Lös ekvationen: \\( 3x+6x^2=0.\\)", question: "Lös ekvationen: \\( 3x+6x^2=0 \\)", },
+{ id: 874, versionLabel: "A", question: "Lös ekvationen: \\( x^2+15x=0 \\) med nollproduktsmetoden.", solution: "\\(x^2+15x=0\\)<br>\\(x(x+15)=0\\)<br>Svar:\\( x_1=0 \\) och \\( x_2=-15 \\)" },
+{ id: 875, versionLabel: "B", question: "Lös ekvationen: \\( 4x^2-12x=0 \\) med nollproduktsmetoden.", solution: "\\(4x^2-12x=0\\)<br>\\(4x(x-3)=0\\)<br>Svar:\\( x_1=0 \\) och \\( x_2=3 \\)" },
+{ id: 876, versionLabel: "C", question: "Lös ekvationen: \\( x^2-5x=0.\\)", solution: "Svar:\\( x_1=0 \\) och \\( x_2=5 \\)" },
+{ id: 877, versionLabel: "D", question: "Lös ekvationen: \\( 3x+6x^2=0.\\)", question: "Lös ekvationen: \\( 3x+6x^2=0 \\)", },
 ]  },
 { groupId: "pq utan justering", area: "Andragradare", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 875, versionLabel: "A", question: "Lös ekvationen: \\( x^2-6x+5=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=5 \\)" },
-{ id: 876, versionLabel: "B", question: "Lös ekvationen: \\( x^2-2x-15=0 \\).", solution: "\\( x_1=5 \\) och \\( x_2=-3 \\)" },
-{ id: 877, versionLabel: "C", question: "Lös ekvationen: \\( x^2+2x-8=0.\\)", solution: "\\( x_1=2 \\) och \\( x_2=4 \\)" }
+{ id: 878, versionLabel: "A", question: "Lös ekvationen: \\( x^2-6x+5=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=5 \\)" },
+{ id: 879, versionLabel: "B", question: "Lös ekvationen: \\( x^2-2x-15=0 \\).", solution: "\\( x_1=5 \\) och \\( x_2=-3 \\)" },
+{ id: 880, versionLabel: "C", question: "Lös ekvationen: \\( x^2+2x-8=0.\\)", solution: "\\( x_1=2 \\) och \\( x_2=4 \\)" }
 ] },
 { groupId: "pq med justering (allt i VL)", area: "Andragradare", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 878, versionLabel: "A", question: "Lös ekvationen: \\( 2x^2+4x-16=0 \\).", solution: "\\( x_1=2 \\) och \\( x_2=-4 \\)" },
-{ id: 879, versionLabel: "B", question: "Lös ekvationen: \\( -2x^2-22x+24=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-12 \\)" },
-{ id: 880, versionLabel: "C", question: "Lös ekvationen: \\( 0,5x^2-2x-11,5=0 \\).", solution: "\\( x_1=7 \\) och \\( x_2=-3 \\)" },
-{ id: 881, versionLabel: "D", question: "Lös ekvationen: \\( 4x^2+4x-8=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-2 \\)" },
-{ id: 882, versionLabel: "E", question: "Lös ekvationen: \\( 2x^2-6x+4=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=2 \\)" },
-{ id: 883, versionLabel: "F", question: "Lös ekvationen: \\( -x^2-3x+4=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-4 \\)" }
+{ id: 881, versionLabel: "A", question: "Lös ekvationen: \\( 2x^2+4x-16=0 \\).", solution: "\\( x_1=2 \\) och \\( x_2=-4 \\)" },
+{ id: 882, versionLabel: "B", question: "Lös ekvationen: \\( -2x^2-22x+24=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-12 \\)" },
+{ id: 883, versionLabel: "C", question: "Lös ekvationen: \\( 0,5x^2-2x-11,5=0 \\).", solution: "\\( x_1=7 \\) och \\( x_2=-3 \\)" },
+{ id: 884, versionLabel: "D", question: "Lös ekvationen: \\( 4x^2+4x-8=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-2 \\)" },
+{ id: 885, versionLabel: "E", question: "Lös ekvationen: \\( 2x^2-6x+4=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=2 \\)" },
+{ id: 886, versionLabel: "F", question: "Lös ekvationen: \\( -x^2-3x+4=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-4 \\)" }
 ] },
 { groupId: "pq med justering VL/HL", area: "Andragradare", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 884, versionLabel: "A", question: "Lös ekvationen: \\( 2x^2+5x+12=x^2-3x \\).", solution: "\\( x_1=-2 \\) och \\( x_2=-6 \\)" },
-{ id: 885, versionLabel: "B", question: "Lös ekvationen: \\( 5x^2=30-5x \\).", solution: "\\( x_1=2 \\) och \\( x_2=-3 \\)" },
-{ id: 886, versionLabel: "C", question: "Lös ekvationen: \\( x^2+6x+7=2x+3 \\).", solution: "\\( x_1=-2 \\) och \\( x_2=-2 \\)" },
-{ id: 887, versionLabel: "D", question: "Lös ekvationen: \\( 3x^2+6x=24 \\).", solution: "\\( x_1=2 \\) och \\( x_2=-4 \\)" }
+{ id: 887, versionLabel: "A", question: "Lös ekvationen: \\( 2x^2+5x+12=x^2-3x \\).", solution: "\\( x_1=-2 \\) och \\( x_2=-6 \\)" },
+{ id: 888, versionLabel: "B", question: "Lös ekvationen: \\( 5x^2=30-5x \\).", solution: "\\( x_1=2 \\) och \\( x_2=-3 \\)" },
+{ id: 889, versionLabel: "C", question: "Lös ekvationen: \\( x^2+6x+7=2x+3 \\).", solution: "\\( x_1=-2 \\) och \\( x_2=-2 \\)" },
+{ id: 890, versionLabel: "D", question: "Lös ekvationen: \\( 3x^2+6x=24 \\).", solution: "\\( x_1=2 \\) och \\( x_2=-4 \\)" }
 ] },
 { groupId: "pq med miniräknare", area: "Andragradare", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
-{ id: 888, versionLabel: "A", question: "Lös ekvationen \\( 1,5x^2-3,3+1,8x=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-2,2 \\)" },
-{ id: 889, versionLabel: "B", question: "Lös ekvationen \\( 0,05x^2-0,425x=2,1 \\).", solution: "\\( x_1=12 \\) och \\( x_2=-3,5 \\)" },
-{ id: 890, versionLabel: "C", question: "Lös ekvationen \\( 2,4x^2+1,2x-3,6=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-1,5 \\)" },
-{ id: 891, versionLabel: "D", question: "Lös ekvationen \\( 0,8x^2-4x-4,4=2 \\).", solution: "\\( x_1=4 \\) och \\( x_2=-2 \\)" },
-{ id: 892, versionLabel: "E", question: "Lös ekvationen \\( 2x^2-1,5x-4,5=-x^2 \\).", solution: "\\( x_1=1,5 \\) och \\( x_2=-1 \\)" }
+{ id: 891, versionLabel: "A", question: "Lös ekvationen \\( 1,5x^2-3,3+1,8x=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-2,2 \\)" },
+{ id: 892, versionLabel: "B", question: "Lös ekvationen \\( 0,05x^2-0,425x=2,1 \\).", solution: "\\( x_1=12 \\) och \\( x_2=-3,5 \\)" },
+{ id: 893, versionLabel: "C", question: "Lös ekvationen \\( 2,4x^2+1,2x-3,6=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-1,5 \\)" },
+{ id: 894, versionLabel: "D", question: "Lös ekvationen \\( 0,8x^2-4x-4,4=2 \\).", solution: "\\( x_1=4 \\) och \\( x_2=-2 \\)" },
+{ id: 895, versionLabel: "E", question: "Lös ekvationen \\( 2x^2-1,5x-4,5=-x^2 \\).", solution: "\\( x_1=1,5 \\) och \\( x_2=-1 \\)" }
 ] },
 { groupId: "Geometrisk problemlösning med pq", area: "Andragradare", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
-{ id: 893, versionLabel: "A", question: "En triangel har arean 142,5 cm². Höjden är 4 cm kortare än basen. Bestäm triangelns bas och höjd.", solution: "Lös ekvationen \\(\\frac{x(x-4)}{2}=142,5\\) (med pq eller kvadratkomplettering).<br>Svar: basen = 19 cm, höjden = 15 cm." },
-{ id: 894, versionLabel: "B", question: "En rektangel vars bredd är 1,5 cm längre än dess höjd har arean 175 cm².  Bestäm rektangelns breddoch höjd.", solution: "Lös ekvationen \\(x(x-1)=175\\) (med pq eller kvadratkomplettering).<br>Svar: bredd = 12,5 cm, höjd = 14 cm." },
+{ id: 896, versionLabel: "A", question: "En triangel har arean 142,5 cm². Höjden är 4 cm kortare än basen. Bestäm triangelns bas och höjd.", solution: "Lös ekvationen \\(\\frac{x(x-4)}{2}=142,5\\) (med pq eller kvadratkomplettering).<br>Svar: basen = 19 cm, höjden = 15 cm." },
+{ id: 897, versionLabel: "B", question: "En rektangel vars bredd är 1,5 cm längre än dess höjd har arean 175 cm².  Bestäm rektangelns breddoch höjd.", solution: "Lös ekvationen \\(x(x-1)=175\\) (med pq eller kvadratkomplettering).<br>Svar: bredd = 12,5 cm, höjd = 14 cm." },
 ] },
 {
-id: 895,
+id: 898,
 area: "Andragradare",
 subArea: "Nollställe / symmetrilinje",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -1806,7 +1811,7 @@ difficulty: 1,
 solution: "a) \\(a\\) är positiv eftersom linjen är \"glad\".<br>b) \\(x=6\\)."
 },
 {
-id: 896,
+id: 899,
 area: "Andragradare",
 subArea: "Nollställe / symmetrilinje",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -1816,7 +1821,7 @@ difficulty: 1,
 solution: "a) \\(c=5\\).<br>b) \\(x_1=2\\) och \\(x_2=10\\)."
 },
 {
-id: 897,
+id: 900,
 area: "Andragradare",
 subArea: "Nollställe / symmetrilinje",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -1826,7 +1831,7 @@ difficulty: 1,
 solution: "a) a är negativ eftersom linjen är \"ledsen\".<br>b) x=1."
 },
 {
-id: 898,
+id: 901,
 area: "Andragradare",
 subArea: "Nollställe / symmetrilinje",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -1836,7 +1841,7 @@ difficulty: 1,
 solution: "a) \\(c=4\\).<br>b) \\(x_1=-2\\) och \\(x_2=4\\)."
 },
 {
-id: 899,
+id: 902,
 area: "Andragradare",
 subArea: "Extrempunkt",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -1845,43 +1850,20 @@ img: "bilder/IMG_0202.jpg",
 difficulty: 1,
 solution: "(1 ; 4,5)"
 },
-{
-id: 900,
-area: "Andragradare",
-subArea: "Nollställe / symmetrilinje",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Funktionen \\( f(x)=10x^2-x+10,5 \\) är given. Har funktionen en maximipunkt eller minimipunkt? Motivera ditt svar.",
-difficulty: 1,
-solution: "Funktionen har en minimipunkt eftersom \\( x^2 \\)-termen är positiv."
-},
 { groupId: "bestäm andra nollstället med f(x)", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 901, versionLabel: "A", question: "För andragradsfunktionen \\( f(x) \\) gäller följande:<br><ul><li>Symmetrilinjen är \\( x=10 \\)</li><li>\\( f(1)=0 \\)</li></ul>Bestäm funktionens nollställen.", solution: "\\( x_1=1 \\) och \\( x_2=19 \\)." },
-{ id: 902, versionLabel: "B", question: "För andragradsfunktionen \\( f(x) \\) gäller följande:<br><ul><li>Symmetrilinjen är \\( x=2 \\)</li><li>\\( f(3)=0 \\)</li></ul>Bestäm funktionens nollställen.", solution: "\\( x_1=1 \\) och \\( x_2=3 \\)." }
+{ id: 903, versionLabel: "A", question: "För andragradsfunktionen \\( f(x) \\) gäller följande:<br><ul><li>Symmetrilinjen är \\( x=10 \\)</li><li>\\( f(1)=0 \\)</li></ul>Bestäm funktionens nollställen.", solution: "\\( x_1=1 \\) och \\( x_2=19 \\)." },
+{ id: 904, versionLabel: "B", question: "För andragradsfunktionen \\( f(x) \\) gäller följande:<br><ul><li>Symmetrilinjen är \\( x=2 \\)</li><li>\\( f(3)=0 \\)</li></ul>Bestäm funktionens nollställen.", solution: "\\( x_1=1 \\) och \\( x_2=3 \\)." }
 ] },
-{
-id: 903,
-area: "Andragradare",
-subArea: "Nollställe / symmetrilinje",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Andragradsfunktionen \\( f(x)=(x+a)(x-8) \\) har symmetrilinjen \\( x=10 \\). Bestäm \\( a \\).",
-difficulty: 1,
-solution: "\\( a=-12 \\)."
-},
-{
-id: 904,
-area: "Andragradare",
-subArea: "Nollställe / symmetrilinje",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Andragradsfunktionen \\( f(x)=2(x+1)(x+b) \\) har symmetrilinjen \\( x=2 \\). Bestäm \\( b \\).",
-difficulty: 1,
-solution: "\\( b=5 \\)."
-},
+{ groupId: "Bestäm a utifrån sym.linje", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ id: 905, versionLabel: "A", question: "Andragradsfunktionen \\( f(x)=(x+a)(x-8) \\) har symmetrilinjen \\( x=10 \\). Bestäm \\( a \\).", solution: "\\( a=-12 \\)." },
+{ id: 906, versionLabel: "B", question: "Andragradsfunktionen \\( f(x)=2(x+1)(x+b) \\) har symmetrilinjen \\( x=2 \\). Bestäm \\( b \\).", solution: "\\( b=5 \\)."}
+] },
 { groupId: "Ange funktion utifrån symmetrilinje", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 905, versionLabel: "A", question: "Ange en andragradsfunktion med symmetrilinjen \\( x=15,5 \\).", solution: "T.ex. \\( f(x)=(x-15)(x-16) \\) eller \\( f(x)=(x-14)(x-17).\\)" },
-{ id: 906, versionLabel: "B", question: "Ange en andragradsfunktion med symmetrilinjen \\( x=-12 \\).", solution: "T.ex. \\( f(x)=(x+13)(x+15) \\) eller \\( f(x)=(x+12)^2\\)" },
+{ id: 907, versionLabel: "A", question: "Ange en andragradsfunktion med symmetrilinjen \\( x=15,5 \\).", solution: "T.ex. \\( f(x)=(x-15)(x-16) \\) eller \\( f(x)=(x-14)(x-17).\\)" },
+{ id: 908, versionLabel: "B", question: "Ange en andragradsfunktion med symmetrilinjen \\( x=-12 \\).", solution: "T.ex. \\( f(x)=(x+13)(x+15) \\) eller \\( f(x)=(x+12)^2\\)" },
 ] },
 {
-id: 907,
+id: 909,
 area: "Andragradare",
 subArea: "Nollställe / symmetrilinje",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -1890,15 +1872,15 @@ difficulty: 1,
 solution: "T.ex. \\( f(x)=(x-1)(x-3) \\)."
 },
 { groupId: "Bestäm nollställen algebraiskt", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 908, versionLabel: "A", question: "Funktionen \\( f(x)=3x^2-30x+27 \\) är given. Bestäm funktionens nollställen.", solution: "\\( x_1=1 \\) och \\( x_2=9 \\)" },
-{ id: 909, versionLabel: "B", question: "Funktionen \\( f(x)=0,5x^2-4x+7,5 \\) är given. Hitta funktionens nollställen.", solution: "\\( x_1=3 \\) och \\( x_2=5 \\)" },
+{ id: 910, versionLabel: "A", question: "Funktionen \\( f(x)=3x^2-30x+27 \\) är given. Bestäm funktionens nollställen.", solution: "\\( x_1=1 \\) och \\( x_2=9 \\)" },
+{ id: 911, versionLabel: "B", question: "Funktionen \\( f(x)=0,5x^2-4x+7,5 \\) är given. Hitta funktionens nollställen.", solution: "\\( x_1=3 \\) och \\( x_2=5 \\)" },
 ] },
 { groupId: "Bestäm symmetrilinje algebraiskt", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 910, versionLabel: "A", question: "Vilken symmetrilinje har funktionen \\( f(x)= \\frac{x^2}{2}+13x+84 \\)?", solution: "Symmetrilinjen är \\( x=-13\\)" },
-{ id: 911, versionLabel: "B", question: "Funktionen \\( f(x)= \\frac{-x^2}{2}-2x+6 \\) är given. Bestäm funktionens symmetrilinje.", solution: "Symmetrilinjen är \\( x=-2\\)" },
+{ id: 912, versionLabel: "A", question: "Vilken symmetrilinje har funktionen \\( f(x)= \\frac{x^2}{2}+13x+84 \\)?", solution: "Symmetrilinjen är \\( x=-13\\)" },
+{ id: 913, versionLabel: "B", question: "Funktionen \\( f(x)= \\frac{-x^2}{2}-2x+6 \\) är given. Bestäm funktionens symmetrilinje.", solution: "Symmetrilinjen är \\( x=-2\\)" },
 ] },
 {
-id: 912,
+id: 914,
 area: "Andragradare",
 subArea: "Extrempunkt",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -1907,40 +1889,25 @@ difficulty: 1,
 calculator: true,
 solution: "Funktionens vertex/extrempunkt hittar vi genom att beräkna \\( f(1,5) \\) (eftersom symmetrilinjen är \\(x = 1,5\\)).<br>Svar: \\((1,5; 1,25)\\)."
 },
-{ groupId: "Avgör max eller min algebraiskt", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 913, versionLabel: "A", question: "Funktionen \\( f(x)=0.4x^2-x+1 \\) är given. Har funktionen en maximipunkt eller en minimipunkt?", solution: "Eftersom koefficienten framför \\(x^2\\)-termen är positiv så har funktionen en minimipunkt." },
-{ id: 914, versionLabel: "B", question: "Funktionen \\( f(x)=6x^2+2x-15 \\) är given. Har funktionen en maximipunkt eller en minimipunkt?", solution: "Eftersom koefficienten framför \\(x^2\\)-termen är positiv så har funktionen en minimipunkt." },
-{ id: 915, versionLabel: "C", question: "Funktionen \\( f(x)=-2x^2+3x+4 \\) är given. Har funktionen en maximipunkt eller en minimipunkt?", solution: "Eftersom koefficienten framför \\(x^2\\)-termen är negativ så har funktionen en maximipunkt." },
+{ groupId: "Avgör max eller min algebraiskt", area: "Andragradare", subArea: "Extrempunkt", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ id: 915, versionLabel: "A", question: "Funktionen \\( f(x)=0.4x^2-x+1 \\) är given. Har funktionen en maximipunkt eller en minimipunkt? Motivera ditt svar.", solution: "Eftersom koefficienten framför \\(x^2\\)-termen är positiv så har funktionen en minimipunkt." },
+{ id: 916, versionLabel: "B", question: "Funktionen \\( f(x)=6x^2+2x-15 \\) är given. Har funktionen en maximipunkt eller en minimipunkt? Motivera ditt svar.", solution: "Eftersom koefficienten framför \\(x^2\\)-termen är positiv så har funktionen en minimipunkt." },
+{ id: 917, versionLabel: "C", question: "Funktionen \\( f(x)=-2x^2+3x+4 \\) är given. Har funktionen en maximipunkt eller en minimipunkt? Motivera ditt svar.", solution: "Eftersom koefficienten framför \\(x^2\\)-termen är negativ så har funktionen en maximipunkt." },
+{ id: 918, versionLabel: "D", question: "Funktionen \\( f(x)=10x^2-x+10,5 \\) är given. Har funktionen en maximipunkt eller minimipunkt? Motivera ditt svar.", solution: "Funktionen har en minimipunkt eftersom \\( x^2 \\)-termen är positiv." },
+] },
+{ groupId: "Bestäm största/minsta värde", area: "Andragradare", subArea: "Extrempunkt", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ id: 919, versionLabel: "A", question: "Funktionen \\( f(x)=10x^2+30x+20 \\) är given. Bestäm funktionens minsta värde.", solution: "Funktionens minsta värde får vi genom att beräkna \\( f(-1,5) \\) (eftersom symmetrilinjen är x = -1,5). <br>Svar: funktionens minsta värde är -2,5."},
+{ id: 920, versionLabel: "B", question: "Funktionen \\( f(x)= \\frac{-x^2}{2}+4x+10 \\) är given. Bestäm funktionens största värde.", solution: "Funktionens största värde får vi genom att beräkna f(4) (eftersom symmetrilinjen är x = 4).<br> Svar: funktionens största värde är 18."},
+] },
+{ groupId: "Bestäm extrempunkt algebraiskt", area: "Andragradare", subArea: "Extrempunkt", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
+{ id: 921, versionLabel: "A", question: "Bestäm funktionens extrempunkt: \\( f(x)= 0,4x^2-3,2x+6 \\) och avgör om det är en maximipunkt eller en minimipunkt.", solution: "Svar: Funktionen har minimipunkten (4; -0,4)." },
+{ id: 922, versionLabel: "B", question: "Bestäm funktionens extrempunkt: \\( f(x)= -0,1x^2+0,6x-0,5 \\) och avgör om det är en maximipunkt eller en minimipunkt.", solution: "Svar: Funktionen har maximipunkten (3; 0,4)." },
+{ id: 923, versionLabel: "C", question: "Bestäm funktionens extrempunkt: \\( f(x)= 2x^2+28x+90 \\) och avgör om det är en maximipunkt eller en minimipunkt.", solution: "Svar: Funktionen har minimipunkten (-7, -8)." },
+{ id: 924, versionLabel: "D", question: "Bestäm funktionens extrempunkt: \\( f(x)= x(x+1)-4x-4 \\) och avgör om det är en maximipunkt eller en minimipunkt.", solution: "Svar: Funktionen har minimipunkten (1,5; -6,25)." },
+{ id: 925, versionLabel: "E", question: "Bestäm funktionens extrempunkt: \\( f(x)= x^2+10x+24 \\) och avgör om det är en maximipunkt eller en minimipunkt.", solution: "Svar: Funktionen har minimipunkten (-5, -1)." },
 ] },
 {
-id: 916,
-area: "Andragradare",
-subArea: "Extrempunkt",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Funktionen \\( f(x)=10x^2+30x+20 \\) är given. Bestäm funktionens minsta värde.",
-difficulty: 1,
-calculator: true,
-solution: "Funktionens minsta värde får vi genom att beräkna \\( f(-1,5) \\) (eftersom symmetrilinjen är x = -1,5). <br>Svar: funktionens minsta värde är -2,5."
-},
-{
-id: 917,
-area: "Andragradare",
-subArea: "Extrempunkt",
-courses: ["Ma2a", "Ma2b", "Ma2c"],
-question: "Funktionen \\( f(x)= \\frac{-x^2}{2}+4x+10 \\) är given. Bestäm funktionens största värde.",
-difficulty: 1,
-calculator: true,
-solution: "Funktionens största värde får vi genom att beräkna f(4) (eftersom symmetrilinjen är x = 4).<br> Svar: funktionens största värde är 18."
-},
-{ groupId: "Bestäm extrempunkt algebraiskt", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
-{ id: 918, versionLabel: "A", question: "Bestäm funktionens extrempunkt: \\( f(x)= 0,4x^2-3,2x+6 \\) och avgör om det är en maximipunkt eller en minimipunkt.", solution: "Svar: Funktionen har minimipunkten (4; -0,4)." },
-{ id: 919, versionLabel: "B", question: "Bestäm funktionens extrempunkt: \\( f(x)= -0,1x^2+0,6x-0,5 \\) och avgör om det är en maximipunkt eller en minimipunkt.", solution: "Svar: Funktionen har maximipunkten (3; 0,4)." },
-{ id: 920, versionLabel: "C", question: "Bestäm funktionens extrempunkt: \\( f(x)= 2x^2+28x+90 \\) och avgör om det är en maximipunkt eller en minimipunkt.", solution: "Svar: Funktionen har minimipunkten (-7, -8)." },
-{ id: 921, versionLabel: "D", question: "Bestäm funktionens extrempunkt: \\( f(x)= x(x+1)-4x-4 \\) och avgör om det är en maximipunkt eller en minimipunkt.", solution: "Svar: Funktionen har minimipunkten (1,5; -6,25)." },
-{ id: 922, versionLabel: "E", question: "Bestäm funktionens extrempunkt: \\( f(x)= x^2+10x+24 \\) och avgör om det är en maximipunkt eller en minimipunkt.", solution: "Svar: Funktionen har minimipunkten (-5, -1)." },
-] },
-{
-id: 923,
+id: 926,
 area: "Andragradare",
 subArea: "Extrempunkt",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -1949,139 +1916,139 @@ difficulty: 2,
 calculator: true,
 solution: "a) 2 meter<br>b) 6,05 meter"
 },
-{ groupId: "lös systemet grafiskt", area: "Ekvationssystem", subArea: "Lös grafiskt", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 924, versionLabel: "A", question: "Lös ekvationssystemet nedan.", solution: "\\( \\begin{cases} x=2 \\\\ y=3 \\end{cases} \\)", img: "bilder/Ekvationssystem/IMG_0500.jpg" },
-{ id: 925, versionLabel: "B", question: "Lös ekvationssystemet \\( \\begin{cases} y=1,5x-1 \\\\ y=-2x+6 \\end{cases} \\)", solution: "\\( \\begin{cases} x=2 \\\\ y=2 \\end{cases} \\)", img: "bilder/Ekvationssystem/IMG_0501.jpg" },
-{ id: 926, versionLabel: "C", question: "Lös ekvationssystemet \\( \\begin{cases} y=x+3 \\\\ y=-2x-9 \\end{cases} \\)", solution: "\\( \\begin{cases} x=-4 \\\\ y=-4 \\end{cases} \\)", img: "bilder/Ekvationssystem/IMG_0502.jpg"}
+{ groupId: "Lös systemet grafiskt", area: "Ekvationssystem", subArea: "Lös grafiskt", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ id: 927, versionLabel: "A", question: "Lös ekvationssystemet nedan.", solution: "\\( \\begin{cases} x=2 \\\\ y=3 \\end{cases} \\)", img: "bilder/Ekvationssystem/IMG_0500.jpg" },
+{ id: 928, versionLabel: "B", question: "Lös ekvationssystemet \\( \\begin{cases} y=1,5x-1 \\\\ y=-2x+6 \\end{cases} \\)", solution: "\\( \\begin{cases} x=2 \\\\ y=2 \\end{cases} \\)", img: "bilder/Ekvationssystem/IMG_0501.jpg" },
+{ id: 929, versionLabel: "C", question: "Lös ekvationssystemet \\( \\begin{cases} y=x+3 \\\\ y=-2x-9 \\end{cases} \\)", solution: "\\( \\begin{cases} x=-4 \\\\ y=-4 \\end{cases} \\)", img: "bilder/Ekvationssystem/IMG_0502.jpg"}
 ] },
-{ groupId: "lös systemet algebraiskt utan räknare", area: "Ekvationssystem", subArea: "Lös algebraiskt", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, calculator: false, versions: [
-{ id: 927, versionLabel: "A", question: "Lös ekvationssystemet \\( \\begin{cases} 2x+y=7 \\\\ x-y=2 \\end{cases} \\)", solution: "\\( \\begin{cases} x=3 \\\\ y=1 \\end{cases} \\)" },
-{ id: 928, versionLabel: "B", question: "Lös ekvationssystemet \\( \\begin{cases} 3x+2y=18 \\\\ x+y=8 \\end{cases} \\)", solution: "\\( \\begin{cases} x=2 \\\\ y=6 \\end{cases} \\)" },
-{ id: 929, versionLabel: "C", question: "Lös ekvationssystemet \\( \\begin{cases} 5x+2y=4 \\\\ x-y=-2 \\end{cases} \\)", solution: "\\( \\begin{cases} x=0 \\\\ y=2 \\end{cases} \\)" },
-{ id: 930, versionLabel: "D", question: "Lös ekvationssystemet \\( \\begin{cases} 2x+3y=14 \\\\ 4x-y=7 \\end{cases} \\)", solution: "\\( \\begin{cases} x=2,5 \\\\ y=3 \\end{cases} \\)" },
-{ id: 931, versionLabel: "E", question: "Lös ekvationssystemet \\( \\begin{cases} 4x-2y=6 \\\\ x+y=4 \\end{cases} \\)", solution: "\\( \\begin{cases} x=2 \\\\ y=2 \\end{cases} \\)" },
-{ id: 932, versionLabel: "F", question: "Lös ekvationssystemet \\( \\begin{cases} x+y=-3 \\\\ 2x-y=-6 \\end{cases} \\)", solution: "\\( \\begin{cases} x=-3 \\\\ y=0 \\end{cases} \\)" },
-{ id: 933, versionLabel: "G", question: "Lös ekvationssystemet \\( \\begin{cases} 3x+y=-7 \\\\ x-y=1 \\end{cases} \\)", solution: "\\( \\begin{cases} x=-1,5 \\\\ y=-2,5 \\end{cases} \\)" },
-{ id: 934, versionLabel: "H", question: "Lös ekvationssystemet \\( \\begin{cases} 4x-y=11 \\\\ 2x+y=7 \\end{cases} \\)", solution: "\\( \\begin{cases} x=3 \\\\ y=1 \\end{cases} \\)" },
-{ id: 935, versionLabel: "I", question: "Lös ekvationssystemet \\( \\begin{cases} 2x+y=1 \\\\ x-5y=28 \\end{cases} \\)", solution: "\\( \\begin{cases} x=3 \\\\ y=-5 \\end{cases} \\)" }
+{ groupId: "Lös systemet algebraiskt utan räknare", area: "Ekvationssystem", subArea: "Lös algebraiskt", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, calculator: false, versions: [
+{ id: 930, versionLabel: "A", question: "Lös ekvationssystemet \\( \\begin{cases} 2x+y=7 \\\\ x-y=2 \\end{cases} \\)", solution: "\\( \\begin{cases} x=3 \\\\ y=1 \\end{cases} \\)" },
+{ id: 931, versionLabel: "B", question: "Lös ekvationssystemet \\( \\begin{cases} 3x+2y=18 \\\\ x+y=8 \\end{cases} \\)", solution: "\\( \\begin{cases} x=2 \\\\ y=6 \\end{cases} \\)" },
+{ id: 932, versionLabel: "C", question: "Lös ekvationssystemet \\( \\begin{cases} 5x+2y=4 \\\\ x-y=-2 \\end{cases} \\)", solution: "\\( \\begin{cases} x=0 \\\\ y=2 \\end{cases} \\)" },
+{ id: 933, versionLabel: "D", question: "Lös ekvationssystemet \\( \\begin{cases} 2x+3y=14 \\\\ 4x-y=7 \\end{cases} \\)", solution: "\\( \\begin{cases} x=2,5 \\\\ y=3 \\end{cases} \\)" },
+{ id: 934, versionLabel: "E", question: "Lös ekvationssystemet \\( \\begin{cases} 4x-2y=6 \\\\ x+y=4 \\end{cases} \\)", solution: "\\( \\begin{cases} x=2 \\\\ y=2 \\end{cases} \\)" },
+{ id: 935, versionLabel: "F", question: "Lös ekvationssystemet \\( \\begin{cases} x+y=-3 \\\\ 2x-y=-6 \\end{cases} \\)", solution: "\\( \\begin{cases} x=-3 \\\\ y=0 \\end{cases} \\)" },
+{ id: 936, versionLabel: "G", question: "Lös ekvationssystemet \\( \\begin{cases} 3x+y=-7 \\\\ x-y=1 \\end{cases} \\)", solution: "\\( \\begin{cases} x=-1,5 \\\\ y=-2,5 \\end{cases} \\)" },
+{ id: 937, versionLabel: "H", question: "Lös ekvationssystemet \\( \\begin{cases} 4x-y=11 \\\\ 2x+y=7 \\end{cases} \\)", solution: "\\( \\begin{cases} x=3 \\\\ y=1 \\end{cases} \\)" },
+{ id: 938, versionLabel: "I", question: "Lös ekvationssystemet \\( \\begin{cases} 2x+y=1 \\\\ x-5y=28 \\end{cases} \\)", solution: "\\( \\begin{cases} x=3 \\\\ y=-5 \\end{cases} \\)" }
 ] },
 { groupId: "Lös systemet med digitalt verktyg", area: "Ekvationssystem", subArea: "Lös algebraiskt", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, calculator: true, versions: [
-{ id: 936, versionLabel: "A", question: "Lös ekvationssystemet med hjälp av digitalt verktyg \\( \\begin{cases} xy=10 \\\\ x-y=3 \\end{cases} \\)", solution: "\\( \\begin{cases} x_1=4,32 \\\\ y_1=2,32 \\end{cases} \\) och \\( \\begin{cases} x_2=-2,32 \\\\ y_2=-4,32 \\end{cases} \\)" },
-{ id: 937, versionLabel: "B", question: "Lös ekvationssystemet med hjälp av digitalt verktyg \\( \\begin{cases} x^2+y=5 \\\\ x-5y=1 \\end{cases} \\)", solution: "\\( \\begin{cases} x_1=2,18 \\\\ y_1=0,24 \\end{cases} \\) och \\( \\begin{cases} x_2=-2,38 \\\\ y_2=-0,68 \\end{cases} \\)" },
+{ id: 939, versionLabel: "A", question: "Lös ekvationssystemet med hjälp av digitalt verktyg \\( \\begin{cases} xy=10 \\\\ x-y=3 \\end{cases} \\)", solution: "\\( \\begin{cases} x_1=4,32 \\\\ y_1=2,32 \\end{cases} \\) och \\( \\begin{cases} x_2=-2,32 \\\\ y_2=-4,32 \\end{cases} \\)" },
+{ id: 940, versionLabel: "B", question: "Lös ekvationssystemet med hjälp av digitalt verktyg \\( \\begin{cases} x^2+y=5 \\\\ x-5y=1 \\end{cases} \\)", solution: "\\( \\begin{cases} x_1=2,18 \\\\ y_1=0,24 \\end{cases} \\) och \\( \\begin{cases} x_2=-2,38 \\\\ y_2=-0,68 \\end{cases} \\)" },
 ] },
 { groupId: "Problemlösning med ekvationssystem 1", area: "Ekvationssystem", subArea: "Problemlösning", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, calculator: true, versions: [
-{ id: 938, versionLabel: "A", question: "Du är och handlar och köper 6 chokladkakor och 3 burkar läsk. Din kompis köper 2 chokladkakor och 4 burkar läsk. Du betalar 153 kr och din kompis betalar 78 kr. Vad kostar en burk läsk?", solution: "Ställ upp ekvationerna \\( 6x+3y=153 \\) och \\( 2x+4y=78 \\). Lös systemet så får du \\( y=9 \\). Svar: En burk läsk kostar 9 kr." },
-{ id: 939, versionLabel: "B", question: "Vid ett zoo köper en familj 2 vuxenbiljetter och 3 barnbiljetter. En annan familj köper 4 vuxenbiljetter och 1 barnbiljett. Den första familjen betalar 540 kr och den andra betalar 620 kr. Vad kostar en barnbiljett?", solution: "Ställ upp ekvationerna \\( 2x+3y=540 \\) och \\( 4x+y=620 \\). Lös systemet så får du \\( y=92 \\). Svar: En barnbiljett kostar 92 kr." },
-{ id: 940, versionLabel: "C", question: "Du köper 7 pennor och 2 anteckningsblock. Din klasskompis köper 3 pennor och 5 anteckningsblock. Du betalar 143,50 kr och klasskompisen betalar 192 kr. Vad kostar en penna?", solution: "Ställ upp ekvationerna \\( 7x+2y=143,5 \\) och \\( 3x+5y=192 \\). Lös systemet så får du \\( x=11,5 \\). Svar: En penna kostar 11,50 kr." },
-{ id: 941, versionLabel: "D", question: "På ett café köper du 3 muffins och 2 smoothies. Din vän köper 5 muffins och 1 smoothie. Du betalar 146 kr och din vän betalar 137 kr. Vad kostar en smoothie?", solution: "Ställ upp ekvationerna \\( 3x+2y=146 \\) och \\( 5x+y=137 \\). Lös systemet så får du \\( y=45 \\). Svar: En smoothie kostar 45 kr." },
-{ id: 942, versionLabel: "E", question: "Elina ska handla godis till sin pappa. Han vill ha 3 hg godis och ger Elina 20 kr. I godisaffären finns två olika priser på godis, det billigare kostar 3,90 kr/hg och det dyrare kostar 10,90 kr/hg. Hur mycket av varje sort ska hon handla för att det ska bli precis 20 kr?", solution: "Ställ upp ekvationerna \\( x+y=3 \\) och \\( 3,9x+10,9y=20 \\). Lös systemet så får du \\( x=1,81 \\) och \\( y=1,19 \\). Svar: Hon ska köpa 1,81 hg av det billiga och 1,19 hg av det dyra." }
+{ id: 941, versionLabel: "A", question: "Du är och handlar och köper 6 chokladkakor och 3 burkar läsk. Din kompis köper 2 chokladkakor och 4 burkar läsk. Du betalar 153 kr och din kompis betalar 78 kr. Vad kostar en burk läsk?", solution: "Ställ upp ekvationerna \\( 6x+3y=153 \\) och \\( 2x+4y=78 \\). Lös systemet så får du \\( y=9 \\). Svar: En burk läsk kostar 9 kr." },
+{ id: 942, versionLabel: "B", question: "Vid ett zoo köper en familj 2 vuxenbiljetter och 3 barnbiljetter. En annan familj köper 4 vuxenbiljetter och 1 barnbiljett. Den första familjen betalar 540 kr och den andra betalar 620 kr. Vad kostar en barnbiljett?", solution: "Ställ upp ekvationerna \\( 2x+3y=540 \\) och \\( 4x+y=620 \\). Lös systemet så får du \\( y=92 \\). Svar: En barnbiljett kostar 92 kr." },
+{ id: 943, versionLabel: "C", question: "Du köper 7 pennor och 2 anteckningsblock. Din klasskompis köper 3 pennor och 5 anteckningsblock. Du betalar 143,50 kr och klasskompisen betalar 192 kr. Vad kostar en penna?", solution: "Ställ upp ekvationerna \\( 7x+2y=143,5 \\) och \\( 3x+5y=192 \\). Lös systemet så får du \\( x=11,5 \\). Svar: En penna kostar 11,50 kr." },
+{ id: 944, versionLabel: "D", question: "På ett café köper du 3 muffins och 2 smoothies. Din vän köper 5 muffins och 1 smoothie. Du betalar 146 kr och din vän betalar 137 kr. Vad kostar en smoothie?", solution: "Ställ upp ekvationerna \\( 3x+2y=146 \\) och \\( 5x+y=137 \\). Lös systemet så får du \\( y=45 \\). Svar: En smoothie kostar 45 kr." },
+{ id: 945, versionLabel: "E", question: "Elina ska handla godis till sin pappa. Han vill ha 3 hg godis och ger Elina 20 kr. I godisaffären finns två olika priser på godis, det billigare kostar 3,90 kr/hg och det dyrare kostar 10,90 kr/hg. Hur mycket av varje sort ska hon handla för att det ska bli precis 20 kr?", solution: "Ställ upp ekvationerna \\( x+y=3 \\) och \\( 3,9x+10,9y=20 \\). Lös systemet så får du \\( x=1,81 \\) och \\( y=1,19 \\). Svar: Hon ska köpa 1,81 hg av det billiga och 1,19 hg av det dyra." }
 ] },
 { groupId: "Problemlösning med ekvationssystem 2", area: "Ekvationssystem", subArea: "Problemlösning", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
-{ id: 943, versionLabel: "A", question: "Summan av två tal är 30. Skillnaden mellan deras kvadrater är 240. Vilka är de två talen?", solution: "Lös ekvationssystemet \\( \\begin{cases} a+b=30 \\\\ a^2-b^2=240 \\end{cases} \\). Svar: 19 och 11." },
-{ id: 944, versionLabel: "B", question: "Summan av två positiva tal är 54 och produkten av talen är 686,75. Vilka är talen?", solution: "Lös ekvationssystemet \\( \\begin{cases} x+y=54 \\\\ xy=686,75 \\end{cases} \\). Svar: 20,5 och 33,5." },
+{ id: 946, versionLabel: "A", question: "Summan av två tal är 30. Skillnaden mellan deras kvadrater är 240. Vilka är de två talen?", solution: "Lös ekvationssystemet \\( \\begin{cases} a+b=30 \\\\ a^2-b^2=240 \\end{cases} \\). Svar: 19 och 11." },
+{ id: 947, versionLabel: "B", question: "Summan av två positiva tal är 54 och produkten av talen är 686,75. Vilka är talen?", solution: "Lös ekvationssystemet \\( \\begin{cases} x+y=54 \\\\ xy=686,75 \\end{cases} \\). Svar: 20,5 och 33,5." },
 ] },
 { groupId: "Hur många lösningar har systemet?", area: "Ekvationssystem", subArea: "Hur många lösningar?", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, calculator: true, versions: [
-{ id: 945, versionLabel: "A", question: "Hur många lösningar har ekvationssystemet \\( \\begin{cases}  y+4x=-100 \\\\ y=4x-100 \\end{cases} \\)?", solution: "Ekvationssystemet har endast en lösning eftersom de två linjerna har olika k-värden." },
-{ id: 946, versionLabel: "B", question: "Hur många lösningar har ekvationssystemet \\( \\begin{cases}  2y=4x+8 \\\\ y=2x+8 \\end{cases} \\)?", solution: "Ekvationssystemet har inga lösningar eftersom det består av två parallella linjer med olika m-värden."},
+{ id: 948, versionLabel: "A", question: "Hur många lösningar har ekvationssystemet \\( \\begin{cases}  y+4x=-100 \\\\ y=4x-100 \\end{cases} \\)?", solution: "Ekvationssystemet har endast en lösning eftersom de två linjerna har olika k-värden." },
+{ id: 949, versionLabel: "B", question: "Hur många lösningar har ekvationssystemet \\( \\begin{cases}  2y=4x+8 \\\\ y=2x+8 \\end{cases} \\)?", solution: "Ekvationssystemet har inga lösningar eftersom det består av två parallella linjer med olika m-värden."},
 ] },
 { groupId: "Justera antalet lösningar", area: "Ekvationssystem", subArea: "Hur många lösningar?", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
-{ id: 947, versionLabel: "A", question: "Bestäm koefficienten \\( a \\) så att ekvationssystemet \\( \\begin{cases}  -1+ay=-2x \\\\ 5x+5y=10 \\end{cases} \\) saknar lösningar.", solution: "Vi behöver bestämma \\( a \\) så att de räta linjerna får samma lutning. Ekvation 1 kan skrivas som \\( ay=-2x+1 \\) och ekvation 2 som \\( y=-x+2 \\). Svar: \\( a=2 \\)."},
-{ id: 948, versionLabel: "B", question: "Bestäm koefficienten \\( a \\) så att ekvationssystemet \\( \\begin{cases}  2x+y=a \\\\ 4x+2y=10 \\end{cases} \\) har oändligt många lösningar.", solution: "Vi behöver bestämma \\( a \\) så att ekvationerna motsvarar samma linje. Ekvation 2 kan skrivas som \\( 2x+y=5 \\) så svar: \\( a=5 \\)."},
+{ id: 950, versionLabel: "A", question: "Bestäm koefficienten \\( a \\) så att ekvationssystemet \\( \\begin{cases}  -1+ay=-2x \\\\ 5x+5y=10 \\end{cases} \\) saknar lösningar.", solution: "Vi behöver bestämma \\( a \\) så att de räta linjerna får samma lutning. Ekvation 1 kan skrivas som \\( ay=-2x+1 \\) och ekvation 2 som \\( y=-x+2 \\). Svar: \\( a=2 \\)."},
+{ id: 951, versionLabel: "B", question: "Bestäm koefficienten \\( a \\) så att ekvationssystemet \\( \\begin{cases}  2x+y=a \\\\ 4x+2y=10 \\end{cases} \\) har oändligt många lösningar.", solution: "Vi behöver bestämma \\( a \\) så att ekvationerna motsvarar samma linje. Ekvation 2 kan skrivas som \\( 2x+y=5 \\) så svar: \\( a=5 \\)."},
 ] },
 { groupId: "Logaritmer: a^x=b", area: "Logaritmer", subArea: "Logaritmer grund", courses: ["Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 949, versionLabel: "A", question: "Lös ekvationen: \\( 5^x=9 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 9}{ \\lg 5} \\)"},
-{ id: 950, versionLabel: "B", question: "Lös ekvationen: \\( 14^x=5 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 5}{ \\lg 14} \\)"},
-{ id: 951, versionLabel: "C", question: "Lös ekvationen: \\( 8^x=4 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 4}{ \\lg 8} \\)"},
-{ id: 952, versionLabel: "D", question: "Lös ekvationen: \\( 6^x=10 \\). Svara exakt.", solution: "\\( x=\\frac{1}{ \\lg 6} \\)"}
+{ id: 952, versionLabel: "A", question: "Lös ekvationen: \\( 5^x=9 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 9}{ \\lg 5} \\)"},
+{ id: 953, versionLabel: "B", question: "Lös ekvationen: \\( 14^x=5 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 5}{ \\lg 14} \\)"},
+{ id: 954, versionLabel: "C", question: "Lös ekvationen: \\( 8^x=4 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 4}{ \\lg 8} \\)"},
+{ id: 955, versionLabel: "D", question: "Lös ekvationen: \\( 6^x=10 \\). Svara exakt.", solution: "\\( x=\\frac{1}{ \\lg 6} \\)"}
 ] },
 { groupId: "Logaritmer: k*a^x=b", area: "Logaritmer", subArea: "Logaritmer grund", courses: ["Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 953, versionLabel: "A", question: "Lös ekvationen: \\( 6 \\cdot 3^x=24 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 4}{ \\lg 3} \\)"},
-{ id: 954, versionLabel: "B", question: "Lös ekvationen: \\( \\frac{7^x}{5}=6 \\). Svara exakt.", solution: "\\( x = \\frac{ \\lg 30}{ \\lg 7} \\)"},
-{ id: 955, versionLabel: "C", question: "Lös ekvationen: \\( 2^x \\cdot5=30 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 6}{ \\lg 2} \\)"},
+{ id: 956, versionLabel: "A", question: "Lös ekvationen: \\( 6 \\cdot 3^x=24 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 4}{ \\lg 3} \\)"},
+{ id: 957, versionLabel: "B", question: "Lös ekvationen: \\( \\frac{7^x}{5}=6 \\). Svara exakt.", solution: "\\( x = \\frac{ \\lg 30}{ \\lg 7} \\)"},
+{ id: 958, versionLabel: "C", question: "Lös ekvationen: \\( 2^x \\cdot5=30 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 6}{ \\lg 2} \\)"},
 ] },
 { groupId: "Beräkna värdet av logaritm-uttryck", area: "Logaritmer", subArea: "Logaritmer grund", courses: ["Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 956, versionLabel: "A", question: "Bestäm värdet av uttrycket: \\( \\lg{100}+\\lg{1000}\\).", solution: "Svar: 5"},
-{ id: 957, versionLabel: "B", question: "Bestäm värdet av uttrycket: \\( \\lg{10}+\\frac{1}{2} \\). Svara i decimalform.", solution: "Svar: 1,5"},
-{ id: 958, versionLabel: "C", question: "Bestäm värdet av uttrycket: \\( 3+\\frac{\\lg 1000}{10} \\).", solution: "Svar: 3,3"},
-{ id: 959, versionLabel: "D", question: "Bestäm värdet av uttrycket: \\( \\lg 10000 \\cdot \\lg 100 \\).", solution: "Svar: 8"},
-{ id: 960, versionLabel: "E", question: "Bestäm värdet av uttrycket: \\( 10-\\lg(3+7) \\).", solution: "Svar: 9"}
+{ id: 959, versionLabel: "A", question: "Bestäm värdet av uttrycket: \\( \\lg{100}+\\lg{1000}\\).", solution: "Svar: 5"},
+{ id: 960, versionLabel: "B", question: "Bestäm värdet av uttrycket: \\( \\lg{10}+\\frac{1}{2} \\). Svara i decimalform.", solution: "Svar: 1,5"},
+{ id: 961, versionLabel: "C", question: "Bestäm värdet av uttrycket: \\( 3+\\frac{\\lg 1000}{10} \\).", solution: "Svar: 3,3"},
+{ id: 962, versionLabel: "D", question: "Bestäm värdet av uttrycket: \\( \\lg 10000 \\cdot \\lg 100 \\).", solution: "Svar: 8"},
+{ id: 963, versionLabel: "E", question: "Bestäm värdet av uttrycket: \\( 10-\\lg(3+7) \\).", solution: "Svar: 9"}
 ] },
 { groupId: "lgx=a", area: "Logaritmer", subArea: "Logaritmer grund", courses: ["Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 961, versionLabel: "A", question: "Lös ekvationen: \\( \\lg x=6 \\).", solution: "\\( x=1000000 \\)"},
-{ id: 962, versionLabel: "B", question: "Lös ekvationen: \\( \\lg x=-3 \\).", solution: "\\( x=0,001\\)"},
-{ id: 963, versionLabel: "C", question: "Lös ekvationen: \\( \\lg x=2 \\).", solution: "\\( x=100\\)"},
+{ id: 964, versionLabel: "A", question: "Lös ekvationen: \\( \\lg x=6 \\).", solution: "\\( x=1000000 \\)"},
+{ id: 965, versionLabel: "B", question: "Lös ekvationen: \\( \\lg x=-3 \\).", solution: "\\( x=0,001\\)"},
+{ id: 966, versionLabel: "C", question: "Lös ekvationen: \\( \\lg x=2 \\).", solution: "\\( x=100\\)"},
 ] },
 { groupId: "Ekvationer med logaritmer A", area: "Logaritmer", subArea: "Logaritmer grund", courses: ["Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 964, versionLabel: "A", question: "Lös ekvationen: \\( \\lg 5x=2 \\).", solution: "\\( x=20 \\)"},
-{ id: 965, versionLabel: "B", question: "Lös ekvationen: \\( \\lg (x+10)=3 \\).", solution: "\\( x=990 \\)"},
-{ id: 966, versionLabel: "C", question: "Lös ekvationen: \\( \\lg (3x+1)=1 \\).", solution: "\\( x=3 \\)"},
+{ id: 967, versionLabel: "A", question: "Lös ekvationen: \\( \\lg 5x=2 \\).", solution: "\\( x=20 \\)"},
+{ id: 968, versionLabel: "B", question: "Lös ekvationen: \\( \\lg (x+10)=3 \\).", solution: "\\( x=990 \\)"},
+{ id: 969, versionLabel: "C", question: "Lös ekvationen: \\( \\lg (3x+1)=1 \\).", solution: "\\( x=3 \\)"},
 ] },
 { groupId: "Ekvationer med logaritmer B", area: "Logaritmer", subArea: "Logaritmer grund", courses: ["Ma2b", "Ma2c"], difficulty: 1, versions: [
-{ id: 967, versionLabel: "A", question: "Lös ekvationen: \\( \\lg 100+x=3 \\).", solution: "\\( 2+x=3 \\) så \\( x=1 \\)."},
-{ id: 968, versionLabel: "B", question: "Lös ekvationen: \\( \\lg 1000+17=2x \\).", solution: "\\(3+17=2x\\)<br>\\(x=10 \\)"},
-{ id: 969, versionLabel: "C", question: "Lös ekvationen: \\( 3+\\lg 10=10x \\).", solution: "\\(x=0,5\\)"},
-{ id: 970, versionLabel: "D", question: "Lös ekvationen: \\( \\lg x-\\lg 1000=1 \\).", solution: "\\(x=10000\\)"},
+{ id: 970, versionLabel: "A", question: "Lös ekvationen: \\( \\lg 100+x=3 \\).", solution: "\\( 2+x=3 \\) så \\( x=1 \\)."},
+{ id: 971, versionLabel: "B", question: "Lös ekvationen: \\( \\lg 1000+17=2x \\).", solution: "\\(3+17=2x\\)<br>\\(x=10 \\)"},
+{ id: 972, versionLabel: "C", question: "Lös ekvationen: \\( 3+\\lg 10=10x \\).", solution: "\\(x=0,5\\)"},
+{ id: 973, versionLabel: "D", question: "Lös ekvationen: \\( \\lg x-\\lg 1000=1 \\).", solution: "\\(x=10000\\)"},
 ] },
 { groupId: "xlga=lga^x med värden", area: "Logaritmer", subArea: "Logaritmer grund", courses: ["Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
-{ id: 971, versionLabel: "A", question: "Givet att \\(\\lg4=0,6\\), beräkna värdet av \\(\\lg16\\).", solution: "\\(\\lg16=\\lg{4^2}=2\\lg4=1,2\\)"},
-{ id: 972, versionLabel: "B", question: "Givet att \\(\\lg5=0,7\\), beräkna värdet av \\(\\lg125\\).", solution: "\\(\\lg125=\\lg{5^3}=3\\lg5=2,1\\)"},
+{ id: 974, versionLabel: "A", question: "Givet att \\(\\lg4=0,6\\), beräkna värdet av \\(\\lg16\\).", solution: "\\(\\lg16=\\lg{4^2}=2\\lg4=1,2\\)"},
+{ id: 975, versionLabel: "B", question: "Givet att \\(\\lg5=0,7\\), beräkna värdet av \\(\\lg125\\).", solution: "\\(\\lg125=\\lg{5^3}=3\\lg5=2,1\\)"},
 ] },
 { groupId: "Logaritmer + pq-formel", area: "Logaritmer", subArea: "Logaritmer grund", courses: ["Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
-{ id: 973, versionLabel: "A", question: "Lös ekvationen: \\( \\lg(x^2-15x)=2 \\).", solution: "\\(x_1=20\\) och \\(x_2=-5\\)"},
-{ id: 974, versionLabel: "B", question: "Lös ekvationen: \\( \\lg(x^2+375x)=3 \\).", solution: "\\(x_1=25\\) och \\(x_2=-400\\)"},
+{ id: 976, versionLabel: "A", question: "Lös ekvationen: \\( \\lg(x^2-15x)=2 \\).", solution: "\\(x_1=20\\) och \\(x_2=-5\\)"},
+{ id: 977, versionLabel: "B", question: "Lös ekvationen: \\( \\lg(x^2+375x)=3 \\).", solution: "\\(x_1=25\\) och \\(x_2=-400\\)"},
 ] },
 { groupId: "Textuppgift med logaritmer", area: "Logaritmer", subArea: "Logaritmer grund", courses: ["Ma2b", "Ma2c"], difficulty: 1, calculator: true, versions: [
-{ id: 975, versionLabel: "A", question: "En mobiltelefon köptes för 9 000 kr. Dess värde minskar med 12 % varje år. Efter hur lång tid är värdet 4 500 kr?", solution: "Efter ca 6 år (5,9)."},
-{ id: 976, versionLabel: "B", question: "Ett bakteriebestånd växer med 8 % per timme. Från början finns det 250 bakterier. Efter hur många timmar finns det minst 500 bakterier?", solution: "Efter ca 9 timmar."},
-{ id: 977, versionLabel: "C", question: "Värdet på ett sparkonto ökar med 3 % per år. När kontot öppnades satte man in 20 000 kr. Efter hur lång tid har pengarna vuxit till 25 000 kr?", solution: "Efter ca 8 år (7,6)."},
-{ id: 978, versionLabel: "D", question: "En radioaktiv substans minskar med 6 % varje år. Från början finns det 150 gram. Efter hur lång tid är mängden mindre än 100 gram?", solution: "Efter ca 7 år (6,6)."},
-{ id: 979, versionLabel: "E", question: "Jojo köpte en bil för 60 000 kr. Den minskade därefter i värde med 5% varje år. Efter hur lång tid var bilens värde 40 000 kr?", solution: "Efter ca 8 år (7,9)."},
-{ id: 980, versionLabel: "F", question: "En biolog studerar ett ämne och ser att mängden koldioxid ökar med 14 % varje dygn. När projektet började var det 60 mg koldioxid i tanken. Efter hur många dagar har mängden koldioxid passerat 105 mg? ", solution: "Efter drygt 4 dagar (4,3)."},
+{ id: 978, versionLabel: "A", question: "En mobiltelefon köptes för 9 000 kr. Dess värde minskar med 12 % varje år. Efter hur lång tid är värdet 4 500 kr?", solution: "Efter ca 6 år (5,9)."},
+{ id: 979, versionLabel: "B", question: "Ett bakteriebestånd växer med 8 % per timme. Från början finns det 250 bakterier. Efter hur många timmar finns det minst 500 bakterier?", solution: "Efter ca 9 timmar."},
+{ id: 980, versionLabel: "C", question: "Värdet på ett sparkonto ökar med 3 % per år. När kontot öppnades satte man in 20 000 kr. Efter hur lång tid har pengarna vuxit till 25 000 kr?", solution: "Efter ca 8 år (7,6)."},
+{ id: 981, versionLabel: "D", question: "En radioaktiv substans minskar med 6 % varje år. Från början finns det 150 gram. Efter hur lång tid är mängden mindre än 100 gram?", solution: "Efter ca 7 år (6,6)."},
+{ id: 982, versionLabel: "E", question: "Jojo köpte en bil för 60 000 kr. Den minskade därefter i värde med 5% varje år. Efter hur lång tid var bilens värde 40 000 kr?", solution: "Efter ca 8 år (7,9)."},
+{ id: 983, versionLabel: "F", question: "En biolog studerar ett ämne och ser att mängden koldioxid ökar med 14 % varje dygn. När projektet började var det 60 mg koldioxid i tanken. Efter hur många dagar har mängden koldioxid passerat 105 mg? ", solution: "Efter drygt 4 dagar (4,3)."},
 ] },
 { groupId: "Textuppgift med logaritmer 2", area: "Logaritmer", subArea: "Logaritmer grund", courses: ["Ma2b", "Ma2c"], difficulty: 1, calculator: true, versions: [
-{ id: 981, versionLabel: "A", question: "Du köper en motorcykel för 400 000 kr. Efter ett år har värdet av motorcykeln sjunkit till 365 000 kr. Förutsätt att den efter detta kommer fortsätta minska i värde och att minskningen är exponentiell i samma takt som första året. Hur många år efter att du köpte motorcykeln är dess värde 100 000 kr?", solution: "Efter drygt 15 år."},
-{ id: 982, versionLabel: "B", question: "Du köper en husvagn för 350 000 kr. Efter ett år har dess värde sjunkit till 328 000 kr. Förutsätt att den efter detta kommer fortsätta minska i värde och att minskningen är exponentiell i samma takt som första året. Hur många år efter att du köpte husvagnen är dess värde 160 600 kr?", solution: "Efter ca 12 år."},
+{ id: 984, versionLabel: "A", question: "Du köper en motorcykel för 400 000 kr. Efter ett år har värdet av motorcykeln sjunkit till 365 000 kr. Förutsätt att den efter detta kommer fortsätta minska i värde och att minskningen är exponentiell i samma takt som första året. Hur många år efter att du köpte motorcykeln är dess värde 100 000 kr?", solution: "Efter drygt 15 år."},
+{ id: 985, versionLabel: "B", question: "Du köper en husvagn för 350 000 kr. Efter ett år har dess värde sjunkit till 328 000 kr. Förutsätt att den efter detta kommer fortsätta minska i värde och att minskningen är exponentiell i samma takt som första året. Hur många år efter att du köpte husvagnen är dess värde 160 600 kr?", solution: "Efter ca 12 år."},
 ] },
 { groupId: "Textuppgift: potensekvation -> exp.ekvation", area: "Logaritmer", subArea: "Logaritmer grund", courses: ["Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
-{ id: 983, versionLabel: "A", question: "Saras bostadsrätt värderades år 2012 till 2 000 000 kr. År 2018 värderades den till 2 400 000 kr. Förutsätt att värdet har ökat med lika många procent varje år och fortsätter i samma takt. Vilket år kommer bostaden vara värd 3 000 000 kr?", solution: "År 2025 (beräkningen ger ca 13,4 år efter 2012)."},
-{ id: 984, versionLabel: "B", question: "Eriks villa var värd 1 100 000 kr år 2015. År 2019 hade värdet stigit till 1 280 000 kr. Antag att värdet har ökat med samma procentsats varje år och fortsätter öka i samma takt. Vilket år är villan värd 1 600 000 kr?", solution: "År 2025 (beräkningen ger ca 9,9 år efter 2015)."},
-{ id: 985, versionLabel: "C", question: "En lägenhet värderades år 2008 till 950 000 kr. År 2013 var värdet 1 045 000 kr. Förutsätt att värdet har ökat med lika många procent varje år och fortsätter öka i samma takt. Vilket år är lägenheten värd 1 300 000 kr?", solution: "År 2024 (beräkningen ger ca 16,5 år efter 2008)."},
+{ id: 986, versionLabel: "A", question: "Saras bostadsrätt värderades år 2012 till 2 000 000 kr. År 2018 värderades den till 2 400 000 kr. Förutsätt att värdet har ökat med lika många procent varje år och fortsätter i samma takt. Vilket år kommer bostaden vara värd 3 000 000 kr?", solution: "År 2025 (beräkningen ger ca 13,4 år efter 2012)."},
+{ id: 987, versionLabel: "B", question: "Eriks villa var värd 1 100 000 kr år 2015. År 2019 hade värdet stigit till 1 280 000 kr. Antag att värdet har ökat med samma procentsats varje år och fortsätter öka i samma takt. Vilket år är villan värd 1 600 000 kr?", solution: "År 2025 (beräkningen ger ca 9,9 år efter 2015)."},
+{ id: 988, versionLabel: "C", question: "En lägenhet värderades år 2008 till 950 000 kr. År 2013 var värdet 1 045 000 kr. Förutsätt att värdet har ökat med lika många procent varje år och fortsätter öka i samma takt. Vilket år är lägenheten värd 1 300 000 kr?", solution: "År 2024 (beräkningen ger ca 16,5 år efter 2008)."},
 ] },
 { groupId: "Längdenheter", area: "Geometri", subArea: "Enheter", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
-{ id: 986, versionLabel: "A", question: "Skriv rätt tal på raden:<br>a) 5 m = __________ cm<br>b) 12 mm = __________ cm", solution: "a) 500<br>b) 1,2"},
-{ id: 987, versionLabel: "B", question: "Skriv rätt tal på raden:<br>a) 10 dm = __________ cm<br>b) 0,5 m = __________ cm", solution: "a) 100<br>b) 40"},
-{ id: 988, versionLabel: "C", question: "Skriv rätt tal på raden:<br>a) 17 dm = __________ m<br>b) 6 km = __________ m", solution: "a) 1,7<br>b) 6000"},
-{ id: 989, versionLabel: "D", question: "Skriv rätt tal på raden:<br>a) 25 cm = __________ mm<br>b) 19 mil = __________ km", solution: "a) 250<br>b) 190"},
+{ id: 989, versionLabel: "A", question: "Skriv rätt tal på raden:<br>a) 5 m = __________ cm<br>b) 12 mm = __________ cm", solution: "a) 500<br>b) 1,2"},
+{ id: 990, versionLabel: "B", question: "Skriv rätt tal på raden:<br>a) 10 dm = __________ cm<br>b) 0,5 m = __________ cm", solution: "a) 100<br>b) 40"},
+{ id: 991, versionLabel: "C", question: "Skriv rätt tal på raden:<br>a) 17 dm = __________ m<br>b) 6 km = __________ m", solution: "a) 1,7<br>b) 6000"},
+{ id: 992, versionLabel: "D", question: "Skriv rätt tal på raden:<br>a) 25 cm = __________ mm<br>b) 19 mil = __________ km", solution: "a) 250<br>b) 190"},
 ] },
 { groupId: "Bestäm randvinklar", area: "Geometri", subArea: "Randvinkelsatsen", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 990, versionLabel: "A", question: "M är medelpunkt i cirkeln. Bestäm vinklarna v och w.", img: "bilder/Randvinkelsatsen/IMG_1014.png", solution: "\\( v=w=59^{\\circ} \\)"},
-{ id: 991, versionLabel: "B", question: "M är medelpunkt i cirkeln. Bestäm vinklarna v och w.", img: "bilder/Randvinkelsatsen/IMG_1015.png", solution: "\\( v=w=68^{\\circ} \\)"},
-{ id: 992, versionLabel: "C", question: "M är medelpunkt i cirkeln. Bestäm vinklarna v och w.", img: "bilder/Randvinkelsatsen/IMG_1016.png", solution: "\\( v=w=95^{\\circ} \\)"},
+{ id: 993, versionLabel: "A", question: "M är medelpunkt i cirkeln. Bestäm vinklarna v och w.", img: "bilder/Randvinkelsatsen/IMG_1014.png", solution: "\\( v=w=59^{\\circ} \\)"},
+{ id: 994, versionLabel: "B", question: "M är medelpunkt i cirkeln. Bestäm vinklarna v och w.", img: "bilder/Randvinkelsatsen/IMG_1015.png", solution: "\\( v=w=68^{\\circ} \\)"},
+{ id: 995, versionLabel: "C", question: "M är medelpunkt i cirkeln. Bestäm vinklarna v och w.", img: "bilder/Randvinkelsatsen/IMG_1016.png", solution: "\\( v=w=95^{\\circ} \\)"},
 ] },
 { groupId: "Bestäm randvinkel och medelpunktsvinkel", area: "Geometri", subArea: "Randvinkelsatsen", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 993, versionLabel: "A", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och w.", img: "bilder/Randvinkelsatsen/IMG_1017.png", solution: "\\( u=128^{\\circ} \\) och \\( w=64^{\\circ} \\)"},
-{ id: 994, versionLabel: "B", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och w.", img: "bilder/Randvinkelsatsen/IMG_1018.png", solution: "\\( u=116^{\\circ} \\) och \\( w=58^{\\circ} \\)"},
-{ id: 995, versionLabel: "C", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och v.", img: "bilder/Randvinkelsatsen/IMG_1019.png", solution: "\\( u=192^{\\circ} \\) och \\( v=96^{\\circ} \\)"},
-{ id: 996, versionLabel: "D", question: "Bestäm vinklarna e och c.", img: "bilder/Randvinkelsatsen/IMG_1004.jpg", solution: "\\( e=74^{\\circ} \\) och \\( c=148^{\\circ} \\)"},
+{ id: 996, versionLabel: "A", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och w.", img: "bilder/Randvinkelsatsen/IMG_1017.png", solution: "\\( u=128^{\\circ} \\) och \\( w=64^{\\circ} \\)"},
+{ id: 997, versionLabel: "B", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och w.", img: "bilder/Randvinkelsatsen/IMG_1018.png", solution: "\\( u=116^{\\circ} \\) och \\( w=58^{\\circ} \\)"},
+{ id: 998, versionLabel: "C", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och v.", img: "bilder/Randvinkelsatsen/IMG_1019.png", solution: "\\( u=192^{\\circ} \\) och \\( v=96^{\\circ} \\)"},
+{ id: 999, versionLabel: "D", question: "Bestäm vinklarna e och c.", img: "bilder/Randvinkelsatsen/IMG_1004.jpg", solution: "\\( e=74^{\\circ} \\) och \\( c=148^{\\circ} \\)"},
 ] },
 { groupId: "Bestäm motstående vinkel", area: "Geometri", subArea: "Randvinkelsatsen", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 997, versionLabel: "A", question: "Punkterna A, B, C och D ligger på cirkelns rand. Bestäm vinkeln v.", img: "bilder/Randvinkelsatsen/IMG_1030.svg", solution: "\\( v=60^{\\circ} \\)."},
+{ id: 1000, versionLabel: "A", question: "Punkterna A, B, C och D ligger på cirkelns rand. Bestäm vinkeln v.", img: "bilder/Randvinkelsatsen/IMG_1030.svg", solution: "\\( v=60^{\\circ} \\)."},
 ] },
 { groupId: "Bestäm motstående vinkel och medelpunktsvinkel", area: "Geometri", subArea: "Randvinkelsatsen", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 998, versionLabel: "A", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och v.", img: "bilder/Randvinkelsatsen/IMG_1020.png", solution: "\\( u=152^{\\circ} \\) och \\( v=76^{\\circ} \\)"},
-{ id: 999, versionLabel: "B", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och v.", img: "bilder/Randvinkelsatsen/IMG_1021.png", solution: "\\( u=132^{\\circ} \\) och \\( w=66^{\\circ} \\)"},
-{ id: 1000, versionLabel: "C", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och w.", img: "bilder/Randvinkelsatsen/IMG_1022.png", solution: "\\( u=132^{\\circ} \\) och \\( w=114^{\\circ} \\)"},
+{ id: 1001, versionLabel: "A", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och v.", img: "bilder/Randvinkelsatsen/IMG_1020.png", solution: "\\( u=152^{\\circ} \\) och \\( v=76^{\\circ} \\)"},
+{ id: 1002, versionLabel: "B", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och v.", img: "bilder/Randvinkelsatsen/IMG_1021.png", solution: "\\( u=132^{\\circ} \\) och \\( w=66^{\\circ} \\)"},
+{ id: 1003, versionLabel: "C", question: "M är medelpunkt i cirkeln. Bestäm vinklarna u och w.", img: "bilder/Randvinkelsatsen/IMG_1022.png", solution: "\\( u=132^{\\circ} \\) och \\( w=114^{\\circ} \\)"},
 ] },
 { groupId: "Bestäm vinklar i cirkel", area: "Geometri", subArea: "Randvinkelsatsen", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
-{ id: 1001, versionLabel: "A", question: "Bestäm vinkel a och b.", img: "bilder/Randvinkelsatsen/IMG_1001.jpg", solution: "\\( a=34^{\\circ} \\) och \\( b=74^{\\circ} \\)"},
-{ id: 1002, versionLabel: "B", question: "Bestäm vinkel a och b.", img: "bilder/Randvinkelsatsen/IMG_1002.jpg", solution: "\\( a=65^{\\circ} \\) och \\( b=110^{\\circ} \\)"},
-{ id: 1003, versionLabel: "C", question: "Linjen genom cirkeln är cirkelns diameter. Bestäm vinkel a och vinkel b.", img: "bilder/Randvinkelsatsen/IMG_1003.jpg", solution: "\\( a=30^{\\circ} \\) och \\( b=90^{\\circ} \\)"},
+{ id: 1004, versionLabel: "A", question: "Bestäm vinkel a och b.", img: "bilder/Randvinkelsatsen/IMG_1001.jpg", solution: "\\( a=34^{\\circ} \\) och \\( b=74^{\\circ} \\)"},
+{ id: 1005, versionLabel: "B", question: "Bestäm vinkel a och b.", img: "bilder/Randvinkelsatsen/IMG_1002.jpg", solution: "\\( a=65^{\\circ} \\) och \\( b=110^{\\circ} \\)"},
+{ id: 1006, versionLabel: "C", question: "Linjen genom cirkeln är cirkelns diameter. Bestäm vinkel a och vinkel b.", img: "bilder/Randvinkelsatsen/IMG_1003.jpg", solution: "\\( a=30^{\\circ} \\) och \\( b=90^{\\circ} \\)"},
 ] },
 { groupId: "Bestäm motsatt medelpunktsvinkel", area: "Geometri", subArea: "Randvinkelsatsen", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
-{ id: 1004, versionLabel: "A", question: "Bestäm vinklarna \\(u\\) och \\(w_1\\).", img: "bilder/Randvinkelsatsen/IMG_1011.jpg", solution: "\\( u=228^{\\circ} \\) och \\( w_1=66^{\\circ} \\)"},
+{ id: 1007, versionLabel: "A", question: "Bestäm vinklarna \\(u\\) och \\(w_1\\).", img: "bilder/Randvinkelsatsen/IMG_1011.jpg", solution: "\\( u=228^{\\circ} \\) och \\( w_1=66^{\\circ} \\)"},
 ] },
 {
-id: 1005,
+id: 1008,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2091,7 +2058,7 @@ difficulty: 1,
 solution: "\\( u=58^{\\circ} \\) och \\( v=45^{\\circ} \\)."
 },
 {
-id: 1006,
+id: 1009,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2101,7 +2068,7 @@ difficulty: 1,
 solution: "\\( w=94^{\\circ} \\)."
 },
 {
-id: 1007,
+id: 1010,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2111,7 +2078,7 @@ difficulty: 1,
 solution: "\\( v=172^{\\circ} \\)."
 },
 {
-id: 1008,
+id: 1011,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2121,7 +2088,7 @@ difficulty: 2,
 solution: "\\( a=20^{\\circ} \\)."
 },
 {
-id: 1009,
+id: 1012,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2131,7 +2098,7 @@ difficulty: 1,
 solution: "\\( w_1=64^{\\circ} \\) och \\( u_2=128^{\\circ} \\)."
 },
 {
-id: 1010,
+id: 1013,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2141,7 +2108,7 @@ difficulty: 2,
 solution: "\\( w_1=56^{\\circ} \\) \\( u=112^{\\circ}.\\)"
 },
 {
-id: 1011,
+id: 1014,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2151,7 +2118,7 @@ difficulty: 1,
 solution: "\\( w=105^{\\circ} \\)."
 },
 {
-id: 1012,
+id: 1015,
 area: "Geometri",
 subArea: "Randvinkelsatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2161,13 +2128,13 @@ difficulty: 2,
 solution: "\\( v=v_1=28^{\\circ} \\)."
 },
 { groupId: "Kordasatsen - Enkla", area: "Geometri", subArea: "Kordasatsen", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 1013, versionLabel: "A", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4001.jpg", solution: "\\( x=10,0 \\) l.e."},
-{ id: 1014, versionLabel: "B", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4002.jpg", solution: "\\( x=10,7 \\) l.e."},
-{ id: 1015, versionLabel: "C", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4003.jpg", solution: "\\( x=6,2 \\) l.e."},
-{ id: 1016, versionLabel: "D", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4020.jpg", solution: "\\( x=7,9 \\) l.e."},
+{ id: 1016, versionLabel: "A", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4001.jpg", solution: "\\( x=10,0 \\) l.e."},
+{ id: 1017, versionLabel: "B", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4002.jpg", solution: "\\( x=10,7 \\) l.e."},
+{ id: 1018, versionLabel: "C", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4003.jpg", solution: "\\( x=6,2 \\) l.e."},
+{ id: 1019, versionLabel: "D", question: "Bestäm sträckan \\( x \\). Svara med en decimals noggranhet.", img: "bilder/IMG_4020.jpg", solution: "\\( x=7,9 \\) l.e."},
 ] },
 {
-id: 1017,
+id: 1020,
 area: "Geometri",
 subArea: "Kordasatsen",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2178,22 +2145,22 @@ difficulty: 2,
 solution: "\\( x=18,6 \\) l.e."
 },
 { groupId: "Beräkna hypotenusan", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 1018, versionLabel: "A", question: "Bestäm sträckan \\( x \\).", img: "bilder/IMG_2013.jpg", solution: "x = 13 l.e."},
+{ id: 1021, versionLabel: "A", question: "Bestäm sträckan \\( x \\).", img: "bilder/IMG_2013.jpg", solution: "x = 13 l.e."},
 ] },
 { groupId: "Beräkna katet", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 1019, versionLabel: "A", question: "Bestäm sträckan \\( x \\).", img: "bilder/IMG_2014.jpg", solution: "x = 24 l.e."},
+{ id: 1022, versionLabel: "A", question: "Bestäm sträckan \\( x \\).", img: "bilder/IMG_2014.jpg", solution: "x = 24 l.e."},
 ] },
 { groupId: "Pythagoras -> Andragradare", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 2, versions: [
-{ id: 1020, versionLabel: "A", question: "Bestäm sträckan x i denna rätvinkliga triangel.", img: "bilder/Pythagoras_och_likformighet/IMG_2015.jpg", solution: "x = 8,47 l.e."},
-{ id: 1021, versionLabel: "B", question: "Bestäm omkretsen för denna rätvinkliga triangel.", img: "bilder/Pythagoras_och_likformighet/IMG_2016.jpg", solution: "Omkretsen är ca 36,96 l.e."},
+{ id: 1023, versionLabel: "A", question: "Bestäm sträckan x i denna rätvinkliga triangel.", img: "bilder/Pythagoras_och_likformighet/IMG_2015.jpg", solution: "x = 8,47 l.e."},
+{ id: 1024, versionLabel: "B", question: "Bestäm omkretsen för denna rätvinkliga triangel.", img: "bilder/Pythagoras_och_likformighet/IMG_2016.jpg", solution: "Omkretsen är ca 36,96 l.e."},
 ] },
 { groupId: "Likformighet grundläggande", area: "Geometri", subArea: "Likformighet / Pythagoras", courses: ["Ma2a", "Ma2b", "Ma2c"], calculator: true, difficulty: 1, versions: [
-{ id: 1022, versionLabel: "A", question: "Figurerna är likformiga. Bestäm sträckan x.", img: "bilder/Pythagoras_och_likformighet/IMG_2010.jpg", solution: "x = 28,8 l.e."},
-{ id: 1023, versionLabel: "B", question: "Figurerna är likformiga. Bestäm sträckan x. Svara med en decimal.", img: "bilder/Pythagoras_och_likformighet/IMG_2011.jpg", solution: "x = 14,5 l.e."},
-{ id: 1024, versionLabel: "C", question: "Figurerna är likformiga. Bestäm sträckorna a och b. Svara med en decimal.", img: "bilder/Pythagoras_och_likformighet/IMG_2012.jpg", solution: "a = 18,4 l.e. och b = 14,4 l.e."},
+{ id: 1025, versionLabel: "A", question: "Figurerna är likformiga. Bestäm sträckan x.", img: "bilder/Pythagoras_och_likformighet/IMG_2010.jpg", solution: "x = 28,8 l.e."},
+{ id: 1026, versionLabel: "B", question: "Figurerna är likformiga. Bestäm sträckan x. Svara med en decimal.", img: "bilder/Pythagoras_och_likformighet/IMG_2011.jpg", solution: "x = 14,5 l.e."},
+{ id: 1027, versionLabel: "C", question: "Figurerna är likformiga. Bestäm sträckorna a och b. Svara med en decimal.", img: "bilder/Pythagoras_och_likformighet/IMG_2012.jpg", solution: "a = 18,4 l.e. och b = 14,4 l.e."},
 ] },
 {
-id: 1025,
+id: 1028,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2203,7 +2170,7 @@ difficulty: 2,
 solution: "FC = 32 l.e."
 },
 {
-id: 1026,
+id: 1029,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2213,7 +2180,7 @@ difficulty: 1,
 solution: "Båda trianglarna har en rät vinkel. Vi ser också att båda trianglarna delar vinkeln vid punkten B. Eftersom trianglarna har två gemensama vinklar och vinkelsumman i en triangel alltid är 180 så måste den tredje vinkeln i respektive triangel vara lika stora. Därför har trianglarna lika stora vinklar och därmed är de likformiga."
 },
 {
-id: 1027,
+id: 1030,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2224,7 +2191,7 @@ calculator: true,
 solution: "DE = 8,57 l.e."
 },
 {
-id: 1028,
+id: 1031,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2235,7 +2202,7 @@ calculator: true,
 solution: "DE = 20,83 l.e."
 },
 {
-id: 1029,
+id: 1032,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2246,7 +2213,7 @@ calculator: true,
 solution: "AE = 21,25 l.e."
 },
 {
-id: 1030,
+id: 1033,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2257,7 +2224,7 @@ calculator: true,
 solution: "AE = 61,48 cm"
 },
 {
-id: 1031,
+id: 1034,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2268,7 +2235,7 @@ calculator: true,
 solution: "AE = 5,33 l.e."
 },
 {
-id: 1032,
+id: 1035,
 area: "Geometri",
 subArea: "Likformighet / Pythagoras",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2279,7 +2246,7 @@ calculator: true,
 solution: "Eftersom \\( 12^2+16^2=144+256=400=20^2 \\) så märker vi att summan av kateternas kvadrater är lika med hyponetusan i kvadrat. Det innebär att Pythagoras sats gäller, alltså är triangeln rätvinklig."
 },
 {
-id: 1033,
+id: 1036,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2288,7 +2255,7 @@ difficulty: 1,
 solution: "Svar: \\( \\sqrt{3^2+4^2}=5 l.e. \\)"
 },
 {
-id: 1034,
+id: 1037,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2298,13 +2265,13 @@ calculator: true,
 solution: "Svar: \\( \\sqrt{7^2+2^2}=7,28 l.e. \\)"
 },
 { groupId: "Bestäm koordinat utifrån givet avstånd", area: "Geometri", subArea: "Avståndsformeln / Mittpunktsformeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
-{ id: 1035, versionLabel: "A", question: "Punkten \\( (2, y) \\) ligger 10 l.e. från punkten \\( (-4, 6) \\). Bestäm \\( y \\).", solution: "Vi löser ekvationen \\( \\sqrt{(2+4)^2+(y-6)^2}=10 \\).<br>Svar: \\( y_1=-2 \\) och \\( y_2=14 \\)." },
-{ id: 1036, versionLabel: "B", question: "Punkten \\( (x, 10) \\) ligger 13 l.e. från punkten \\( (5, 4) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-5)^2+(10-4)^2}=13 \\).<br>Svar: \\( x_1=-6 \\) och \\( x_2=16 \\)."},
-{ id: 1037, versionLabel: "C", question: "Punkten \\( (x, 20) \\) ligger 37 l.e. från punkten \\( (3, 8) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-3)^2+(20-8)^2}=37 \\).<br>Svar: \\( x_1=-32 \\) och \\( x_2=38 \\)."},
-{ id: 1038, versionLabel: "D", question: "Punkten \\( (a, a) \\) ligger 5 l.e. från punkten \\( (1, 2) \\). Bestäm punktens koordinater.", solution: "Vi löser ekvationen \\( \\sqrt{(a-1)^2+(a-2)^2}=5 \\).<br>Svar: \\( (-2, -2)\\) eller \\( (5,5) \\)."},
+{ id: 1038, versionLabel: "A", question: "Punkten \\( (2, y) \\) ligger 10 l.e. från punkten \\( (-4, 6) \\). Bestäm \\( y \\).", solution: "Vi löser ekvationen \\( \\sqrt{(2+4)^2+(y-6)^2}=10 \\).<br>Svar: \\( y_1=-2 \\) och \\( y_2=14 \\)." },
+{ id: 1039, versionLabel: "B", question: "Punkten \\( (x, 10) \\) ligger 13 l.e. från punkten \\( (5, 4) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-5)^2+(10-4)^2}=13 \\).<br>Svar: \\( x_1=-6 \\) och \\( x_2=16 \\)."},
+{ id: 1040, versionLabel: "C", question: "Punkten \\( (x, 20) \\) ligger 37 l.e. från punkten \\( (3, 8) \\). Bestäm \\( x \\).", solution: "Vi löser ekvationen \\( \\sqrt{(x-3)^2+(20-8)^2}=37 \\).<br>Svar: \\( x_1=-32 \\) och \\( x_2=38 \\)."},
+{ id: 1041, versionLabel: "D", question: "Punkten \\( (a, a) \\) ligger 5 l.e. från punkten \\( (1, 2) \\). Bestäm punktens koordinater.", solution: "Vi löser ekvationen \\( \\sqrt{(a-1)^2+(a-2)^2}=5 \\).<br>Svar: \\( (-2, -2)\\) eller \\( (5,5) \\)."},
 ] },
 {
-id: 1039,
+id: 1042,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2314,7 +2281,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{3^2+a^2}=\\sqrt{6^2+8^2} \\).<br>Svar: \\( a_1=10 \\) och \\( a_2=-10 \\)."
 },
 {
-id: 1040,
+id: 1043,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2324,7 +2291,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(-4)^2+a^2}=\\sqrt{0^2+7^2} \\).<br>Svar: \\( a_1=\\sqrt{33} \\) och \\( a_2=-\\sqrt{33} \\)."
 },
 {
-id: 1041,
+id: 1044,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2334,7 +2301,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(-7)^2+b^2}=\\sqrt{1^2+24^2} \\).<br>Svar: \\( b_1=\\sqrt{528} \\) och \\( b_2=-\\sqrt{528} \\)."
 },
 {
-id: 1042,
+id: 1045,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2344,7 +2311,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{10^2+a^2}=\\sqrt{13^2+0^2} \\).<br>Svar: \\( a_1=\\sqrt{69} \\) och \\( a_2=-\\sqrt{69} \\)."
 },
 {
-id: 1043,
+id: 1046,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2353,7 +2320,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{3+2}{2}=2,5 \\) och \\( \\frac{-5+(-3)}{2}=-4 \\).<br>Svar \\( M=(2,5 ; -4) \\)."
 },
 {
-id: 1044,
+id: 1047,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2362,7 +2329,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{5+12}{2}=8,5 \\) och \\( \\frac{10+18}{2}=14 \\).<br>Svar \\( M=(8,5 ; 14) \\)."
 },
 {
-id: 1045,
+id: 1048,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2373,7 +2340,7 @@ difficulty: 1,
 solution: "Svar: P=(1,5 ; 8,77)."
 },
 {
-id: 1046,
+id: 1049,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2384,7 +2351,7 @@ difficulty: 1,
 solution: "Svar: y-koordinaten är ca 4,36."
 },
 {
-id: 1047,
+id: 1050,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2393,7 +2360,7 @@ difficulty: 1,
 solution: "Svar: \\( \\sqrt{3^2+4^2}=5 l.e. \\)"
 },
 {
-id: 1048,
+id: 1051,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2403,7 +2370,7 @@ calculator: true,
 solution: "Svar: \\( \\sqrt{7^2+2^2}=7,28 l.e. \\)"
 },
 {
-id: 1049,
+id: 1052,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2413,7 +2380,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(2+4)^2+(y-6)^2}=10 \\).<br>Svar: \\( y_1=-2 \\) och \\( y_2=14 \\)."
 },
 {
-id: 1050,
+id: 1053,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2423,7 +2390,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(x-5)^2+(10-4)^2}=13 \\).<br>Svar: \\( x_1=-6 \\) och \\( x_2=16 \\)."
 },
 {
-id: 1051,
+id: 1054,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2433,7 +2400,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(x-3)^2+(20-8)^2}=37 \\).<br>Svar: \\( x_1=-32 \\) och \\( x_2=38 \\)."
 },
 {
-id: 1052,
+id: 1055,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2443,7 +2410,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(x-1)^2+(x-2)^2}=5 \\).<br>Svar: \\( x_1=-2 \\) och \\( x_2=5 \\)."
 },
 {
-id: 1053,
+id: 1056,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2453,7 +2420,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{3^2+a^2}=\\sqrt{6^2+8^2} \\).<br>Svar: \\( a_1=10 \\) och \\( a_2=-10 \\)."
 },
 {
-id: 1054,
+id: 1057,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2463,7 +2430,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(-4)^2+a^2}=\\sqrt{0^2+7^2} \\).<br>Svar: \\( a_1=\\sqrt{33} \\) och \\( a_2=-\\sqrt{33} \\)."
 },
 {
-id: 1055,
+id: 1058,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2473,7 +2440,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{(-7)^2+b^2}=\\sqrt{1^2+24^2} \\).<br>Svar: \\( b_1=\\sqrt{528} \\) och \\( b_2=-\\sqrt{528} \\)."
 },
 {
-id: 1056,
+id: 1059,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2483,7 +2450,7 @@ calculator: true,
 solution: "Vi löser ekvationen \\( \\sqrt{10^2+a^2}=\\sqrt{13^2+0^2} \\).<br>Svar: \\( a_1=\\sqrt{69} \\) och \\( a_2=-\\sqrt{69} \\)."
 },
 {
-id: 1057,
+id: 1060,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2492,7 +2459,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{3+2}{2}=2,5 \\) och \\( \\frac{-5+(-3)}{2}=-4 \\).<br>Svar \\( M=(2,5 ; -4) \\)."
 },
 {
-id: 1058,
+id: 1061,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2501,7 +2468,7 @@ difficulty: 1,
 solution: "Svar: \\( \\frac{5+12}{2}=8,5 \\) och \\( \\frac{10+18}{2}=14 \\).<br>Svar \\( M=(8,5 ; 14) \\)."
 },
 {
-id: 1059,
+id: 1062,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2512,7 +2479,7 @@ difficulty: 1,
 solution: "Svar: P=(1,5 ; 8,77)."
 },
 {
-id: 1060,
+id: 1063,
 area: "Geometri",
 subArea: "Avståndsformeln / Mittpunktsformeln",
 courses: ["Ma2a", "Ma2b", "Ma2c"],
@@ -2523,7 +2490,7 @@ difficulty: 1,
 solution: "Svar: y-koordinaten är ca 4,36."
 },
 { groupId: "derivera enkla polynom", area: "Derivata", subArea: "Derivera polynom", courses: ["Ma3b", "Ma3c"], difficulty: 1, versions: [
-{ id: 1061, versionLabel: "A", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=x^2+5x^3\\)<br>b) \\(g(x)=7x^4-x \\)", solution: "a) \\(f´(x)=2x+15x^2\\)<br>b) \\(g´(x)=28x^3-1\\)" },
-{ id: 1062, versionLabel: "B", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=3x^3-4\\)<br>b) \\(g(x)=x^6-0,3x^8 \\)", solution: "a) \\(f´(x)=9x^2\\)<br>b) \\(g´(x)=6x^5-2,4x^7\\)" },
+{ id: 1064, versionLabel: "A", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=x^2+5x^3\\)<br>b) \\(g(x)=7x^4-x \\)", solution: "a) \\(f´(x)=2x+15x^2\\)<br>b) \\(g´(x)=28x^3-1\\)" },
+{ id: 1065, versionLabel: "B", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=3x^3-4\\)<br>b) \\(g(x)=x^6-0,3x^8 \\)", solution: "a) \\(f´(x)=9x^2\\)<br>b) \\(g´(x)=6x^5-2,4x^7\\)" },
 ] },
 ];
