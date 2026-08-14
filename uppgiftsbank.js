@@ -268,7 +268,7 @@ export const taskGroups = [
 { groupId: "Svårare Prioriteringsregler", area: "Aritmetik", subArea: "Prioriteringsregler", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, versions: [
 { id: 189, versionLabel: "A", question: "Beräkna \\( 28 - 3 \\cdot (2+5) + 18/3 \\) ", solution: "13" },
 { id: 190, versionLabel: "B", question: "Beräkna \\( \\frac{45}{5} - 4 \\cdot (5-3) + \\frac{21}{7} \\) ", solution: "4" },
-{ id: 191, versionLabel: "C", question: "Beräkna \\( \\frac{(8 \\ cdot 3)}{6} + (5 \\ cdot 7) \\) ", solution: "39" },
+{ id: 191, versionLabel: "C", question: "Beräkna \\( \\frac{(8 \\cdot 3)}{6} + (5 \\cdot 7) \\) ", solution: "39" },
 { id: 192, versionLabel: "D", question: "Beräkna \\( 2 + 12/4 \\cdot (6-5) \\) ", solution: "5" },
 ] },
 { groupId: "Beräkna med prioriteringsregler", area: "Aritmetik", subArea: "Prioriteringsregler", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
