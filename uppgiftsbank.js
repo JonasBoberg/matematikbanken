@@ -726,7 +726,7 @@ solution: "Svar: 2"
 { id: 460, versionLabel: "A", question: "Skriv som en potens:<br>a) \\(12\\cdot12\\cdot12\\cdot12\\)<br>b) \\(a \\cdot a \\cdot a\\)", solution: "a) \\(12^4\\)<br>b) \\(a^3\\)" },
 { id: 461, versionLabel: "B", question: "Skriv som en potens:<br>a) \\(5\\cdot5\\cdot5\\)<br>b) \\(x\\cdot x\\)", solution: "a) \\(5^3\\)<br>b) \\(x^2\\)" },
 { id: 462, versionLabel: "C", question: "Skriv som en potens:<br>a) \\(2\\cdot2\\cdot2\\cdot2\\cdot2\\)<br>b) \\(m\\cdot m\\cdot m\\cdot m\\)", solution: "a) \\(2^5\\)<br>b) \\(m^4\\)" },
-{ id: 463, versionLabel: "D", question: "Skriv som en potens:<br>a) \\(3\\cdot3\\cdot3\\cdot3\\)<br>b) \\(y\\cdot y)", solution: "a) \\(3^4\\)<br>b) \\(y^2\\)" },
+{ id: 463, versionLabel: "D", question: "Skriv som en potens:<br>a) \\(3\\cdot3\\cdot3\\cdot3\\)<br>b) \\(y\\cdot \\y)", solution: "a) \\(3^4\\)<br>b) \\(y^2\\)" },
 ] },
 { groupId: "Beräkna uttryck med potenser", area: "Potenser", subArea: "Potenser", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: false, difficulty: 1, versions: [
 { id: 464, versionLabel: "A", question: "Beräkna:<br>a) \\(4^2-2^3\\)<br>b) \\(1^2+2^2+3^2\\)", solution: "a) 8<br>b) 14" },
