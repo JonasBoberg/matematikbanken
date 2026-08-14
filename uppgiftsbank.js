@@ -1979,7 +1979,7 @@ solution: "Funktionens vertex/extrempunkt hittar vi genom att beräkna \\( f(1,5
 { id: 984, versionLabel: "A", question: "Lös ekvationen: \\( 5^x=9 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 9}{ \\lg 5} \\)"},
 { id: 985, versionLabel: "B", question: "Lös ekvationen: \\( 14^x=5 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 5}{ \\lg 14} \\)"},
 { id: 986, versionLabel: "C", question: "Lös ekvationen: \\( 8^x=4 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 4}{ \\lg 8} \\)"},
-{ id: 987, versionLabel: "D", question: "Lös ekvationen: \\( 6^x=10 \\). Svara exakt.", solution: "\\( x=\\frac{1}{ \\lg 6} \\)"}
+{ id: 987, versionLabel: "D", question: "Lös ekvationen: \\( 6^x=10 \\). Svara exakt.", solution: "\\( x=\\frac{1}{ \\lg 6} \\)"},
 { id: 988, versionLabel: "E", question: "Lös ekvationen: \\( 19^x=5 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 5}{ \\lg 19} \\)"},
 { id: 989, versionLabel: "F", question: "Lös ekvationen: \\( 3^x=8 \\). Svara exakt.", solution: "\\( x=\\frac{ \\lg 8}{ \\lg 3} \\)"},
 ] },
