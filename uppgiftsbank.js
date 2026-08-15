@@ -1014,8 +1014,8 @@ calculator: true
 { id: 660, versionLabel: "A", question: "Utgå från funktionen \\( f(x)=3a+x \\). Bestäm \\( a \\) så att \\( f(-2)=7.\\)", solution: "\\( f(-2)=3a-2 \\) så \\( 3a-2=7 \\) vilket ger oss \\( a=3 \\)"},
 { id: 661, versionLabel: "B", question: "Funktionen \\( f(x)=5x+a \\) är given. Bestäm \\( a \\) så att \\( f(8)=20.\\)", solution: "\\( f(8)=5 \\cdot 8+a \\) så \\( 40+a=20 \\) vilket ger oss \\( a=-20 \\)" },
 { id: 662, versionLabel: "C", question: "Utgå från funktionen \\( f(x)=5x^3+a \\). Bestäm \\( a \\) så att \\( f(2) = 0 \\).", solution: "Svar: \\( a=-40 \\)" },
-{ id: 663, versionLabel: "D", question: "Givet \\( f(x)=6ax+2 \\). Bestäm \\( a \\) så att \\( f(3) = 38 \\).", solution: "Svar: \\( a=2 \\)" },
-{ id: 664, versionLabel: "E", question: "Givet \\( f(x)=x^2-a \\). Bestäm \\( a \\) så att \\( f(10) = 40 \\).", solution: "Svar: \\( a=60 \\)" },
+{ id: 663, versionLabel: "D", question: "Givet \\( f(x)=6ax+2 \\), bestäm \\( a \\) så att \\( f(3) = 38 \\).", solution: "Svar: \\( a=2 \\)" },
+{ id: 664, versionLabel: "E", question: "Givet \\( f(x)=x^2-a \\), bestäm \\( a \\) så att \\( f(10) = 40 \\).", solution: "Svar: \\( a=60 \\)" },
 ] },
 { groupId: "Problemlösning med f(x) - två givna värden", area: "Funktioner", subArea: "f(x) algebraiskt", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, versions: [
 { id: 665, versionLabel: "A", question: "Funktionen \\( f(x)=ax+b \\) är given. Bestäm \\( a \\) och \\( b \\) förutsatt att \\( f(0)=20 \\) och \\( f(10)=100 \\).", solution: "\\( f(0)=20 \\) ger oss att \\( b=20 \\). Då blir \\( f(10)=10a+20 \\) så \\( a=8 \\)."},
