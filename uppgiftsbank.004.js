@@ -2576,4 +2576,8 @@ solution: "Svar: y-koordinaten är ca 4,36."
 { id: 1143, versionLabel: "A", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=x^2+5x^3\\)<br>b) \\(g(x)=7x^4-x \\)", solution: "a) \\(f´(x)=2x+15x^2\\)<br>b) \\(g´(x)=28x^3-1\\)" },
 { id: 1144, versionLabel: "B", question: "Derivera funktionerna nedan:<br>a) \\(f(x)=3x^3-4\\)<br>b) \\(g(x)=x^6-0,3x^8 \\)", solution: "a) \\(f´(x)=9x^2\\)<br>b) \\(g´(x)=6x^5-2,4x^7\\)" },
 ] },
+{ groupId: "Derivera enkla polynom och bestäm värde", area: "Derivata", subArea: "Derivera polynom", courses: ["Ma3b", "Ma3c"], difficulty: 1, versions: [
+{ id: 1145, versionLabel: "A", question: "Givet \\(f(x)=4x^3-2\\), bestäm \\(f'(3)\\)", solution: "Svar: 108" },
+{ id: 1146, versionLabel: "B", question: "Givet \\(f(x)=10x^2+x\\), bestäm \\(f'(5)\\)", solution: "Svar: 101" },
+] },
 ];
