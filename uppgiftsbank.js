@@ -28,7 +28,7 @@ export const taskGroups = [
 { id: 20, listid: 13, versionLabel: "A", question: "I ett stort stall finns det 35 hästar. 20% av dessa är gråa och 20% är vita. Resten är svarta. Hur många svarta hästar finns det i stallet?", solution: "Svar: 21 st (60% av 35)" },
 { id: 21, listid: 14, versionLabel: "B", question: "I en godisbutik finns det 80 klubbor. 25% av dessa är jordgubbssmak och 35% är colasmak. Resten är hallonsmak. Hur många klubbor med hallonsmak finns det i butiken?", solution: "Svar: 32 st (40% av 80)" },
 { id: 22, listid: 15, versionLabel: "C", question: "I ett växthus finns det 60 blommor varav 15% är rosor. Hur många rosor finns det i växthuset?", solution: "Svar: 9 st (15% av 60)" },
-{ id: 23, listid: 16, versionLabel: "D", question: "I en klass finns det 40 elever. 30% spelar fotboll och 20% spelar innebandy. Resten spelar ingen av dessa sporter. Hur många elever spelar ingen av dessa sporter?", solution: "Svar: 20 st (50% av 40)" },
+{ id: 23, listid: 16, versionLabel: "D", question: "I en klass går det 40 elever. 30% spelar fotboll och 20% spelar innebandy. Resten spelar ingen av dessa sporter. Hur många elever spelar ingen av dessa sporter?", solution: "Svar: 20 st (50% av 40)" },
 { id: 24, listid: 17, versionLabel: "E", question: "I ett bibliotek finns det 90 böcker på ett bord. 20% är deckare och 50% är faktaböcker. Resten är romaner. Hur många romaner finns det på bordet?", solution: "Svar: 27 st (30% av 90)" },
 ] },
 { groupId: "Procentuell förändring 1", area: "Procent", subArea: "Procentuell förändring", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 1, versions: [
