@@ -1075,8 +1075,8 @@ solution: "Svar: \\( m=12 \\)"
 },
 { groupId: "Uttryck med funktioner - svåra förenklingar", area: "Funktioner", subArea: "f(x) algebraiskt", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 3, versions: [
 { id: 689, versionLabel: "A", question: "Funktionen \\( f(x)=5x+12 \\) är given. Skriv ett förenklat uttryck för \\( f(a+1)-f(2a).\\)", solution: "Svar: \\(-5a+5\\)"},
-{ id: 690, versionLabel: "B", question: "Funktionen \\( g(x)=10-2x \\) är given. Skriv ett förenklat uttryck för \\( g(x)+g(2x).\\)", solution: "\\( g(x)+g(2x)=\\)<br>\\(=10-2x+(10-2\\cdot 2x)\\)<br>\\(=10-2x+10-4x\\)<br>\\(20-6x\\)<br>Svar: \\(20-6x\\)."}
-{ id: 691, versionLabel: "C", question: "Givet \\( f(x)=6+4x \\), skriv ett förenklat uttryck för \\( f(3a)+f(a+1).\\)", solution: "\\( f(3a)+f(a+1)=\\)<br>\\(=6+12a+6+4(a+1) \\)<br>\\(=12+12a+4a+4\\)<br>\\(16+16a\\)<br>Svar: \\(16+16a\\)."}
+{ id: 690, versionLabel: "B", question: "Funktionen \\( g(x)=10-2x \\) är given. Skriv ett förenklat uttryck för \\( g(x)+g(2x).\\)", solution: "\\( g(x)+g(2x)=\\)<br>\\(=10-2x+(10-2\\cdot 2x)\\)<br>\\(=10-2x+10-4x\\)<br>\\(20-6x\\)<br>Svar: \\(20-6x\\)."},
+{ id: 691, versionLabel: "C", question: "Givet \\( f(x)=6+4x \\), skriv ett förenklat uttryck för \\( f(3a)+f(a+1).\\)", solution: "\\( f(3a)+f(a+1)=\\)<br>\\(=6+12a+6+4(a+1) \\)<br>\\(=12+12a+4a+4\\)<br>\\(16+16a\\)<br>Svar: \\(16+16a\\)."},
 ] },
 { groupId: "Lös ekvation med f(x) och potens", area: "Funktioner", subArea: "f(x) algebraiskt", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 3, versions: [
 { id: 692, versionLabel: "A", question: "Funktionen \\( f(x)=ax \\) är given. Bestäm \\(a\\) så att \\( (f(4))^3=216 \\)", solution: "Svar: \\( a=1,5 \\)"},
