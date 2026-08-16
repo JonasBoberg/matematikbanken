@@ -919,8 +919,8 @@ calculator: true
 { id: 591, versionLabel: "D", question: "Vad ska stå i rutorna?<br>a) \\( (\\square+4)^2=25x^2+40x+16 \\)<br>b) \\( (5x+2)(5x-2)=\\square x^2-4 \\)", solution: "a) 5x<br>b) 25" },
 ] },
 { groupId: "Fyll i raden - konjugat", area: "Konjugat / Kvadrering", subArea: "Förenkla uttryck", courses: ["Ma2a","Ma2b","Ma2c"], difficulty: 1, versions: [
-{ id: 592, versionLabel: "A", question: "Vad ska stå i parentesen? \\( (2x+5)(\\)_______\\()=4x^2-25 \\)", solution: "Svar: \\(2x-5\\)" },
-{ id: 593, versionLabel: "B", question: "Vad ska stå i parentesen? \\( (x-12)(\\)_______\\()=x^2-144 \\)", solution: "Svar: \\(x+12\\)" },
+{ id: 592, versionLabel: "A", question: "Vad ska stå i parentesen?<br>\\( (2x+5)(\\)_______\\()=4x^2-25 \\)", solution: "Svar: \\(2x-5\\)" },
+{ id: 593, versionLabel: "B", question: "Vad ska stå i parentesen?<br>\\( (x-12)(\\)_______\\()=x^2-144 \\)", solution: "Svar: \\(x+12\\)" },
 ] },
 { groupId: "Kvadrering från f(x)", area: "Konjugat / Kvadrering", subArea: "Förenkla uttryck", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, versions: [
 { id: 594, versionLabel: "A", question: "Givet \\( f(x)=x^2+4x \\), skriv ett förenklat uttryck för \\(f(a+3).\\)", solution: "Svar: \\( a^2+10a+21 \\)" },
