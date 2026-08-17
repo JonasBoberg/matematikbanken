@@ -361,17 +361,32 @@ function displayTasks(filteredTasks) {
 
 
         // Container för vanliga versionsknappar (A, B, C...)
-        const versionsContainer = document.createElement('div');
-        versionsContainer.style.display = 'grid';
-        versionsContainer.style.gridTemplateColumns = 'repeat(6, auto)'; // Max 6 knappar per rad
-        versionsContainer.style.gap = '2px';
-        versionsContainer.style.marginBottom = '5px'; // Lite mellanrum till exemplen
-        versionsContainer.style.justifyContent = 'end'; // Håller knapporna högerjusterade om de radbryts
+        //const versionsContainer = document.createElement('div');
+        //versionsContainer.style.display = 'grid';
+        //versionsContainer.style.gridTemplateColumns = 'repeat(6, auto)'; // Max 6 knappar per rad
+        //versionsContainer.style.gap = '2px';
+        //versionsContainer.style.marginBottom = '5px'; // Lite mellanrum till exemplen
+        //versionsContainer.style.justifyContent = 'end'; // Håller knapporna högerjusterade om de radbryt//s//
 
 
         // Container för Exempelknappar (under versionsknapparna)
-        const examplesContainer = document.createElement('div');
-        examplesContainer.style.gap = '2px';
+        //const examplesContainer = document.createElement('div');
+        //examplesContainer.style.gap = '2px';
+
+
+        // Gemensam container för ALLA knappar
+        const buttonsContainer = document.createElement('div');
+        buttonsContainer.style.display = 'flex';
+        buttonsContainer.style.flexWrap = 'wrap';
+        buttonsContainer.style.gap = '2px';
+        buttonsContainer.style.justifyContent = 'flex-end'; 
+        buttonsContainer.style.marginBottom = '5px';
+
+        let normalVersionCount = 0;
+        let hasAddedExampleSpacer = false;
+
+
+
 
         // HJÄLPFUNKTION: Uppdatera hela rutans utseende
         const updateContainerStyle = () => {
@@ -387,7 +402,7 @@ function displayTasks(filteredTasks) {
 
         let mainVersionBtn = null;
 
-        // 3. Skapa versionsknappar
+                // 3. Skapa versionsknappar
         if (group.length > 1 || (group.length === 1 && group[0].groupId)) {
             group.forEach((verTask) => {
                 // Kolla om det är ett exempel
@@ -433,8 +448,6 @@ function displayTasks(filteredTasks) {
                 
                 btn.appendChild(previewDiv);
 
-
-
                 // Hover events
                 btn.addEventListener('mouseenter', () => {
                     previewDiv.style.display = 'block';
@@ -467,11 +480,32 @@ function displayTasks(filteredTasks) {
                     updatePreview();
                 });
 
+                // --- NY LOGIK FÖR ATT LÄGGA KNAPPAR I SAMMA CONTAINER MED RADBRYTNING ---
                 if (isExample) {
-                    examplesContainer.appendChild(btn);
+                    // När vi träffar första Ex-knappen, tvinga en ny rad
+                    if (!hasAddedExampleSpacer) {
+                        const spacer = document.createElement('div');
+                        spacer.style.width = '100%';
+                        spacer.style.height = '0';
+                        spacer.style.overflow = 'hidden';
+                        buttonsContainer.appendChild(spacer);
+                        hasAddedExampleSpacer = true;
+                    }
+                    buttonsContainer.appendChild(btn);
                 } else {
-                    versionsContainer.appendChild(btn);
+                    buttonsContainer.appendChild(btn);
+                    normalVersionCount++;
+                    
+                    // Efter varje 6:e vanlig knapp, tvinga en ny rad
+                    if (normalVersionCount % 6 === 0) {
+                        const spacer = document.createElement('div');
+                        spacer.style.width = '100%';
+                        spacer.style.height = '0';
+                        spacer.style.overflow = 'hidden';
+                        buttonsContainer.appendChild(spacer);
+                    }
                 }
+                // -------------------------------------------------------------------------------
 
                 if (verTask.id === mainTask.id && !isExample) {
                     mainVersionBtn = btn;
