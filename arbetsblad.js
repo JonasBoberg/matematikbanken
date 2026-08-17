@@ -364,14 +364,15 @@ function displayTasks(filteredTasks) {
         const versionsContainer = document.createElement('div');
         versionsContainer.style.display = 'grid';
         versionsContainer.style.gridTemplateColumns = 'repeat(6, auto)'; // Max 6 knappar per rad
-        //versionsContainer.style.gap = '2px';
+        versionsContainer.style.gap = '2px';
         versionsContainer.style.marginBottom = '5px'; // Lite mellanrum till exemplen
-        //versionsContainer.style.justifyContent = 'end'; // Håller knapporna högerjusterade om de radbryts
+        versionsContainer.style.justifyContent = 'end'; // Håller knapporna högerjusterade om de radbryts
 
 
         // Container för Exempelknappar (under versionsknapparna)
         const examplesContainer = document.createElement('div');
-        
+        examplesContainer.style.gap = '2px';
+
         // HJÄLPFUNKTION: Uppdatera hela rutans utseende
         const updateContainerStyle = () => {
             const hasSelection = group.some(t => selectedTaskIds.includes(t.id));
