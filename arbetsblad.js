@@ -402,7 +402,7 @@ function displayTasks(filteredTasks) {
 
         let mainVersionBtn = null;
 
-                // 3. Skapa versionsknappar
+        // 3. Skapa versionsknappar
         if (group.length > 1 || (group.length === 1 && group[0].groupId)) {
             group.forEach((verTask) => {
                 // Kolla om det är ett exempel
