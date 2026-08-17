@@ -366,7 +366,7 @@ function displayTasks(filteredTasks) {
         versionsContainer.style.gridTemplateColumns = 'repeat(6, auto)'; // Max 6 knappar per rad
         versionsContainer.style.gap = '2px';
         versionsContainer.style.marginBottom = '5px'; // Lite mellanrum till exemplen
-        versionsContainer.style.justifyContent = 'end'; // Håller knapporna högerjusterade om de radbryts
+        //versionsContainer.style.justifyContent = 'end'; // Håller knapporna högerjusterade om de radbryts
 
 
         // Container för Exempelknappar (under versionsknapparna)
