@@ -412,6 +412,7 @@ function displayTasks(filteredTasks) {
                 // Använd samma klass för stil
                 btn.className = 'version-btn';
                 
+                btn.style.position = 'relative';
                 
                 // --- TILLÄGG 1: Spara ID på knappen för att kunna hitta den senare ---
                 btn.dataset.id = verTask.id; 
@@ -427,6 +428,14 @@ function displayTasks(filteredTasks) {
                 // Preview
                 const previewDiv = document.createElement('div');
                 previewDiv.className = 'version-preview';
+
+                // --- TILLÄGG: Tvinga positioneringen att följa knappen ---
+                previewDiv.style.position = 'absolute';
+                previewDiv.style.top = '100%';       // Startar precis nedanför knappen
+                previewDiv.style.left = '15px';      // Skjuter den lite åt höger (snett)
+                previewDiv.style.marginTop = '5px';  // Lite luft mellan knapp och preview
+                previewDiv.style.zIndex = '1000';    // Lägger den ovanpå allt annat (även andra rader)
+                // ---------------------------------------------------------
                 
                 const header = document.createElement('div');
                 header.style.cssText = "font-weight: bold; margin-bottom: 8px; border-bottom: 1px solid #eee; padding-bottom: 4px; color: #333;";
