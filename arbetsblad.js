@@ -354,10 +354,20 @@ function displayTasks(filteredTasks) {
         const mainCheckbox = taskDiv.querySelector('input[type="checkbox"]');
         
         // Container för vanliga versionsknappar (A, B, C...)
+        //const versionsContainer = document.createElement('div');
+        //versionsContainer.style.display = 'flex';
+        //versionsContainer.style.gap = '2px';
+        //versionsContainer.style.marginBottom = '5px'; // Lite mellanrum till exemplen
+
+
+        // Container för vanliga versionsknappar (A, B, C...)
         const versionsContainer = document.createElement('div');
-        versionsContainer.style.display = 'flex';
+        versionsContainer.style.display = 'grid';
+        versionsContainer.style.gridTemplateColumns = 'repeat(6, auto)'; // Max 6 knappar per rad
         versionsContainer.style.gap = '2px';
         versionsContainer.style.marginBottom = '5px'; // Lite mellanrum till exemplen
+        versionsContainer.style.justifyContent = 'end'; // Håller knapporna högerjusterade om de radbryts
+
 
         // Container för Exempelknappar (under versionsknapparna)
         const examplesContainer = document.createElement('div');
