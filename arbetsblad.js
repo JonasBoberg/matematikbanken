@@ -432,7 +432,7 @@ function displayTasks(filteredTasks) {
                 // --- TILLÄGG: Tvinga positioneringen att följa knappen ---
                 previewDiv.style.position = 'absolute';
                 previewDiv.style.top = '100%';       // Startar precis nedanför knappen
-                previewDiv.style.left = '15px';      // Skjuter den lite åt höger (snett)
+                previewDiv.style.right = '10px';      // Skjuter den lite åt vänster (snett)
                 previewDiv.style.marginTop = '5px';  // Lite luft mellan knapp och preview
                 previewDiv.style.zIndex = '1000';    // Lägger den ovanpå allt annat (även andra rader)
                 // ---------------------------------------------------------
