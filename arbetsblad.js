@@ -513,8 +513,7 @@ function displayTasks(filteredTasks) {
             });
         }
 
-        versionSelector.appendChild(versionsContainer);
-        versionSelector.appendChild(examplesContainer);
+        versionSelector.appendChild(buttonsContainer);
 
         // --- Klick-logik för huvudcheckbox ---
         mainCheckbox.addEventListener('change', (e) => {
