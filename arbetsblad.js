@@ -1339,7 +1339,6 @@ async function buildPaginatedDocument(tasksList, settings, type = 'question') {
             const textValue = escapeHtml(customTextBlocks[task.id]?.content || "");
             bodyContent = `
                 <div style="display:block; width:100%; position:relative;">
-                    <span class="drag-handle" draggable="true" title="Dra för att flytta" style="position:absolute; top:10px; right:10px; cursor:grab; user-select:none; font-size:12px; color:#666;">⋮⋮</span>
                     <div
                         contenteditable="true"
                         class="custom-text-preview"
