@@ -364,7 +364,7 @@ function displayTasks(filteredTasks) {
         const versionsContainer = document.createElement('div');
         versionsContainer.style.display = 'grid';
         versionsContainer.style.gridTemplateColumns = 'repeat(6, auto)'; // Max 6 knappar per rad
-        versionsContainer.style.gap = '2px';
+        //versionsContainer.style.gap = '2px';
         versionsContainer.style.marginBottom = '5px'; // Lite mellanrum till exemplen
         //versionsContainer.style.justifyContent = 'end'; // Håller knapporna högerjusterade om de radbryts
 
