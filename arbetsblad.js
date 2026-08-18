@@ -1,6 +1,6 @@
 // --- Supabase klient ---
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm"
-import { taskGroups } from './uppgiftsbank.009.js';
+import { taskGroups } from './uppgiftsbank.010.js';
 
 // TEMPORÄRT INAKTIVERAT AUTH
 // För att återaktivera senare: byt ut den aktiva auth-blocken längre ned mot den kommenterade koden härunder.
