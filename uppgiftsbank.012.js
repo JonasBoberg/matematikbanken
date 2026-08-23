@@ -639,7 +639,7 @@ export const taskGroups = [
 { id: 469, versionLabel: "F", question: "Faktorisera uttrycket \\( 10-15y \\) genom att bryta ut största möjliga faktor.", solution: "Svar: \\( 5(2-3y) \\)" },
 { id: 470, versionLabel: "G", question: "Faktorisera uttrycket \\( 12+4x^2 \\) genom att bryta ut största möjliga faktor.", solution: "Svar: \\( 4(3+x^2) \\)" },
 { id: 471, versionLabel: "H", question: "Faktorisera uttrycket \\( x^2-5x \\) genom att bryta ut största möjliga faktor.", solution: "Svar: \\( x(x-5) \\)" },
-{ id: 472, versionLabel: "Ex", example: "\\( Att faktorisera innebär att 'skriva om ett uttryck till sina faktorer (som en multiplikation)'.<br>När vi faktoriserar uttrycket \\(3x+12\\) så börjar vi med att konstatera att båda termerna innehåller faktorn 3 (eftersom \\(3x=3\\cdotx\\) och \\(12=3\\cdot4\\).<br>Det innebär att vi kan bryta ut faktorn 3 och skriva uttycket på faktoriserad form:<br>\\(3x+12=3(x+4)\\)<br>Svar: \\(3(x+4)\\)." },
+{ id: 472, versionLabel: "Ex", example: "Att faktorisera innebär att 'skriva om ett uttryck till sina faktorer (som en multiplikation)'.<br>När vi faktoriserar uttrycket \\(3x+12\\) så börjar vi med att konstatera att båda termerna innehåller faktorn 3 (eftersom \\( 3x=3\\cdot x \\) och \\( 12=3\\cdot 4 \\).<br>Det innebär att vi kan bryta ut faktorn 3 och skriva uttycket på faktoriserad form:<br>\\(3x+12=3(x+4)\\)<br>Svar: \\(3(x+4)\\)." },
 ] },
 { groupId: "Faktorisering, största möjliga, dubbel", area: "Algebra", subArea: "Faktorisering", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, versions: [
 { id: 473, versionLabel: "A", question: "Faktorisera uttrycket \\( 28y^2 - 21y \\) genom att bryta ut största möjliga faktor.", solution: "Svar: \\( 7y(4y - 3) \\)" },
