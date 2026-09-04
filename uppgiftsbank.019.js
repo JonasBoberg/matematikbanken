@@ -220,7 +220,7 @@ export const taskGroups = [
 { id: 156, versionLabel: "H", question: "Beräkna: \\( \\frac{4}{7} + \\frac{3}{14} \\) och svara i enklaste bråkform.", solution: "Svar: \\( \\frac{11}{14} \\)" },
 { id: 157, versionLabel: "I", question: "Vad blir \\( \\frac{11}{15} - \\frac{2}{5} \\)? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{1}{3} \\)" },
 ] },
-{ groupId: "add/sub bråk med olika nämnare - enkla förlängningar", area: "Aritmetik", subArea: "Räkna med bråk", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: false, difficulty: 1, versions: [
+{ groupId: "add/sub bråk med olika nämnare - halvenkla förlängningar", area: "Aritmetik", subArea: "Räkna med bråk", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: false, difficulty: 1, versions: [
 { id: 158, versionLabel: "A", question: "Vad blir \\( \\frac{1}{2} + \\frac{2}{3} \\)? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{7}{6} \\)" },
 { id: 159, versionLabel: "B", question: "Vad blir \\( \\frac{5}{3} - \\frac{5}{4} \\)? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{5}{12} \\)" },
 { id: 160, versionLabel: "C", question: "Vad blir \\( \\frac{4}{5} + \\frac{1}{2} \\)? Svara i enklaste bråkform.", solution: "Svar: \\( \\frac{13}{10} \\)" },
