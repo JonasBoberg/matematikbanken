@@ -296,7 +296,7 @@ export const taskGroups = [
 { groupId: "Alla räknesätt (bråk) - halvsvåra", area: "Aritmetik", subArea: "Räkna med bråk", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, versions: [
 { id: 209, versionLabel: "A", question: "Beräkna: \\( \\frac{3}{2}(\\frac{1}{9} - (2-\\frac{5}{6})) \\) och svara i enklaste bråkform.", solution: "Svar: \\( -\\frac{19}{12} \\)" },
 { id: 210, versionLabel: "B", question: "Beräkna: \\( \\frac{4}{5} - \\frac{\\frac{1}{3}+1}{4} \\) och svara i enklaste bråkform.", solution: "Svar: \\( \\frac{7}{15} \\)" },
-{ id: 211, versionLabel: "C", question: "Beräkna: \\( ( \\frac{3}{5}-\\frac{1}{3}(\\frac{1}{2}-\\frac{1}{5}) )^2 \\) och svara i enklaste bråkform.", solution: "Svar: \\( \\frac{1}{4} \\)" },
+{ id: 211, versionLabel: "C", question: "Beräkna: \\( \left( \\frac{3}{5}-\\frac{1}{3}(\\frac{1}{2}-\\frac{1}{5}) \right)^2 \\) och svara i enklaste bråkform.", solution: "Svar: \\( \\frac{1}{4} \\)" },
 ] },
 { groupId: "Textuppgift - addera och multiplicera bråk", area: "Aritmetik", subArea: "Räkna med bråk", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, versions: [
 { id: 212, versionLabel: "A", question: "Du och din kompis köper en familjepizza. Du äter en sjättedel av pizzan och din kompis äter därefter en tredejdel av det som finns kvar. Hur stor andel av pizzan finns kvar? Svara i enklaste bråkform.", solution: "Det finns \\( \\frac{5}{9} \\) av pizzan kvar." },
