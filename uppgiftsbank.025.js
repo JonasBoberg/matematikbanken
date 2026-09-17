@@ -1015,7 +1015,7 @@ solution: "Svar: 2"
 { id: 691, versionLabel: "B", question: "Förenkla uttrycket \\( \\frac{5^{4x}\\cdot 25^{3x}}{5^{x}} \\) så långt som möjligt.", solution: "Svar: \\( 5^{9x} \\)." },
 { id: 692, versionLabel: "C", question: "Förenkla uttrycket \\( \\frac{4^{10x}\\cdot 2^{4x}}{8^{x}} \\) så långt som möjligt.", solution: "Svar: \\( 2^{21x} \\)." },
 { id: 693, versionLabel: "D", question: "Skriv uttrycket \\( 9^{3x}\\cdot 27^{x+2} \\) som en potens med basen 3.", solution: "Svar: \\( 3^{9x+6} \\)." },
-{ id: 694, versionLabel: "E", question: "Skriv uttrycket  \\( 5^{y}\\cdot 25^{2y}\\cdot \\frac{5^y}{25^{4y}} \\) som en potens med basen 5., solution: "Svar: \\( 5^{-2y} \\)." },
+{ id: 694, versionLabel: "E", question: "Skriv uttrycket  \\( 5^{y}\\cdot 25^{2y}\\cdot \\frac{5^y}{25^{4y}} \\) som en potens med basen 5.", solution: "Svar: \\( 5^{-2y} \\)." },
 ] },
 { groupId: "Potensform till bråkform 1", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1a", "Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 695, versionLabel: "A", question: "Skriv uttrycket i bråkform: \\( x^{-3}\\)", solution: "Svar: \\( \\frac{1}{x^3} \\)." },
