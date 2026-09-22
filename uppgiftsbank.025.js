@@ -1334,7 +1334,7 @@ solution: "Svar: 2"
 { id: 910, versionLabel: "H", question: "En rät linje går genom punkterna \\( (2, -3) \\) och \\( (5, 6) \\). Ange linjens ekvation.", solution: "Svar: \\( y=3x-9 \\)." },
 { id: 911, versionLabel: "I", question: "En rät linje går genom punkterna \\( (4, 8) \\) och origo. Ange linjens ekvation.", solution: "Svar: \\( y=0,5x \\)." },
 ] },
-{ groupId: "Rita linje och beräkna area på triangel", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c", "Ma2a], difficulty: 1, versions: [
+{ groupId: "Rita linje och beräkna area på triangel", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 1, versions: [
 { id: 912, versionLabel: "A", question: "Linjen \\( y=2x-4 \\), linjen \\( x=3 \\) och x-axeln bildar tillsammans en rätvinklig triangel. Rita upp dessa linjer i ett koordinatsystem och beräkna triangelns area.", solution: "Triangeln har basen 1 l.e. och höjden 2 l.e.<br> Svar: Triangeln har arean 1 a.e."},
 ] },
 { groupId: "Två givna punkter, vart skär x-axeln?", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 2, versions: [
