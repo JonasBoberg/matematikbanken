@@ -727,7 +727,7 @@ export const taskGroups = [
 { groupId: "Parentesmultiplikation: Två st med addition däremellan", area: "Algebra", subArea: "Förenkla uttryck", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: false, difficulty: 2, versions: [
 { id: 538, versionLabel: "A", question: "Förenkla: \\( (5x-1)(3x+2)+(x+1)(x+2) \\)", solution: "Svar: \\(16x^2+10x \\)" },
 { id: 539, versionLabel: "B", question: "Förenkla: \\( (a-2)(a+3)+(3a-1)(a-10) \\)", solution: "Svar: \\(4a^2-30a+4 \\)" },
-{ id: 540, versionLabel: "C", question: "Förenkla: \\( (x+5)(5x-1)+(x-2)(x+4) \\)", solution: "Svar: \\(6x^2+22x-13 \\)" },
+{ id: 540, versionLabel: "C", question: "Förenkla: \\( (x+5)(5x-1)+(x-2)(x+4) \\)", solution: "Svar: \\(6x^2+26x-13 \\)" },
 { id: 541, versionLabel: "D", question: "Förenkla: \\( (3+y)(y-5)+(2y-1)(2y+4) \\)", solution: "Svar: \\(5y^2-19 \\)" },
 ] },
 { groupId: "Multiplicera in i parentes, minustecken och många termer", area: "Algebra", subArea: "Förenkla uttryck", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, versions: [
