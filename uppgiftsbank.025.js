@@ -484,7 +484,7 @@ export const taskGroups = [
 {id: 352, versionLabel: "F", question: "Beräkna värdet av \\(a^2-3b\\) då \\(a=10\\) och \\(b=5.\\)", solution: "Svar: 85" },
 {id: 353, versionLabel: "G", question: "Låt \\(x=8\\) och \\(y=6\\) och beräkna värdet av:<br>a) \\(1+2x-y\\)<br>b) \\(y+x^2\\)", solution: "a) 11<br>b) 70" },
 {id: 354, versionLabel: "H", question: "Låt \\(a=4\\) och \\(b=10\\) och beräkna värdet av:<br>a) \\(\\frac{5a}{b}+5\\)<br>b) \\(b-(a+5)\\)", solution: "a) 7<br>b) 1" },
-{id: 355, versionLabel: "I", question: "Låt \\(x=12\\) och \\(y=8\\) och beräkna värdet av:<br>a) \\( x+2y \\)<br>b) \\(2x-10+y)\\)", solution: "a) 28<br>b) 22" },
+{id: 355, versionLabel: "I", question: "Låt \\(x=12\\) och \\(y=8\\) och beräkna värdet av:<br>a) \\( x+2y \\)<br>b) \\(2x-10+y\\)", solution: "a) 28<br>b) 22" },
 ] },
 { groupId: "Beräkna värdet av uttryck - svåra med positiva tal", area: "Algebra", subArea: "Beräkna värdet av uttryck", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, versions: [
 {id: 356, versionLabel: "A", question: "Låt \\(x=12\\) och \\(y=3\\) och beräkna värdet av \\( \\frac{x}{y^2-6}+2(x-y).\\)", solution: "22" },
@@ -724,7 +724,7 @@ export const taskGroups = [
 { id: 536, versionLabel: "B", question: "Förenkla: \\( (x+1)(x+2)(x+3)-x-6 \\)", solution: "Svar: \\(x^3+6x^2+10x \\)" },
 { id: 537, versionLabel: "C", question: "Förenkla: \\( (a+b)(a+c)(b+c)-(a^2b+a^2c+b^2c+bc^2) \\)", solution: "Svar: \\( ab^2+ac^2+2abc \\)" },
 ] },
-{ groupId: "Parentesmultiplikation: Två st med addition däremellan", area: "Algebra", subArea: "Förenkla uttryck", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: false, difficulty: 2, versions: [
+{ groupId: "Parentesmultiplikation: Två st med addition däremellan", area: "Algebra", subArea: "Förenkla uttryck", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, versions: [
 { id: 538, versionLabel: "A", question: "Förenkla: \\( (5x-1)(3x+2)+(x+1)(x+2) \\)", solution: "Svar: \\(16x^2+10x \\)" },
 { id: 539, versionLabel: "B", question: "Förenkla: \\( (a-2)(a+3)+(3a-1)(a-10) \\)", solution: "Svar: \\(4a^2-30a+4 \\)" },
 { id: 540, versionLabel: "C", question: "Förenkla: \\( (x+5)(5x-1)+(x-2)(x+4) \\)", solution: "Svar: \\(6x^2+26x-13 \\)" },
@@ -926,24 +926,24 @@ question: "Vilket värde på \\( x \\) uppfyller inte villkoret \\( 2x+1 \\ge 5 
 difficulty: 1,
 solution: "Svar: 2"
 },
-{ groupId: "vilka ligger i intervallet?", area: "Algebra", subArea: "Olikheter och intervall", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "vilka ligger i intervallet?", area: "Algebra", subArea: "Olikheter och intervall", courses: ["Ma1b", "Ma1c"], difficulty: 1, versions: [
 { id: 634, versionLabel: "A", question: "Vilka av följande heltal, \\( x \\), ligger i intervallet \\( 5 \\leq x < 12 \\)?<br><br>Alternativ: -2, 3, 5, 10, 12, 15.", solution: "Svar: 5 och 10." },
 { id: 635, versionLabel: "B", question: "Vilka av följande tal, \\( x \\), ligger i intervallet \\( -3,5 < x \\leq -0,5 \\)?<br><br>Alternativ: -4 ; -3,5 ; -1 ; -3,8 ; 1,2.", solution: "Svar: -1 och -3,8." },
 { id: 636, versionLabel: "C", question: "Vilka av följande heltal, \\( x \\), ligger i intervallet \\( -2 \\leq x < 4 \\)?<br><br>Alternativ: -3, -2, 0, 3, 4, 6.", solution: "Svar: -2, 0 och 3." },
 { id: 637, versionLabel: "D", question: "Vilka av följande tal, \\( x \\), ligger i intervallet \\( 1,5 < x \\leq 5,5 \\)?<br><br>Alternativ: 1,2 ; 2 ; 5,5 ; 6 ; 1,5.", solution: "Svar: 2 och 5,5." },
 { id: 638, versionLabel: "E", question: "Vilka av följande heltal, \\( x \\), ligger i intervallet \\( -10 < x \\leq -6 \\)?<br><br>Alternativ: -11, -10, -9, -7, -6, -5.", solution: "Svar: -9, -7 och -6." }
 ] },
-{ groupId: "lös olikheten, simpel", area: "Algebra", subArea: "Olikheter och intervall", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "lös olikheten, simpel", area: "Algebra", subArea: "Olikheter och intervall", courses: ["Ma1b", "Ma1c"], difficulty: 1, versions: [
 { id: 639, versionLabel: "A", question: "Lös olikheten \\( 2+4x<12 \\).", solution: "Svar: \\( x<2,5 \\)" },
 { id: 640, versionLabel: "B", question: "Lös olikheten \\( 10>5x \\).", solution: "Svar: \\( x<2 \\)" },
 { id: 641, versionLabel: "C", question: "Lös olikheten \\( \\frac{x}{3}+1>22 \\).", solution: "Svar: \\( x>63 \\)" }
 ] },
-{ groupId: "Lös olikheten, negativ / behöver vända", area: "Algebra", subArea: "Olikheter och intervall", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], difficulty: 2, versions: [
+{ groupId: "Lös olikheten, negativ / behöver vända", area: "Algebra", subArea: "Olikheter och intervall", courses: ["Ma1b", "Ma1c"], difficulty: 2, versions: [
 { id: 642, versionLabel: "A", question: "Lös olikheten \\( 4-3x<16 \\).", solution: "Svar: \\( x>-4 \\)" },
 { id: 643, versionLabel: "B", question: "Lös olikheten \\( 16 \\leq -10x+1 \\).", solution: "Svar: \\( x \\leq -1,5 \\)" },
 { id: 644, versionLabel: "C", question: "Lös olikheten \\( \\frac{-x}{2}+4>-10 \\).", solution: "Svar: \\( x<28 \\)" }
 ] },
-{ groupId: "Vilka tal uppfyller olikhet, med alternativ", area: "Algebra", subArea: "Olikheter och intervall", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "Vilka tal uppfyller olikhet, med alternativ", area: "Algebra", subArea: "Olikheter och intervall", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 1, versions: [
 { id: 645, versionLabel: "A", question: "Vilket eller vilka av följande tal uppfyller olikheten \\( \\frac{5x}{2}>100 \\)?<br><br>Alternativ: 10 / 30 / 40 / 60", solution: "Svar: 60" },
 { id: 646, versionLabel: "B", question: "Vilket eller vilka av följande tal uppfyller olikheten \\( -2x+1>5 \\)?<br><br>Alternativ: 2 / 4 / -2 / -4", solution: "Svar: -4" },
 { id: 647, versionLabel: "C", question: "Vilket eller vilka av följande tal uppfyller olikheten \\( -10>x+4 \\)?<br><br>Alternativ: -12 / -13 / -14 / -15", solution: "Svar: -15" },
@@ -951,7 +951,7 @@ solution: "Svar: 2"
 { id: 649, versionLabel: "E", question: "Vilket eller vilka av följande tal uppfyller olikheten \\( 3<x+4 \\)?<br><br>Alternativ: 0 / -1 / -2 / -3", solution: "Svar: 0" },
 { id: 650, versionLabel: "F", question: "Vilket eller vilka av följande tal uppfyller olikheten \\( 12x<-24 \\)?<br><br>Alternativ: 0 / -2 / -4 / -6", solution: "Svar: -4 och -6" },
 ] },
-{ groupId: "Hitta tal mellan två olikheter", area: "Algebra", subArea: "Olikheter och intervall", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], calculator: false, difficulty: 2, versions: [
+{ groupId: "Hitta tal mellan två olikheter", area: "Algebra", subArea: "Olikheter och intervall", courses: ["Ma1b", "Ma1c"], difficulty: 2, versions: [
 { id: 651, versionLabel: "A", question: "Ange ett heltal \\( x \\) som uppfyller olikheterna \\( 4x+7 \\geq 15 \\) och \\( 10>x+5 \\).", solution: "Svar: 2, 3 eller 4" },
 { id: 652, versionLabel: "B", question: "Ange ett heltal \\( x \\) som uppfyller olikheterna \\( 11-2x \\geq 3 \\) och \\( \\frac{x}{3}>1 \\).", solution: "Svar: 4" }
 ] },
@@ -1010,58 +1010,58 @@ solution: "Svar: 2"
 { id: 688, versionLabel: "F", question: "Bestäm \\(x\\) så att \\( \\frac{2^{3x} \\cdot 2^x}{2^{10x}}=2^{12}\\).", solution: "Svar: \\( x=-2 \\)." },
 { id: 689, versionLabel: "G", question: "Lös ekvationen \\(5^{3x}\\cdot 5^{x-1}=5^{39}\\).", solution: "Svar: \\( x=10 \\)." },
 ] },
-{ groupId: "Basbyte och förenkling", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 2, versions: [
+{ groupId: "Basbyte och förenkling", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1b", "Ma1c" ,"Ma2a"], difficulty: 2, versions: [
 { id: 690, versionLabel: "A", question: "Förenkla uttrycket \\( \\frac{9^x\\cdot 3^{7x}}{3^{3x}} \\) så långt som möjligt.", solution: "Svar: \\( 3^{6x} \\)." },
 { id: 691, versionLabel: "B", question: "Förenkla uttrycket \\( \\frac{5^{4x}\\cdot 25^{3x}}{5^{x}} \\) så långt som möjligt.", solution: "Svar: \\( 5^{9x} \\)." },
 { id: 692, versionLabel: "C", question: "Förenkla uttrycket \\( \\frac{4^{10x}\\cdot 2^{4x}}{8^{x}} \\) så långt som möjligt.", solution: "Svar: \\( 2^{21x} \\)." },
 { id: 693, versionLabel: "D", question: "Skriv uttrycket \\( 9^{3x}\\cdot 27^{x+2} \\) som en potens med basen 3.", solution: "Svar: \\( 3^{9x+6} \\)." },
 { id: 694, versionLabel: "E", question: "Skriv uttrycket  \\( 5^{y}\\cdot 25^{2y}\\cdot \\frac{5^y}{25^{4y}} \\) som en potens med basen 5.", solution: "Svar: \\( 5^{-2y} \\)." },
 ] },
-{ groupId: "Potensform till bråkform 1", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1a", "Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "Potensform till bråkform 1", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 1, versions: [
 { id: 695, versionLabel: "A", question: "Skriv uttrycket i bråkform: \\( x^{-3}\\)", solution: "Svar: \\( \\frac{1}{x^3} \\)." },
 { id: 696, versionLabel: "B", question: "Skriv uttrycket i bråkform: \\( y^{-10}\\)", solution: "Svar: \\( \\frac{1}{y^{10}} \\)." },
 { id: 697, versionLabel: "C", question: "Skriv uttrycket i bråkform: \\( a^{-4}\\)", solution: "Svar: \\( \\frac{1}{a^{4}} \\)." },
 ] },
-{ groupId: "Bråkform till potensform 2", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1a", "Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "Bråkform till potensform 2", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 1, versions: [
 { id: 698, versionLabel: "A", question: "Skriv uttrycket \\(\\frac{1}{7^{8}}\\) som en potens med basen 7.", solution: "Svar: \\( 7^{-8} \\)." },
 { id: 699, versionLabel: "B", question: "Skriv uttrycket \\(\\frac{1}{5^{3}}\\) som en potens med basen 5.", solution: "Svar: \\( 5^{-3} \\)." },
 { id: 700, versionLabel: "C", question: "Skriv uttrycket \\(\\frac{1}{10^{4}}\\) som en potens med basen 10.", solution: "Svar: \\( 10^{-4} \\)." },
 { id: 701, versionLabel: "D", question: "Skriv uttrycket \\(\\frac{1}{2^{6}}\\) som en potens med basen 2.", solution: "Svar: \\( 2^{-6} \\)." },
 ] },
-{ groupId: "Bråkform till potensform 1", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1a", "Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
+{ groupId: "Bråkform till potensform 1", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1b", "Ma1c" ,"Ma2a"], difficulty: 1, versions: [
 { id: 702, versionLabel: "A", question: "Skriv talet \\(\\frac{1}{2}\\) som en potens med basen 2.", solution: "Svar: \\( 2^{-1} \\)." },
 { id: 703, versionLabel: "B", question: "Skriv talet \\(\\frac{1}{6}\\) som en potens med basen 6.", solution: "Svar: \\( 6^{-1} \\)." },
 { id: 704, versionLabel: "C", question: "Skriv talet \\(\\frac{1}{3}\\) i potensform.", solution: "Svar: \\( 3^{-1} \\)." },
 { id: 705, versionLabel: "D", question: "Skriv talet \\(\\frac{1}{15}\\) i potensform.", solution: "Svar: \\( 15^{-1} \\)." },
 ] },
-{ groupId: "Bråkform till potensform 2", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1a", "Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 2, versions: [
+{ groupId: "Bråkform till potensform 2", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1b", "Ma1c" ,"Ma2a"], difficulty: 2, versions: [
 { id: 706, versionLabel: "A", question: "Skriv talet \\(\\frac{1}{8}\\) som en potens med basen 2.", solution: "Lösning: \\(\\frac{1}{8}=\\frac{1}{2^3}=2^{-3}\\)<br>Svar: \\(2^{-3}\\)" },
 { id: 707, versionLabel: "B", question: "Skriv talet \\(\\frac{1}{16}\\) som en potens med basen 4.", solution: "Lösning: \\(\\frac{1}{16}=\\frac{1}{4^2}=4^{-2}\\)<br>Svar: \\(4^{-2}\\)" },
 { id: 708, versionLabel: "C", question: "Skriv talet \\(\\frac{1}{9}\\) som en potens med basen 3.", solution: "Lösning: \\(\\frac{1}{9}=\\frac{1}{3^2}=3^{-2}\\)<br>Svar: \\(3^{-2}\\)" },
 { id: 709, versionLabel: "D", question: "Skriv talet \\(\\frac{1}{27}\\) som en potens med basen 3.", solution: "Lösning: \\(\\frac{1}{27}=\\frac{1}{3^3}=3^{-3}\\)<br>Svar: \\(3^{-3}\\)" },
 ] },
-{ groupId: "Basbyte av potenser - multiplikation", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1a", "Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 2, versions: [
+{ groupId: "Basbyte av potenser - multiplikation", area: "Potenser", subArea: "Potenslagar", courses: ["Ma1b", "Ma1c" ,"Ma2a"], difficulty: 2, versions: [
 { id: 710, versionLabel: "A", question: "Skriv uttrycket \\( 8^{10} \\cdot 4^{3} \\) som en potens med basen 2.", solution: "Svar: \\(2^{36}\\)" },
 { id: 711, versionLabel: "B", question: "Skriv uttrycket \\( 3^{5} \\cdot 27^{2} \\) som en potens med basen 3.", solution: "Svar: \\(3^{11}\\)" },
 { id: 712, versionLabel: "C", question: "Skriv uttrycket \\( 4^{4} \\cdot 8^{3} \\) som en potens med basen 2.", solution: "Svar: \\(2^{17}\\)" },
 { id: 713, versionLabel: "D", question: "Skriv uttrycket \\( 25^{3} \\cdot 5^{2} \\) som en potens med basen 5.", solution: "Svar: \\(5^{8}\\)" },
 { id: 714, versionLabel: "E", question: "Skriv uttrycket \\( 9^{6} \\cdot 3^{2} \\) som en potens med basen 3.", solution: "Svar: \\(3^{14}\\)" },
 ] },
-{ groupId: "Basbyte i potenser - enkla ekvationer med multiplikation", area: "Potenser", subArea: "Basbyte i potenser", courses: ["Ma1a", "Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 2, versions: [
+{ groupId: "Basbyte i potenser - enkla ekvationer med multiplikation", area: "Potenser", subArea: "Basbyte i potenser", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 2, versions: [
 { id: 715, versionLabel: "A", question: "Lös ekvationen \\( 4^{3x} \\cdot 2^{5x} = 2^{33} \\).", solution: "Svar: \\( x=3 \\)." },
 { id: 716, versionLabel: "B", question: "Lös ekvationen \\( 3^x \\cdot 9^{3x} = 3^{17,5} \\).", solution: "Svar: \\( x=2,5 \\)." },
 { id: 717, versionLabel: "C", question: "Lös ekvationen \\( 5^{2x} \\cdot 5^{3x} = 25^{10} \\).", solution: "Svar: \\( x=4 \\)." },
 { id: 718, versionLabel: "D", question: "Lös ekvationen \\( 8^{2x} \\cdot 2^{x} = 2^{21} \\).", solution: "Svar: \\( x=3 \\)." },
 { id: 719, versionLabel: "E", question: "Lös ekvationen \\( 9^{x} \\cdot 3^{2x} = 3^{12} \\).", solution: "Svar: \\( x=3 \\)." },
 ] },
-{ groupId: "Basbyte i potenser (svåra ekvationer)", area: "Potenser", subArea: "Basbyte i potenser", courses: ["Ma1a", "Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 3, versions: [
+{ groupId: "Basbyte i potenser (svåra ekvationer)", area: "Potenser", subArea: "Basbyte i potenser", courses: ["Ma1b", "Ma1c" ,"Ma2a"], difficulty: 3, versions: [
 { id: 720, versionLabel: "A", question: "Bestäm \\(a\\) och \\(b\\) så att \\( 5^3 \\cdot 15^5 = 3^a \\cdot 5^b \\).", solution: "Svar: \\(a=5\\) och \\(b=8\\)." },
 { id: 721, versionLabel: "B", question: "Bestäm \\(n\\) om \\( 2^4 \\cdot 3^8 = 9^n \\cdot 6^4 \\). (NP Ma1bc).", solution: "Svar: \\( n=2 \\)." },
 { id: 722, versionLabel: "C", question: "Bestäm \\(a\\) och \\(b\\) så att \\( 4^3 \\cdot 8^2 = 2^a \\cdot 4^b \\).", solution: "Svar: \\(a=6\\) och \\(b=3\\)." },
 { id: 723, versionLabel: "D", question: "Bestäm \\(n\\) om \\( 3^5 \\cdot 27^2 = 9^n \\cdot 3^4 \\).", solution: "Svar: \\( n=4 \\)." },
 { id: 724, versionLabel: "E", question: "Bestäm \\(a\\) och \\(b\\) så att \\( 4^3 \\cdot 12^3 = 3^a \\cdot 2^b \\).", solution: "Svar: \\(a=3\\) och \\(b=9\\)." },
 ]  },
-{ groupId: "Potensekvationer 1", area: "Potenser", subArea: "Potensekvationer", courses: ["Ma1a","Ma1b","Ma1c","Ma2a","Ma2b","Ma2c"], difficulty: 1, versions: [
+{ groupId: "Potensekvationer 1", area: "Potenser", subArea: "Potensekvationer", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b","Ma2c"], difficulty: 1, versions: [
 { id: 725, versionLabel: "A", question: "Lös ekvationen \\( x^2=9 \\).", solution: "Svar: \\( x_1=3 \\) och \\( x_2=-3.\\)" },
 { id: 726, versionLabel: "B", question: "Lös ekvationen \\( x^2=49 \\).", solution: "Svar: \\( x_1=7 \\) och \\( x_2=-7 \\)." },
 { id: 727, versionLabel: "C", question: "Lös ekvationen \\( x^2=100 \\).", solution: "Svar: \\( x_1=10 \\) och \\( x_2=-10 \\)." },
@@ -1069,14 +1069,14 @@ solution: "Svar: 2"
 { id: 729, versionLabel: "E", question: "Lös ekvationen \\( x^2=1 \\).", solution: "Svar: \\( x_1=1 \\) och \\( x_2=-1 \\)." },
 { id: 730, versionLabel: "E", question: "Lös ekvationen \\( x^2=4 \\).", solution: "Svar: \\( x_1=2 \\) och \\( x_2=-2 \\)." },
 ] },
-{ groupId: "Potensekvationer 2", area: "Potenser", subArea: "Potensekvationer", courses: ["Ma1a","Ma1b","Ma1c","Ma2a","Ma2b","Ma2c"], difficulty: 1, versions: [
+{ groupId: "Potensekvationer 2", area: "Potenser", subArea: "Potensekvationer", courses: ["Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 731, versionLabel: "A", question: "Lös ekvationen \\( 2x^2=18 \\).", solution: "Svar: \\( x_1=3 \\) och \\( x_2=-3 \\)." },
 { id: 732, versionLabel: "B", question: "Lös ekvationen \\( 2x^2+3 = 5 \\).", solution: "Svar: \\( x_1=1 \\) och \\( x_2=-1 \\)." },
 { id: 733, versionLabel: "C", question: "Lös ekvationen \\( 5x^4-10 = 15 \\). Svara exakt.", solution: "Svar: \\( x_1=\\sqrt[4]{5} \\) och \\( x_2=-\\sqrt[4]{5} \\)." },
 { id: 734, versionLabel: "D", question: "Lös ekvationen \\( 3x^5+4 = 100 \\).", solution: "Svar: \\( x=2 \\).", calculator: true },
 { id: 735, versionLabel: "F", question: "Lös ekvationen \\( 4x^2+1 = 37 \\).", solution: "Svar: \\( x_1=3 \\) och \\( x_2=-3 \\)."},
 ] },
-{ groupId: "Potensekvation med ff", area: "Potenser", subArea: "Potensekvationer med förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
+{ groupId: "Potensekvation med ff", area: "Potenser", subArea: "Potensekvationer med förändringsfaktor", courses: ["Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
 { id: 736, versionLabel: "A", question: "Du sätter in 30 000 kr på ett sparkonto. Tre år senare har pengarnas värde ökat till 32 300. Beräkna årsräntan på kontot.", solution: "Lös ekvationen \\( 30000 \\cdot x^3=32300 \\). Det ger dig lösningen \\( x=1,025 \\). Svar: Årsräntan är 2,5%." },
 { id: 737, versionLabel: "B", question: "Du sätter in 50 000 kr på ett sparkonto. Efter fyra år har beloppet vuxit till 60 775 kr. Beräkna årsräntan på kontot.", solution: "Lös ekvationen \\( 50000 \\cdot x^4=60775 \\). Det ger dig lösningen \\( x=1,05 \\). Svar: Årsräntan är 5%." },
 { id: 738, versionLabel: "C", question: "En investering på 20 000 kr är efter två år värd 22 050 kr. Beräkna den årliga tillväxtfaktorn och ange årsräntan i procent.", solution: "Lös ekvationen \\( 20000 \\cdot x^2=22050 \\). Det ger dig lösningen \\( x=1,05 \\). Svar: Årsräntan är 5%." },
@@ -1086,27 +1086,21 @@ solution: "Svar: 2"
 { id: 742, versionLabel: "G", question: "I en stor skog finns det 10 000 st träd år 2020. Sex år senare uppskattar man antalet träd till 16 000 st. Med hur många procent ökar antalet träd per år om du förutsätter att det ökar med lika många procent varje år?", solution: "Lös ekvationen \\( 10000 \\cdot x^6=16000 \\). Det ger dig lösningen \\( x=1,08 \\). Svar: Det ökar med 8% varje år." },
 { id: 743, versionLabel: "H", question: "Temperaturen i en bastu är 20°C. 10 minuter efter att man har börjat elda har temperaturen ökat till 25°C. Temperaturen ökade exponentiellt. Med hur många procent ökade temperaturen per minut? (NP 1b, 1c)", solution: "Temperaturen ökar med 2,3%." }
 ] },
-{ groupId: "Potensekvation med ff (förändringen given)", area: "Potenser", subArea: "Potensekvationer med förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
+{ groupId: "Potensekvation med ff (förändringen given)", area: "Potenser", subArea: "Potensekvationer med förändringsfaktor", courses: ["Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
 { id: 744, versionLabel: "A", question: "Du sätter in 15 000 kr på ett sparkonto. Efter fem år har pengarnas värde ökat med 3 250 kr. Beräkna årsräntan på kontot.", solution: "Svar: Årsräntan är 4%." },
 { id: 745, versionLabel: "B", question: "I en by bor det 1800 invånare. Tre år senare när man gör en beräkning av antalet invånare märker man att det har minskat med 400 invånare. Med hur många procent har antalet minskat per år förutsatt att det har minskat med lika många procent varje år?", solution: "Svar: ca 8% per år." },
 { id: 746, versionLabel: "C", question: "En investering på 20 000 kr har efter två år ökat med 20 350 kr. Ange den årliga tillväxtfaktorn.", solution: "Svar: ca 12%." },
 ] },
-{ groupId: "Potensekvationer med ff + beräkna nytt", area: "Potenser", subArea: "Potensekvationer med förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
+{ groupId: "Potensekvationer med ff + beräkna nytt", area: "Potenser", subArea: "Potensekvationer med förändringsfaktor", courses: ["Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
 { id: 747, versionLabel: "A", question: "Du analyserar en bakteriekultur. Klockan 09:00 bestod den av 3000 bakterier. Fyra timmar senare fanns det 5400 bakterier. Om denna ökning är exponentiell, hur många bakterier finns det i bakteriekulturen klockan 18:00?", solution: "Det finns då 11 529 bakterier." },
 { id: 748, versionLabel: "B", question: "Antalet grodyngel i en damm ökar under en period exponentiellt. Den 5e april fanns det 25 yngel i dammen och den 10e april fanns det 48 yngel. Om det fortsätter i samma takt, hur många yngel finns det i dammen på den den 18 april?", solution: "Svar: Det finns då ca 136 st." },
 { id: 749, versionLabel: "C", question: "Thomas jobbar som kemist och mäter mängden litium i ett ämne. Vid första mätningen (t=0) var det 600mg litium i ämnet. Tre minuter senare (vid t=3) var det bara 531mg kvar.<br>Förutsatt att minskningen är exponentiell, hur mycket litium bör det finns i ämnet efter totalt 10 minuter (vid t=10)?", solution: "Svar: Det finns då ca 399mg litium." },
 { id: 750, versionLabel: "D", question: "Erik analyserar hur värdet på ett unikt frimärke förändras. År 2000 var frimärket värt 430kr men år 2004 hade dess värde ökat till 585kr. Förutsätt att frimärkets värde ökar exponentiellt och att det kommer fortsätta i samma takt. Vad är frimärket värt år 2010?", solution: "928 kr" },
 ] },
-{
-id: 751,
-area: "Potenser",
-subArea: "Potensekvationer med förändringsfaktor",
-courses: ["Ma1a", "Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"],
-question: "Du sätter in 45 000 kr på ett sparkonto. Efter 5 år har pengarnas värde vuxit till 54 750.<br> a) Beräkna årsräntan.<br> b) Förutsatt att du inte sätter in nya pengar eller tar ut några pengar, hur mycket pengar har du efter ytterliggare 5 år?",
-solution: "a) 4%<br> b) ca 66 611 kr",
-calculator: true
-},
-{ groupId: "Förenkla med konjugat 1", area: "Konjugat / Kvadrering", subArea: "Förenkla uttryck", courses: ["Ma2a","Ma2b","Ma2c"], difficulty: 1, versions: [
+{ groupId: "Potensekvationer med ff + beräkna nytt (a och b)", area: "Potenser", subArea: "Potensekvationer med förändringsfaktor", courses: ["Ma1b", "Ma1c" ,"Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
+{ id: 751, versionLabel: "A", question: "Du sätter in 45 000 kr på ett sparkonto. Efter 5 år har pengarnas värde vuxit till 54 750.<br> a) Beräkna årsräntan.<br> b) Förutsatt att du inte sätter in nya pengar eller tar ut några pengar, hur mycket pengar har du efter ytterliggare 5 år?", solution: "a) 4%<br> b) ca 66 611 kr", },
+] },
+{ groupId: "Förenkla med konjugat 1", area: "Konjugat / Kvadrering", subArea: "Förenkla uttryck", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 752, versionLabel: "A", question: "Förenkla uttrycket \\( (4x-5)(4x+5)-10 \\).", solution: "\\( 16x^2-35 \\)" },
 { id: 753, versionLabel: "B", question: "Förenkla uttrycket \\( 2x^2+(x+10)(x-10) \\).", solution: "\\( 3x^2-100 \\)" },
 { id: 754, versionLabel: "C", question: "Förenkla uttrycket \\( (y+3x)(y-3x)-y^2 \\).", solution: "\\( -9x^2 \\)" },
@@ -1114,7 +1108,7 @@ calculator: true
 { id: 756, versionLabel: "E", question: "Förenkla uttrycket \\( (a-5)(a+5)+(6a^2+10) \\).", solution: "\\( 7a^2-15 \\)" },
 { id: 757, versionLabel: "F", question: "Förenkla uttrycket \\( (x+y)(x-y)+y^2 \\).", solution: "\\( x^2 \\)" },
 ] },
-{ groupId: "Förenkla med kvadrering 1", area: "Konjugat / Kvadrering", subArea: "Förenkla uttryck", courses: ["Ma2a","Ma2b","Ma2c"], difficulty: 1, versions: [
+{ groupId: "Förenkla med kvadrering 1", area: "Konjugat / Kvadrering", subArea: "Förenkla uttryck", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 758, versionLabel: "A", question: "Förenkla \\( (x+2)^2+(x+3)^2 \\).", solution: "\\( 2x^2+10x+13 \\)" },
 { id: 759, versionLabel: "B", question: "Förenkla \\( 100+(x+10)^2 \\).", solution: "\\( x^2+20x+200 \\)" },
 { id: 760, versionLabel: "C", question: "Förenkla \\( (x-3)^2-9 \\).", solution: "\\( x^2-6x \\)" },
@@ -1123,20 +1117,20 @@ calculator: true
 { id: 763, versionLabel: "F", question: "Förenkla \\( (x-5)^2+(2x+5)^2-10x \\).", solution: "\\( 5x^2+50 \\)" },
 { id: 764, versionLabel: "G", question: "Förenkla \\( (3x+2)^2-(x+4) \\).", solution: "\\( 9x^2+11x \\)" },
 ] },
-{ groupId: "Förenkla - konjugat+kvadrering", area: "Konjugat / Kvadrering", subArea: "Förenkla uttryck", courses: ["Ma2a","Ma2b","Ma2c"], difficulty: 1, versions: [
+{ groupId: "Förenkla - konjugat+kvadrering", area: "Konjugat / Kvadrering", subArea: "Förenkla uttryck", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 765, versionLabel: "A", question: "Förenkla uttrycken så långt som möjligt:<br>a) \\( 2a^2+(a+6)^2 \\)<br>b) \\((x-5)(x+5)+30\\)", solution: "a) \\(3a^2+12a+36\\)<br>b) \\(x^2+5\\)" },
 { id: 766, versionLabel: "B", question: "Förenkla uttrycken så långt som möjligt:<br>a) \\( x+(x-1)^2+x^2 \\)<br>b) \\(4+(4x-2)(4x+2)\\)", solution: "a) \\(2x^2-x+1\\)<br>b) \\(16x^2\\)" },
 { id: 767, versionLabel: "C", question: "Förenkla uttrycken så långt som möjligt:<br>a) \\( 2a^2+(a-3)(a+3) \\)<br>b) \\((5x-1)^2-5x^2\\)", solution: "a) \\(3a^2-9 \\)<br>b) \\(20x^2-10x+1\\)" },
 { id: 768, versionLabel: "D", question: "Förenkla uttrycken så långt som möjligt:<br>a) \\( (b-1)(b+1)+(b+1)^2 \\)<br>b) \\(x+(x-3)^2+3\\)", solution: "a) \\(2b^2+2b \\)<br>b) \\(x^2-5x+12\\)" },
 { id: 769, versionLabel: "E", question: "Förenkla uttrycken så långt som möjligt:<br>a) \\( x^2+(x+4)^2 \\)<br>b) \\( (a+3)(a-3)-(a-10) \\)", solution: "a) \\(2x^2+8x+16 \\)<br>b) \\( a^2-a+1 \\)" },
 ]  },
-{ groupId: "Vad saknas i konjugat och kvadrering", area: "Konjugat / Kvadrering", subArea: "Förenkla uttryck", courses: ["Ma2a","Ma2b","Ma2c"], difficulty: 1, versions: [
+{ groupId: "Vad saknas i konjugat och kvadrering", area: "Konjugat / Kvadrering", subArea: "Förenkla uttryck", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 770, versionLabel: "A", question: "Vad ska stå i rutorna?<br>a) \\( (3x+2)(3x-2)=9x^2-\\square \\)<br>b) \\( (x+\\square)^2=x^2+10x+25 \\)", solution: "a) 4<br>b) 5" },
 { id: 771, versionLabel: "B", question: "Vad ska stå i rutorna?<br>a) \\( (\\square-10)^2=16x^2-80x+100 \\)<br>b) \\( (3x+1)(3x-1)=\\square x^2-1 \\)", solution: "a) 4x<br>b) 9" },
 { id: 772, versionLabel: "C", question: "Vad ska stå i rutorna?<br>a) \\( (2x+3)(2x-3)=4x^2-\\square \\)<br>b) \\( (x-\\square)^2=x^2-8x+16 \\)", solution: "a) 9<br>b) 4" },
 { id: 773, versionLabel: "D", question: "Vad ska stå i rutorna?<br>a) \\( (\\square+4)^2=25x^2+40x+16 \\)<br>b) \\( (5x+2)(5x-2)=\\square x^2-4 \\)", solution: "a) 5x<br>b) 25" },
 ] },
-{ groupId: "Fyll i raden - konjugat", area: "Konjugat / Kvadrering", subArea: "Förenkla uttryck", courses: ["Ma2a","Ma2b","Ma2c"], difficulty: 1, versions: [
+{ groupId: "Fyll i raden - konjugat", area: "Konjugat / Kvadrering", subArea: "Förenkla uttryck", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 774, versionLabel: "A", question: "Vad ska stå i parentesen?<br>\\( (2x+5)(\\)_______\\()=4x^2-25 \\)", solution: "Svar: \\(2x-5\\)" },
 { id: 775, versionLabel: "B", question: "Vad ska stå i parentesen?<br>\\( (x-12)(\\)_______\\()=x^2-144 \\)", solution: "Svar: \\(x+12\\)" },
 { id: 776, versionLabel: "C", question: "Vad ska stå i parentesen?<br>\\( (\\)_______\\()(3a+1)=9a^2-1 \\)", solution: "Svar: \\(3a-1\)" },
@@ -1276,24 +1270,12 @@ calculator: true
 { id: 870, versionLabel: "D", question: "Funktionen \\( f(x)=x^2+1\\) är given. Bestäm \\( f(f(3)) \\).", solution: "\\( f(f(3))=f(10)=101 \\)" },
 { id: 871, versionLabel: "E", question: "Funktionen \\( f(x)=3(x+2) \\) är given. Bestäm \\( f(f(2)) \\).", solution: "\\( f(f(2))=f(12)=42 \\)" },
 ] },
-{
-id: 872,
-area: "Funktioner",
-subArea: "f(x) algebraiskt",
-courses: ["Ma1a", "Ma1b", "Ma1c"],
-question: "Funktionen \\( f(x)=10x+b \\) korsar \\(x\\)-axeln där \\( x=5 \\). Bestäm \\( b \\).",
-difficulty: 2,
-solution: "Svar: \\( b=-50 \\)"
-},
-{
-id: 873,
-area: "Funktioner",
-subArea: "f(x) algebraiskt",
-courses: ["Ma1a", "Ma1b", "Ma1c"],
-question: "Funktionen \\( f(x)=-2x+m \\) bildar tillsammans med x-axeln och y-axeln en rätvinklig triangel. Bestäm \\( m \\) så att triangelns area blir 36 a.e.",
-difficulty: 2,
-solution: "Svar: \\( m=12 \\)"
-},
+{ groupId: "Bestäm konstant utifrån korsning med x-axel", area: "Funktioner", subArea: "f(x) algebraiskt", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, versions: [
+{ id: 872, versionLabel: "A", question: "Funktionen \\( f(x)=10x+b \\) korsar \\(x\\)-axeln där \\( x=5 \\). Bestäm \\( b \\).", solution: "Svar: \\( b=-50 \\)"},
+] },
+{ groupId: "Bestäm konstant som ger given area på triangel", area: "Funktioner", subArea: "f(x) algebraiskt", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, versions: [
+{ id: 873, versionLabel: "A", question: "Funktionen \\( f(x)=-2x+m \\) bildar tillsammans med x-axeln och y-axeln en rätvinklig triangel. Bestäm \\( m \\) så att triangelns area blir 36 a.e.", solution: "Svar: \\( m=12 \\)"},
+] },
 { groupId: "Uttryck med funktioner - svåra förenklingar", area: "Funktioner", subArea: "f(x) algebraiskt", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 3, versions: [
 { id: 874, versionLabel: "A", question: "Funktionen \\( f(x)=5x+12 \\) är given. Skriv ett förenklat uttryck för \\( f(a+1)-f(2a).\\)", solution: "Svar: \\(-5a+5\\)"},
 { id: 875, versionLabel: "C", question: "Givet \\( f(x)=6+4x \\), skriv ett förenklat uttryck för \\( f(3a)+f(a+1).\\)", solution: "\\( f(3a)+f(a+1)=\\)<br>\\(=6+12a+6+4(a+1) \\)<br>\\(=12+12a+4a+4\\)<br>\\(16+16a\\)<br>Svar: \\(16+16a\\)."},
@@ -1320,91 +1302,46 @@ solution: "Svar: \\( m=12 \\)"
 { id: 888, versionLabel: "C", question: "Nedan ser du funktionen \\( f(x) \\). Lös ekvationen \\( f(x)=2 \\).", img: "bilder/IMG_0012.jpg", solution: "\\( x=6 \\)." },
 { id: 889, versionLabel: "D", question: "Nedan ser du funktionen \\( f(x) \\). Lös ekvationen \\( f(x)=2 \\). ", img: "bilder/IMG_0007.jpg", solution: "\\( x=-1 \\)." },
 ] },
-{
-id: 890,
-area: "Funktioner",
-subArea: "f(x) grafiskt",
-courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"],
-question: "Nedan ser du funktionen \\( f(x) \\). Bestäm \\( f(2) \\).",
-difficulty: 1,
-img: "bilder/IMG_0100.jpg",
-solution: "Svar: f(2)=3."
-},
-{
-id: 891,
-area: "Funktioner",
-subArea: "f(x) grafiskt",
-courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"],
-question: "Nedan ser du funktionen \\( f(x) \\). Bestäm \\( f(1) \\).",
-img: "bilder/IMG_0100.jpg",
-difficulty: 1,
-solution: "Svar: f(1)=0."
-},
-{
-id: 892,
-area: "Funktioner",
-subArea: "f(x) grafiskt",
-courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"],
-question: "Nedan ser du funktionen \\( f(x) \\). Lös ekvationen \\( f(x)=-2 \\).",
-img: "bilder/IMG_0100.jpg",
-difficulty: 1,
-solution: "Svar: x=-2."
-},
-{
-id: 893,
-area: "Funktioner",
-subArea: "f(x) grafiskt",
-courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"],
-question: "Nedan ser du funktionen \\( f(x) \\). Bestäm \\( f(2)\\).",
-img: "bilder/IMG_0101.jpg",
-difficulty: 1,
-solution: "Svar: f(2)=4."
-},
-{
-id: 894,
-area: "Funktioner",
-subArea: "f(x) grafiskt",
-courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"],
-question: "Nedan ser du funktionen \\( f(x) \\). Lös ekvationen \\( f(x)=-2\\).",
-img: "bilder/IMG_0101.jpg",
-difficulty: 2,
-solution: "Svar: \\(x_1=0\\), \\(x_2=-2,7\\) och \\(x_3=0,7\\)"
-},
-{
-id: 895,
-area: "Funktioner",
-subArea: "Räta linjens ekvation",
-courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b", "Ma2c"],
-question: "Linjen \\( y=2x-4 \\), linjen \\( x=3 \\) och x-axeln bildar tillsammans en rätvinklig triangel. Rita upp dessa linjer i ett koordinatsystem och beräkna triangelns area.",
-difficulty: 1,
-solution: "Triangeln har basen 1 l.e. och höjden 2 l.e. Svar: Triangeln har arean 1 a.e."
-},
+{ groupId: "Bestäm f(a) grafiskt - lite svårare graf", area: "Funktioner", subArea: "f(x) grafiskt", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
+{ id: 890, versionLabel: "A", question: "Nedan ser du funktionen \\( f(x) \\). Bestäm \\( f(2) \\).", img: "bilder/IMG_0100.jpg", solution: "\\( f(2)=3 \\)." },
+{ id: 891, versionLabel: "B", question: "Nedan ser du funktionen \\( f(x) \\). Bestäm \\( f(1) \\).", img: "bilder/IMG_0100.jpg", solution: "\\( f(1)=0 \\)." },
+{ id: 892, versionLabel: "C", question: "Nedan ser du funktionen \\( f(x) \\). Bestäm \\( f(2) \\).", img: "bilder/IMG_0101.jpg", solution: "\\( f(2)=4 \\)." },
+] },
+{ groupId: "Lös ekvationen f(x)=a grafiskt - lite svårare graf", area: "Funktioner", subArea: "f(x) grafiskt", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
+{ id: 893, versionLabel: "A", question: "Nedan ser du funktionen \\( f(x) \\). Lös ekvationen \\( f(x)=-2 \\).", img: "bilder/IMG_0100.jpg", solution: "Svar: \\( x=-2 \\)." },
+] },
+{ groupId: "Lös ekvationen f(x)=a grafiskt - fler lösningar", area: "Funktioner", subArea: "f(x) grafiskt", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 2, versions: [
+{ id: 894, versionLabel: "A", question: "Nedan ser du funktionen \\( f(x) \\). Lös ekvationen \\( f(x)=-2\\).", img: "bilder/IMG_0101.jpg", solution: "Svar: \\(x_1=0\\), \\(x_2=-2,7\\) och \\(x_3=0,7\\)" },
+] },
 { groupId: "Ange linjens ekvation (rät)", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a"], difficulty: 1, versions: [
-{ id: 896, versionLabel: "A", question: "Ange linjens ekvation", img: "bilder/IMG_0013.jpg", solution: "\\( y=2x-3 \\)." },
-{ id: 897, versionLabel: "B", question: "Ange linjens ekvation", img: "bilder/IMG_0014.jpg", solution: "\\( y=-x+1 \\)." },
-{ id: 898, versionLabel: "C", question: "Ange linjens ekvation", img: "bilder/IMG_0015.jpg", solution: "\\( y=1,5x \\)." },
-{ id: 899, versionLabel: "D", question: "Ange linjens ekvation", img: "bilder/IMG_0016.jpg", solution: "\\( y=-2x+1 \\)." },
-{ id: 900, versionLabel: "E", question: "Ange linjens ekvation", img: "bilder/IMG_0017.jpg", solution: "\\( y=2x+1 \\)." },
-{ id: 901, versionLabel: "F", question: "Ange linjens ekvation", img: "bilder/IMG_0003.jpg", solution: "\\( y=2x-1 \\)." },
-{ id: 902, versionLabel: "G", question: "Ange linjens ekvation", img: "bilder/IMG_0004.jpg", solution: "\\( y=3x-2 \\)." },
-{ id: 903, versionLabel: "H", question: "Ange linjens ekvation", img: "bilder/IMG_0005.jpg", solution: "\\( y=0,5x+2 \\)." },
+{ id: 895, versionLabel: "A", question: "Ange linjens ekvation", img: "bilder/IMG_0013.jpg", solution: "\\( y=2x-3 \\)." },
+{ id: 896, versionLabel: "B", question: "Ange linjens ekvation", img: "bilder/IMG_0014.jpg", solution: "\\( y=-x+1 \\)." },
+{ id: 897, versionLabel: "C", question: "Ange linjens ekvation", img: "bilder/IMG_0015.jpg", solution: "\\( y=1,5x \\)." },
+{ id: 898, versionLabel: "D", question: "Ange linjens ekvation", img: "bilder/IMG_0016.jpg", solution: "\\( y=-2x+1 \\)." },
+{ id: 899, versionLabel: "E", question: "Ange linjens ekvation", img: "bilder/IMG_0017.jpg", solution: "\\( y=2x+1 \\)." },
+{ id: 900, versionLabel: "F", question: "Ange linjens ekvation", img: "bilder/IMG_0003.jpg", solution: "\\( y=2x-1 \\)." },
+{ id: 901, versionLabel: "G", question: "Ange linjens ekvation", img: "bilder/IMG_0004.jpg", solution: "\\( y=3x-2 \\)." },
+{ id: 902, versionLabel: "H", question: "Ange linjens ekvation", img: "bilder/IMG_0005.jpg", solution: "\\( y=0,5x+2 \\)." },
 ] },
 { groupId: "Bestäm ekvation utifrån två punkter", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a"], difficulty: 1, versions: [
-{ id: 904, versionLabel: "A", question: "Ange ekvationen för den räta linje som går genom punkterna \\( (2, 13) \\) och \\( (5, -2) \\).", solution: "Svar: \\( y=-5x+23 \\)." },
-{ id: 905, versionLabel: "B", question: "Ange ekvationen för den räta linje som går genom punkterna \\( (1, 4) \\) och \\( (3, 10) \\).", solution: "Svar: \\( y=3x+1 \\)." },
-{ id: 906, versionLabel: "C", question: "Ange ekvationen för den räta linje som går genom punkterna \\( (-2, 5) \\) och \\( (2, -3) \\).", solution: "Svar: \\( y=-2x+1 \\)." },
-{ id: 907, versionLabel: "D", question: "Ange ekvationen för den räta linje som går genom punkterna \\( (0, -1) \\) och \\( (4, 7) \\).", solution: "Svar: \\( y=2x-1 \\)." },
-{ id: 908, versionLabel: "E", question: "Ange ekvationen för den räta linje som går genom punkterna \\( (8, 2) \\) och \\( (10, 3) \\).", solution: "Svar: \\( y=0,5x-2 \\)." },
-{ id: 909, versionLabel: "F", question: "En rät linje går genom punkterna \\( (-1, -2) \\) och \\( (2, 4) \\). Ange linjens ekvation.", solution: "Svar: \\( y=2x \\)." },
-{ id: 910, versionLabel: "G", question: "En rät linje går genom punkterna \\( (4, 5) \\) och \\( (8, 1) \\). Ange linjens ekvation.", solution: "Svar: \\( y=-x+9 \\)." },
-{ id: 911, versionLabel: "H", question: "En rät linje går genom punkterna \\( (2, -3) \\) och \\( (5, 6) \\). Ange linjens ekvation.", solution: "Svar: \\( y=3x-9 \\)." },
-{ id: 912, versionLabel: "I", question: "En rät linje går genom punkterna \\( (4, 8) \\) och origo. Ange linjens ekvation.", solution: "Svar: \\( y=0,5x \\)." },
+{ id: 903, versionLabel: "A", question: "Ange ekvationen för den räta linje som går genom punkterna \\( (2, 13) \\) och \\( (5, -2) \\).", solution: "Svar: \\( y=-5x+23 \\)." },
+{ id: 904, versionLabel: "B", question: "Ange ekvationen för den räta linje som går genom punkterna \\( (1, 4) \\) och \\( (3, 10) \\).", solution: "Svar: \\( y=3x+1 \\)." },
+{ id: 905, versionLabel: "C", question: "Ange ekvationen för den räta linje som går genom punkterna \\( (-2, 5) \\) och \\( (2, -3) \\).", solution: "Svar: \\( y=-2x+1 \\)." },
+{ id: 906, versionLabel: "D", question: "Ange ekvationen för den räta linje som går genom punkterna \\( (0, -1) \\) och \\( (4, 7) \\).", solution: "Svar: \\( y=2x-1 \\)." },
+{ id: 907, versionLabel: "E", question: "Ange ekvationen för den räta linje som går genom punkterna \\( (8, 2) \\) och \\( (10, 3) \\).", solution: "Svar: \\( y=0,5x-2 \\)." },
+{ id: 908, versionLabel: "F", question: "En rät linje går genom punkterna \\( (-1, -2) \\) och \\( (2, 4) \\). Ange linjens ekvation.", solution: "Svar: \\( y=2x \\)." },
+{ id: 909, versionLabel: "G", question: "En rät linje går genom punkterna \\( (4, 5) \\) och \\( (8, 1) \\). Ange linjens ekvation.", solution: "Svar: \\( y=-x+9 \\)." },
+{ id: 910, versionLabel: "H", question: "En rät linje går genom punkterna \\( (2, -3) \\) och \\( (5, 6) \\). Ange linjens ekvation.", solution: "Svar: \\( y=3x-9 \\)." },
+{ id: 911, versionLabel: "I", question: "En rät linje går genom punkterna \\( (4, 8) \\) och origo. Ange linjens ekvation.", solution: "Svar: \\( y=0,5x \\)." },
 ] },
-{ groupId: "Två givna punkter, vart skär x-axeln?", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a"], difficulty: 2, versions: [
+{ groupId: "Rita linje och beräkna area på triangel", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c", "Ma2a], difficulty: 1, versions: [
+{ id: 912, versionLabel: "A", question: "Linjen \\( y=2x-4 \\), linjen \\( x=3 \\) och x-axeln bildar tillsammans en rätvinklig triangel. Rita upp dessa linjer i ett koordinatsystem och beräkna triangelns area.", solution: "Triangeln har basen 1 l.e. och höjden 2 l.e.<br> Svar: Triangeln har arean 1 a.e."},
+] },
+{ groupId: "Två givna punkter, vart skär x-axeln?", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 2, versions: [
 { id: 913, versionLabel: "A", question: "En rät linje går genom punkterna \\( (5, 6) \\) och \\( (8, -3) \\). I vilken punkt skär linjen \\(x\\)-axeln?", solution: "Svar: \\( (7, 0) \\)." },
 { id: 914, versionLabel: "B", question: "En rät linje går genom punkterna \\( (-4, 10) \\) och \\( (2, 7) \\). I vilken punkt skär linjen \\(x\\)-axeln?", solution: "Svar: \\( (16, 0) \\)." },
 ] },
-{ groupId: "Två givna punkter, bestäm tredje punkt", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a"], difficulty: 2, versions: [
+{ groupId: "Två givna punkter, bestäm tredje punkt", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 2, versions: [
 { id: 915, versionLabel: "A", question: "En rät linje går genom punkterna \\( (3, 10) \\) och \\( (5, 18) \\). Linjen går också genom \\( (-1, a) \\). Bestäm \\(a.\\)", solution: "Svar: \\( a=-6 \\)." },
 { id: 916, versionLabel: "B", question: "En rät linje går genom punkterna \\( (-5, 2) \\) och \\( (-2, -10) \\). Linjen går också genom \\( (9, b) \\). Bestäm \\(b.\\)", solution: "Svar: \\( b=-54 \\)." },
 ] },
@@ -1418,36 +1355,36 @@ solution: "Triangeln har basen 1 l.e. och höjden 2 l.e. Svar: Triangeln har are
 { id: 921, versionLabel: "A", question: "Tabellen nedan visar olika värden för den linjära funktionen \\(f(x).\\) Bestäm linjens ekvation.\n{table\nx | f(x)\n 1 | 0\n 2 | 3 \n 3 | 6\n}", solution: "\\( y=3x-3 \\)." },
 { id: 922, versionLabel: "B", question: "Tabellen nedan visar olika värden för den linjära funktionen \\(f(x).\\) Bestäm linjens ekvation.\n{table\nx | f(x)\n 0 | 10\n 1 | 12 \n 2 | 14\n}", solution: "\\( y=2x+10 \\)." },
 ] },
-{ groupId: "Bestäm linjens ekvation utifrån tabell (svåra)", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1a", "Ma1b", "Ma1c","Ma2a"], difficulty: 2, versions: [
+{ groupId: "Bestäm linjens ekvation utifrån tabell (svåra)", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 2, versions: [
 { id: 923, versionLabel: "A", question: "Tabellen nedan visar olika värden för den linjära funktionen \\(f(x).\\) Bestäm linjens ekvation.\n{table\nx | f(x)\n 12 | -20 \n 20 | -32 \n}", solution: "\\( y=-1,5x-2 \\)." },
 { id: 924, versionLabel: "B", question: "Tabellen nedan visar olika värden för den linjära funktionen \\(f(x).\\) Bestäm linjens ekvation.\n{table\nx | f(x)\n 8 | 3 \n 10 | -1 \n}", solution: "\\( y=-2x+19 \\)." },
 ] },
-{ groupId: "Räta linjens ekvation av två punkter- f(x)", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1a", "Ma1b", "Ma1c","Ma2a"], difficulty: 1, versions: [
+{ groupId: "Räta linjens ekvation av två punkter- f(x)", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c","Ma2a"], difficulty: 1, versions: [
 { id: 925, versionLabel: "A", question: "För den linjära funktionen \\( f(x) \\) gäller att \\( f(5)=5 \\) och \\( f(-3)=13 \\). Ange funktionsuttrycket.", solution: "\\( f(x)=-x+10 \\)." },
 { id: 926, versionLabel: "B", question: "För den linjära funktionen \\( f(x) \\) gäller att \\( f(2)=3 \\) och \\( f(4)=13 \\). Ange funktionsuttrycket.", solution: "\\( f(x)=5x-7 \\)."},
 ] },
-{ groupId: "Räta linjens ekvation av parallell och punkt", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1a", "Ma1b", "Ma1c","Ma2a"], difficulty: 1, versions: [
+{ groupId: "Räta linjens ekvation av parallell och punkt", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 1, versions: [
 { id: 927, versionLabel: "A", question: "Ange ekvationen för den räta linje som är parallell med linjen \\( y=-10x+100 \\) och som går genom punkten \\( (-8, -10) \\).", solution: "\\( y=-10x-90 \\)."},
 { id: 928, versionLabel: "B", question: "En rät linje som går genom punkten \\( (5, 20) \\) är parallell med linjen \\( y=8x-1 \\). Ange linjens ekvation.", solution: "\\( y=8x-20 \\)."},
 { id: 929, versionLabel: "C", question: "Ange ekvationen för den räta linje som är parallell med linjen \\( y=4x+12 \\) och som går genom punkten \\( (3, -5) \\).", solution: "\\( y=4x-17 \\)."},
 ] },
-{ groupId: "Bestäm k och m från blandad form", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c","Ma2a"], difficulty: 1, versions: [
+{ groupId: "Bestäm k och m från blandad form", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 1, versions: [
 { id: 930, versionLabel: "A", question: "Bestäm linjens k-värde och m-värde: \\( 2y=50x-10 \\).", solution: "\\( k=25 \\) och \\(m=-5\\)."},
 { id: 931, versionLabel: "B", question: "Bestäm linjens k-värde och m-värde: \\( 5x+5y-15=0 \\).", solution: "\\( k=-1 \\) och \\(m=3\\)."},
 { id: 932, versionLabel: "C", question: "Bestäm linjens k-värde och m-värde: \\( 0,5y-3x=-4 \\).", solution: "\\( k=6 \\) och \\(m=-8\\)."},
 { id: 933, versionLabel: "D", question: "Bestäm linjens k-värde och m-värde: \\( 4x-y=12 \\).", solution: "\\( k=4 \\) och \\(m=-12\\)."},
 ] },
-{ groupId: "Skriv på k-form", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c","Ma2a"], difficulty: 1, versions: [
+{ groupId: "Skriv på k-form", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 1, versions: [
 { id: 934, versionLabel: "A", question: "Skriv linjen på k-form: \\( 2y+2x=12 \\).", solution: "\\( y=-x+6 \\)."},
 { id: 935, versionLabel: "B", question: "Skriv linjen på k-form: \\( 20-4y=4x \\).", solution: "\\( y=-x+5 \\)."},
 { id: 936, versionLabel: "C", question: "Skriv linjen på k-form: \\( 5y-10x+15=0 \\).", solution: "\\( y=2x-3 \\)."},
 { id: 937, versionLabel: "D", question: "Skriv linjen på k-form: \\( 3y+15x+1=0 \\).", solution: "\\( y=-5x-\\frac{1}{3} \\)."},
 ] },
-{ groupId: "Avgör om parallella", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c","Ma2a"], difficulty: 1, versions: [
+{ groupId: "Avgör om parallella", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 1, versions: [
 { id: 938, versionLabel: "A", question: "Avgör om linjerna \\( 2y=4x-20 \\) och \\( y+2x=100 \\) är parallella eller ej. Motivera ditt svar.", solution: "Svar: \\( 2y=4x-20 \\) är samma sak som \\( y=2x-10 \\) så det är en linje med lutningen \\( k=2 \\). <br> Linjen \\( y+2x=100 \\) är samma sak som \\( y=-2x+100 \\) så det är en linje med lutningen \\( k=-2 \\). <br> Linjerna är alltså inte parallella eftersom de har olika k-värden." },
 { id: 939, versionLabel: "B", question: "Avgör om linjerna \\( 0,5y=10-3x \\) och \\( y=-6x+5 \\) är parallella eller ej. Motivera ditt svar.", solution: "Svar: \\( 0,5y=10-3x \\) är samma sak som \\( y=20-6x \\) så det är en linje med lutningen \\( k=-6 \\). <br> Linjen \\( y=-6x+5 \\) har också lutningen \\( k=-6 \\). <br> Svar: Linjerna är parallella eftersom de har samma k-värde." }
 ] },
-{ groupId: "Bestäm a så att parallella", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c","Ma2a"], difficulty: 2, versions: [
+{ groupId: "Bestäm a så att parallella", area: "Funktioner", subArea: "Räta linjens ekvation", courses: ["Ma1b", "Ma1c", "Ma2a"], difficulty: 2, versions: [
 { id: 940, versionLabel: "A", question: "Linje \\(L_1\\) går genom punkterna \\( (1, 2) \\) och \\( (3, 10) \\). Linje \\(L_2\\) går genom punkterna \\( (5, 12) \\) och \\( (16, a) \\). Bestäm värdet på \\(a\\) så att \\(L_1\\) och \\(L_2\\) blir parallella.", solution: "Linje \\(L_1\\) har \\( k=4 \\) så \\( \\frac{a-12}{16-5}=4 \\).<br>Svar: \\( a=56 \\)." }
 ] },
 {
@@ -1824,7 +1761,7 @@ calculator: true
 id: 1047,
 area: "Sannolikhet",
 subArea: "Sannolikhet i flera steg",
-courses: ["Ma1a", "Ma1b", "Ma1c", "Ma5"],
+courses: ["Ma1a", "Ma1b", "Ma1c"],
 question: "I en påse ligger det 8 lappar med siffrorna 1-4 (två av varje). Du plockar slumpmässigt upp tre lappar och multiplicerar talen. Vad är sannolikheten att produkten är udda? Svara i procentform med en decimal.",
 difficulty: 3,
 solution: "Svar: 7,1%.",
@@ -1834,7 +1771,7 @@ calculator: true
 id: 1048,
 area: "Sannolikhet",
 subArea: "Sannolikhet / kombinatorik",
-courses: ["Ma1a", "Ma1b", "Ma1c", "Ma5"],
+courses: ["Ma1a", "Ma1b", "Ma1c"],
 question: "I en påse ligger det 5 lappar med siffrorna 1-5 (en av varje). Du plockar slumpmässigt upp tre lappar och adderar talen. Vad är sannolikheten att summan är jämn? Svara i procentform.",
 difficulty: 3,
 solution: "Svar: 60%.",
