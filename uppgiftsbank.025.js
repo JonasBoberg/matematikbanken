@@ -2184,7 +2184,7 @@ solution: "(1 ; 4,5)"
 { id: 1217, versionLabel: "I", question: "Lös ekvationssystemet \\( \\begin{cases} 2x+y=1 \\\\ x-5y=28 \\end{cases} \\)", solution: "\\( \\begin{cases} x=3 \\\\ y=-5 \\end{cases} \\)" },
 ] },
 { groupId: "Lös systemet med digitalt verktyg", area: "Ekvationssystem", subArea: "Lös algebraiskt", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, calculator: true, versions: [
-{ id: 1218, versionLabel: "A", question: "Lös ekvationssystemet med hjälp av digitalt verktyg \\( \\begin{cases} xy=10 \\\\ x-y=3 \\end{cases} \\)", solution: "\\( \\begin{cases} x_1=4,32 \\\\ y_1=2,32 \\end{cases} \\) och \\( \\begin{cases} x_2=-2,32 \\\\ y_2=-4,32 \\end{cases} \\)" },
+{ id: 1218, versionLabel: "A", question: "Lös ekvationssystemet med hjälp av digitalt verktyg \\( \\begin{cases} xy=10 \\\\ x-y=3 \\end{cases} \\)", solution: "\\( \\begin{cases} x_1=5 \\\\ y_1=2 \\end{cases} \\) och \\( \\begin{cases} x_2=-2 \\\\ y_2=-5 \\end{cases} \\)" },
 { id: 1219, versionLabel: "B", question: "Lös ekvationssystemet med hjälp av digitalt verktyg \\( \\begin{cases} x^2+y=5 \\\\ x-5y=1 \\end{cases} \\)", solution: "\\( \\begin{cases} x_1=2,18 \\\\ y_1=0,24 \\end{cases} \\) och \\( \\begin{cases} x_2=-2,38 \\\\ y_2=-0,68 \\end{cases} \\)" },
 ] },
 { groupId: "Andragradare genom tre punkter", area: "Ekvationssystem", subArea: "Lös algebraiskt", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
