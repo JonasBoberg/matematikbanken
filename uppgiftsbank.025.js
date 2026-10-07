@@ -730,7 +730,7 @@ export const taskGroups = [
 ] },
 { groupId: "Parentesmultiplikation - rektangel", area: "Algebra", subArea: "Förenkla uttryck", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
 { id: 540, versionLabel: "A", question: "Skriv ett förenklat uttryck för rektangelns:<br>a) omkrets<br>b) area", img: "bilder/Uttryck_med_parenteser/IMG_5001.jpg", solution: "a) \\(6x+2\\)<br>b) \\(2x^2-2\\)" },
-{ id: 541, versionLabel: "B", question: "Skriv ett förenklat uttryck för rektangelns:<br>a) omkrets<br>b) area", img: "bilder/Uttryck_med_parenteser/IMG_5002.jpg", solution: "a) \\(12x+8\\)<br>b) \\(5x^2+16x+4\\)" },
+{ id: 541, versionLabel: "B", question: "Skriv ett förenklat uttryck för rektangelns:<br>a) omkrets<br>b) area", img: "bilder/Uttryck_med_parenteser/IMG_5002.jpg", solution: "a) \\(12x+8\\)<br>b) \\(5x^2+16x+3\\)" },
 ] },
 { groupId: "Parentesmultiplikation 2", area: "Algebra", subArea: "Förenkla uttryck", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: false, difficulty: 2, versions: [
 { id: 542, versionLabel: "A", question: "Förenkla: \\( x+(3x+7)(2x-5) \\)", solution: "Svar: \\(6x^2-35 \\)" },
@@ -783,7 +783,7 @@ export const taskGroups = [
 { id: 575, versionLabel: "B", question: "Förenkla uttrycket \\( 3(20-(x-7)) \\) så långt som möjligt.", solution: "\\( 3(20-(x-7))=\\)<br>\\(=3(20-x+7)=\\)<br>\\(=3(27-x)=\\)<br>\\(=81-3x \\)" },
 { id: 576, versionLabel: "C", question: "Förenkla uttrycket \\( 5-(12(2x-1)) \\) så långt som möjligt.", solution: "\\( 5-(12(2x-1))=\\)<br>\\(=5-(24x-12)=\\)<br>\\(=5-24x+12=\\)<br>\\(=-24x+17 \\)" },
 { id: 577, versionLabel: "D", question: "Förenkla uttrycket \\( x-(6-(3x-4)+1) \\) så långt som möjligt.", solution: "\\( x-(6-(3x-4)+1)=\\)<br>\\(=x-(6-3x+4+1)=\\)<br>\\(=x-6+3x-4-1=\\)<br>\\(=4x-11 \\)" },
-{ id: 578, versionLabel: "E", question: "Förenkla uttrycket \\( 4x- \\left( 2x^2-(3x-x \\cdot 2x) \\right) \\) så långt som möjligt.", solution: "\\(-4x^2+7x)" },
+{ id: 578, versionLabel: "E", question: "Förenkla uttrycket \\( 4x- \\left( 2x^2-(3x-x \\cdot 2x) \\right) \\) så långt som möjligt.", solution: "\\(-4x^2+7x\\)" },
 { id: 579, versionLabel: "F", question: "Förenkla uttrycket \\( 2 \\left( 3x(3+2x)-x \\right) \\) så långt som möjligt.", solution: "\\(30x^2+16x)" },
 ] },
 { groupId: "Faktorisering, given faktor, singel", area: "Algebra", subArea: "Faktorisering", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
@@ -1010,14 +1010,14 @@ solution: "Svar: 2"
 { id: 688, versionLabel: "F", question: "Bestäm \\(x\\) så att \\( \\frac{2^{3x} \\cdot 2^x}{2^{10x}}=2^{12}\\).", solution: "Svar: \\( x=-2 \\)." },
 { id: 689, versionLabel: "G", question: "Lös ekvationen \\(5^{3x}\\cdot 5^{x-1}=5^{39}\\).", solution: "Svar: \\( x=10 \\)." },
 ] },
-{ groupId: "Basbyte och förenkling", area: "Potenslagar och potensekvationer", subArea: "Potenslagar", courses: ["Ma1b", "Ma1c" ,"Ma2a"], difficulty: 2, versions: [
+{ groupId: "Basbyte och förenkling", area: "Potenslagar och potensekvationer", subArea: "Basbyte i potenser", courses: ["Ma1b", "Ma1c" ,"Ma2a"], difficulty: 2, versions: [
 { id: 690, versionLabel: "A", question: "Förenkla uttrycket \\( \\frac{9^x\\cdot 3^{7x}}{3^{3x}} \\) så långt som möjligt.", solution: "Svar: \\( 3^{6x} \\)." },
 { id: 691, versionLabel: "B", question: "Förenkla uttrycket \\( \\frac{5^{4x}\\cdot 25^{3x}}{5^{x}} \\) så långt som möjligt.", solution: "Svar: \\( 5^{9x} \\)." },
 { id: 692, versionLabel: "C", question: "Förenkla uttrycket \\( \\frac{4^{10x}\\cdot 2^{4x}}{8^{x}} \\) så långt som möjligt.", solution: "Svar: \\( 2^{21x} \\)." },
 { id: 693, versionLabel: "D", question: "Skriv uttrycket \\( 9^{3x}\\cdot 27^{x+2} \\) som en potens med basen 3.", solution: "Svar: \\( 3^{9x+6} \\)." },
 { id: 694, versionLabel: "E", question: "Skriv uttrycket  \\( 5^{y}\\cdot 25^{2y}\\cdot \\frac{5^y}{25^{4y}} \\) som en potens med basen 5.", solution: "Svar: \\( 5^{-2y} \\)." },
 ] },
-{ groupId: "Jämför storlek mha basbyte", area: "Potenslagar och potensekvationer", subArea: "Potenslagar", courses: ["Ma1b", "Ma1c" ,"Ma2a"], difficulty: 2, versions: [
+{ groupId: "Jämför storlek mha basbyte", area: "Potenslagar och potensekvationer", subArea: "Basbyte i potenser", courses: ["Ma1b", "Ma1c" ,"Ma2a"], difficulty: 2, versions: [
 { id: 695, versionLabel: "A", question: "Vilket tal är störst, \\( 9^{21} \\) eller \\(3^{41}\\)?", solution: "Svar: \\( 9^{21} \\)." },
 { id: 696, versionLabel: "B", question: "Vilket tal är störst, \\( 4^{10} \\) eller \\(8^{6}\\)?", solution: "Svar: \\( 4^{10} \\)." },
 { id: 697, versionLabel: "C", question: "Vilket tal är störst, \\( 8^{32} \\) eller \\(2^{100}\\)?", solution: "Svar: \\( 2^{100} \\)." },
@@ -1046,7 +1046,7 @@ solution: "Svar: 2"
 { id: 712, versionLabel: "C", question: "Skriv talet \\(\\frac{1}{9}\\) som en potens med basen 3.", solution: "Lösning: \\(\\frac{1}{9}=\\frac{1}{3^2}=3^{-2}\\)<br>Svar: \\(3^{-2}\\)" },
 { id: 713, versionLabel: "D", question: "Skriv talet \\(\\frac{1}{27}\\) som en potens med basen 3.", solution: "Lösning: \\(\\frac{1}{27}=\\frac{1}{3^3}=3^{-3}\\)<br>Svar: \\(3^{-3}\\)" },
 ] },
-{ groupId: "Basbyte av potenser - multiplikation", area: "Potenslagar och potensekvationer", subArea: "Potenslagar", courses: ["Ma1b", "Ma1c" ,"Ma2a"], difficulty: 2, versions: [
+{ groupId: "Basbyte av potenser - multiplikation", area: "Potenslagar och potensekvationer", subArea: "Basbyte i potenser", courses: ["Ma1b", "Ma1c" ,"Ma2a"], difficulty: 2, versions: [
 { id: 714, versionLabel: "A", question: "Skriv uttrycket \\( 8^{10} \\cdot 4^{3} \\) som en potens med basen 2.", solution: "Svar: \\(2^{36}\\)" },
 { id: 715, versionLabel: "B", question: "Skriv uttrycket \\( 3^{5} \\cdot 27^{2} \\) som en potens med basen 3.", solution: "Svar: \\(3^{11}\\)" },
 { id: 716, versionLabel: "C", question: "Skriv uttrycket \\( 4^{4} \\cdot 8^{3} \\) som en potens med basen 2.", solution: "Svar: \\(2^{17}\\)" },
@@ -1064,7 +1064,7 @@ solution: "Svar: 2"
 { id: 724, versionLabel: "A", question: "Bestäm \\(a\\) och \\(b\\) så att \\( 5^3 \\cdot 15^5 = 3^a \\cdot 5^b \\).", solution: "Svar: \\(a=5\\) och \\(b=8\\)." },
 { id: 725, versionLabel: "B", question: "Bestäm \\(n\\) om \\( 2^4 \\cdot 3^8 = 9^n \\cdot 6^4 \\). (NP Ma1bc).", solution: "Svar: \\( n=2 \\)." },
 { id: 726, versionLabel: "C", question: "Bestäm \\(a\\) och \\(b\\) så att \\( 4^3 \\cdot 8^2 = 2^a \\cdot 4^b \\).", solution: "Svar: \\(a=6\\) och \\(b=3\\)." },
-{ id: 727, versionLabel: "D", question: "Bestäm \\(n\\) om \\( 3^5 \\cdot 27^2 = 9^n \\cdot 3^4 \\).", solution: "Svar: \\( n=4 \\)." },
+{ id: 727, versionLabel: "D", question: "Bestäm \\(n\\) om \\( 3^5 \\cdot 27^2 = 9^n \\cdot 3^4 \\).", solution: "Svar: \\( n=3,5 \\)." },
 { id: 728, versionLabel: "E", question: "Bestäm \\(a\\) och \\(b\\) så att \\( 4^3 \\cdot 12^3 = 3^a \\cdot 2^b \\).", solution: "Svar: \\(a=3\\) och \\(b=9\\)." },
 ]  },
 { groupId: "Potensekvationer 1", area: "Potenslagar och potensekvationer", subArea: "Potensekvationer", courses: ["Ma1a", "Ma1b", "Ma1c", "Ma2a", "Ma2b","Ma2c"], difficulty: 1, versions: [
@@ -2030,7 +2030,7 @@ solution: "\\( x_1=\\sqrt{2} \\) och \\( x_2=-\\sqrt{2} \\)"
 { groupId: "pq utan justering", area: "Andragradare", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 1143, versionLabel: "A", question: "Lös ekvationen: \\( x^2-6x+5=0.\\)", solution: "\\( x_1=1 \\) och \\( x_2=5 \\)" },
 { id: 1144, versionLabel: "B", question: "Lös ekvationen: \\( x^2-2x-15=0.\\)", solution: "\\( x_1=5 \\) och \\( x_2=-3 \\)" },
-{ id: 1145, versionLabel: "C", question: "Lös ekvationen: \\( x^2+2x-8=0.\\)", solution: "\\( x_1=2 \\) och \\( x_2=4 \\)" },
+{ id: 1145, versionLabel: "C", question: "Lös ekvationen: \\( x^2+2x-8=0.\\)", solution: "\\( x_1=2 \\) och \\( x_2=-4 \\)" },
 { id: 1146, versionLabel: "D", question: "Lös ekvationen: \\( x^2+2x-8=0.\\)", solution: "\\( x_1=-4 \\) och \\( x_2=2 \\)" },
 { id: 1147, versionLabel: "E", question: "Lös ekvationen: \\( x^2-4x+3=0.\\)", solution: "\\( x_1=1 \\) och \\( x_2=3 \\)" },
 { id: 1148, versionLabel: "F", question: "Lös ekvationen: \\( x^2+12x+35=0.\\)", solution: "\\( x_1=-5 \\) och \\( x_2=-7 \\)" },
@@ -2054,7 +2054,7 @@ solution: "\\( x_1=\\sqrt{2} \\) och \\( x_2=-\\sqrt{2} \\)"
 { id: 1160, versionLabel: "A", question: "Lös ekvationen \\( 1,5x^2-3,3+1,8x=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-2,2 \\)" },
 { id: 1161, versionLabel: "B", question: "Lös ekvationen \\( 0,05x^2-0,425x=2,1 \\).", solution: "\\( x_1=12 \\) och \\( x_2=-3,5 \\)" },
 { id: 1162, versionLabel: "C", question: "Lös ekvationen \\( 2,4x^2+1,2x-3,6=0 \\).", solution: "\\( x_1=1 \\) och \\( x_2=-1,5 \\)" },
-{ id: 1163, versionLabel: "D", question: "Lös ekvationen \\( 0,8x^2-4x-4,4=2 \\).", solution: "\\( x_1=4 \\) och \\( x_2=-2 \\)" },
+{ id: 1163, versionLabel: "D", question: "Lös ekvationen \\( 0,8x^2-1,6x-4,4=2 \\).", solution: "\\( x_1=4 \\) och \\( x_2=-2 \\)" },
 { id: 1164, versionLabel: "E", question: "Lös ekvationen \\( 2x^2-1,5x-4,5=-x^2 \\).", solution: "\\( x_1=1,5 \\) och \\( x_2=-1 \\)" }
 ] },
 { groupId: "Geometrisk problemlösning med pq", area: "Andragradare", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 2, calculator: true, versions: [
