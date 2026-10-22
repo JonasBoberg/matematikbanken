@@ -73,7 +73,7 @@ export const taskGroups = [
 { id: 55, listid: 47, versionLabel: "C", question: "Du sätter in 12 800 kr på ett konto. Pengarna ökar med 3,5% per år. Hur mycket finns på kontot efter 9 år?", solution: "\\( 12 800 \\cdot 1,035^9 = 17 440 \\) kr." },
 { id: 56, listid: 48, versionLabel: "D", question: "Du köper en båt för 145 000 kr. Båtens värde minskar med 4,5% per år. Hur mycket är båten värd efter 7 år?", solution: "\\( 145 000 \\cdot 0,955^7 = 105 049 \\) kr." },
 { id: 57, listid: 49, versionLabel: "E", question: "En investering på 23 500 kr växer med 6,2% per år. Hur mycket är investeringen värd efter 5 år?", solution: "\\( 23 500 \\cdot 1,062^5 = 31 923 \\) kr." },
-{ id: 58, listid: 50, versionLabel: "F", question: "Du köper en dator för 18 900 kr. Datorns värde minskar med 12% per år. Hur mycket är datorn värd efter 4 år?", solution: "\\( 18 900 \\cdot 0,88^4 = 11 325 \\) kr." },
+{ id: 58, listid: 50, versionLabel: "F", question: "Du köper en dator för 18 900 kr. Datorns värde minskar med 12% per år. Hur mycket är datorn värd efter 4 år?", solution: "\\( 18 900 \\cdot 0,88^4 = 11 334 \\) kr." },
 { id: 59, listid: 51, versionLabel: "G", question: "Du köper en bil för 80 000 kr. Bilens värde minskar med 6% per år. Hur mycket är bilen värd 8 år efter att du köpt den?", solution: "\\( 80 000 \\cdot 0,94^8 = 48 766\\) kr." },
 ] },
 { groupId: "beräkna gammalt värde", area: "Procent", subArea: "Procentuell förändring och förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 1, versions: [
@@ -685,7 +685,7 @@ export const taskGroups = [
 { id: 507, versionLabel: "E", question: "Förenkla uttrycket \\( 10y^2-(5+y^2)-1 \\) så långt som möjligt.", solution: "\\( 9y^2-6 \\)"},
 { id: 508, versionLabel: "F", question: "Förenkla uttrycket \\( 8a^2+a-(5a+a^2) \\) så långt som möjligt.", solution: "\\( 7a^2-4a \\)"},
 { id: 509, versionLabel: "G", question: "Förenkla uttrycken så långt som möjligt:<br>a) \\( 10a-(3a+2) \\)<br>b) \\( 5+3x-(4-10x) \\)", solution: "a) \\( 7a-2 \\)<br>b) \\(13x+1\\)" },
-{ id: 510, versionLabel: "H", question: "Förenkla uttrycken så långt som möjligt:<br>a) \\( -2a-(a+1) \\)<br>b) \\( 10-(2x+12)+5x \\)", solution: "a) \\( -3a+-1 \\)<br>b) \\(3x-2\\)" },
+{ id: 510, versionLabel: "H", question: "Förenkla uttrycken så långt som möjligt:<br>a) \\( -2a-(a+1) \\)<br>b) \\( 10-(2x+12)+5x \\)", solution: "a) \\( -3a-1 \\)<br>b) \\(3x-2\\)" },
 ] },
 { groupId: "Förenkla svåra uttryck", area: "Algebra", subArea: "Förenkla uttryck", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 3, versions: [
 { id: 511, versionLabel: "A", question: "Förenkla uttrycket så långt som möjligt:<br>\\( -1+x-( \\frac{3x}{2}-\\frac{x}{3}-(x+1)) \\)", solution: "\\( \\frac{5x}{6}  \\)"},
