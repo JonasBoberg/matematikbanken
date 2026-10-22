@@ -101,7 +101,7 @@ export const taskGroups = [
 { id: 71, versionLabel: "A", question: "Oskar vinner x kr i en tävling. Ahmed vinner 40 % mer än Oskar. Stina vinner 20 % mindre än Oskar. Hur många procent större är Ahmeds vinst jämfört med Stinas?", solution: "\\(\\frac{0,6x}{0,8x}=0,75\\). Svar: 75%." },
 ] },
 { groupId: "vinkelsumma med ff", area: "Procent", subArea: "Procentuell förändring och förändringsfaktor", courses: ["Ma1a", "Ma1b", "Ma1c"], calculator: true, difficulty: 2, versions: [
-{ id: 72, versionLabel: "A", question: "En triangel har vinklarna U, V och W. Vinkel V är 20 % mindre än vinkel U och vinkel W är 40 % större än vinkel W. Bestäm vinkel W.", solution: "Svar: Lös ekvationen \\(x+1,4x+0,8x=180\\). \\(W=78,75^{\\circ} \\)." },
+{ id: 72, versionLabel: "A", question: "En triangel har vinklarna U, V och W. Vinkel V är 20 % mindre än vinkel U och vinkel W är 40 % större än vinkel U. Bestäm vinkel W.", solution: "Svar: Lös ekvationen \\(x+1,4x+0,8x=180\\). \\(W=78,75^{\\circ} \\)." },
 { id: 73, versionLabel: "B", question: "En triangel har vinklarna U, V och W. Vinkel V och vinkel W är båda 30 % mindre än vinkel U. Bestäm vinkel V.", solution: "Svar: Lös ekvationen \\(x+0,7x+0,7x=180\\). \\(V=52,5^{\\circ} \\)." },
 { id: 74, versionLabel: "C", question: "En triangel har vinklarna A, B och C. Vinkel B är 72 % mindre än vinkel A. Vinkel C är 60 % större än vinkel A. Bestäm triangelns vinklar. (NP 1a, 1b, 1c)", solution: "Svar: Lös ekvationen \\(x+0,28x+1,6x=180\\) så får du \\(A=62,5^{\\circ} \\), \\(B=17,5^{\\circ} \\) och \\(C=100^{\\circ} \\)." }
 ] },
@@ -2039,8 +2039,8 @@ solution: "\\( x_1=\\sqrt{2} \\) och \\( x_2=-\\sqrt{2} \\)"
 { groupId: "pq utan justering", area: "Andragradare", subArea: "pq-formeln", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 1150, versionLabel: "A", question: "Lös ekvationen: \\( x^2-6x+5=0.\\)", solution: "\\( x_1=1 \\) och \\( x_2=5 \\)" },
 { id: 1151, versionLabel: "B", question: "Lös ekvationen: \\( x^2-2x-15=0.\\)", solution: "\\( x_1=5 \\) och \\( x_2=-3 \\)" },
-{ id: 1152, versionLabel: "C", question: "Lös ekvationen: \\( x^2+2x-8=0.\\)", solution: "\\( x_1=2 \\) och \\( x_2=-4 \\)" },
-{ id: 1153, versionLabel: "D", question: "Lös ekvationen: \\( x^2+2x-8=0.\\)", solution: "\\( x_1=-4 \\) och \\( x_2=2 \\)" },
+{ id: 1152, versionLabel: "C", question: "Lös ekvationen: \\( x^2+6x+8=0.\\)", solution: "\\( x_1=-2 \\) och \\( x_2=-4 \\)" },
+{ id: 1153, versionLabel: "D", question: "Lös ekvationen: \\( x^2-8x+15=0.\\)", solution: "\\( x_1=3 \\) och \\( x_2=5 \\)" },
 { id: 1154, versionLabel: "E", question: "Lös ekvationen: \\( x^2-4x+3=0.\\)", solution: "\\( x_1=1 \\) och \\( x_2=3 \\)" },
 { id: 1155, versionLabel: "F", question: "Lös ekvationen: \\( x^2+12x+35=0.\\)", solution: "\\( x_1=-5 \\) och \\( x_2=-7 \\)" },
 ] },
