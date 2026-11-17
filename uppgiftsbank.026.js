@@ -745,7 +745,7 @@ export const taskGroups = [
 { id: 551, versionLabel: "G", question: "Förenkla: \\( (x + 5)(2x - 3) \\)", solution: "Svar: \\(2x^2 + 7x - 15 \\)" },
 { id: 552, versionLabel: "H", question: "Förenkla uttrycket \\( (3x - 1)(2x + 2) \\)", solution: "Svar: \\(6x^2 + 4x - 2 \\)" },
 { id: 553, versionLabel: "I", question: "Förenkla uttrycket \\( (2x-5y)(2x-y) \\)", solution: "Svar: \\(4x^2-12xy+5y^2 \\)" },
-{ id: 554, versionLabel: "Ex", example: "Parentesmultiplikation: båda termerna i första parentesen multipliceras med båda termerna i andra parentesen.<br>img: 'bilder/Exempel/ex_parentesmultiplikation.png" },
+{ id: 554, versionLabel: "Ex", example: "Parentesmultiplikation: båda termerna i första parentesen multipliceras med båda termerna i andra parentesen.<br>img: 'bilder/Exempel/ex_parentesmultiplikation.png'" },
 ] },
 { groupId: "Parentesmultiplikation - rektangel", area: "Algebra", subArea: "Förenkla uttryck", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 1, versions: [
 { id: 555, versionLabel: "A", question: "Skriv ett förenklat uttryck för rektangelns:<br>a) omkrets<br>b) area", img: "bilder/Uttryck_med_parenteser/IMG_5001.jpg", solution: "a) \\(6x+2\\)<br>b) \\(2x^2-2\\)" },
