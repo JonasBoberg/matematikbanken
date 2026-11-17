@@ -2116,7 +2116,7 @@ solution: "(1 ; 4,5)"
 ] },
 { groupId: "Ange funktion utifrån symmetrilinje", area: "Andragradare", subArea: "Nollställe / symmetrilinje", courses: ["Ma2a", "Ma2b", "Ma2c"], difficulty: 1, versions: [
 { id: 1216, versionLabel: "A", question: "Ange en andragradsfunktion med symmetrilinjen \\( x=15,5 \\).", solution: "T.ex. \\( f(x)=(x-15)(x-16) \\) eller \\( f(x)=(x-14)(x-17).\\)" },
-{ id: 1217, versionLabel: "B", question: "Ange en andragradsfunktion med symmetrilinjen \\( x=-12 \\).", solution: "T.ex. \\( f(x)=(x+13)(x+15) \\) eller \\( f(x)=(x+12)^2\\)" },
+{ id: 1217, versionLabel: "B", question: "Ange en andragradsfunktion med symmetrilinjen \\( x=-12 \\).", solution: "T.ex. \\( f(x)=(x+11)(x+13) \\) eller \\( f(x)=(x+12)^2\\)" },
 { id: 1218, versionLabel: "C", question: "Ange en andragradsfunktion med symmetrilinjen \\( x=4,5 \\).", solution: "T.ex. \\( f(x)=(x-4)(x-5) \\) eller \\( f(x)=(x-3)(x-6).\\)" },
 { id: 1219, versionLabel: "D", question: "Ange en andragradsfunktion med symmetrilinjen \\( x=-7,5 \\).", solution: "T.ex. \\( f(x)=(x+7)(x+8) \\) eller \\( f(x)=(x+7,5)^2\\)" },
 ] },
@@ -2267,7 +2267,7 @@ solution: "(1 ; 4,5)"
 { id: 1313, versionLabel: "B", question: "Lös ekvationen: \\( \\lg(x^2+375x)=3 \\).", solution: "\\(x_1=25\\) och \\(x_2=-400\\)"},
 ] },
 { groupId: "Textuppgift med logaritmer", area: "Logaritmer", subArea: "Logaritmer grund", courses: ["Ma2b", "Ma2c"], difficulty: 1, calculator: true, versions: [
-{ id: 1314, versionLabel: "A", question: "En mobiltelefon köptes för 9 000 kr. Dess värde minskar med 12 % varje år. Efter hur lång tid är värdet 4 500 kr?", solution: "Efter ca 6 år (5,9)."},
+{ id: 1314, versionLabel: "A", question: "En mobiltelefon köptes för 9 000 kr. Dess värde minskar med 12 % varje år. Efter hur lång tid är värdet 4 500 kr?", solution: "Efter ca 5,4 år."},
 { id: 1315, versionLabel: "B", question: "Ett bakteriebestånd växer med 8 % per timme. Från början finns det 250 bakterier. Efter hur många timmar finns det minst 500 bakterier?", solution: "Efter ca 9 timmar."},
 { id: 1316, versionLabel: "C", question: "Värdet på ett sparkonto ökar med 3 % per år. När kontot öppnades satte man in 20 000 kr. Efter hur lång tid har pengarna vuxit till 25 000 kr?", solution: "Efter ca 8 år (7,6)."},
 { id: 1317, versionLabel: "D", question: "En radioaktiv substans minskar med 6 % varje år. Från början finns det 150 gram. Efter hur lång tid är mängden mindre än 100 gram?", solution: "Efter ca 7 år (6,6)."},
