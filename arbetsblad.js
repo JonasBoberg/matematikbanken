@@ -1293,7 +1293,7 @@ async function buildPaginatedDocument(tasksList, settings, type = 'question') {
 
     // Definiera layout-stilen
     const wrapperStyle = type === "solution"
-        ? `display: block; column-count: 3; column-gap: 12px; column-fill: balance;`
+        ? `display: block; column-count: 2; column-gap: 16px; column-fill: balance;`
         : settings.layout === "two"
         ? `display: grid; grid-template-columns: 1fr 1fr; gap: 0px 20px; align-content: start;`
         : `display: flex; flex-direction: column; gap: 0px;`;
