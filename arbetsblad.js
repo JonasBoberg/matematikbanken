@@ -110,6 +110,7 @@ function flattenTasks(groups) {
                 id: group.id,
                 question: group.question,
                 solution: group.solution,
+                exp: group.exp,
                 versionLabel: group.versionLabel || null
             });
         }
@@ -146,6 +147,7 @@ let customTaskImgWidths = {}; // Lagrar manuellt ändrade bildbredder per uppgif
 let customTextBlocks = {}; // Lagrar innehållet: { -1: "Min text...", -2: "Mer text..." }
 let nextCustomId = -1;     // Används för att ge unika negativa ID
 let extraBrSpacing = false; // Visa extra utrymme vid <br>
+let includeExplanations = false;
 let customTextDebounceTimer = null;
 
 function escapeHtml(value) {
@@ -898,7 +900,7 @@ function createFunctionPlot(dataStr) {
 }
 
 // Uppdaterad parser som hanterar tabeller, diagram OCH inbäddade bilder
-function parseContent(text, taskId = null) {
+function parseContent(text, taskId = null, useExtraBrSpacing = extraBrSpacing) {
     // 1. Hantera Tabeller
     text = text.replace(/\{table([\s\S]*?)\}/g, function(match, content) {
         const rows = content.trim().split('\n');
@@ -937,7 +939,7 @@ function parseContent(text, taskId = null) {
         return `<img src="${src}" data-task-id="${taskId || ''}" style="${widthStyle} height: auto; margin: 5px 0; display: block;" alt="Uppgiftsbild">`;
     });
 
-    if (extraBrSpacing) {
+    if (useExtraBrSpacing) {
         text = text.replace(/<br\s*\/?>/gi, '<br><span class="extra-br-space"></span>');
     }
 
@@ -1240,7 +1242,7 @@ function createRenderContainer(settings) {
     // Använd mm-mått för att matcha CSS (210mm A4)
     container.style.width = "210mm";
     container.style.boxSizing = "border-box";
-    container.style.fontFamily = "Roboto, sans-serif";
+    container.style.fontFamily = '"Computer Modern Serif", serif';
     container.style.fontSize = "10pt";
     container.style.background = "white";
     container.style.padding = "20mm 15mm";
@@ -1249,6 +1251,17 @@ function createRenderContainer(settings) {
 
     return container;
 }
+
+function formatSolutionContent(task) {
+    const answer = (task.solution || "").replace(/^\s*(?:Svar:\s*)+/i, "");
+    const explanation = includeExplanations ? (task.exp || "").trim() : "";
+    const explanationHtml = explanation
+        ? `<div class="solution-explanation"><div class="solution-explanation-label">Lösning:</div><div>${explanation}</div></div>`
+        : "";
+
+    return `<div class="solution-answer">${answer}</div>${explanationHtml}`;
+}
+
 
 async function buildPaginatedDocument(tasksList, settings, type = 'question') {
 
@@ -1279,7 +1292,9 @@ async function buildPaginatedDocument(tasksList, settings, type = 'question') {
     const otherPageUsablePx = otherPageUsableMm * pxPerMm;
 
     // Definiera layout-stilen
-    const wrapperStyle = settings.layout === "two"
+    const wrapperStyle = type === "solution"
+        ? `display: block; column-count: 3; column-gap: 12px; column-fill: balance;`
+        : settings.layout === "two"
         ? `display: grid; grid-template-columns: 1fr 1fr; gap: 0px 20px; align-content: start;`
         : `display: flex; flex-direction: column; gap: 0px;`;
     
@@ -1315,13 +1330,13 @@ async function buildPaginatedDocument(tasksList, settings, type = 'question') {
             isExample = !!task.example;
             if (type === "solution") {
                 if (isExample) continue; 
-                content = task.solution;
+                content = formatSolutionContent(task);
             } else {
                 content = isExample ? task.example : task.question;
             }
         }
 
-        content = parseContent(content, task.id); // Behandla formler/tabeller
+        content = parseContent(content, task.id, type === "question" && extraBrSpacing); // Behandla formler/tabeller
 
         let imgTag = "";
         
@@ -1351,8 +1366,10 @@ async function buildPaginatedDocument(tasksList, settings, type = 'question') {
             width:100%;
         `;
 
-        // --- STYLING: Exempel har ram, egna textrutor får enkel layout
-        if (isExample || isCustomText) {
+        if (type === "solution") {
+            taskElement.classList.add("solution-task");
+            styleCss += `margin-bottom: 7px;`;
+        } else if (isExample || isCustomText) {
             styleCss += `
                 border: 2px solid #000;
                 box-sizing: border-box;
@@ -1383,7 +1400,7 @@ async function buildPaginatedDocument(tasksList, settings, type = 'question') {
                 labelHtml = `${calcIconPdf}<strong>${questionCounter}.</strong>`;
             } else if (type === "solution") {
                 questionCounter++;
-                labelHtml = `<strong>${questionCounter}.</strong>`;
+                labelHtml = `<strong>${questionCounter})</strong>`;
             }
         }
 
@@ -1408,7 +1425,11 @@ async function buildPaginatedDocument(tasksList, settings, type = 'question') {
             `;
         }
 
-        taskElement.innerHTML = `
+        taskElement.innerHTML = type === "solution"
+            ? `<div class="solution-entry">
+                <div class="solution-entry-answer">${labelHtml}&nbsp;${bodyContent}</div>
+              </div>`
+            : `
             <button class="preview-remove-btn" type="button" data-remove-id="${task.id}" aria-label="Ta bort uppgift">✕</button>
             <div style="display:flex; align-items:baseline;">
                 <div style="flex-shrink:0;">
@@ -1926,7 +1947,7 @@ async function generatePDF() {
     if (solutionTasks.length > 0) {
 
         const settings = {
-            title: "Lösningar",
+            title: "Facit",
             spacing: 10,
             imgSize: parseInt(document.getElementById('imgSizeSlider')?.value || 100),
             layout: document.querySelector('input[name="layout"]:checked')?.value || "one"
@@ -1952,6 +1973,8 @@ async function generatePDF() {
 
     document.body.appendChild(printRoot);
 
+    await document.fonts.load('10pt "Computer Modern Serif"');
+
     setTimeout(() => {
         window.print();
 
@@ -1973,7 +1996,7 @@ async function appendSolutionsToPDF(doc, scale) {
 
     // ✅ skapa TEMP preview (offscreen)
     const settings = {
-        title: "Lösningar",
+        title: "Facit",
         spacing: 10,
         imgSize: parseInt(document.getElementById('imgSizeSlider')?.value || 100),
         layout: document.querySelector('input[name="layout"]:checked')?.value || "one"
@@ -2087,7 +2110,23 @@ function updateBrSpacingButton() {
     }
 }
 
+window.toggleExplanations = function() {
+    includeExplanations = !includeExplanations;
+    updateExplanationsButton();
+};
+
+function updateExplanationsButton() {
+    const btn = document.getElementById('includeExplanationsButton');
+    if (!btn) return;
+    btn.classList.toggle('active', includeExplanations);
+    btn.setAttribute('aria-pressed', String(includeExplanations));
+    btn.textContent = includeExplanations
+        ? 'Lägg till lösningar: PÅ'
+        : 'Lägg till lösningar';
+}
+
 updateBrSpacingButton();
+updateExplanationsButton();
 
 
 // --- Start ---

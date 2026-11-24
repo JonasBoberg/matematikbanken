@@ -826,6 +826,7 @@ body.login-page {
     
     /* VIKTIGT: Sätt box-sizing så att padding räknas in i höjden */
     box-sizing: border-box;
+    font-family: "Computer Modern Serif", serif;
 
     padding: 20mm 15mm 0 15mm; 
 
@@ -891,6 +892,47 @@ body.login-page {
     break-inside: avoid;
 } 
 
+.pdf-page {
+    font-family: "Computer Modern Serif", serif;
+}
+
+.solution-task {
+    display: inline-block;
+    font-size: 9pt !important;
+    line-height: 1.25;
+    cursor: default;
+    vertical-align: top;
+    break-inside: avoid-column;
+    page-break-inside: avoid;
+}
+
+.solution-entry-answer {
+    overflow-wrap: anywhere;
+}
+
+.solution-answer {
+    display: inline;
+}
+
+.solution-explanation {
+    margin-top: 4px;
+    padding: 6px 8px;
+    border: 1px solid #e4dfc7;
+    border-radius: 7px;
+    background: #f7f5e8;
+    font-size: 8.5pt;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+    break-inside: avoid;
+}
+
+.solution-explanation-label {
+    margin-bottom: 3px;
+    text-align: center;
+    font-style: italic;
+    font-size: 8pt;
+}
+
 .preview-remove-btn {
     position: absolute;
     top: 10px;
@@ -921,6 +963,11 @@ body.login-page {
 }
 
 #brSpacingButton.active {
+    background: var(--primary);
+    color: white;
+}
+
+#includeExplanationsButton.active {
     background: var(--primary);
     color: white;
 }
