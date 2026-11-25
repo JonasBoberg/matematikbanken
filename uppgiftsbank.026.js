@@ -1255,7 +1255,7 @@ solution: "Svar: 2"
 { id: 892, versionLabel: "B", question: "Funktionen \\( g(x)=x^2+bx+c \\) är given. Bestäm \\( b \\) och \\( c \\) förutsatt att \\( g(0)=-5 \\) och \\( g(3)=10 \\).", solution: "\\( g(0)=-5 \\) ger oss att \\( c=-5 \\). Då blir \\( g(3)=9+3b-5=3b+4 \\) så \\( b=2 \\)." },
 ] },
 { groupId: "Bestäm uttryck för sammansatt funktion", area: "Funktioner", subArea: "f(x) algebraiskt", courses: ["Ma1a", "Ma1b", "Ma1c"], difficulty: 3, versions: [
-{ id: 893, versionLabel: "A", question: "Funktionen \\( f(x)=10-5x \\) är given. Ange ett uttryck för \\( f(f(x)) \\) och förenkla så långt som möjligt.", solution: "\\( Svar: \\(25x-40\\).", exp: "f(f(x))=\\)<br>\\(f(10-5x)=\\)<br>\\(=10-5(10-5x)=\\)<br>\\(=10-50+25x=\\)<br>\\(=25x-40 \\)"},
+{ id: 893, versionLabel: "A", question: "Funktionen \\( f(x)=10-5x \\) är given. Ange ett uttryck för \\( f(f(x)) \\) och förenkla så långt som möjligt.", solution: "Svar: \\(25x-40\\).", exp: "f(f(x))=\\)<br>\\(f(10-5x)=\\)<br>\\(=10-5(10-5x)=\\)<br>\\(=10-50+25x=\\)<br>\\(=25x-40 \\)"},
 { id: 894, versionLabel: "B", question: "Funktionen \\( g(x)=3x+6 \\) är given. Ange ett uttryck för \\( g(g(x)) \\) och förenkla så långt som möjligt.", solution: "Svar: \\(9x+24\\).", exp: "\\( g(g(x))=g(3x+6)=\\)<br>\\(=3(3x+6)+6=9x+18+6=\\)<br>\\(=9x+24 \\)."},
 { id: 895, versionLabel: "C", question: "Funktionerna \\( f(x)=2x-1 \\) och \\( g(x)=x+5 \\) är givna. Ange ett uttryck för \\( f(g(a)) \\) och förenkla så långt som möjligt.", solution: "Svar: \\(2a+9\\).", exp: "\\( f(g(a))=f(a+5)=\\)<br>\\(=2(a+5)-1=2a+10-1=\\)<br>\\(=2a+9 \\)"},
 ] },
